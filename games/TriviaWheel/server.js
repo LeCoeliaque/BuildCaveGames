@@ -653,10 +653,11 @@ function applyOverride(room,winnerId){
 
 // ── HTTP + WS ─────────────────────────────────────────────────
 const server=http.createServer((req,res)=>{
-  if(req.url==='/'||req.url==='/index.html'){
+  const urlPath=(req.url||'/').split('?')[0].split('#')[0];
+  if(urlPath==='/'||urlPath==='/index.html'){
     fs.readFile(path.join(__dirname,'index.html'),(err,data)=>{if(err){res.writeHead(404);res.end();return;}res.writeHead(200,{'Content-Type':'text/html'});res.end(data);});
-  }else if(req.url.startsWith('/assets/')){
-    const fp=path.join(__dirname,req.url.slice(1));
+  }else if(urlPath.startsWith('/assets/')){
+    const fp=path.join(__dirname,urlPath.slice(1));
     if(!fp.startsWith(path.join(__dirname,'assets'))){res.writeHead(403);res.end();return;}
     fs.readFile(fp,(err,data)=>{
       if(err){res.writeHead(404);res.end();return;}
