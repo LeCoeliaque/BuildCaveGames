@@ -556,16 +556,25 @@ function revealAnswers(room) {
 }
 
 // HTTP server to serve the client HTML
+const MIME = { '.js':'text/javascript', '.css':'text/css', '.png':'image/png', '.jpg':'image/jpeg', '.svg':'image/svg+xml', '.gif':'image/gif', '.json':'application/json', '.mp3':'audio/mpeg', '.wav':'audio/wav' };
 const server = http.createServer((req, res) => {
-  if (req.url === '/' || req.url === '/index.html') {
+  const urlPath = (req.url || '/').split('?')[0].split('#')[0]; // strip query/hash
+
+  if (urlPath === '/' || urlPath === '/index.html') {
     const file = path.join(__dirname, 'index.html');
     fs.readFile(file, (err, data) => {
-      if (err) {
-        res.writeHead(404);
-        res.end('Not found');
-        return;
-      }
+      if (err) { res.writeHead(404); res.end('Not found'); return; }
       res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(data);
+    });
+  } else if (urlPath.startsWith('/assets/')) {
+    const rel = urlPath.slice('/assets/'.length).replace(/\.\./g, '');
+    const file = path.join(__dirname, 'assets', rel);
+    if (!file.startsWith(path.join(__dirname, 'assets'))) { res.writeHead(403); res.end(); return; }
+    fs.readFile(file, (err, data) => {
+      if (err) { res.writeHead(404); res.end('Not found'); return; }
+      const ext = path.extname(file).toLowerCase();
+      res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
       res.end(data);
     });
   } else {
