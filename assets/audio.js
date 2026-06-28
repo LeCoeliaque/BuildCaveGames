@@ -103,43 +103,80 @@
 
   // ── Named sound library ───────────────────────────────────────────
   const SOUNDS = {
-    click:    () => tone({ freq: 600, type: 'triangle', dur: 0.05, vol: 0.18 }),
-    tap:      () => tone({ freq: 420, type: 'sine', dur: 0.06, vol: 0.2 }),
-    correct:  () => { tone({ freq: 660, type: 'sine', dur: 0.12, vol: 0.25 }); tone({ freq: 880, type: 'sine', dur: 0.16, vol: 0.22, delay: 0.1 }); },
-    wrong:    () => { tone({ freq: 200, type: 'sawtooth', dur: 0.18, vol: 0.22, slideTo: 120 }); tone({ freq: 150, type: 'sawtooth', dur: 0.16, vol: 0.18, delay: 0.12 }); },
-    win:      () => { [523, 659, 784, 1047].forEach((f, i) => tone({ freq: f, type: 'triangle', dur: 0.25, vol: 0.25, delay: i * 0.11 })); },
-    lose:     () => { [392, 330, 262].forEach((f, i) => tone({ freq: f, type: 'sine', dur: 0.3, vol: 0.22, delay: i * 0.16 })); },
-    roll:     () => { noise({ dur: 0.18, vol: 0.12, filterFreq: 2000 }); tone({ freq: 300, type: 'triangle', dur: 0.08, vol: 0.12, delay: 0.05 }); },
-    hop:      () => tone({ freq: 500, type: 'sine', dur: 0.07, vol: 0.14, slideTo: 700 }),
-    pop:      () => tone({ freq: 800, type: 'sine', dur: 0.08, vol: 0.2, slideTo: 1200 }),
-    whoosh:   () => noise({ dur: 0.25, vol: 0.15, filterFreq: 800 }),
-    buzz:     () => tone({ freq: 180, type: 'square', dur: 0.25, vol: 0.2 }),
-    ding:     () => tone({ freq: 1047, type: 'sine', dur: 0.3, vol: 0.22 }),
-    chime:    () => { tone({ freq: 784, type: 'sine', dur: 0.2, vol: 0.18 }); tone({ freq: 1047, type: 'sine', dur: 0.3, vol: 0.16, delay: 0.08 }); },
-    deal:     () => { noise({ dur: 0.08, vol: 0.1, filterFreq: 3000 }); },
-    flip:     () => { noise({ dur: 0.1, vol: 0.12, filterFreq: 2500 }); tone({ freq: 400, type: 'triangle', dur: 0.06, vol: 0.1, delay: 0.04 }); },
-    select:   () => tone({ freq: 520, type: 'square', dur: 0.05, vol: 0.14 }),
-    countdown:() => tone({ freq: 880, type: 'sine', dur: 0.1, vol: 0.18 }),
-    turn:     () => { tone({ freq: 587, type: 'sine', dur: 0.1, vol: 0.18 }); tone({ freq: 784, type: 'sine', dur: 0.14, vol: 0.16, delay: 0.08 }); },
+    click:    () => tone({ freq: 600, type: 'triangle', dur: 0.05, vol: 0.16 }),
+    tap:      () => tone({ freq: 420, type: 'sine', dur: 0.06, vol: 0.18 }),
+    // Pleasant rising two-note confirm
+    correct:  () => { tone({ freq: 660, type: 'sine', dur: 0.12, vol: 0.22 }); tone({ freq: 988, type: 'sine', dur: 0.18, vol: 0.2, delay: 0.1 }); },
+    // Soft descending "nope" — not harsh
+    wrong:    () => { tone({ freq: 311, type: 'triangle', dur: 0.16, vol: 0.18, slideTo: 233 }); tone({ freq: 233, type: 'triangle', dur: 0.2, vol: 0.16, delay: 0.13 }); },
+    // Triumphant 4-note major arpeggio with a sparkle on top
+    win:      () => { [523, 659, 784, 1047].forEach((f, i) => tone({ freq: f, type: 'triangle', dur: 0.3, vol: 0.24, delay: i * 0.12 })); tone({ freq: 1568, type: 'sine', dur: 0.4, vol: 0.18, delay: 0.5 }); },
+    // Gentle descending minor — for losing / last place
+    lose:     () => { [440, 370, 294].forEach((f, i) => tone({ freq: f, type: 'sine', dur: 0.32, vol: 0.2, delay: i * 0.17 })); },
+    // Dice tumble: filtered noise + a settle thunk
+    roll:     () => { noise({ dur: 0.22, vol: 0.13, filterFreq: 1800 }); tone({ freq: 260, type: 'triangle', dur: 0.09, vol: 0.13, delay: 0.18 }); },
+    hop:      () => tone({ freq: 500, type: 'sine', dur: 0.07, vol: 0.13, slideTo: 720 }),
+    pop:      () => tone({ freq: 700, type: 'sine', dur: 0.08, vol: 0.18, slideTo: 1100 }),
+    whoosh:   () => noise({ dur: 0.28, vol: 0.14, filterFreq: 700 }),
+    buzz:     () => { tone({ freq: 196, type: 'square', dur: 0.18, vol: 0.16 }); tone({ freq: 185, type: 'square', dur: 0.14, vol: 0.12, delay: 0.04 }); },
+    ding:     () => tone({ freq: 1047, type: 'sine', dur: 0.3, vol: 0.2 }),
+    // Bright two-note chime — for earning something
+    chime:    () => { tone({ freq: 784, type: 'sine', dur: 0.18, vol: 0.18 }); tone({ freq: 1175, type: 'sine', dur: 0.3, vol: 0.16, delay: 0.09 }); },
+    // Card sounds
+    deal:     () => { noise({ dur: 0.07, vol: 0.1, filterFreq: 3500 }); },
+    flip:     () => { noise({ dur: 0.09, vol: 0.11, filterFreq: 2800 }); tone({ freq: 420, type: 'triangle', dur: 0.05, vol: 0.09, delay: 0.04 }); },
+    shuffle:  () => { for (let i = 0; i < 5; i++) noise({ dur: 0.05, vol: 0.07, filterFreq: 3000, delay: i * 0.05 }); },
+    select:   () => tone({ freq: 520, type: 'square', dur: 0.05, vol: 0.13 }),
+    countdown:() => tone({ freq: 880, type: 'sine', dur: 0.1, vol: 0.16 }),
+    // Your-turn alert — gentle upward two-note
+    turn:     () => { tone({ freq: 587, type: 'sine', dur: 0.1, vol: 0.16 }); tone({ freq: 880, type: 'sine', dur: 0.16, vol: 0.15, delay: 0.09 }); },
+    // Single rising tick for score-count-up animations (call repeatedly)
+    tick:     () => tone({ freq: 880, type: 'sine', dur: 0.04, vol: 0.1 }),
+    // A point lands during the score reveal — pitch can be passed via define override
+    score:    () => { tone({ freq: 660, type: 'triangle', dur: 0.08, vol: 0.14, slideTo: 990 }); },
+    // Suspense riser for the lead-up to a winner reveal
+    riser:    () => { const o = ensureCtx(); if (!o || muted) return; tone({ freq: 220, type: 'sawtooth', dur: 1.2, vol: 0.12, slideTo: 660 }); },
+    // Big celebratory hit
+    fanfare:  () => { [523, 659, 784].forEach((f,i)=>tone({freq:f,type:'square',dur:0.5,vol:0.16,delay:i*0.04})); [1047,1319].forEach((f,i)=>tone({freq:f,type:'triangle',dur:0.6,vol:0.18,delay:0.25+i*0.12})); },
   };
+
+  // ── Optional real audio files (synthesis fallback) ────────────────
+  const fileBuffers = {}, filePending = {}, fileRegistry = {};
+  function loadFile(name, url) {
+    ensureCtx(); if (!ctx) return;
+    if (fileBuffers[name] || filePending[name]) return;
+    filePending[name] = fetch(url).then(r => r.arrayBuffer())
+      .then(b => ctx.decodeAudioData(b))
+      .then(d => { fileBuffers[name] = d; })
+      .catch(() => { delete fileRegistry[name]; }); // fall back to synth
+  }
+  function playFile(name) {
+    const d = fileBuffers[name];
+    if (!d || !ctx || muted) return false;
+    const s = ctx.createBufferSource(); s.buffer = d; s.connect(master); s.start();
+    return true;
+  }
 
   // ── Public API ────────────────────────────────────────────────────
   const BCAudio = {
     init() {
       ensureCtx();
-      // Unlock on the first user interaction of any kind.
       const onGesture = () => { unlock(); };
       ['pointerdown', 'touchstart', 'keydown', 'click'].forEach(ev =>
         window.addEventListener(ev, onGesture, { once: false, passive: true }));
-      // Persisted mute preference
       try { muted = localStorage.getItem('bc_muted') === '1'; } catch (e) {}
       return this;
     },
     play(name) {
       if (!unlocked) unlock();
+      // Prefer a registered real file; otherwise synthesize.
+      if (fileRegistry[name] && playFile(name)) return;
       const fn = SOUNDS[name];
       if (fn) try { fn(); } catch (e) {}
     },
+    // Register a real audio file for a sound name (decoded & cached on first use).
+    // BCAudio.useFile('win', '/assets/sounds/win.mp3')
+    useFile(name, url) { fileRegistry[name] = url; loadFile(name, url); },
     setMuted(m) {
       muted = !!m;
       try { localStorage.setItem('bc_muted', muted ? '1' : '0'); } catch (e) {}
@@ -147,7 +184,6 @@
     isMuted() { return muted; },
     toggleMute() { this.setMuted(!muted); return muted; },
     setVolume(v) { if (master) master.gain.value = Math.max(0, Math.min(1, v)); },
-    // Let games register custom sounds: BCAudio.define('explode', () => ...)
     define(name, fn) { SOUNDS[name] = fn; },
     get ctx() { return ctx; },
   };
