@@ -760,6 +760,10 @@ function loadingPage(gameName) {
 // ── HTTP SERVER ───────────────────────────────────────────────────────────────
 
 const MIME = {
+  '.html': 'text/html; charset=utf-8',
+  '.js':   'application/javascript; charset=utf-8',
+  '.css':  'text/css; charset=utf-8',
+  '.json': 'application/json',
   '.png':  'image/png',
   '.jpg':  'image/jpeg',
   '.jpeg': 'image/jpeg',
@@ -767,6 +771,11 @@ const MIME = {
   '.svg':  'image/svg+xml',
   '.ico':  'image/x-icon',
   '.webp': 'image/webp',
+  '.mp3':  'audio/mpeg',
+  '.ogg':  'audio/ogg',
+  '.wav':  'audio/wav',
+  '.woff': 'font/woff',
+  '.woff2':'font/woff2',
 };
 
 const server = http.createServer(async (req, res) => {
@@ -781,8 +790,10 @@ const server = http.createServer(async (req, res) => {
 
   // Static assets (/assets/...) — covers logo, assets/games/*, etc.
   if (urlPath.startsWith('/assets/')) {
+    // Strip query string before resolving the file path
+    const pathname = urlPath.split('?')[0];
     // Prevent directory traversal
-    const rel = urlPath.slice('/assets/'.length).replace(/\.\./g, '');
+    const rel = pathname.slice('/assets/'.length).replace(/\.\./g, '');
     const assetFile = path.join(ASSETS_DIR, rel);
     const ext  = path.extname(assetFile).toLowerCase();
     const mime = MIME[ext] || 'application/octet-stream';
