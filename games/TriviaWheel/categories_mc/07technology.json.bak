@@ -1,0 +1,2598 @@
+[
+  {
+    "question": "A presentation of Dickens' \"Oliver Twist\" in which Fagin communicates with his pickpockets using cell phones and GPS technology would illustrate ...",
+    "answer": "D",
+    "options": {
+      "A": "irony",
+      "B": "paradox",
+      "C": "flashback",
+      "D": "anachronism",
+      "E": "characterization"
+    }
+  },
+  {
+    "question": "A miniaturized electrical circuit built on a microchip is a(n) ---- circuit.",
+    "answer": "E",
+    "options": {
+      "A": "short",
+      "B": "closed",
+      "C": "series",
+      "D": "chitlin",
+      "E": "integrated"
+    }
+  },
+  {
+    "question": "Sadi Carnot was a 19th-century French engineer who was associated with ...",
+    "answer": "B",
+    "options": {
+      "A": "cryogenics",
+      "B": "heat engines",
+      "C": "wave mechanics",
+      "D": "geostationary satellites",
+      "E": "electromagnetic induction"
+    }
+  },
+  {
+    "question": "According to Arthur Clarke, what is indistinguishable from magic?",
+    "answer": "E",
+    "options": {
+      "A": "modern medicine",
+      "B": "quantum physics",
+      "C": "genetic engineering",
+      "D": "electronic data processing",
+      "E": "any sufficiently advanced technology"
+    }
+  },
+  {
+    "question": "Which was not invented during the Renaissance?",
+    "answer": "E",
+    "options": {
+      "A": "musket",
+      "B": "astrolabe",
+      "C": "parachute",
+      "D": "printing press",
+      "E": "potter's wheel"
+    }
+  },
+  {
+    "question": "Reminiscent of the spacecraft described in \"Rendezvous with Rama,\" a futuristic space habitat design is called the ---- cylinder.",
+    "answer": "A",
+    "options": {
+      "A": "O'Neill",
+      "B": "O'Casey",
+      "C": "O'Connor",
+      "D": "O'Keeffe",
+      "E": "O'Higgins"
+    }
+  },
+  {
+    "question": "A 2008 report indicated that Iran had more than 5,000 --- in operation to enrich uranium.",
+    "answer": "C",
+    "options": {
+      "A": "cyclotrons",
+      "B": "autoclaves",
+      "C": "centrifuges",
+      "D": "magnetrons",
+      "E": "spectroscopes"
+    }
+  },
+  {
+    "question": "NASA's X-43A scramjet achieved a speed of Mach 10 which is about how many miles per second?",
+    "answer": "A",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "Space shuttle missions were designated by \"STS\" followed by a number such as STS-115.  The letters stood for ---- System.",
+    "answer": "D",
+    "options": {
+      "A": "Sidereal Transit",
+      "B": "Solar Telescopic",
+      "C": "Satellite Technology",
+      "D": "Space Transportation",
+      "E": "Suborbital Thermonuclear"
+    }
+  },
+  {
+    "question": "Which names are directly associated with SpaceShipOne?",
+    "answer": "A",
+    "options": {
+      "A": "Mike Melville, Paul Allen, Burt Rutan",
+      "B": "Gordon Cooper, Sam Walton, J.L. Baird",
+      "C": "Gary Powers, Bill Gates, Thomas Sopwith",
+      "D": "Chuck Yeager, Donald Trump, Igor Sikorsky",
+      "E": "Billy Mitchell, Howard Hughes, Louis Bleriot"
+    }
+  },
+  {
+    "question": "What kind of computer program searches through a text or series of texts and indexes every occurrence of every word?",
+    "answer": "D",
+    "options": {
+      "A": "freelancer",
+      "B": "conveyancer",
+      "C": "necromancer",
+      "D": "concordancer",
+      "E": "encumbrancer"
+    }
+  },
+  {
+    "question": "The guillotine is associated with ...",
+    "answer": "D",
+    "options": {
+      "A": "Cleopatra",
+      "B": "Elizabeth I",
+      "C": "Joan of Arc",
+      "D": "Marie Antoinette",
+      "E": "Catherine the Great"
+    }
+  },
+  {
+    "question": "The Gossamer Albatross is best described as a ...",
+    "answer": "C",
+    "options": {
+      "A": "film of cobwebs",
+      "B": "web-footed bird",
+      "C": "human-powered aircraft",
+      "D": "constant and worrisome burden",
+      "E": "watercraft equipped with hydrofoils"
+    }
+  },
+  {
+    "question": "What kind of apparatuses are essential to the uranium-enrichment process?",
+    "answer": "D",
+    "options": {
+      "A": "incubators",
+      "B": "heliostats",
+      "C": "autoclaves",
+      "D": "centrifuges",
+      "E": "stroboscopes"
+    }
+  },
+  {
+    "question": "What German engineer invented the internal combustion engine?",
+    "answer": "C",
+    "options": {
+      "A": "Max Planck",
+      "B": "Robert Koch",
+      "C": "Nikolaus Otto",
+      "D": "Conrad Roentgen",
+      "E": "Herman Hollerith"
+    }
+  },
+  {
+    "question": "Which agency was established in 1972 to foresee unintended consequences of scientific development?",
+    "answer": "E",
+    "options": {
+      "A": "OSHA",
+      "B": "NAACP",
+      "C": "Federal Mediation Board",
+      "D": "U.S. Information Agency",
+      "E": "Office of Technology Assessment"
+    }
+  },
+  {
+    "question": "James Watt's steam engine was an improvement over an earlier engine developed by ...",
+    "answer": "E",
+    "options": {
+      "A": "Blaise Pascal",
+      "B": "Robert Hooke",
+      "C": "Charles Macintosh",
+      "D": "Richard Trevithick",
+      "E": "Thomas Newcomen"
+    }
+  },
+  {
+    "question": "Regarding computers, what is the meaning of the abbreviation, LAN?",
+    "answer": "C",
+    "options": {
+      "A": "log-analog",
+      "B": "laser nanosecond",
+      "C": "local area network",
+      "D": "light-activated neuron",
+      "E": "language-aided numeration"
+    }
+  },
+  {
+    "question": "The Scotsman John McAdam contributed to the field of ...",
+    "answer": "B",
+    "options": {
+      "A": "oil drilling",
+      "B": "road building",
+      "C": "airfoil design",
+      "D": "steel production",
+      "E": "architectural engineering"
+    }
+  },
+  {
+    "question": "Samuel Morse put the work of what two scientists to practical use?",
+    "answer": "C",
+    "options": {
+      "A": "Charles Richter, Robert Boyle",
+      "B": "Louis Pasteur, Charles Darwin",
+      "C": "Alessandro Volta, Andre Ampere",
+      "D": "Alexander Fleming, Joseph Lister",
+      "E": "Marie Curie, Anton van Leeuwenhoek"
+    }
+  },
+  {
+    "question": "Components of computers include ---- chips.",
+    "answer": "B",
+    "options": {
+      "A": "sodium",
+      "B": "silicon",
+      "C": "selenium",
+      "D": "scandium",
+      "E": "strontium"
+    }
+  },
+  {
+    "question": "In 2004, NASA broke the speed record for a plane powered by an air-breathing engine by reaching Mach 10 with its X-43A ...",
+    "answer": "E",
+    "options": {
+      "A": "fanjet",
+      "B": "laserjet",
+      "C": "pulsejet",
+      "D": "turbojet",
+      "E": "scramjet"
+    }
+  },
+  {
+    "question": "Which was invented first?",
+    "answer": "D",
+    "options": {
+      "A": "neoprene",
+      "B": "AC motor",
+      "C": "transistor",
+      "D": "barbed wire",
+      "E": "aerosol spray"
+    }
+  },
+  {
+    "question": "Shortwave radiation from the Sun passes freely into this unit but its glass traps the longer infra-red rays inside raising the temperature.  What is this unit?",
+    "answer": "B",
+    "options": {
+      "A": "telescope",
+      "B": "greenhouse",
+      "C": "planetarium",
+      "D": "bathysphere",
+      "E": "spectroscope"
+    }
+  },
+  {
+    "question": "Sonar relies on ...",
+    "answer": "B",
+    "options": {
+      "A": "halos",
+      "B": "echoes",
+      "C": "photons",
+      "D": "shadows",
+      "E": "overtones"
+    }
+  },
+  {
+    "question": "For security identification, scanner technology examines either the retina or the ...",
+    "answer": "A",
+    "options": {
+      "A": "iris",
+      "B": "lens",
+      "C": "pupil",
+      "D": "sclera",
+      "E": "cornea"
+    }
+  },
+  {
+    "question": "There would not have been much use for Gutenberg's invention had a(n) ...",
+    "answer": "D",
+    "options": {
+      "A": "Swede not invented dynamite",
+      "B": "German not invented airships",
+      "C": "Italian not invented the battery",
+      "D": "Chinese man not invented paper",
+      "E": "Scotsman not invented the steam engine"
+    }
+  },
+  {
+    "question": "Radar equipment and microwave ovens incorporate ...",
+    "answer": "B",
+    "options": {
+      "A": "heliostats",
+      "B": "magnetrons",
+      "C": "venturi tubes",
+      "D": "electroscopes",
+      "E": "eudiometer tubes"
+    }
+  },
+  {
+    "question": "Internal combustion engines, incendiary bombs, and gas heaters would never have been developed had which mythical character not stolen something from the gods?",
+    "answer": "E",
+    "options": {
+      "A": "Phoenix",
+      "B": "Penelope",
+      "C": "Pygmalion",
+      "D": "Persephone",
+      "E": "Prometheus"
+    }
+  },
+  {
+    "question": "In an incandescent lamp, the vacuum around the filament is designed to prevent ...",
+    "answer": "B",
+    "options": {
+      "A": "pulsation",
+      "B": "oxidation",
+      "C": "resonation",
+      "D": "scintillation",
+      "E": "fragmentation"
+    }
+  },
+  {
+    "question": "California's Napa Valley is famed for its ...",
+    "answer": "A",
+    "options": {
+      "A": "vineyards",
+      "B": "salt flats",
+      "C": "technology",
+      "D": "truck farms",
+      "E": "Joshua trees"
+    }
+  },
+  {
+    "question": "Which aircraft had a canard biplane configuration?",
+    "answer": "B",
+    "options": {
+      "A": "Enola Gay",
+      "B": "Wright Flyer",
+      "C": "Curtis Jenny",
+      "D": "Glamorous Glennis",
+      "E": "Spirit of St. Louis"
+    }
+  },
+  {
+    "question": "While a neuron takes about one millisecond to fire, certain computer switches can close a billion times faster.  Such switches close in a ...",
+    "answer": "A",
+    "options": {
+      "A": "picosecond",
+      "B": "attosecond",
+      "C": "nanosecond",
+      "D": "microsecond",
+      "E": "femtosecond"
+    }
+  },
+  {
+    "question": "Which of these did not have a significant role in the First World War?",
+    "answer": "C",
+    "options": {
+      "A": "tanks",
+      "B": "bayonets",
+      "C": "monoplanes",
+      "D": "machine guns",
+      "E": "artillery pieces"
+    }
+  },
+  {
+    "question": "The world's first commercial jet airliner took its maiden flight in 1949.  It was called the De Havilland ...",
+    "answer": "B",
+    "options": {
+      "A": "Star",
+      "B": "Comet",
+      "C": "Rocket",
+      "D": "Meteor",
+      "E": "Streak"
+    }
+  },
+  {
+    "question": "Prince Henry the Navigator encouraged the development of the ...",
+    "answer": "C",
+    "options": {
+      "A": "yawl",
+      "B": "cutter",
+      "C": "caravel",
+      "D": "longship",
+      "E": "schooner"
+    }
+  },
+  {
+    "question": "The abbreviation PBX refers to a kind of ...",
+    "answer": "B",
+    "options": {
+      "A": "stealth aircraft",
+      "B": "telephone system",
+      "C": "intermediate range missile",
+      "D": "satellite navigation system",
+      "E": "telescope positioning device"
+    }
+  },
+  {
+    "question": "Nikolaus Otto was directly associated with the development of the ...",
+    "answer": "E",
+    "options": {
+      "A": "dynamo",
+      "B": "dirigible",
+      "C": "steamship",
+      "D": "blast furnace",
+      "E": "gasoline engine"
+    }
+  },
+  {
+    "question": "Lasers are not used to ...",
+    "answer": "C",
+    "options": {
+      "A": "cut metals",
+      "B": "transmit data",
+      "C": "propel aircraft",
+      "D": "reshape corneas",
+      "E": "survey distances"
+    }
+  },
+  {
+    "question": "The purpose of desalination plants is to ...",
+    "answer": "C",
+    "options": {
+      "A": "recycle garbage",
+      "B": "purify grey water",
+      "C": "remove salt from seawater",
+      "D": "restore denuded landscapes",
+      "E": "extract impurities from coal"
+    }
+  },
+  {
+    "question": "Anyone who resists technological innovation may be called a ...",
+    "answer": "B",
+    "options": {
+      "A": "Shiite",
+      "B": "Luddite",
+      "C": "Ammonite",
+      "D": "Canaanite",
+      "E": "Benthamite"
+    }
+  },
+  {
+    "question": "Who contributed to printing technology?",
+    "answer": "D",
+    "options": {
+      "A": "Kepler",
+      "B": "Galileo",
+      "C": "Newton",
+      "D": "Gutenberg",
+      "E": "Copernicus"
+    }
+  },
+  {
+    "question": "Most plastic shapes are formed through ...",
+    "answer": "B",
+    "options": {
+      "A": "casting",
+      "B": "extrusion",
+      "C": "embossing",
+      "D": "distillation",
+      "E": "lithification"
+    }
+  },
+  {
+    "question": "Providing directional stability for torpedoes was one application for ...",
+    "answer": "A",
+    "options": {
+      "A": "gyroscopes",
+      "B": "horoscopes",
+      "C": "oscilloscopes",
+      "D": "kaleidoscopes",
+      "E": "spectroscopes"
+    }
+  },
+  {
+    "question": "Glenn L. Martin and Glenn Curtiss designed ...",
+    "answer": "B",
+    "options": {
+      "A": "ships",
+      "B": "aircraft",
+      "C": "skyscrapers",
+      "D": "hydroelectric dams",
+      "E": "internal combustion engines"
+    }
+  },
+  {
+    "question": "Submarines detect the presence of ships and underwater objects by sonar, a technology that depends on ...",
+    "answer": "C",
+    "options": {
+      "A": "heat",
+      "B": "light",
+      "C": "sound",
+      "D": "gravity",
+      "E": "magnetism"
+    }
+  },
+  {
+    "question": "Platinum didn't work.  Who then tried 6000 species of carbonized vegetable fiber and found bamboo was best for his invention?",
+    "answer": "D",
+    "options": {
+      "A": "Eli Whitney",
+      "B": "Samuel Colt",
+      "C": "Robert Fulton",
+      "D": "Thomas Edison",
+      "E": "George Eastman"
+    }
+  },
+  {
+    "question": "The rate of human population growth is generally highest in nations with the ...",
+    "answer": "A",
+    "options": {
+      "A": "lowest literacy",
+      "B": "highest latitudes",
+      "C": "best medical care",
+      "D": "highest technology",
+      "E": "worst air pollution"
+    }
+  },
+  {
+    "question": "Sonar relies on ...",
+    "answer": "B",
+    "options": {
+      "A": "halos",
+      "B": "echoes",
+      "C": "photons",
+      "D": "shadows",
+      "E": "overtones"
+    }
+  },
+  {
+    "question": "Iron horses were ...",
+    "answer": "C",
+    "options": {
+      "A": "cannons",
+      "B": "catapults",
+      "C": "locomotives",
+      "D": "armored ships",
+      "E": "torture devices"
+    }
+  },
+  {
+    "question": "Another name for recombinant DNA technology is ...",
+    "answer": "B",
+    "options": {
+      "A": "grafting",
+      "B": "gene splicing",
+      "C": "terraforming",
+      "D": "inductive reasoning",
+      "E": "hydroponic gardening"
+    }
+  },
+  {
+    "question": "Which of these categories receives the greatest government funding annually in the U.S.?",
+    "answer": "B",
+    "options": {
+      "A": "transportation",
+      "B": "national defense",
+      "C": "veterans benefits and services",
+      "D": "science and space and technology",
+      "E": "natural resources and environment"
+    }
+  },
+  {
+    "question": "Northrop Grumman is working on an unmanned fighter plane called the X-47A ...",
+    "answer": "C",
+    "options": {
+      "A": "Cupid",
+      "B": "Icarus",
+      "C": "Pegasus",
+      "D": "Unicorn",
+      "E": "Minotaur"
+    }
+  },
+  {
+    "question": "Ferdinand von Zeppelin developed ...",
+    "answer": "B",
+    "options": {
+      "A": "rockets",
+      "B": "airships",
+      "C": "jet engines",
+      "D": "locomotives",
+      "E": "clipper ships"
+    }
+  },
+  {
+    "question": "Which aircraft is designed as a flying wing?",
+    "answer": "A",
+    "options": {
+      "A": "B-2 bomber",
+      "B": "B-1B bomber",
+      "C": "F-4 Phantom",
+      "D": "F-16F Falcon",
+      "E": "P-38 Lightning"
+    }
+  },
+  {
+    "question": "As you might surmise from their names, in the 1970s, Herbert Saffir and Robert Simpson worked for the ...",
+    "answer": "A",
+    "options": {
+      "A": "National Hurricane Center",
+      "B": "Centers for Disease Control",
+      "C": "United States Geological Survey",
+      "D": "Office of Technology Assessment",
+      "E": "United States Department of Agriculture"
+    }
+  },
+  {
+    "question": "Albert Michelson invented the ...",
+    "answer": "D",
+    "options": {
+      "A": "anemometer",
+      "B": "psychrometer",
+      "C": "hemacytometer",
+      "D": "interferometer",
+      "E": "sphygmomanometer"
+    }
+  },
+  {
+    "question": "Electric motors and loudspeakers are alike in that both contain ...",
+    "answer": "B",
+    "options": {
+      "A": "lenses",
+      "B": "magnets",
+      "C": "amplifiers",
+      "D": "gyroscopes",
+      "E": "diaphragms"
+    }
+  },
+  {
+    "question": "A main purpose of snopes.com is ...",
+    "answer": "E",
+    "options": {
+      "A": "detaining",
+      "B": "defraying",
+      "C": "delousing",
+      "D": "devesting",
+      "E": "debunking"
+    }
+  },
+  {
+    "question": "The standard television has an aspect ratio of 4 to 3 while that of high definition video systems is usually 16 x 9.  This is a ratio of ...",
+    "answer": "B",
+    "options": {
+      "A": "green to red",
+      "B": "width to height",
+      "C": "electrons to protons",
+      "D": "amperage to wattage",
+      "E": "pixels to screen area"
+    }
+  },
+  {
+    "question": "What invention consisted of a revolving metal cylinder covered with tinfoil, a stylus, and a flexible diaphragm?",
+    "answer": "E",
+    "options": {
+      "A": "camera",
+      "B": "generator",
+      "C": "telephone",
+      "D": "gyroscope",
+      "E": "phonograph"
+    }
+  },
+  {
+    "question": "Fulton's Folly, first demonstrated in 1807, was also called the ...",
+    "answer": "A",
+    "options": {
+      "A": "Clermont",
+      "B": "Plymouth",
+      "C": "Tom Thumb",
+      "D": "Old Ironsides",
+      "E": "Seward's Folly"
+    }
+  },
+  {
+    "question": "In the 18th century, Samuel Slater brought British ---- technology to the United States.",
+    "answer": "C",
+    "options": {
+      "A": "steel",
+      "B": "steam",
+      "C": "textile",
+      "D": "railroad",
+      "E": "telegraph"
+    }
+  },
+  {
+    "question": "The Boeing X-37 is a ...",
+    "answer": "E",
+    "options": {
+      "A": "biplane",
+      "B": "seaplane",
+      "C": "sailplane",
+      "D": "gyroplane",
+      "E": "spaceplane"
+    }
+  },
+  {
+    "question": "Name the first piloted supersonic aircraft.",
+    "answer": "A",
+    "options": {
+      "A": "Bell X-1",
+      "B": "Boeing 707",
+      "C": "Northrop P-61",
+      "D": "Lockheed SR-71",
+      "E": "Messerschmitt ME-262"
+    }
+  },
+  {
+    "question": "Samuel Morse put the work of what two scientists to practical use?",
+    "answer": "C",
+    "options": {
+      "A": "Charles Richter, Robert Boyle",
+      "B": "Louis Pasteur, Charles Darwin",
+      "C": "Alessandro Volta, Andre Ampere",
+      "D": "Alexander Fleming, Joseph Lister",
+      "E": "Marie Curie, Anton van Leeuwenhoek"
+    }
+  },
+  {
+    "question": "In the early 21st century, some automobile manufacturers began marketing ---- vehicles combining electric motors with internal combustion engines.",
+    "answer": "A",
+    "options": {
+      "A": "hybrid",
+      "B": "dual fuel",
+      "C": "composite",
+      "D": "hydroelectric",
+      "E": "rotary turbine"
+    }
+  },
+  {
+    "question": "How many colors are possible with an 8-bit digital image?",
+    "answer": "D",
+    "options": {
+      "A": "32",
+      "B": "64",
+      "C": "128",
+      "D": "256",
+      "E": "512"
+    }
+  },
+  {
+    "question": "Electromagnets are not used in ...",
+    "answer": "B",
+    "options": {
+      "A": "doorbells",
+      "B": "light bulbs",
+      "C": "generators",
+      "D": "disk drives",
+      "E": "loudspeakers"
+    }
+  },
+  {
+    "question": "Neurons take 1 millisecond to fire while some computer switches can close in 1 picosecond.  Those switches are how many times faster?",
+    "answer": "D",
+    "options": {
+      "A": "1 hundred times",
+      "B": "1 thousand times",
+      "C": "1 million times",
+      "D": "1 billion times",
+      "E": "1 trillion times"
+    }
+  },
+  {
+    "question": "Radar equipment and microwave ovens incorporate ...",
+    "answer": "B",
+    "options": {
+      "A": "heliostats",
+      "B": "magnetrons",
+      "C": "venturi tubes",
+      "D": "electroscopes",
+      "E": "eudiometer tubes"
+    }
+  },
+  {
+    "question": "Automatic tunnel digging machines are ...",
+    "answer": "A",
+    "options": {
+      "A": "moles",
+      "B": "hares",
+      "C": "skunks",
+      "D": "badgers",
+      "E": "prairie dogs"
+    }
+  },
+  {
+    "question": "Bob ambled into the office one morning and announced that his computer was down, meaning that it was ...",
+    "answer": "B",
+    "options": {
+      "A": "obsolete",
+      "B": "out of order",
+      "C": "in the basement",
+      "D": "running a long program",
+      "E": "hooked up only as a data station"
+    }
+  },
+  {
+    "question": "Which is not true?",
+    "answer": "A",
+    "options": {
+      "A": "Fulton invented the cotton gin.",
+      "B": "Sikorsky invented the helicopter.",
+      "C": "Hargreaves invented the spinning  jenny.",
+      "D": "John Dunlop invented the pneumatic tire.",
+      "E": "Rudolph Diesel invented the diesel engine."
+    }
+  },
+  {
+    "question": "About how many colors are possible in a digital image with 24 bits allocated for the storage of each pixel?",
+    "answer": "E",
+    "options": {
+      "A": "1,020",
+      "B": "32,000",
+      "C": "524,000",
+      "D": "1,048,000",
+      "E": "17,000,000"
+    }
+  },
+  {
+    "question": "Which airplane has the longest wing span?",
+    "answer": "C",
+    "options": {
+      "A": "Boeing 707",
+      "B": "Douglas DC-10",
+      "C": "Lockheed C-5A",
+      "D": "Grumman F-14B",
+      "E": "McDonnell Douglas F-4E"
+    }
+  },
+  {
+    "question": "The feudal system was based on ...",
+    "answer": "A",
+    "options": {
+      "A": "land",
+      "B": "technology",
+      "C": "papal indulgences",
+      "D": "international trade",
+      "E": "precious metals and gems"
+    }
+  },
+  {
+    "question": "Name John Hersey's narrative set in the Orient that presents the clash of tradition with technology.",
+    "answer": "D",
+    "options": {
+      "A": "The Yearling",
+      "B": "East of Eden",
+      "C": "The Good Earth",
+      "D": "A Single Pebble",
+      "E": "A Passage to India"
+    }
+  },
+  {
+    "question": "Albert Michelson invented the ...",
+    "answer": "D",
+    "options": {
+      "A": "anemometer",
+      "B": "psychrometer",
+      "C": "hemacytometer",
+      "D": "interferometer",
+      "E": "sphygmomanometer"
+    }
+  },
+  {
+    "question": "In addition to building the first practical steamboat, Robert Fulton is also remembered for developing the first ...",
+    "answer": "A",
+    "options": {
+      "A": "torpedo",
+      "B": "steel plow",
+      "C": "passenger elevator",
+      "D": "multiple-coil magnet",
+      "E": "breech-loading flintlock"
+    }
+  },
+  {
+    "question": "Which was invented first?",
+    "answer": "D",
+    "options": {
+      "A": "neoprene",
+      "B": "AC motor",
+      "C": "transistor",
+      "D": "barbed wire",
+      "E": "aerosol spray"
+    }
+  },
+  {
+    "question": "Radar played no role in which conflict?",
+    "answer": "C",
+    "options": {
+      "A": "Iraq War",
+      "B": "Korean War",
+      "C": "World War I",
+      "D": "Vietnam War",
+      "E": "Persian Gulf War"
+    }
+  },
+  {
+    "question": "What are the initials for the type of electronic memory associated with plug-in cartridges for video games?",
+    "answer": "C",
+    "options": {
+      "A": "REM",
+      "B": "RAM",
+      "C": "ROM",
+      "D": "RUM",
+      "E": "RIM"
+    }
+  },
+  {
+    "question": "Microlithography is a process widely used in manufacturing ...",
+    "answer": "B",
+    "options": {
+      "A": "jewelry",
+      "B": "semiconductors",
+      "C": "telescope lenses",
+      "D": "nuclear warheads",
+      "E": "drilling equipment"
+    }
+  },
+  {
+    "question": "Most plastic shapes are formed through ...",
+    "answer": "B",
+    "options": {
+      "A": "casting",
+      "B": "extrusion",
+      "C": "embossing",
+      "D": "distillation",
+      "E": "lithification"
+    }
+  },
+  {
+    "question": "The term for unsolicited commercial email messages is the same as that for ...",
+    "answer": "A",
+    "options": {
+      "A": "a brand of canned meat",
+      "B": "something which is frothy",
+      "C": "Popeye's favorite vegetable",
+      "D": "a popular cream-filled dessert roll",
+      "E": "the sediment at the bottom of a coffee pot"
+    }
+  },
+  {
+    "question": "A long helically-wound coil is a ...",
+    "answer": "C",
+    "options": {
+      "A": "dry cell",
+      "B": "rheostat",
+      "C": "solenoid",
+      "D": "electrolyte",
+      "E": "thermocouple"
+    }
+  },
+  {
+    "question": "Components of computers include ---- chips.",
+    "answer": "B",
+    "options": {
+      "A": "sodium",
+      "B": "silicon",
+      "C": "selenium",
+      "D": "scandium",
+      "E": "strontium"
+    }
+  },
+  {
+    "question": "Electric motors and loudspeakers are alike in that both contain ...",
+    "answer": "B",
+    "options": {
+      "A": "lenses",
+      "B": "magnets",
+      "C": "amplifiers",
+      "D": "gyroscopes",
+      "E": "diaphragms"
+    }
+  },
+  {
+    "question": "The most common method of uranium enrichment is ...",
+    "answer": "E",
+    "options": {
+      "A": "recapitulation",
+      "B": "pasteurization",
+      "C": "biodegradation",
+      "D": "eutrophication",
+      "E": "centrifugation"
+    }
+  },
+  {
+    "question": "A bio-fuel made by a newly discovered fungus that digests cellulose is dubbed ...",
+    "answer": "E",
+    "options": {
+      "A": "lipo-diesel",
+      "B": "baro-diesel",
+      "C": "vaso-diesel",
+      "D": "hemo-diesel",
+      "E": "myco-diesel"
+    }
+  },
+  {
+    "question": "Proposed as a cheap way to mine the entire solar system, a device that is able to build a working copy of itself using materials in its environment is called a ---- machine.",
+    "answer": "C",
+    "options": {
+      "A": "Von Trapp",
+      "B": "Von Guericke",
+      "C": "Von Neumann",
+      "D": "Von Bismarck",
+      "E": "Von Hindenburg"
+    }
+  },
+  {
+    "question": "In 2001, Advanced Cell Technology announced that it had successfully produced the world's first ...",
+    "answer": "A",
+    "options": {
+      "A": "human clone",
+      "B": "leukemia vaccine",
+      "C": "hydrogen battery",
+      "D": "controlled cold fusion reaction",
+      "E": "confirmation of extraterrestrial life"
+    }
+  },
+  {
+    "question": "What technology uses a split laser beam to produce three-dimensional images?",
+    "answer": "A",
+    "options": {
+      "A": "holography",
+      "B": "topography",
+      "C": "choreography",
+      "D": "spectrography",
+      "E": "photomicrography"
+    }
+  },
+  {
+    "question": "Over 80% of the ammonia produced around the world is used to make ...",
+    "answer": "C",
+    "options": {
+      "A": "fuels",
+      "B": "plastics",
+      "C": "fertilizers",
+      "D": "explosives",
+      "E": "refrigerants"
+    }
+  },
+  {
+    "question": "Over 80% of the ammonia produced around the world is used to make ...",
+    "answer": "C",
+    "options": {
+      "A": "fuels",
+      "B": "plastics",
+      "C": "fertilizers",
+      "D": "explosives",
+      "E": "refrigerants"
+    }
+  },
+  {
+    "question": "Devices with mirrors used in solar power generation are called ...",
+    "answer": "C",
+    "options": {
+      "A": "rheostats",
+      "B": "gyrostats",
+      "C": "heliostats",
+      "D": "hemostats",
+      "E": "thermostats"
+    }
+  },
+  {
+    "question": "The most common method of uranium enrichment is ...",
+    "answer": "E",
+    "options": {
+      "A": "recapitulation",
+      "B": "pasteurization",
+      "C": "biodegradation",
+      "D": "eutrophication",
+      "E": "centrifugation"
+    }
+  },
+  {
+    "question": "The $10 million Ansari X Prize relates to ...",
+    "answer": "A",
+    "options": {
+      "A": "space flight",
+      "B": "nuclear fusion",
+      "C": "agricultural research",
+      "D": "environmental cleanup",
+      "E": "weapons of mass destruction"
+    }
+  },
+  {
+    "question": "Who linked two continents?",
+    "answer": "A",
+    "options": {
+      "A": "Cyrus Field",
+      "B": "Miley Cyrus",
+      "C": "Cyrus Vance",
+      "D": "Cyrus the Great",
+      "E": "Cyrus McCormick"
+    }
+  },
+  {
+    "question": "Who, in 1860, opened the first factory for the production of evaporated milk?",
+    "answer": "A",
+    "options": {
+      "A": "Gail Borden",
+      "B": "George Pullman",
+      "C": "Angus Campbell",
+      "D": "Cyrus McCormick",
+      "E": "Clarence Birdseye"
+    }
+  },
+  {
+    "question": "Desalination is a process used to remove ...",
+    "answer": "D",
+    "options": {
+      "A": "metals from ore",
+      "B": "bacteria from food",
+      "C": "pollutants from air",
+      "D": "salt from seawater",
+      "E": "impurities from drugs"
+    }
+  },
+  {
+    "question": "A supercomputer could sort the fewest number of records in one ...",
+    "answer": "E",
+    "options": {
+      "A": "millisecond",
+      "B": "picosecond",
+      "C": "nanosecond",
+      "D": "microsecond",
+      "E": "femtosecond"
+    }
+  },
+  {
+    "question": "Who patented a fuel system and designs for multistage rockets?",
+    "answer": "C",
+    "options": {
+      "A": "Enrico Fermi",
+      "B": "Edward Teller",
+      "C": "Robert Goddard",
+      "D": "Arthur Compton",
+      "E": "Albert Michelson"
+    }
+  },
+  {
+    "question": "Which requires the greatest amount of electrical power?",
+    "answer": "A",
+    "options": {
+      "A": "toaster",
+      "B": "ceiling fan",
+      "C": "refrigerator",
+      "D": "personal computer",
+      "E": "200-watt light bulb"
+    }
+  },
+  {
+    "question": "Many scientists project that space will provide a better environment than Earth for the ...",
+    "answer": "C",
+    "options": {
+      "A": "flight of insects",
+      "B": "growth of green plants",
+      "C": "manufacture of crystals",
+      "D": "raising of bacterial cultures",
+      "E": "investigation of parapsychology"
+    }
+  },
+  {
+    "question": "Which term is not paired with a connotation?",
+    "answer": "A",
+    "options": {
+      "A": "dog - canine",
+      "B": "Chicago - wind",
+      "C": "astrology - first lady",
+      "D": "technology - Robbie the Robot",
+      "E": "tennis shoes - summer vacation"
+    }
+  },
+  {
+    "question": "Microlithography is a process widely used in manufacturing ...",
+    "answer": "B",
+    "options": {
+      "A": "jewelry",
+      "B": "semiconductors",
+      "C": "telescope lenses",
+      "D": "nuclear warheads",
+      "E": "drilling equipment"
+    }
+  },
+  {
+    "question": "No U.S. space shuttle has had which name?",
+    "answer": "E",
+    "options": {
+      "A": "Atlantis",
+      "B": "Discovery",
+      "C": "Endeavour",
+      "D": "Challenger",
+      "E": "Constitution"
+    }
+  },
+  {
+    "question": "Preceding the commercial Early Bird Project, the first U.S. satellite to amplify radio and television signals was ...",
+    "answer": "D",
+    "options": {
+      "A": "Eagle",
+      "B": "Skylab",
+      "C": "Sputnik",
+      "D": "Telstar",
+      "E": "Mariner I"
+    }
+  },
+  {
+    "question": "Otto Lilienthal first predicted that high lift and low drag could be produced by ...",
+    "answer": "A",
+    "options": {
+      "A": "airfoils",
+      "B": "airways",
+      "C": "airheads",
+      "D": "airwaves",
+      "E": "airstrips"
+    }
+  },
+  {
+    "question": "A supercomputer could sort the fewest number of records in one ...",
+    "answer": "E",
+    "options": {
+      "A": "millisecond",
+      "B": "picosecond",
+      "C": "nanosecond",
+      "D": "microsecond",
+      "E": "femtosecond"
+    }
+  },
+  {
+    "question": "Scientists in ---- are attempting to produce devices one billionth of a meter in size.",
+    "answer": "D",
+    "options": {
+      "A": "biotechnology",
+      "B": "aerotechnology",
+      "C": "cryotechnology",
+      "D": "nanotechnology",
+      "E": "hydrotechnology"
+    }
+  },
+  {
+    "question": "A decisive demonstration of superior weapons technology took place at the Battle of Agincourt during the ...",
+    "answer": "C",
+    "options": {
+      "A": "Crimean War",
+      "B": "First World War",
+      "C": "Hundred Years' War",
+      "D": "American Revolution",
+      "E": "French and Indian War"
+    }
+  },
+  {
+    "question": "In a robot, an actuator is a ...",
+    "answer": "A",
+    "options": {
+      "A": "servo",
+      "B": "buffer",
+      "C": "ground",
+      "D": "rectifier",
+      "E": "power supply"
+    }
+  },
+  {
+    "question": "Proposed as a cheap way to mine the entire solar system, a device that is able to build a working copy of itself using materials in its environment is called a ---- machine.",
+    "answer": "C",
+    "options": {
+      "A": "Von Trapp",
+      "B": "Von Guericke",
+      "C": "Von Neumann",
+      "D": "Von Bismarck",
+      "E": "Von Hindenburg"
+    }
+  },
+  {
+    "question": "NASA's X-43A scramjet achieved a speed of Mach 10 which is about how many miles per second?",
+    "answer": "A",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "What kind of apparatuses are essential to the uranium-enrichment process?",
+    "answer": "D",
+    "options": {
+      "A": "incubators",
+      "B": "heliostats",
+      "C": "autoclaves",
+      "D": "centrifuges",
+      "E": "stroboscopes"
+    }
+  },
+  {
+    "question": "Kill Devil Hills, a town in North Carolina, is associated with a major milestone in ...",
+    "answer": "A",
+    "options": {
+      "A": "aviation",
+      "B": "robotics",
+      "C": "rocketry",
+      "D": "telecommunication",
+      "E": "electricity generation"
+    }
+  },
+  {
+    "question": "In the early 21st century, some automobile manufacturers began marketing ---- vehicles combining electric motors with internal combustion engines.",
+    "answer": "A",
+    "options": {
+      "A": "hybrid",
+      "B": "dual fuel",
+      "C": "composite",
+      "D": "hydroelectric",
+      "E": "rotary turbine"
+    }
+  },
+  {
+    "question": "The Gossamer Albatross is best described as a ...",
+    "answer": "C",
+    "options": {
+      "A": "film of cobwebs",
+      "B": "web-footed bird",
+      "C": "human-powered aircraft",
+      "D": "constant and worrisome burden",
+      "E": "watercraft equipped with hydrofoils"
+    }
+  },
+  {
+    "question": "The man who designed and built the first steam locomotive in the U.S. was Peter ...",
+    "answer": "B",
+    "options": {
+      "A": "Roget",
+      "B": "Cooper",
+      "C": "Seeger",
+      "D": "Minuit",
+      "E": "Benchley"
+    }
+  },
+  {
+    "question": "Anthony Burgess' novel, \"A Clockwork Orange,\" is about ...",
+    "answer": "C",
+    "options": {
+      "A": "food made out of people",
+      "B": "a virus from outer space",
+      "C": "a rampaging teenage gang",
+      "D": "a world without technology",
+      "E": "plants that become humanoid"
+    }
+  },
+  {
+    "question": "What was used by Indians to throw spears?",
+    "answer": "A",
+    "options": {
+      "A": "atlatl",
+      "B": "travois",
+      "C": "metate",
+      "D": "calumet",
+      "E": "parfleche"
+    }
+  },
+  {
+    "question": "The world's first cast iron bridge was built across the ---- River.",
+    "answer": "B",
+    "options": {
+      "A": "Rhine",
+      "B": "Severn",
+      "C": "Hudson",
+      "D": "Danube",
+      "E": "Yangtze"
+    }
+  },
+  {
+    "question": "Submarines detect the presence of ships and underwater objects by sonar, a technology that depends on ...",
+    "answer": "C",
+    "options": {
+      "A": "heat",
+      "B": "light",
+      "C": "sound",
+      "D": "gravity",
+      "E": "magnetism"
+    }
+  },
+  {
+    "question": "Which is not an abbreviation for some form of medical imaging technology?",
+    "answer": "B",
+    "options": {
+      "A": "CAT",
+      "B": "WMD",
+      "C": "PET",
+      "D": "MRI",
+      "E": "DSA"
+    }
+  },
+  {
+    "question": "The batteries that power watches, cardiac pacemakers, and computer memory backup are usually made of ...",
+    "answer": "B",
+    "options": {
+      "A": "silicon",
+      "B": "lithium",
+      "C": "zinc and carbon",
+      "D": "lead and an acid",
+      "E": "nickel and cadmium"
+    }
+  },
+  {
+    "question": "Providing directional stability for torpedoes was one application for ...",
+    "answer": "A",
+    "options": {
+      "A": "gyroscopes",
+      "B": "horoscopes",
+      "C": "oscilloscopes",
+      "D": "kaleidoscopes",
+      "E": "spectroscopes"
+    }
+  },
+  {
+    "question": "Who made significant contributions in the field of communications?",
+    "answer": "C",
+    "options": {
+      "A": "James Watt, Eli Whitney",
+      "B": "John Deer, Robert Fulton",
+      "C": "Cyrus Field, Samuel Morse",
+      "D": "Cyrus McCormick, Samuel Colt",
+      "E": "Charles Goodyear, George Eastman"
+    }
+  },
+  {
+    "question": "If suitable technology existed, a cubic mile of ---- would present the richest source of iron, nickel, and cobalt.",
+    "answer": "D",
+    "options": {
+      "A": "Mars",
+      "B": "the Sun",
+      "C": "the Moon",
+      "D": "an asteroid",
+      "E": "ocean water"
+    }
+  },
+  {
+    "question": "The Otto cycle is a(n) ...",
+    "answer": "E",
+    "options": {
+      "A": "bicycle",
+      "B": "blast furnace",
+      "C": "electrical circuit",
+      "D": "desalination system",
+      "E": "internal combustion engine"
+    }
+  },
+  {
+    "question": "Aside from the ABC, historians usually say the first electronic computer was the ...",
+    "answer": "B",
+    "options": {
+      "A": "Cray",
+      "B": "Eniac",
+      "C": "Bell X-1",
+      "D": "Univac I",
+      "E": "Hal 5000"
+    }
+  },
+  {
+    "question": "Bundles of thin glass strands that transmit data are called ---- optics.",
+    "answer": "A",
+    "options": {
+      "A": "fiber",
+      "B": "string",
+      "C": "thread",
+      "D": "strand",
+      "E": "filament"
+    }
+  },
+  {
+    "question": "The doctrine of fair use allows the limited public use of what without obtaining permission?",
+    "answer": "D",
+    "options": {
+      "A": "public lands",
+      "B": "navigable waters",
+      "C": "patented technology",
+      "D": "copyrighted material",
+      "E": "government equipment"
+    }
+  },
+  {
+    "question": "Which ancient culture did not use the wheel and axle?",
+    "answer": "B",
+    "options": {
+      "A": "Greek",
+      "B": "Aztec",
+      "C": "Roman",
+      "D": "Egyptian",
+      "E": "Babylonian"
+    }
+  },
+  {
+    "question": "Otto Lilienthal first predicted that high lift and low drag could be produced by ...",
+    "answer": "A",
+    "options": {
+      "A": "airfoils",
+      "B": "airways",
+      "C": "airheads",
+      "D": "airwaves",
+      "E": "airstrips"
+    }
+  },
+  {
+    "question": "An absorber is a photovoltaic device that readily absorbs ...",
+    "answer": "E",
+    "options": {
+      "A": "futons",
+      "B": "leptons",
+      "C": "plutons",
+      "D": "nektons",
+      "E": "photons"
+    }
+  },
+  {
+    "question": "The Ariane rocket was developed in ...",
+    "answer": "E",
+    "options": {
+      "A": "Iran",
+      "B": "India",
+      "C": "Japan",
+      "D": "China",
+      "E": "France"
+    }
+  },
+  {
+    "question": "Those who resist modern technology share a name with what 19th-century English group who protested against the Industrial Revolution by destroying textile machines?",
+    "answer": "B",
+    "options": {
+      "A": "Shiites",
+      "B": "Luddites",
+      "C": "Jacobites",
+      "D": "Canaanites",
+      "E": "Muscovites"
+    }
+  },
+  {
+    "question": "Which is not a computer peripheral?",
+    "answer": "A",
+    "options": {
+      "A": "the CPU",
+      "B": "a printer",
+      "C": "a terminal",
+      "D": "the hard disk",
+      "E": "an optical scanner"
+    }
+  },
+  {
+    "question": "Who headed the task of building the Saturn V moon rocket?",
+    "answer": "D",
+    "options": {
+      "A": "Harlow Shapley",
+      "B": "Robert Goddard",
+      "C": "Hermann Oberth",
+      "D": "Wernher von Braun",
+      "E": "Robert Oppenheimer"
+    }
+  },
+  {
+    "question": "A 2008 report indicated that Iran had more than 5,000 --- in operation to enrich uranium.",
+    "answer": "C",
+    "options": {
+      "A": "cyclotrons",
+      "B": "autoclaves",
+      "C": "centrifuges",
+      "D": "magnetrons",
+      "E": "spectroscopes"
+    }
+  },
+  {
+    "question": "Which might be regarded as America's first engineering school?",
+    "answer": "A",
+    "options": {
+      "A": "Erie Canal",
+      "B": "Boulder Dam",
+      "C": "Mount Rushmore",
+      "D": "Golden Gate Bridge",
+      "E": "the Transatlantic Cable"
+    }
+  },
+  {
+    "question": "Which depends on reflection?",
+    "answer": "A",
+    "options": {
+      "A": "sonar",
+      "B": "solar cell",
+      "C": "gyroscope",
+      "D": "thermostat",
+      "E": "electromagnet"
+    }
+  },
+  {
+    "question": "Someone professionally involved daily with arches, loops, whorls, and composites is in ...",
+    "answer": "B",
+    "options": {
+      "A": "cryogenics",
+      "B": "fingerprinting",
+      "C": "bioengineering",
+      "D": "plant breeding",
+      "E": "laser technology"
+    }
+  },
+  {
+    "question": "For what do the initials, RAM, stand with regard to the B-2 bomber?",
+    "answer": "C",
+    "options": {
+      "A": "retiform angular media",
+      "B": "radial aerodynamic mass",
+      "C": "radar-absorbing material",
+      "D": "robot-activated mechanism",
+      "E": "radioactive animated mirage"
+    }
+  },
+  {
+    "question": "Computerized axial tomography ...",
+    "answer": "C",
+    "options": {
+      "A": "estimates fossil age",
+      "B": "controls spacecraft attitude",
+      "C": "produces images of the brain",
+      "D": "locates earthquake epicenters",
+      "E": "synthesizes transuranium elements"
+    }
+  },
+  {
+    "question": "Platinum didn't work.  Who then tried 6000 species of carbonized vegetable fiber and found bamboo was best for his invention?",
+    "answer": "D",
+    "options": {
+      "A": "Eli Whitney",
+      "B": "Samuel Colt",
+      "C": "Robert Fulton",
+      "D": "Thomas Edison",
+      "E": "George Eastman"
+    }
+  },
+  {
+    "question": "Gottlieb Daimler developed a(n) ...",
+    "answer": "E",
+    "options": {
+      "A": "armored tank",
+      "B": "solid fuel rocket",
+      "C": "direct current motor",
+      "D": "rotary-winged aircraft",
+      "E": "internal combustion engine"
+    }
+  },
+  {
+    "question": "Which acronym used in the computer field does not refer to a programming language?",
+    "answer": "A",
+    "options": {
+      "A": "GIGO",
+      "B": "Basic",
+      "C": "Algol",
+      "D": "COBOL",
+      "E": "FORTRAN"
+    }
+  },
+  {
+    "question": "The minimum number of light-emitting diodes required to display numerals from 0 to 9 is ...",
+    "answer": "C",
+    "options": {
+      "A": "3",
+      "B": "5",
+      "C": "7",
+      "D": "9",
+      "E": "11"
+    }
+  },
+  {
+    "question": "Which German developed airships?",
+    "answer": "E",
+    "options": {
+      "A": "Felix Mendelssohn",
+      "B": "Otto von Bismarck",
+      "C": "Gabriel Fahrenheit",
+      "D": "Willy Messerschmitt",
+      "E": "Ferdinand von Zeppelin"
+    }
+  },
+  {
+    "question": "Which requires the greatest amount of electrical power?",
+    "answer": "A",
+    "options": {
+      "A": "toaster",
+      "B": "ceiling fan",
+      "C": "refrigerator",
+      "D": "personal computer",
+      "E": "200-watt light bulb"
+    }
+  },
+  {
+    "question": "Devices with mirrors used in solar power generation are called ...",
+    "answer": "C",
+    "options": {
+      "A": "rheostats",
+      "B": "gyrostats",
+      "C": "heliostats",
+      "D": "hemostats",
+      "E": "thermostats"
+    }
+  },
+  {
+    "question": "Who formed The Wireless Telegraph and Signal Company around 1920?",
+    "answer": "E",
+    "options": {
+      "A": "James Watt",
+      "B": "Thomas Edison",
+      "C": "Simon Newcomb",
+      "D": "Herman Hollerith",
+      "E": "Guglielmo Marconi"
+    }
+  },
+  {
+    "question": "Quadrants, verniers, sextants, and compasses directly related to the development of ...",
+    "answer": "A",
+    "options": {
+      "A": "cartography",
+      "B": "cryptography",
+      "C": "choreography",
+      "D": "crystallography",
+      "E": "cinematography"
+    }
+  },
+  {
+    "question": "In 1916, who broadcast the first radio news?",
+    "answer": "D",
+    "options": {
+      "A": "Elias Howe",
+      "B": "Eli Whitney",
+      "C": "Cyrus Field",
+      "D": "Lee De Forest",
+      "E": "James Hargreaves"
+    }
+  },
+  {
+    "question": "The $10 million Ansari X Prize relates to ...",
+    "answer": "A",
+    "options": {
+      "A": "space flight",
+      "B": "nuclear fusion",
+      "C": "agricultural research",
+      "D": "environmental cleanup",
+      "E": "weapons of mass destruction"
+    }
+  },
+  {
+    "question": "Which type of bridge can span the greatest distance between its towers?",
+    "answer": "E",
+    "options": {
+      "A": "beam bridge",
+      "B": "arch bridge",
+      "C": "flying bridge",
+      "D": "cantilever bridge",
+      "E": "suspension bridge"
+    }
+  },
+  {
+    "question": "In the early 1900s, buildings including Madison Square Garden, the U.S. Senate, and the House of Representatives became air conditioned thanks to the invention of Willis who?",
+    "answer": "C",
+    "options": {
+      "A": "Otis",
+      "B": "Ferris",
+      "C": "Carrier",
+      "D": "Marconi",
+      "E": "Arkwright"
+    }
+  },
+  {
+    "question": "Rutan and Yeager became prominent in 1986 for their achievement in ...",
+    "answer": "A",
+    "options": {
+      "A": "aviation",
+      "B": "archaeology",
+      "C": "AIDS research",
+      "D": "psychic phenomena",
+      "E": "earthquake prediction"
+    }
+  },
+  {
+    "question": "Northrop Grumman is working on an unmanned fighter plane called the X-47A ...",
+    "answer": "C",
+    "options": {
+      "A": "Cupid",
+      "B": "Icarus",
+      "C": "Pegasus",
+      "D": "Unicorn",
+      "E": "Minotaur"
+    }
+  },
+  {
+    "question": "What technology uses a split laser beam to produce three-dimensional images?",
+    "answer": "A",
+    "options": {
+      "A": "holography",
+      "B": "topography",
+      "C": "choreography",
+      "D": "spectrography",
+      "E": "photomicrography"
+    }
+  },
+  {
+    "question": "Which technological achievement came first?",
+    "answer": "C",
+    "options": {
+      "A": "dynamite",
+      "B": "galvanic cell",
+      "C": "flying shuttle",
+      "D": "reinforced concrete",
+      "E": "alternating current electric motor"
+    }
+  },
+  {
+    "question": "A function of heliostats is to ...",
+    "answer": "B",
+    "options": {
+      "A": "absorb sound",
+      "B": "reflect sunlight",
+      "C": "increase precipitation",
+      "D": "desalinate ocean water",
+      "E": "reduce atmospheric pollution"
+    }
+  },
+  {
+    "question": "Quadrants, verniers, sextants, and compasses directly related to the development of ...",
+    "answer": "A",
+    "options": {
+      "A": "cartography",
+      "B": "cryptography",
+      "C": "choreography",
+      "D": "crystallography",
+      "E": "cinematography"
+    }
+  },
+  {
+    "question": "Which aircraft had a canard biplane configuration?",
+    "answer": "B",
+    "options": {
+      "A": "Enola Gay",
+      "B": "Wright Flyer",
+      "C": "Curtis Jenny",
+      "D": "Glamorous Glennis",
+      "E": "Spirit of St. Louis"
+    }
+  },
+  {
+    "question": "Which airplane has the longest wing span?",
+    "answer": "C",
+    "options": {
+      "A": "Boeing 707",
+      "B": "Douglas DC-10",
+      "C": "Lockheed C-5A",
+      "D": "Grumman F-14B",
+      "E": "McDonnell Douglas F-4E"
+    }
+  },
+  {
+    "question": "Desalination is a process used to remove ...",
+    "answer": "D",
+    "options": {
+      "A": "metals from ore",
+      "B": "bacteria from food",
+      "C": "pollutants from air",
+      "D": "salt from seawater",
+      "E": "impurities from drugs"
+    }
+  },
+  {
+    "question": "Which is not a type of digital image file?",
+    "answer": "C",
+    "options": {
+      "A": "GIF",
+      "B": "JPG",
+      "C": "EXE",
+      "D": "PNG",
+      "E": "TIFF"
+    }
+  },
+  {
+    "question": "Who patented a fuel system and designs for multistage rockets?",
+    "answer": "C",
+    "options": {
+      "A": "Enrico Fermi",
+      "B": "Edward Teller",
+      "C": "Robert Goddard",
+      "D": "Arthur Compton",
+      "E": "Albert Michelson"
+    }
+  },
+  {
+    "question": "Two new inventions were used to fight the Civil War including the ironclad ship and the ...",
+    "answer": "E",
+    "options": {
+      "A": "tank",
+      "B": "bayonet",
+      "C": "telescope",
+      "D": "portable cannon",
+      "E": "observation balloon"
+    }
+  },
+  {
+    "question": "Guglielmo Marconi's invention was based on a discovery made by ...",
+    "answer": "D",
+    "options": {
+      "A": "Karl Benz",
+      "B": "Robert Fulton",
+      "C": "Gregor Mendel",
+      "D": "Heinrich Hertz",
+      "E": "Louis Daguerre"
+    }
+  },
+  {
+    "question": "If you send an email to an audience that considers your message inappropriate, you can expect to get ...",
+    "answer": "E",
+    "options": {
+      "A": "flexed",
+      "B": "flayed",
+      "C": "fluted",
+      "D": "fluxed",
+      "E": "flamed"
+    }
+  },
+  {
+    "question": "What is the first letter in this series familiar to all who word process?   ... W  E  R  T  Y",
+    "answer": "B",
+    "options": {
+      "A": "M",
+      "B": "Q",
+      "C": "F",
+      "D": "B",
+      "E": "Z"
+    }
+  },
+  {
+    "question": "The air pump was invented by ...",
+    "answer": "E",
+    "options": {
+      "A": "Newton",
+      "B": "Marconi",
+      "C": "Sopwith",
+      "D": "da Vinci",
+      "E": "von Guericke"
+    }
+  },
+  {
+    "question": "A kinetoscope was used in the world's first ...",
+    "answer": "B",
+    "options": {
+      "A": "planetarium",
+      "B": "movie house",
+      "C": "assembly line",
+      "D": "space station",
+      "E": "hydroelectric dam"
+    }
+  },
+  {
+    "question": "The device called ENIAC was an early ...",
+    "answer": "C",
+    "options": {
+      "A": "abacus",
+      "B": "compass",
+      "C": "electronic computer",
+      "D": "mechanical slide rule",
+      "E": "gear-driven calculator"
+    }
+  },
+  {
+    "question": "A decision statement belongs in what shape when flowcharting a computer program?",
+    "answer": "D",
+    "options": {
+      "A": "oval",
+      "B": "circle",
+      "C": "square",
+      "D": "diamond",
+      "E": "rectangle"
+    }
+  },
+  {
+    "question": "Which appliance has a compressor?",
+    "answer": "C",
+    "options": {
+      "A": "disposal",
+      "B": "microwave",
+      "C": "refrigerator",
+      "D": "dishwasher",
+      "E": "water heater"
+    }
+  },
+  {
+    "question": "A program that translates a high-level computer language into machine language is a ...",
+    "answer": "B",
+    "options": {
+      "A": "buffer",
+      "B": "compiler",
+      "C": "word processor",
+      "D": "microprocessor",
+      "E": "acoustic coupler"
+    }
+  },
+  {
+    "question": "The Ariane rocket was developed in ...",
+    "answer": "E",
+    "options": {
+      "A": "Iran",
+      "B": "India",
+      "C": "Japan",
+      "D": "China",
+      "E": "France"
+    }
+  },
+  {
+    "question": "In 1916, who broadcast the first radio news?",
+    "answer": "D",
+    "options": {
+      "A": "Elias Howe",
+      "B": "Eli Whitney",
+      "C": "Cyrus Field",
+      "D": "Lee De Forest",
+      "E": "James Hargreaves"
+    }
+  },
+  {
+    "question": "Scientists in ---- are attempting to produce devices one billionth of a meter in size.",
+    "answer": "D",
+    "options": {
+      "A": "biotechnology",
+      "B": "aerotechnology",
+      "C": "cryotechnology",
+      "D": "nanotechnology",
+      "E": "hydrotechnology"
+    }
+  },
+  {
+    "question": "The Glomar Challenger was a(n) ...",
+    "answer": "B",
+    "options": {
+      "A": "submarine",
+      "B": "drilling ship",
+      "C": "aircraft carrier",
+      "D": "supersonic aircraft",
+      "E": "mock-up of the space shuttle"
+    }
+  },
+  {
+    "question": "The batteries that power watches, cardiac pacemakers, and computer memory backup are usually made of ...",
+    "answer": "B",
+    "options": {
+      "A": "silicon",
+      "B": "lithium",
+      "C": "zinc and carbon",
+      "D": "lead and an acid",
+      "E": "nickel and cadmium"
+    }
+  },
+  {
+    "question": "An absorber is a photovoltaic device that readily absorbs ...",
+    "answer": "E",
+    "options": {
+      "A": "futons",
+      "B": "leptons",
+      "C": "plutons",
+      "D": "nektons",
+      "E": "photons"
+    }
+  },
+  {
+    "question": "Electromagnets are not used in ...",
+    "answer": "B",
+    "options": {
+      "A": "doorbells",
+      "B": "light bulbs",
+      "C": "generators",
+      "D": "disk drives",
+      "E": "loudspeakers"
+    }
+  },
+  {
+    "question": "In London in 1928, John Baird demonstrated the world's first ...",
+    "answer": "D",
+    "options": {
+      "A": "transistor",
+      "B": "radar image",
+      "C": "light-emitting diode",
+      "D": "color TV transmission",
+      "E": "silicon computer chip"
+    }
+  },
+  {
+    "question": "Magnetic levitation is used in a vehicle called a maglev.  The maglev is a ...",
+    "answer": "B",
+    "options": {
+      "A": "ship",
+      "B": "train",
+      "C": "dirigible",
+      "D": "aircraft",
+      "E": "automobile"
+    }
+  },
+  {
+    "question": "Which depends on reflection?",
+    "answer": "A",
+    "options": {
+      "A": "sonar",
+      "B": "solar cell",
+      "C": "gyroscope",
+      "D": "thermostat",
+      "E": "electromagnet"
+    }
+  },
+  {
+    "question": "The world's first commercial jet airliner took its maiden flight in 1949.  It was called the De Havilland ...",
+    "answer": "B",
+    "options": {
+      "A": "Star",
+      "B": "Comet",
+      "C": "Rocket",
+      "D": "Meteor",
+      "E": "Streak"
+    }
+  },
+  {
+    "question": "A long helically-wound coil is a ...",
+    "answer": "C",
+    "options": {
+      "A": "dry cell",
+      "B": "rheostat",
+      "C": "solenoid",
+      "D": "electrolyte",
+      "E": "thermocouple"
+    }
+  },
+  {
+    "question": "Lasers are not used to ...",
+    "answer": "C",
+    "options": {
+      "A": "cut metals",
+      "B": "transmit data",
+      "C": "propel aircraft",
+      "D": "reshape corneas",
+      "E": "survey distances"
+    }
+  },
+  {
+    "question": "Which is not a standing committee in the House of Representatives?",
+    "answer": "B",
+    "options": {
+      "A": "Education",
+      "B": "Technology",
+      "C": "Agriculture",
+      "D": "Foreign Affairs",
+      "E": "Ways and Means"
+    }
+  },
+  {
+    "question": "Graf Spee was a German ...",
+    "answer": "D",
+    "options": {
+      "A": "tank",
+      "B": "missile",
+      "C": "dirigible",
+      "D": "battleship",
+      "E": "fortification"
+    }
+  },
+  {
+    "question": "Whose success was based largely on the growing public infatuation with achievements of technology at the time?",
+    "answer": "A",
+    "options": {
+      "A": "Jules Verne",
+      "B": "Walt Whitman",
+      "C": "William Faulkner",
+      "D": "Margaret Mitchell",
+      "E": "Arthur Conan Doyle"
+    }
+  },
+  {
+    "question": "As you might surmise from their names, in the 1970s, Herbert Saffir and Robert Simpson worked for the ...",
+    "answer": "A",
+    "options": {
+      "A": "National Hurricane Center",
+      "B": "Centers for Disease Control",
+      "C": "United States Geological Survey",
+      "D": "Office of Technology Assessment",
+      "E": "United States Department of Agriculture"
+    }
+  },
+  {
+    "question": "Every device connected to the Internet has an identifying ---- address.",
+    "answer": "A",
+    "options": {
+      "A": "IP",
+      "B": "BO",
+      "C": "VD",
+      "D": "AC",
+      "E": "MO"
+    }
+  },
+  {
+    "question": "In data processing, for what does the \"G\" in GIGO stand?",
+    "answer": "D",
+    "options": {
+      "A": "go",
+      "B": "giga-",
+      "C": "gismo",
+      "D": "garbage",
+      "E": "generalization"
+    }
+  },
+  {
+    "question": "A rocket used by the Soviet Union to launch heavy satellites and probes was the ...",
+    "answer": "A",
+    "options": {
+      "A": "Proton",
+      "B": "Lepton",
+      "C": "Neutron",
+      "D": "Electron",
+      "E": "Positron"
+    }
+  },
+  {
+    "question": "The greatest outlay of U.S. federal revenues annually is for ...",
+    "answer": "B",
+    "options": {
+      "A": "agriculture",
+      "B": "Social Security",
+      "C": "national defense",
+      "D": "international affairs",
+      "E": "science and technology"
+    }
+  },
+  {
+    "question": "Magnetic levitation is used in a vehicle called a maglev.  The maglev is a ...",
+    "answer": "B",
+    "options": {
+      "A": "ship",
+      "B": "train",
+      "C": "dirigible",
+      "D": "aircraft",
+      "E": "automobile"
+    }
+  },
+  {
+    "question": "The Boeing X-37 is a ...",
+    "answer": "E",
+    "options": {
+      "A": "biplane",
+      "B": "seaplane",
+      "C": "sailplane",
+      "D": "gyroplane",
+      "E": "spaceplane"
+    }
+  },
+  {
+    "question": "Reminiscent of the spacecraft described in \"Rendezvous with Rama,\" a futuristic space habitat design is called the ---- cylinder.",
+    "answer": "A",
+    "options": {
+      "A": "O'Neill",
+      "B": "O'Casey",
+      "C": "O'Connor",
+      "D": "O'Keeffe",
+      "E": "O'Higgins"
+    }
+  },
+  {
+    "question": "Recombinant DNA is used in ...",
+    "answer": "D",
+    "options": {
+      "A": "organ transplants",
+      "B": "photovoltaic cells",
+      "C": "magnetic levitation",
+      "D": "genetic engineering",
+      "E": "fiber optic transmission"
+    }
+  },
+  {
+    "question": "Which material is a semiconductor?",
+    "answer": "E",
+    "options": {
+      "A": "mica",
+      "B": "nickel",
+      "C": "silver",
+      "D": "paraffin",
+      "E": "selenium"
+    }
+  },
+  {
+    "question": "The greatest amount of which industrial chemical is produced annually around the world?",
+    "answer": "D",
+    "options": {
+      "A": "ethanol",
+      "B": "styrene",
+      "C": "chlorine",
+      "D": "sulfuric acid",
+      "E": "ammonium nitrate"
+    }
+  },
+  {
+    "question": "The purpose of desalination plants is to ...",
+    "answer": "C",
+    "options": {
+      "A": "recycle garbage",
+      "B": "purify grey water",
+      "C": "remove salt from seawater",
+      "D": "restore denuded landscapes",
+      "E": "extract impurities from coal"
+    }
+  },
+  {
+    "question": "NEXRAD is a technology enabling scientists to better ...",
+    "answer": "A",
+    "options": {
+      "A": "locate tornadoes",
+      "B": "predict earthquakes",
+      "C": "communicate with satellites",
+      "D": "digitally compress video data",
+      "E": "create thermal images of objects"
+    }
+  },
+  {
+    "question": "Which abbreviation indicates an optical storage technology that can record vast amounts of information?",
+    "answer": "E",
+    "options": {
+      "A": "VTR",
+      "B": "MTV",
+      "C": "IFR",
+      "D": "VHF",
+      "E": "DVD"
+    }
+  },
+  {
+    "question": "The latest technology used in Persian Gulf War aviation was incorporated in which aircraft?",
+    "answer": "E",
+    "options": {
+      "A": "F-14",
+      "B": "F-15",
+      "C": "F-5E",
+      "D": "F-111",
+      "E": "F117A"
+    }
+  },
+  {
+    "question": "In 1897, du Pont de Nemours bought the gunpowder plant of Hudson Maxim in New Jersey.  Hudson's brother, Hiram, invented the ...",
+    "answer": "D",
+    "options": {
+      "A": "torpedo",
+      "B": "bazooka",
+      "C": "land mine",
+      "D": "machine gun",
+      "E": "hand grenade"
+    }
+  },
+  {
+    "question": "Which was invented first?",
+    "answer": "E",
+    "options": {
+      "A": "revolver",
+      "B": "telephone",
+      "C": "lightning rod",
+      "D": "sewing machine",
+      "E": "reflecting telescope"
+    }
+  },
+  {
+    "question": "In 1900, the Kodak corporation introduced what inexpensive camera for the masses?",
+    "answer": "E",
+    "options": {
+      "A": "Elf",
+      "B": "Fairie",
+      "C": "Sprite",
+      "D": "Gnome",
+      "E": "Brownie"
+    }
+  },
+  {
+    "question": "Shortwave radiation from the Sun passes freely into this unit but its glass traps the longer infra-red rays inside raising the temperature.  What is this unit?",
+    "answer": "B",
+    "options": {
+      "A": "telescope",
+      "B": "greenhouse",
+      "C": "planetarium",
+      "D": "bathysphere",
+      "E": "spectroscope"
+    }
+  },
+  {
+    "question": "Which inventor played a major role in developing the technology that replaced the Pony Express?",
+    "answer": "C",
+    "options": {
+      "A": "Eli Whitney",
+      "B": "Samuel Colt",
+      "C": "Samuel Morse",
+      "D": "Cyrus McCormick",
+      "E": "James Hargreaves"
+    }
+  },
+  {
+    "question": "Capable of seven shots in 30 seconds, the repeating rifle that first gave Union soldiers a tremendous advantage over the muskets of the Confederate forces was known as what carbine?",
+    "answer": "C",
+    "options": {
+      "A": "Henry",
+      "B": "Gatling",
+      "C": "Spencer",
+      "D": "Derringer",
+      "E": "Winchester"
+    }
+  },
+  {
+    "question": "Anarchists are opposed to ...",
+    "answer": "D",
+    "options": {
+      "A": "ethics",
+      "B": "profits",
+      "C": "technology",
+      "D": "governments",
+      "E": "performing arts"
+    }
+  },
+  {
+    "question": "Photographs are typically sent over the Internet as what kind of file?",
+    "answer": "B",
+    "options": {
+      "A": ".DOC",
+      "B": ".JPG",
+      "C": ".DBF",
+      "D": ".WAV",
+      "E": ".EXE"
+    }
+  },
+  {
+    "question": "The Glomar Challenger was a(n) ...",
+    "answer": "B",
+    "options": {
+      "A": "submarine",
+      "B": "drilling ship",
+      "C": "aircraft carrier",
+      "D": "supersonic aircraft",
+      "E": "mock-up of the space shuttle"
+    }
+  },
+  {
+    "question": "In 2000, the international space station became one of the most visible objects in the heavens when astronauts deployed enormous panels containing what kind of cells?",
+    "answer": "A",
+    "options": {
+      "A": "photovoltaic",
+      "B": "hydrothermal",
+      "C": "thermonuclear",
+      "D": "semipermeable",
+      "E": "electrochemical"
+    }
+  },
+  {
+    "question": "In computer science, parity is ...",
+    "answer": "A",
+    "options": {
+      "A": "odd or even",
+      "B": "positive or negative",
+      "C": "duplex or half-duplex",
+      "D": "volatile or non-volatile",
+      "E": "synchronous or asynchronous"
+    }
+  },
+  {
+    "question": "A function of heliostats is to ...",
+    "answer": "B",
+    "options": {
+      "A": "absorb sound",
+      "B": "reflect sunlight",
+      "C": "increase precipitation",
+      "D": "desalinate ocean water",
+      "E": "reduce atmospheric pollution"
+    }
+  },
+  {
+    "question": "According to Michael Crichton, InGen is a company that develops ...",
+    "answer": "A",
+    "options": {
+      "A": "dinosaurs",
+      "B": "nanomachines",
+      "C": "hyperspace drives",
+      "D": "artificial body parts",
+      "E": "terraforming technology"
+    }
+  },
+  {
+    "question": "Richard Trevithick's technological developments related to ...",
+    "answer": "E",
+    "options": {
+      "A": "clocks",
+      "B": "explosives",
+      "C": "telegraphy",
+      "D": "calculators",
+      "E": "locomotives"
+    }
+  },
+  {
+    "question": "The Otto cycle is a(n) ...",
+    "answer": "E",
+    "options": {
+      "A": "bicycle",
+      "B": "blast furnace",
+      "C": "electrical circuit",
+      "D": "desalination system",
+      "E": "internal combustion engine"
+    }
+  },
+  {
+    "question": "Illegal copying of cassette tapes, video tapes, and computer software is ...",
+    "answer": "A",
+    "options": {
+      "A": "piracy",
+      "B": "bigamy",
+      "C": "bribery",
+      "D": "larceny",
+      "E": "conspiracy"
+    }
+  },
+  {
+    "question": "Sadi Carnot was a 19th-century French engineer who was associated with ...",
+    "answer": "B",
+    "options": {
+      "A": "cryogenics",
+      "B": "heat engines",
+      "C": "wave mechanics",
+      "D": "geostationary satellites",
+      "E": "electromagnetic induction"
+    }
+  },
+  {
+    "question": "If the binary code for the character A is 1000001 and the binary code for B is 1000010, then 1001011 is the code for ...",
+    "answer": "A",
+    "options": {
+      "A": "K",
+      "B": "M",
+      "C": "O",
+      "D": "Q",
+      "E": "S"
+    }
+  },
+  {
+    "question": "Computerized axial tomography ...",
+    "answer": "C",
+    "options": {
+      "A": "estimates fossil age",
+      "B": "controls spacecraft attitude",
+      "C": "produces images of the brain",
+      "D": "locates earthquake epicenters",
+      "E": "synthesizes transuranium elements"
+    }
+  },
+  {
+    "question": "In 2004, NASA broke the speed record for a plane powered by an air-breathing engine by reaching Mach 10 with its X-43A ...",
+    "answer": "E",
+    "options": {
+      "A": "fanjet",
+      "B": "laserjet",
+      "C": "pulsejet",
+      "D": "turbojet",
+      "E": "scramjet"
+    }
+  },
+  {
+    "question": "The greatest amount of which industrial chemical is produced annually around the world?",
+    "answer": "D",
+    "options": {
+      "A": "ethanol",
+      "B": "styrene",
+      "C": "chlorine",
+      "D": "sulfuric acid",
+      "E": "ammonium nitrate"
+    }
+  },
+  {
+    "question": "Which Internet domain suffix is not correctly paired with a meaning?",
+    "answer": "C",
+    "options": {
+      "A": "mil - military",
+      "B": "net - network",
+      "C": "com - computing",
+      "D": "edu - educational",
+      "E": "gov - government"
+    }
+  },
+  {
+    "question": "Bundles of thin glass strands that transmit data are called ---- optics.",
+    "answer": "A",
+    "options": {
+      "A": "fiber",
+      "B": "string",
+      "C": "thread",
+      "D": "strand",
+      "E": "filament"
+    }
+  }
+]

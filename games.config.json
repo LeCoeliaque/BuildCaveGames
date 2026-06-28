@@ -1,0 +1,32 @@
+{
+  "Azul": {
+    "description": "A beautiful tile-drafting game. Draft colorful tiles from factories to complete rows on your player board.",
+    "image": "AzulCover.png",
+    "icon": "🪟"
+  },
+  "Compound": {
+    "description": "A word-building party game, match the prefix or suffix of the given word with one other person to win!",
+    "image": "CompoundCover.png",
+    "icon": "🔗"
+  },
+  "Gnomin Around": {
+    "description": "A gnome-themed card game. Get the lowest score and beat your friends.",
+    "image": "GnominAroundCover.png",
+    "icon": "⛳"
+  },
+  "Just One": {
+    "description": "A cooperative word game. Everyone writes a one-word clue to help the guesser, but duplicates cancel out!",
+    "image": "JustOneCover.png",
+    "icon": "💬"
+  },
+  "Pink Cow": {
+    "description": "Think like the herd! Guess the same as others to win points!",
+    "image": "PinkCowCover.png",
+    "icon": "🐄"
+  },
+  "TriviaWheel": {
+    "description": "A fast-paced trivia game. Answer questions and outsmart the competition before the clock runs out.",
+    "image": "TriviaWheelCover.png",
+    "icon": "🎡"
+  }
+}

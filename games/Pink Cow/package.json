@@ -1,0 +1,12 @@
+{
+  "name": "pink-cow",
+  "version": "1.0.0",
+  "description": "Pink Cow — the crowd-matching party game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

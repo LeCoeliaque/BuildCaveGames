@@ -1,0 +1,321 @@
+[
+  {
+    "question": "Which word could be a gerund?",
+    "answer": "C",
+    "options": {
+      "A": "lavishly",
+      "B": "themselves",
+      "C": "engineering",
+      "D": "predominate",
+      "E": "most spectacular"
+    }
+  },
+  {
+    "question": "The Englishman William Blackstone made contributions to ...",
+    "answer": "A",
+    "options": {
+      "A": "law",
+      "B": "aviation",
+      "C": "medicine",
+      "D": "engineering",
+      "E": "military tactics"
+    }
+  },
+  {
+    "question": "A cantilever would most likely be used on a ...",
+    "answer": "A",
+    "options": {
+      "A": "balcony",
+      "B": "skylight",
+      "C": "stairwell",
+      "D": "roof opening",
+      "E": "warehouse floor"
+    }
+  },
+  {
+    "question": "Charles Steinmetz worked in which field?",
+    "answer": "E",
+    "options": {
+      "A": "meteorology",
+      "B": "rocket propulsion",
+      "C": "organic chemistry",
+      "D": "mathematical logic",
+      "E": "electrical engineering"
+    }
+  },
+  {
+    "question": "Which type of bridge can span the greatest distance between its towers?",
+    "answer": "E",
+    "options": {
+      "A": "beam bridge",
+      "B": "arch bridge",
+      "C": "flying bridge",
+      "D": "cantilever bridge",
+      "E": "suspension bridge"
+    }
+  },
+  {
+    "question": "Which might be regarded as America's first engineering school?",
+    "answer": "A",
+    "options": {
+      "A": "Erie Canal",
+      "B": "Boulder Dam",
+      "C": "Mount Rushmore",
+      "D": "Golden Gate Bridge",
+      "E": "the Transatlantic Cable"
+    }
+  },
+  {
+    "question": "What was named after the Scottish engineer, John McAdam?",
+    "answer": "C",
+    "options": {
+      "A": "a biplane",
+      "B": "a type of bridge",
+      "C": "a kind of pavement",
+      "D": "a framing technique",
+      "E": "a distillation process"
+    }
+  },
+  {
+    "question": "Recombinant DNA is used in ...",
+    "answer": "D",
+    "options": {
+      "A": "organ transplants",
+      "B": "photovoltaic cells",
+      "C": "magnetic levitation",
+      "D": "genetic engineering",
+      "E": "fiber optic transmission"
+    }
+  },
+  {
+    "question": "Which type of bridge can span the greatest distance between its towers?",
+    "answer": "E",
+    "options": {
+      "A": "beam bridge",
+      "B": "arch bridge",
+      "C": "flying bridge",
+      "D": "cantilever bridge",
+      "E": "suspension bridge"
+    }
+  },
+  {
+    "question": "The Pole who taught military engineering to American colonial patriots was ...",
+    "answer": "C",
+    "options": {
+      "A": "Lech Walesa",
+      "B": "Truman Capote",
+      "C": "Thaddeus Kosciusko",
+      "D": "Marquis de Lafayette",
+      "E": "Friedrich Von Steuben"
+    }
+  },
+  {
+    "question": "Which structure incorporates flying buttresses?",
+    "answer": "E",
+    "options": {
+      "A": "Kremlin",
+      "B": "Roman Colosseum",
+      "C": "Golden Gate Bridge",
+      "D": "Washington Monument",
+      "E": "Notre Dame Cathedral"
+    }
+  },
+  {
+    "question": "Over the Golden Gate is a(n) ---- bridge.",
+    "answer": "E",
+    "options": {
+      "A": "arch",
+      "B": "truss",
+      "C": "girder",
+      "D": "cantilever",
+      "E": "suspension"
+    }
+  },
+  {
+    "question": "The world's first cast iron bridge was built across the ---- River.",
+    "answer": "B",
+    "options": {
+      "A": "Rhine",
+      "B": "Severn",
+      "C": "Hudson",
+      "D": "Danube",
+      "E": "Yangtze"
+    }
+  },
+  {
+    "question": "George Meany and Lane Kirkland are names associated with ...",
+    "answer": "A",
+    "options": {
+      "A": "organized labor",
+      "B": "the Supreme Court",
+      "C": "the Irangate affair",
+      "D": "aerospace engineering",
+      "E": "recovery of artifacts from the Titanic"
+    }
+  },
+  {
+    "question": "Francis Bacon contributed to ...",
+    "answer": "C",
+    "options": {
+      "A": "warfare",
+      "B": "politics",
+      "C": "reasoning",
+      "D": "agriculture",
+      "E": "engineering"
+    }
+  },
+  {
+    "question": "By design, wires with the highest resistance are built into ...",
+    "answer": "B",
+    "options": {
+      "A": "clocks",
+      "B": "toasters",
+      "C": "telephones",
+      "D": "stereo speakers",
+      "E": "printed circuit boards"
+    }
+  },
+  {
+    "question": "The Scotsman John McAdam contributed to the field of ...",
+    "answer": "B",
+    "options": {
+      "A": "oil drilling",
+      "B": "road building",
+      "C": "airfoil design",
+      "D": "steel production",
+      "E": "architectural engineering"
+    }
+  },
+  {
+    "question": "Which river was channelized by the Corps of Engineers in the 1960s eliminating about 40,000 acres of wetlands?",
+    "answer": "D",
+    "options": {
+      "A": "Yukon",
+      "B": "Snake",
+      "C": "Delaware",
+      "D": "Kissimmee",
+      "E": "Rio Grande"
+    }
+  },
+  {
+    "question": "Migrant workers are usually hired for ...",
+    "answer": "B",
+    "options": {
+      "A": "construction",
+      "B": "crop cultivation",
+      "C": "civil engineering",
+      "D": "pharmaceutical testing",
+      "E": "automobile manufacturing"
+    }
+  },
+  {
+    "question": "A person is most likely to make frequent use of a micrometer in ...",
+    "answer": "B",
+    "options": {
+      "A": "cryogenics",
+      "B": "engineering",
+      "C": "volcanology",
+      "D": "pyrotechnics",
+      "E": "nuclear physics"
+    }
+  },
+  {
+    "question": "By design, wires with the highest resistance are built into ...",
+    "answer": "B",
+    "options": {
+      "A": "clocks",
+      "B": "toasters",
+      "C": "telephones",
+      "D": "stereo speakers",
+      "E": "printed circuit boards"
+    }
+  },
+  {
+    "question": "Any procedure that makes a simple task into a complicated one may be compared to a ---- contraption.",
+    "answer": "A",
+    "options": {
+      "A": "Rube Goldberg",
+      "B": "William Golding",
+      "C": "Barry Goldwater",
+      "D": "Oliver Goldsmith",
+      "E": "Samuel Goldwyn"
+    }
+  },
+  {
+    "question": "The engineering of mechanical systems based on living organisms is ...",
+    "answer": "A",
+    "options": {
+      "A": "bionics",
+      "B": "geriatrics",
+      "C": "cryogenics",
+      "D": "cybernetics",
+      "E": "numismatics"
+    }
+  },
+  {
+    "question": "Charles Steinmetz worked in which field?",
+    "answer": "E",
+    "options": {
+      "A": "meteorology",
+      "B": "rocket propulsion",
+      "C": "organic chemistry",
+      "D": "mathematical logic",
+      "E": "electrical engineering"
+    }
+  },
+  {
+    "question": "Someone professionally involved daily with arches, loops, whorls, and composites is in ...",
+    "answer": "B",
+    "options": {
+      "A": "cryogenics",
+      "B": "fingerprinting",
+      "C": "bioengineering",
+      "D": "plant breeding",
+      "E": "laser technology"
+    }
+  },
+  {
+    "question": "Psychometric psychology is primarily concerned with ...",
+    "answer": "C",
+    "options": {
+      "A": "experimentation",
+      "B": "physiological psychology",
+      "C": "testing and measurement",
+      "D": "methods of psychotherapy",
+      "E": "human factors engineering"
+    }
+  },
+  {
+    "question": "According to Arthur Clarke, what is indistinguishable from magic?",
+    "answer": "E",
+    "options": {
+      "A": "modern medicine",
+      "B": "quantum physics",
+      "C": "genetic engineering",
+      "D": "electronic data processing",
+      "E": "any sufficiently advanced technology"
+    }
+  },
+  {
+    "question": "A person is most likely to make frequent use of a micrometer in ...",
+    "answer": "B",
+    "options": {
+      "A": "cryogenics",
+      "B": "engineering",
+      "C": "volcanology",
+      "D": "pyrotechnics",
+      "E": "nuclear physics"
+    }
+  },
+  {
+    "question": "Roman architects and engineers contributed what to Roman life?",
+    "answer": "E",
+    "options": {
+      "A": "roads",
+      "B": "arches",
+      "C": "bridges",
+      "D": "aqueducts",
+      "E": "all of the above"
+    }
+  }
+]

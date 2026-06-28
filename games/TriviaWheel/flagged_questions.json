@@ -1,0 +1,16 @@
+[
+  {
+    "cat": "02geography",
+    "isMC": false,
+    "question": "What extensive inland body of water has been called America's Dead Sea?",
+    "answer": "Great Salt Lake",
+    "flaggedAt": "2026-06-26T23:50:47.843Z"
+  },
+  {
+    "cat": "06history",
+    "isMC": false,
+    "question": "What powered the ancient Roman aqueducts?",
+    "answer": "gravity",
+    "flaggedAt": "2026-06-26T23:55:54.698Z"
+  }
+]

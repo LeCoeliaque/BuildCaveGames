@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#162b16">
+<title>Gnome Golf ⛳</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --g0:#0f1f0f; --g1:#162b16; --g2:#1e3d1e; --g3:#2d5a2d; --g4:#3d7a3d; --g5:#5a9a5a;
+  --cream:#f0e6cc; --parch:#e8d5a8; --brown:#5c3d1e;
+  --amber:#e8a020; --amber2:#ffc040;
+  --blue:#2d6eb0; --bluebg:#ddeeff;
+  --red:#c0392b;  --redbg:#ffe8e6;
+  --gold:#c9970a; --goldbg:#fff9e0;
+  --sh:rgba(0,0,0,0.4);
+  --rcard:10px; --rui:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overscroll-behavior:none}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--g1);color:var(--cream);
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation;overflow:hidden}
+
+/* ── SCREENS ── */
+.screen{display:none;position:fixed;inset:0;flex-direction:column}
+.screen.active{display:flex}
+
+/* ══ LOBBY ══ */
+#s-lobby{overflow-y:auto;-webkit-overflow-scrolling:touch;align-items:center;
+  padding:max(env(safe-area-inset-top),20px) 20px max(env(safe-area-inset-bottom),24px);
+  background:radial-gradient(ellipse 90% 50% at 50% 0%,var(--g3) 0%,transparent 60%),var(--g1)}
+
+.logo{text-align:center;padding:24px 0 20px;width:100%}
+.logo h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,9vw,3.4rem);
+  font-weight:900;color:var(--amber);text-shadow:0 2px 0 #7a4a00,0 0 28px rgba(232,160,32,.25);line-height:1}
+.logo p{font-size:.82rem;color:var(--g5);margin-top:5px}
+
+.lcard{width:100%;max-width:420px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--rui);padding:18px;margin-bottom:12px;backdrop-filter:blur(4px)}
+.lcard h2{font-family:'Playfair Display',serif;font-size:.95rem;color:var(--amber);margin-bottom:14px}
+
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:11px}
+.field label{font-size:.7rem;color:var(--g5);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+input[type=text]{width:100%;padding:13px 14px;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;
+  background:rgba(0,0,0,.3);color:var(--cream);font-size:1rem;font-family:'Inter',sans-serif;
+  outline:none;-webkit-appearance:none;transition:border-color .2s,box-shadow .2s}
+input[type=text]:focus{border-color:var(--amber);box-shadow:0 0 0 3px rgba(232,160,32,.18)}
+input[type=text]::placeholder{color:rgba(255,255,255,.22)}
+.code-input{text-transform:uppercase;letter-spacing:6px;font-family:'Playfair Display',serif;
+  font-size:1.25rem;text-align:center}
+
+.btn{display:block;width:100%;padding:14px;border:none;border-radius:8px;font-size:.95rem;
+  font-family:'Inter',sans-serif;font-weight:600;cursor:pointer;text-align:center;
+  -webkit-appearance:none;transition:opacity .15s,transform .1s;letter-spacing:.2px;margin-bottom:9px}
+.btn:active{opacity:.8;transform:scale(.97)}
+.btn-green{background:linear-gradient(160deg,#4a8f4a,#2d6a2d);color:#fff;box-shadow:0 4px 0 #1a3d1a,0 6px 14px var(--sh)}
+.btn-amber{background:linear-gradient(160deg,#f0b030,#c07010);color:#1a0a00;box-shadow:0 4px 0 #7a4a00,0 6px 14px var(--sh)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.15)}
+.btn-red{background:linear-gradient(160deg,#e74c3c,#c0392b);color:#fff;box-shadow:0 4px 0 #7b1a12}
+.btn-sm{padding:9px 14px;font-size:.82rem;width:auto;margin-bottom:0}
+
+.or-div{text-align:center;color:rgba(255,255,255,.22);font-size:.78rem;margin:4px 0 12px;position:relative}
+.or-div::before,.or-div::after{content:'';position:absolute;top:50%;width:38%;height:1px;background:rgba(255,255,255,.1)}
+.or-div::before{left:0}.or-div::after{right:0}
+
+/* toggles */
+.trow{display:flex;align-items:center;justify-content:space-between;padding:9px 0;
+  border-bottom:1px solid rgba(255,255,255,.06);gap:12px}
+.trow:last-child{border-bottom:none;padding-bottom:0}
+.tlbl{font-size:.83rem;color:var(--cream);flex:1}
+.tlbl small{display:block;color:var(--g5);font-size:.7rem;margin-top:2px}
+.tog{position:relative;width:44px;height:24px;flex-shrink:0}
+.tog input{opacity:0;width:0;height:0}
+.tog-track{position:absolute;inset:0;background:rgba(255,255,255,.12);border-radius:12px;cursor:pointer;transition:background .2s}
+.tog input:checked~.tog-track{background:var(--g4)}
+.tog-track::after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;
+  background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.tog input:checked~.tog-track::after{transform:translateX(20px)}
+
+.rounds-row{display:flex;gap:5px;margin-top:4px}
+.ropt{flex:1;padding:8px 4px;border:1.5px solid rgba(255,255,255,.13);border-radius:6px;
+  background:rgba(0,0,0,.18);color:var(--cream);font-size:.82rem;text-align:center;
+  cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif}
+.ropt.on{border-color:var(--amber);background:rgba(232,160,32,.15);color:var(--amber);font-weight:700}
+
+.code-big{text-align:center;font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:900;
+  letter-spacing:10px;color:var(--amber);background:rgba(0,0,0,.2);border:1.5px solid rgba(232,160,32,.3);
+  border-radius:9px;padding:11px;margin:9px 0}
+.plist{display:flex;flex-direction:column;gap:5px;margin:10px 0}
+.prow{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.05);
+  border-radius:7px;padding:8px 11px;font-size:.87rem}
+
+/* ══ GAME SCREEN ══ */
+#s-game{background:var(--g1)}
+
+/* Top bar — minimal */
+.topbar{flex-shrink:0;display:flex;align-items:center;gap:8px;
+  padding:max(env(safe-area-inset-top),8px) 12px 8px;
+  background:rgba(0,0,0,.35);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(6px)}
+.topbar-left{flex:1;min-width:0}
+.tb-round{font-size:.65rem;color:var(--g5);text-transform:uppercase;letter-spacing:.5px}
+.tb-turn{font-size:.9rem;color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  font-family:'Playfair Display',serif}
+.turn-pill{padding:5px 11px;border-radius:20px;font-size:.72rem;font-weight:600;
+  background:rgba(255,255,255,.1);color:var(--cream);white-space:nowrap;flex-shrink:0}
+.turn-pill.mine{background:var(--amber);color:#1a0a00;animation:pill-p 2s ease-in-out infinite}
+@keyframes pill-p{0%,100%{box-shadow:0 0 0 0 rgba(232,160,32,.5)}50%{box-shadow:0 0 0 7px rgba(232,160,32,0)}}
+
+/* Opponents — compact horizontal strip */
+.opp-strip{flex-shrink:0;display:flex;gap:6px;padding:6px 10px;
+  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  background:rgba(0,0,0,.18);border-bottom:1px solid rgba(255,255,255,.04)}
+.opp-strip::-webkit-scrollbar{display:none}
+.opp-card{flex-shrink:0;display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);
+  border-radius:9px;padding:6px 9px;min-width:0}
+.opp-card.active{border-color:var(--amber);background:rgba(232,160,32,.08)}
+.opp-left{display:flex;flex-direction:column;gap:2px;min-width:0}
+.opp-name{font-size:.7rem;font-weight:600;color:var(--cream);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;max-width:64px}
+.opp-score{font-size:.75rem;font-family:'Playfair Display',serif}
+.opp-score.neg{color:#88ccff}.opp-score.pos{color:#f08080}.opp-score.zero{color:var(--g5)}
+.opp-grid-mini{display:grid;grid-template-columns:repeat(3,12px);grid-template-rows:repeat(3,16px);gap:2px}
+.ogc{border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:.45rem;font-weight:700}
+.ogc.d{background:var(--g3)}.ogc.p{background:var(--parch);color:var(--brown)}
+.ogc.n{background:var(--bluebg);color:var(--blue)}.ogc.h{background:var(--redbg);color:var(--red)}
+.ogc.m{background:var(--goldbg);color:var(--gold)}
+
+/* Log line */
+.logline{flex-shrink:0;padding:3px 11px;font-size:.65rem;color:var(--g5);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:rgba(0,0,0,.12);
+  border-bottom:1px solid rgba(255,255,255,.03);height:22px;line-height:16px}
+
+/* Center zone: deck + discards + drawn card — one tight row */
+.center{flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;
+  gap:12px;padding:9px 10px;background:rgba(0,0,0,.15);
+  border-bottom:1px solid rgba(255,255,255,.04);flex-wrap:nowrap}
+.pile-wrap{display:flex;flex-direction:column;align-items:center;gap:4px}
+.pile-lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:.4px;color:var(--g5);white-space:nowrap}
+
+/* Cards in center zone — enlarged for easier tapping */
+.mini-card{width:56px;height:76px;border-radius:8px;display:flex;align-items:center;
+  justify-content:center;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.mini-card.selectable::after{content:'';position:absolute;inset:-2px;border-radius:10px;
+  border:2px solid var(--amber2);pointer-events:none;animation:ring-p 1.4s ease-in-out infinite}
+@keyframes ring-p{0%,100%{opacity:1}50%{opacity:.35}}
+.mini-card:active{transform:scale(.92)}
+.mini-card .ci{width:100%;height:100%;border-radius:8px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;box-shadow:0 2px 6px var(--sh)}
+.mini-card.cd .ci{background:repeating-linear-gradient(45deg,var(--g3) 0,var(--g3) 5px,var(--g2) 5px,var(--g2) 10px);
+  border:1px solid rgba(255,255,255,.1)}
+.mini-card.cd .ci::after{content:'🍄';font-size:1.1rem;opacity:.6}
+.mini-card.cp .ci{background:linear-gradient(150deg,#f5ecd5,#e8d5aa);border:1px solid #c8ad7a}
+.mini-card.cn .ci{background:linear-gradient(150deg,#e8f4ff,#c0d8f0);border:1px solid #88b4e0}
+.mini-card.ch .ci{background:linear-gradient(150deg,#fff0ee,#ffd0cc);border:1px solid #e0a0a0}
+.mini-card.cm .ci{background:linear-gradient(150deg,#fffbe8,#fff0b0);border:1px solid #e0c840}
+.mini-val{font-family:'Playfair Display',serif;font-weight:900;font-size:1.15rem;line-height:1}
+.mini-val.pos{color:var(--brown)}.mini-val.neg{color:var(--blue)}
+.mini-val.haz{color:var(--red);font-size:.85rem}.mini-val.mul{color:var(--gold);font-size:.85rem}
+
+.deck-btn{width:56px;height:76px;border-radius:8px;border:2px dashed rgba(255,255,255,.18);
+  background:rgba(255,255,255,.03);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;cursor:pointer;gap:3px;-webkit-tap-highlight-color:transparent}
+.deck-btn.selectable{border-color:var(--amber);background:rgba(232,160,32,.09)}
+.deck-btn:active{transform:scale(.92)}
+.deck-icon{font-size:1.5rem}.deck-n{font-size:.56rem;color:var(--g5)}
+
+.drawn-wrap{display:flex;flex-direction:column;align-items:center;gap:4px}
+.drawn-lbl{font-size:.62rem;color:var(--amber);text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+
+/* ── MY GRID — hero element ── */
+/* The area is a flex column; min-height:0 lets it shrink. The grid is capped by
+   BOTH width (86vw) and the area's height (via the wrapper), so on any phone it
+   scales down to fit instead of overflowing behind the action bar. */
+.my-area{flex:1 1 0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:8px;min-height:0;overflow:hidden}
+.my-hdr{display:flex;align-items:center;width:100%;max-width:min(86vw,340px);margin-bottom:7px;gap:8px;flex-shrink:0}
+.my-name{font-size:.82rem;color:var(--g5);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.my-score{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--amber)}
+
+/* Wrapper takes remaining height; grid fits inside it keeping 3:4. */
+.my-grid-wrap{flex:1 1 0;min-height:0;width:100%;display:flex;align-items:center;justify-content:center}
+.my-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);
+  gap:7px;aspect-ratio:3/4;height:100%;max-height:100%;max-width:min(86vw,340px);
+  width:auto}
+.my-grid.glow{filter:drop-shadow(0 0 10px rgba(90,154,90,.35))}
+
+/* Full-size cards — size from grid */
+.gc{border-radius:var(--rcard);display:flex;align-items:center;justify-content:center;
+  position:relative;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .1s}
+.gc:active{transform:scale(.92)}
+.gc.selectable::after{content:'';position:absolute;inset:-3px;border-radius:calc(var(--rcard) + 3px);
+  border:2.5px solid var(--amber2);pointer-events:none;animation:ring-p 1.4s ease-in-out infinite}
+.gc .ci{width:100%;height:100%;border-radius:var(--rcard);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;box-shadow:0 3px 10px var(--sh)}
+.gc.cd .ci{background:repeating-linear-gradient(45deg,var(--g3) 0,var(--g3) 7px,var(--g2) 7px,var(--g2) 14px);
+  border:1.5px solid rgba(255,255,255,.1)}
+.gc.cd .ci::after{content:'🍄';font-size:1.8rem;opacity:.65}
+.gc.cp .ci{background:linear-gradient(160deg,#f5ecd5,#e8d5aa);border:1.5px solid #c8ad7a}
+.gc.cn .ci{background:linear-gradient(160deg,#e8f4ff,#c0d8f0);border:1.5px solid #88b4e0}
+.gc.ch .ci{background:linear-gradient(160deg,#fff0ee,#ffd0cc);border:1.5px solid #e0a0a0}
+.gc.cm .ci{background:linear-gradient(160deg,#fffbe8,#fff0b0);border:1.5px solid #e0c840}
+.gc-val{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(1.2rem,5vw,2rem);line-height:1}
+.gc-val.pos{color:var(--brown)}.gc-val.neg{color:var(--blue)}
+.gc-val.haz{color:var(--red);font-size:clamp(.9rem,4vw,1.3rem)}
+.gc-val.mul{color:var(--gold);font-size:clamp(.9rem,4vw,1.3rem)}
+
+/* ── ACTION BAR ── */
+.abar{flex-shrink:0;padding:9px 12px;padding-bottom:max(env(safe-area-inset-bottom),9px);
+  background:rgba(0,0,0,.45);border-top:1px solid rgba(255,255,255,.07);backdrop-filter:blur(8px)}
+.abar-hint{font-size:.72rem;color:var(--g5);text-align:center;margin-bottom:7px;line-height:1.4;min-height:1em}
+.abar-btns{display:flex;gap:7px}
+.abar-btns .btn{flex:1;padding:12px 8px;font-size:.82rem;margin:0}
+
+/* ══ OVERLAYS ══ */
+.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:50;
+  align-items:flex-end;backdrop-filter:blur(4px)}
+.ov.on{display:flex}
+.sheet{width:100%;max-height:80dvh;background:#1c381c;border-radius:18px 18px 0 0;
+  padding:18px;overflow-y:auto;border-top:1px solid rgba(255,255,255,.09);
+  animation:su .22s ease-out}
+@keyframes su{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--amber);
+  margin-bottom:14px;text-align:center}
+
+/* Discard choice */
+.dchoice{display:flex;gap:10px;margin-bottom:10px}
+.dopt{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px;
+  border:1.5px solid rgba(255,255,255,.13);border-radius:11px;cursor:pointer;
+  background:rgba(0,0,0,.18);transition:border-color .15s,background .15s}
+.dopt:active{border-color:var(--amber);background:rgba(232,160,32,.09)}
+.dopt-lbl{font-size:.7rem;color:var(--g5)}
+
+/* Score table */
+.stbl{width:100%;border-collapse:collapse;font-size:.82rem;margin:6px 0 14px}
+.stbl th{background:rgba(90,154,90,.25);padding:6px 8px;text-align:left;
+  color:var(--cream);font-size:.72rem;font-weight:600}
+.stbl td{padding:6px 8px;border-bottom:1px solid rgba(255,255,255,.05);color:var(--cream)}
+.stbl tr:last-child td{border-bottom:none}
+.stbl .win td{color:var(--amber)}
+.sn{color:#88ccff}.sp{color:#f08080}.sz{color:var(--g5)}
+
+/* Toast */
+#toast{position:fixed;bottom:85px;left:50%;transform:translateX(-50%) translateY(8px);
+  background:rgba(20,46,20,.96);border:1px solid rgba(90,154,90,.4);color:var(--cream);
+  padding:9px 18px;border-radius:22px;font-size:.8rem;opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s;z-index:200;max-width:88vw;text-align:center;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;backdrop-filter:blur(6px)}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Mulligan value picker */
+.mul-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.mul-opt{padding:16px 0;border:1.5px solid rgba(232,160,32,.35);border-radius:11px;
+  background:linear-gradient(150deg,#fffbe8,#fff0b0);color:var(--gold);
+  font-family:'Playfair Display',serif;font-weight:900;font-size:1.5rem;cursor:pointer;
+  transition:transform .1s,box-shadow .15s}
+.mul-opt:active{transform:scale(.94)}
+.mul-opt:hover{box-shadow:0 0 0 2px var(--amber)}
+
+/* Rules overlay */
+.rules-body{font-size:.84rem;line-height:1.55;color:var(--cream)}
+.rules-body h4{font-family:'Playfair Display',serif;color:var(--amber);font-size:.95rem;
+  margin:14px 0 6px}
+.rules-body h4:first-child{margin-top:0}
+.rules-body p{margin-bottom:8px;color:#d8e8d8}
+.rules-body ul{margin:0 0 8px 18px}
+.rules-body li{margin-bottom:5px}
+.rules-body .chip{display:inline-block;padding:1px 7px;border-radius:5px;font-weight:700;
+  font-size:.78rem;margin:0 1px}
+.rules-body .chip.pos{background:var(--parch);color:var(--brown)}
+.rules-body .chip.neg{background:var(--bluebg);color:var(--blue)}
+.rules-body .chip.haz{background:var(--redbg);color:var(--red)}
+.rules-body .chip.mul{background:var(--goldbg);color:var(--gold)}
+
+/* Help button in topbar */
+.help-btn{flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.07);color:var(--cream);font-size:.9rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;font-weight:700}
+.help-btn:active{transform:scale(.9)}
+
+/* ── SCORE TALLY (end of round) ── */
+.tally-players{display:flex;flex-direction:column;gap:18px;margin:6px 0 14px}
+.tally-player{border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px;
+  background:rgba(0,0,0,.18)}
+.tally-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.tally-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--cream)}
+.tally-name .crown{color:var(--amber)}
+.tally-total{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900}
+.tally-main{display:flex;gap:14px;align-items:flex-start}
+/* mini grid w/ overlay lines */
+.tally-grid-wrap{position:relative;flex-shrink:0;width:138px;height:138px}
+.tally-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);
+  gap:5px;width:100%;height:100%}
+.tcell{border-radius:6px;display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-weight:900;font-size:.92rem;position:relative}
+.tcell.pos{background:var(--parch);color:var(--brown)}
+.tcell.neg{background:var(--bluebg);color:var(--blue)}
+.tcell.haz{background:var(--redbg);color:var(--red);font-size:.7rem}
+.tcell.mul{background:var(--goldbg);color:var(--gold)}
+.tcell .mul-tag{position:absolute;top:1px;right:3px;font-size:.5rem;color:var(--gold)}
+.tally-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.tally-lines{flex:1;min-width:0}
+.tline{display:flex;justify-content:space-between;gap:8px;font-size:.76rem;padding:2px 0;
+  border-bottom:1px solid rgba(255,255,255,.04)}
+.tline:last-child{border-bottom:none}
+.tline .tl-reason{color:#cfe0cf}
+.tline .tl-pts{font-weight:700;flex-shrink:0}
+.tl-pts.neg{color:#88ccff}.tl-pts.pos{color:#f0908a}
+
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+
+<!-- ══ LOBBY ══ -->
+<div id="s-lobby" class="screen active">
+  <div style="width:100%;max-width:420px;margin:auto;display:flex;flex-direction:column">
+    <div class="logo"><h1>⛳ Gnome Golf</h1><p>A card game for 2–6 gnomes</p></div>
+
+    <div class="lcard" id="lc-name">
+      <h2>🍄 Your Name</h2>
+      <div class="field">
+        <input type="text" id="inp-name" placeholder="Enter your gnome name…" maxlength="20" autocomplete="off" autocorrect="off" spellcheck="false">
+      </div>
+      <button class="btn btn-amber" onclick="goMenu()">Continue →</button>
+      <button class="btn btn-ghost btn-sm" style="width:100%;margin-top:4px" onclick="openRules()">📖 How to Play</button>
+    </div>
+
+    <div class="lcard hidden" id="lc-menu">
+      <h2>🌱 Play</h2>
+      <button class="btn btn-green" onclick="goCreate()">Create New Game</button>
+      <div class="or-div">or join with a code</div>
+      <div class="field">
+        <label>Game Code</label>
+        <input type="text" id="inp-code" class="code-input" placeholder="XXXXX" maxlength="5"
+          autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false">
+      </div>
+      <button class="btn btn-ghost" onclick="joinGame()">Join →</button>
+    </div>
+
+    <div class="lcard hidden" id="lc-config">
+      <h2>⚙️ Settings</h2>
+      <div class="field">
+        <label>Rounds</label>
+        <div class="rounds-row">
+          <div class="ropt" data-r="1" onclick="selR(this)">1</div>
+          <div class="ropt on" data-r="3" onclick="selR(this)">3</div>
+          <div class="ropt" data-r="5" onclick="selR(this)">5</div>
+          <div class="ropt" data-r="9" onclick="selR(this)">9</div>
+        </div>
+      </div>
+      <div style="margin-top:6px">
+        <div class="trow">
+          <div class="tlbl">Advanced Bounce<small>Also bounce face-up cards</small></div>
+          <label class="tog"><input type="checkbox" id="tog-b"><span class="tog-track"></span></label>
+        </div>
+        <div class="trow">
+          <div class="tlbl">Runs<small>Score −pts for 3 consecutive values</small></div>
+          <label class="tog"><input type="checkbox" id="tog-r"><span class="tog-track"></span></label>
+        </div>
+        <div class="trow">
+          <div class="tlbl">Advanced Hazard<small>Only helps players with 4+ face-down cards</small></div>
+          <label class="tog"><input type="checkbox" id="tog-h"><span class="tog-track"></span></label>
+        </div>
+        <div class="trow">
+          <div class="tlbl">Advanced Mulligan<small>Same value in both row and column</small></div>
+          <label class="tog"><input type="checkbox" id="tog-m"><span class="tog-track"></span></label>
+        </div>
+      </div>
+      <button class="btn btn-green" style="margin-top:16px" onclick="createGame()">Create Game →</button>
+      <button class="btn btn-ghost" onclick="goMenu2()">← Back</button>
+    </div>
+
+    <div class="lcard hidden" id="lc-wait">
+      <h2 id="wt-title">⏳ Waiting Room</h2>
+      <p style="font-size:.76rem;color:var(--g5);margin-bottom:5px">Share this code:</p>
+      <div class="code-big" id="wt-code">—</div>
+      <div class="plist" id="wt-players"></div>
+      <button class="btn btn-amber hidden" id="wt-start" onclick="startGame()">Start Game ⛳</button>
+      <p class="hidden" id="wt-wait" style="text-align:center;color:var(--g5);font-size:.8rem;padding:8px 0;font-style:italic">
+        Waiting for host to start…
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ GAME SCREEN ══ -->
+<div id="s-game" class="screen">
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="tb-round" id="tb-round">Round 1 of 3</div>
+      <div class="tb-turn" id="tb-turn">—</div>
+    </div>
+    <button class="help-btn" onclick="openRules()" title="How to play">?</button>
+    <div class="turn-pill" id="tb-pill">…</div>
+  </div>
+
+  <div class="opp-strip" id="opp-strip"></div>
+  <div class="logline" id="logline">Welcome!</div>
+
+  <div class="center">
+    <div class="pile-wrap">
+      <div class="pile-lbl">Deck</div>
+      <div class="deck-btn" id="deck-btn" onclick="drawDeck()">
+        <span class="deck-icon">🂠</span>
+        <span class="deck-n" id="deck-n">–</span>
+      </div>
+    </div>
+    <div class="pile-wrap">
+      <div class="pile-lbl">Discard 1</div>
+      <div class="mini-card cd" id="disc0" onclick="drawDiscard(0)"><div class="ci"></div></div>
+    </div>
+    <div class="pile-wrap">
+      <div class="pile-lbl">Discard 2</div>
+      <div class="mini-card cd" id="disc1" onclick="drawDiscard(1)"><div class="ci"></div></div>
+    </div>
+    <div class="pile-wrap hidden" id="drawn-wrap">
+      <div class="drawn-lbl">In Hand</div>
+      <div class="mini-card cd" id="drawn-card"><div class="ci"></div></div>
+    </div>
+    <div class="pile-wrap hidden" id="bounce-wrap">
+      <div class="drawn-lbl" style="color:var(--amber2)">Bounce?</div>
+      <div class="mini-card cd" id="bounce-card"><div class="ci"></div></div>
+    </div>
+  </div>
+
+  <div class="my-area">
+    <div class="my-hdr">
+      <span class="my-name" id="my-name">You</span>
+      <span class="my-score" id="my-score">0</span>
+    </div>
+    <div class="my-grid-wrap">
+      <div class="my-grid" id="my-grid"></div>
+    </div>
+  </div>
+
+  <div class="abar">
+    <div class="abar-hint" id="abar-hint">…</div>
+    <div class="abar-btns" id="abar-btns"></div>
+  </div>
+</div>
+
+<!-- ══ OVERLAY: Discard pile choice ══ -->
+<div class="ov" id="ov-discard">
+  <div class="sheet">
+    <h3>Which discard pile?</h3>
+    <div class="dchoice">
+      <div class="dopt" onclick="chooseDiscard(0)">
+        <div class="dopt-lbl">Pile 1</div>
+        <div class="mini-card cd" id="dc0" style="width:64px;height:86px"><div class="ci"></div></div>
+        <button class="btn btn-green btn-sm">Choose</button>
+      </div>
+      <div class="dopt" onclick="chooseDiscard(1)">
+        <div class="dopt-lbl">Pile 2</div>
+        <div class="mini-card cd" id="dc1" style="width:64px;height:86px"><div class="ci"></div></div>
+        <button class="btn btn-ghost btn-sm">Choose</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ OVERLAY: Mulligan value picker ══ -->
+<div class="ov" id="ov-mulligan">
+  <div class="sheet">
+    <h3>★ Choose your Mulligan value</h3>
+    <p style="font-size:.8rem;color:var(--g5);text-align:center;margin-bottom:14px">
+      The Mulligan is wild — pick the value it counts as (3–8). Choose to complete a run or match.</p>
+    <div class="mul-grid" id="mul-options"></div>
+    <button class="btn btn-ghost" style="margin-top:14px" onclick="cancelMulligan()">Cancel</button>
+  </div>
+</div>
+
+<!-- ══ OVERLAY: Rules / How to play ══ -->
+<div class="ov" id="ov-rules">
+  <div class="sheet">
+    <h3>⛳ How to Play Gnome Golf</h3>
+    <div class="rules-body" id="rules-body"></div>
+    <button class="btn btn-green" style="margin-top:8px" onclick="closeRules()">Got it</button>
+  </div>
+</div>
+
+<!-- ══ OVERLAY: Scores ══ -->
+<div class="ov" id="ov-scores">
+  <div class="sheet">
+    <h3 id="sc-title">Round Complete!</h3>
+    <div id="sc-body"></div>
+    <div class="abar-btns" style="margin-top:10px">
+      <button class="btn btn-amber hidden" id="sc-next" onclick="nextRound()">Next Round →</button>
+      <button class="btn btn-ghost hidden" id="sc-view" onclick="closeScores()">View Board</button>
+      <button class="btn btn-green hidden" id="sc-again" onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+'use strict';
+// ── State ──
+let ws, myId, myName, myGameId, isHost;
+let G = null;
+let selRounds = 3;
+let drawnCard = null, pendingDisplace = null, pendingBounce = null, hazardOwed = 0;
+let discardCtx = null; // 'drawn' | 'displaced'
+
+// ── WebSocket ──
+const SAVE_KEY = 'gnomin_session';
+function saveSession() {
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify({ myId, myGameId, myName })); } catch {}
+}
+function clearSession() { try { localStorage.removeItem(SAVE_KEY); } catch {} }
+function loadSession() {
+  try { return JSON.parse(localStorage.getItem(SAVE_KEY) || 'null'); } catch { return null; }
+}
+
+let reconnectTimer = null;
+let reconnectTries = 0;
+let intentionalClose = false;
+function connect(cb) {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}`);
+  ws.onopen    = () => { reconnectTries = 0; if (cb) cb(); };
+  ws.onmessage = e => handle(JSON.parse(e.data));
+  ws.onclose   = () => {
+    if (intentionalClose) return;
+    // Reconnect whenever we have an identity — don't require G (it's absent right after a refresh).
+    if (myId && myGameId) {
+      showReconnBanner();
+      clearTimeout(reconnectTimer);
+      const delay = Math.min(1000 * Math.pow(1.5, reconnectTries++), 8000);
+      reconnectTimer = setTimeout(() => {
+        connect(() => send({ type:'reconnect', gameId: myGameId, playerId: myId }));
+      }, delay);
+    } else {
+      toast('Disconnected');
+    }
+  };
+  ws.onerror   = () => {};
+}
+function send(o) { if (ws?.readyState === 1) ws.send(JSON.stringify(o)); }
+
+// ── Reconnect banner ──
+function ensureReconnBanner() {
+  let el = document.getElementById('gnomin-reconn');
+  if (el) return el;
+  el = document.createElement('div');
+  el.id = 'gnomin-reconn';
+  el.style.cssText = 'display:none;position:fixed;top:0;left:0;right:0;z-index:9999;'+
+    'background:linear-gradient(90deg,#2d4a1e,#1e3a2a);color:#fff;padding:.55rem 1rem;'+
+    'align-items:center;justify-content:center;gap:.6rem;font-size:.82rem;'+
+    'border-bottom:1px solid #6ab04c;box-shadow:0 2px 12px rgba(0,0,0,.4)';
+  el.innerHTML = '<span style="width:13px;height:13px;border:2px solid rgba(255,255,255,.3);'+
+    'border-top-color:#fff;border-radius:50%;display:inline-block;animation:gnspin .7s linear infinite"></span>'+
+    '<span>Reconnecting…</span>'+
+    '<button onclick="leaveGnomin()" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);'+
+    'color:#fff;border-radius:6px;padding:.2rem .55rem;font-size:.72rem;cursor:pointer">Leave</button>';
+  const st = document.createElement('style');
+  st.textContent = '@keyframes gnspin{to{transform:rotate(360deg)}}';
+  document.head.appendChild(st);
+  document.body.appendChild(el);
+  return el;
+}
+function showReconnBanner() { ensureReconnBanner().style.display = 'flex'; }
+function hideReconnBanner() { const el = document.getElementById('gnomin-reconn'); if (el) el.style.display = 'none'; }
+function leaveGnomin() {
+  intentionalClose = true;
+  clearTimeout(reconnectTimer);
+  clearSession();
+  myId = myGameId = null; G = null;
+  if (ws) { ws.onclose = null; try { ws.close(); } catch {} }
+  location.reload();
+}
+
+// On a fresh page load, if we have a saved session, attempt to rejoin it.
+function tryResumeSession() {
+  const s = loadSession();
+  if (!s || !s.myId || !s.myGameId) return false;
+  myId = s.myId; myGameId = s.myGameId; myName = s.myName;
+  showReconnBanner();
+  connect(() => send({ type:'reconnect', gameId: myGameId, playerId: myId }));
+  return true;
+}
+
+function handle(msg) {
+  if (msg.state) {
+    G = msg.state;
+    const me = myPlayer();
+    if (me && !me.drawnCard) drawnCard = null;
+    else if (me?.drawnCard && !me.drawnCard.hidden) drawnCard = me.drawnCard;
+  }
+
+  switch (msg.type) {
+    case 'created':
+      myId = msg.playerId; myGameId = msg.gameId; isHost = true; saveSession(); showWaiting(); break;
+    case 'joined':
+      myId = msg.playerId; myGameId = msg.gameId; isHost = false; saveSession(); showWaiting(); break;
+    case 'reconnected':
+      myId = msg.playerId; myGameId = msg.gameId; isHost = msg.isHost; saveSession();
+      hideReconnBanner();
+      // Jump straight to the right screen based on current game state.
+      drawnCard=null; pendingDisplace=null; pendingBounce=null; hazardOwed=0;
+      if (G && (G.state==='playing' || G.state==='round_end' || G.state==='game_over')) {
+        showGame(); renderGame();
+      } else { showWaiting(); }
+      toast('Reconnected ✓'); break;
+    case 'player_rejoined': toast(`${msg.name} reconnected`); break;
+    case 'error':
+      // A failed reconnect shouldn't strand the player on a blank screen.
+      hideReconnBanner();
+      if (/not found|no longer exists/i.test(msg.msg)) { clearSession(); intentionalClose = true; setTimeout(()=>location.reload(), 1500); toast('⚠ Game no longer available'); break; }
+      toast('⚠ ' + msg.msg); break;
+    case 'lobby_update': renderWaiting(); break;
+    case 'game_started': case 'round_started':
+      drawnCard=null; pendingDisplace=null; pendingBounce=null; hazardOwed=0;
+      showGame(); renderGame(); break;
+    case 'placed':
+      if (msg.displaced) {
+        pendingDisplace = { card: msg.displaced, lastFlipped: !!msg.lastFlipped };
+        pendingBounce   = msg.bounceCard || null;
+        if (pendingBounce) toast(`Bounce! Tap a face-down slot to send your ${pendingBounce.value} there.`);
+        // discard overlay shown by renderActionBar once state is rendered
+      } else {
+        pendingDisplace = null; pendingBounce = null;
+      }
+      break;
+    case 'bounced':
+      pendingDisplace = msg.displaced ? { card: msg.displaced, lastFlipped: !!msg.lastFlipped } : null;
+      pendingBounce   = msg.nextBounce || null;
+      break;
+    case 'hazard_event':
+      if (msg.owed?.[myId]) { hazardOwed = msg.owed[myId]; toast(`⚠ Flip ${hazardOwed} card(s) — Hazard!`); }
+      break;
+    case 'player_left': toast(`${msg.name} left`); break;
+  }
+
+  if (G) {
+    if (G.state === 'round_end' || G.state === 'game_over') { showGame(); showScores(); }
+    else if (G.state === 'playing') { showGame(); renderGame(); }
+  }
+}
+
+// ── Lobby ──
+function goMenu()  { myName = V('inp-name') || 'Gnome'; hide('lc-name'); show('lc-menu'); }
+function goCreate(){ hide('lc-menu'); show('lc-config'); }
+function goMenu2() { hide('lc-config'); show('lc-menu'); }
+function selR(el)  {
+  document.querySelectorAll('.ropt').forEach(e => e.classList.remove('on'));
+  el.classList.add('on'); selRounds = +el.dataset.r;
+}
+function createGame() {
+  connect(() => send({ type:'create_game', name:myName, rules:{
+    totalRounds:selRounds, advancedBounce:ck('tog-b'), runs:ck('tog-r'),
+    advancedHazard:ck('tog-h'), advancedMulligan:ck('tog-m')
+  }}));
+}
+function joinGame() {
+  const code = V('inp-code').toUpperCase();
+  if (!code) { toast('Enter a game code'); return; }
+  connect(() => send({ type:'join_game', gameId:code, name:myName }));
+}
+function startGame() { send({ type:'start_game' }); }
+function showWaiting() {
+  hide('lc-config'); hide('lc-menu'); hide('lc-name'); show('lc-wait');
+  $('wt-code').textContent = myGameId;
+  if (isHost) { show('wt-start'); hide('wt-wait'); }
+  else        { hide('wt-start'); show('wt-wait'); }
+  renderWaiting();
+}
+function renderWaiting() {
+  if (!G) return;
+  $('wt-players').innerHTML = G.players.map((p,i) =>
+    `<div class="prow">${i===0?'👑':'🍄'} ${esc(p.name)}${i===0?' <span style="font-size:.7rem;color:var(--g5)">(host)</span>':''}</div>`
+  ).join('');
+}
+
+
+// ── Game screen ──
+function showGame() { screens('s-game'); }
+
+function renderGame() {
+  if (!G) return;
+  const me       = myPlayer();
+  const isMyTurn = G.currentId === myId;
+  const curP     = G.players.find(p => p.id === G.currentId);
+
+  $('tb-round').textContent = `Round ${G.round} of ${G.totalRounds}`;
+  $('tb-turn').textContent  = isMyTurn ? 'Your turn' : curP ? `${curP.name}'s turn` : '—';
+  const pill = $('tb-pill');
+  pill.textContent = isMyTurn ? '⛳ Your Turn!' : (curP?.name ?? '…');
+  pill.className   = 'turn-pill' + (isMyTurn ? ' mine' : '');
+
+  renderOpponents();
+  $('logline').textContent = G.log?.at(-1)?.msg ?? '';
+
+  // Deck
+  const canDraw = isMyTurn && !drawnCard && G.state==='playing' && !pendingDisplace && !pendingBounce && !hazardOwed;
+  const db = $('deck-btn');
+  db.className = 'deck-btn' + (canDraw ? ' selectable' : '');
+  $('deck-n').textContent = G.deckSize + ' left';
+
+  // Discard piles
+  renderMiniCard('disc0', G.discardTops[0], canDraw, () => drawDiscard(0));
+  renderMiniCard('disc1', G.discardTops[1], canDraw, () => drawDiscard(1));
+
+  // Drawn card
+  if (drawnCard && isMyTurn) {
+    show('drawn-wrap');
+    renderMiniCard('drawn-card', drawnCard, false, null);
+  } else {
+    hide('drawn-wrap');
+  }
+
+  // Bounce card (displaced card eligible for bouncing)
+  if (pendingBounce && isMyTurn) {
+    show('bounce-wrap');
+    renderMiniCard('bounce-card', pendingBounce, false, null);
+  } else {
+    hide('bounce-wrap');
+  }
+
+  // My grid
+  if (me) {
+    $('my-name').textContent = me.name + ' (you)';
+    const sc = me.totalScore;
+    $('my-score').textContent = (sc >= 0 ? '+' : '') + sc;
+    $('my-score').className   = 'my-score ' + sClass(sc);
+    renderMyGrid(me, isMyTurn);
+  }
+
+  $('my-grid').className = 'my-grid' + (isMyTurn && G.state==='playing' ? ' glow' : '');
+  renderActionBar(isMyTurn, me);
+}
+
+function renderOpponents() {
+  const strip = $('opp-strip');
+  strip.innerHTML = '';
+  for (const p of G.players) {
+    if (p.id === myId) continue;
+    const isActive = p.id === G.currentId;
+    const sc       = p.totalScore;
+    const div      = document.createElement('div');
+    div.className  = 'opp-card' + (isActive ? ' active' : '');
+    div.innerHTML  = `
+      <div class="opp-left">
+        <div class="opp-name">${isActive?'▶ ':''}${esc(p.name)}</div>
+        <div class="opp-score ${sClass(sc)}">${sc>=0?'+':''}${sc}</div>
+      </div>
+      <div class="opp-grid-mini">${p.grid.map(c => oppCell(c)).join('')}</div>`;
+    strip.appendChild(div);
+  }
+}
+
+function oppCell(c) {
+  if (!c.faceUp || !c.card) return `<div class="ogc d"></div>`;
+  const t = c.card.type;
+  const cls = t==='negative'?'n':t==='hazard'?'h':t==='mulligan'?'m':'p';
+  const v   = t==='hazard'?'⚠':t==='mulligan'?'★':c.card.value;
+  return `<div class="ogc ${cls}">${v}</div>`;
+}
+
+function renderMyGrid(me, isMyTurn) {
+  const grid = $('my-grid');
+  grid.innerHTML = '';
+  me.grid.forEach((cell, idx) => {
+    const el  = document.createElement('div');
+    const sel = cellSel(cell, idx, isMyTurn);
+    if (!cell.faceUp || !cell.card) {
+      el.className = 'gc cd' + (sel ? ' selectable' : '');
+      el.innerHTML = `<div class="ci"></div>`;
+    } else {
+      el.className = 'gc ' + gcClass(cell.card) + (sel ? ' selectable' : '');
+      el.innerHTML = `<div class="ci">${gcVal(cell.card)}</div>`;
+    }
+    if (sel) el.onclick = () => onGridTap(idx, cell);
+    grid.appendChild(el);
+  });
+}
+
+function cellSel(cell, idx, isMyTurn) {
+  if (hazardOwed > 0) return !cell.faceUp;
+  if (!isMyTurn || G.state !== 'playing') return false;
+  if (pendingBounce) return true;
+  if (drawnCard)     return true;
+  return false;
+}
+
+function renderMiniCard(id, card, selectable, onclick) {
+  const el = $(id);
+  if (!card) {
+    el.className = 'mini-card cd'; el.style.opacity = '.3'; el.onclick = null;
+    el.innerHTML = `<div class="ci"></div>`; return;
+  }
+  el.style.opacity = '1';
+  el.className = 'mini-card ' + mcClass(card) + (selectable ? ' selectable' : '');
+  el.innerHTML = `<div class="ci">${mcVal(card)}</div>`;
+  el.onclick = onclick || null;
+}
+
+function renderActionBar(isMyTurn, me) {
+  const hint = $('abar-hint');
+  const btns = $('abar-btns');
+  btns.innerHTML = '';
+
+  if (hazardOwed > 0) {
+    hint.textContent = `Tap ${hazardOwed} face-down card${hazardOwed>1?'s':''} to flip (Hazard).`; return;
+  }
+  if (!isMyTurn) {
+    const cur = G.players.find(p => p.id === G.currentId);
+    hint.textContent = `Waiting for ${cur?.name ?? '…'}…`; return;
+  }
+  if (pendingBounce) {
+    hint.textContent = `Tap a face-down slot to bounce your ${pendingBounce.value}, or discard it.`;
+    addBtn(btns, 'Discard Instead', 'btn-ghost', cancelBounce); return;
+  }
+  if (pendingDisplace) {
+    hint.textContent = `Tap to discard the displaced ${cLabel(pendingDisplace.card)}.`;
+    addBtn(btns, 'Discard Displaced', 'btn-amber', showDiscardOv); return;
+  }
+  if (drawnCard) {
+    hint.textContent = drawnCard.type === 'mulligan'
+      ? `★ Mulligan — tap a slot, then pick its value. Or discard.`
+      : `Place your ${cLabel(drawnCard)} — tap any grid slot, or discard.`;
+    addBtn(btns, 'Discard', 'btn-ghost', showDiscardDrawn); return;
+  }
+  hint.textContent = 'Draw from the deck or take a discard pile card.';
+}
+
+// ── Actions ──
+let pendingMulliganIdx = null;
+function onGridTap(idx, cell) {
+  if (hazardOwed > 0)     { send({ type:'flip_hazard', gridIdx:idx }); hazardOwed--; return; }
+  const isMyTurn = G.currentId === myId;
+  if (!isMyTurn) return;
+  if (pendingBounce)  { send({ type:'bounce_card', gridIdx:idx }); pendingBounce = null; return; }
+  if (drawnCard) {
+    // Placing a Mulligan? Let the player choose its value (3–8) first.
+    if (drawnCard.type === 'mulligan') { pendingMulliganIdx = idx; openMulliganPicker(); return; }
+    send({ type:'place_card', gridIdx:idx });
+    return;
+  }
+}
+
+function openMulliganPicker() {
+  const wrap = $('mul-options');
+  wrap.innerHTML = '';
+  [3,4,5,6,7,8].forEach(v => {
+    const b = document.createElement('button');
+    b.className = 'mul-opt';
+    b.textContent = '+' + v;
+    b.onclick = () => chooseMulligan(v);
+    wrap.appendChild(b);
+  });
+  $('ov-mulligan').classList.add('on');
+}
+function chooseMulligan(v) {
+  $('ov-mulligan').classList.remove('on');
+  if (pendingMulliganIdx == null) return;
+  send({ type:'place_card', gridIdx: pendingMulliganIdx, mulliganValue: v });
+  pendingMulliganIdx = null;
+}
+function cancelMulligan() {
+  $('ov-mulligan').classList.remove('on');
+  pendingMulliganIdx = null;
+}
+
+function drawDeck()          { if (G?.currentId===myId && !drawnCard) send({ type:'draw_deck' }); }
+function drawDiscard(pile)   { if (G?.currentId===myId && !drawnCard && G.discardTops[pile]) send({ type:'draw_discard', pileIdx:pile }); }
+
+function cancelBounce() {
+  // Player opts to discard the bounceCard instead of bouncing it
+  // Move pendingBounce into pendingDisplace so it gets discarded
+  if (pendingBounce) {
+    pendingDisplace = pendingDisplace || { card: pendingBounce, lastFlipped: false };
+    pendingDisplace.card = pendingBounce;
+    pendingBounce = null;
+  }
+  showDiscardOv();
+}
+function showDiscardDrawn()  { discardCtx='drawn';      renderDiscardOv(); $('ov-discard').classList.add('on'); }
+function showDiscardOv()     { discardCtx='displaced';  renderDiscardOv(); $('ov-discard').classList.add('on'); }
+function renderDiscardOv() {
+  [0,1].forEach(i => {
+    const c = G?.discardTops[i];
+    const el = $(`dc${i}`);
+    if (!c) { el.className='mini-card cd'; el.style.opacity='.3'; el.innerHTML='<div class="ci"></div>'; return; }
+    el.className='mini-card '+mcClass(c); el.style.opacity='1';
+    el.innerHTML=`<div class="ci">${mcVal(c)}</div>`;
+  });
+}
+function chooseDiscard(pile) {
+  $('ov-discard').classList.remove('on');
+  if (discardCtx === 'drawn') {
+    send({ type:'discard_drawn', pileIdx:pile }); drawnCard = null;
+  } else if (discardCtx === 'displaced' && pendingDisplace) {
+    const { card, lastFlipped } = pendingDisplace;
+    pendingDisplace = null; pendingBounce = null;
+    send({ type:'discard_displaced', card, pileIdx:pile, lastFlipped });
+  }
+  discardCtx = null;
+}
+
+function showScores() {
+  const isOver = G.state === 'game_over';
+  if (isOver) clearSession();
+  $('sc-title').textContent = isOver ? '🏆 Game Over!' : `Round ${G.round} Complete!`;
+  const minS = Math.min(...G.players.map(p => p.totalScore));
+
+  // 1) This round's visual tally — each player's grid with run/match lines + breakdown.
+  const result = G.result;
+  let tallyHTML = '';
+  if (result && Array.isArray(result.scores)) {
+    tallyHTML = `<div class="tally-players">` + result.scores.map(s => {
+      const p = G.players.find(pp => pp.id === s.playerId);
+      const name = p ? esc(p.name) : '?';
+      const roundWin = false;
+      return `
+        <div class="tally-player">
+          <div class="tally-hdr">
+            <div class="tally-name">${name}${p && p.id===myId?' (you)':''}</div>
+            <div class="tally-total ${sClass(s.roundTotal)}">${s.roundTotal>=0?'+':''}${s.roundTotal}</div>
+          </div>
+          <div class="tally-main">
+            <div class="tally-grid-wrap">
+              ${tallyGrid(s.grid)}
+              ${tallyLines(s.breakdown)}
+            </div>
+            <div class="tally-lines">
+              ${(s.breakdown||[]).map(b => `
+                <div class="tline">
+                  <span class="tl-reason">${esc(b.reason)}</span>
+                  <span class="tl-pts ${b.points<0?'neg':b.points>0?'pos':''}">${b.points>=0?'+':''}${b.points}</span>
+                </div>`).join('')}
+            </div>
+          </div>
+        </div>`;
+    }).join('') + `</div>`;
+  }
+
+  // 2) Cumulative table.
+  const hdrs = ['Gnome', ...Array.from({length:G.round},(_,i)=>`R${i+1}`), 'Total'];
+  const tableHTML = `
+    <table class="stbl">
+      <thead><tr>${hdrs.map(h=>`<th>${h}</th>`).join('')}</tr></thead>
+      <tbody>${G.players.map(p => {
+        const win = isOver && p.totalScore === minS;
+        return `<tr class="${win?'win':''}">
+          <td>${win?'🏆 ':''}${esc(p.name)}</td>
+          ${p.scores.map(s=>`<td class="${sClass(s)}">${s>=0?'+':''}${s}</td>`).join('')}
+          <td><strong class="${sClass(p.totalScore)}">${p.totalScore>=0?'+':''}${p.totalScore}</strong></td>
+        </tr>`;
+      }).join('')}</tbody>
+    </table>`;
+
+  $('sc-body').innerHTML = tallyHTML + tableHTML;
+  hide('sc-next'); hide('sc-view'); hide('sc-again');
+  if (isOver) show('sc-again');
+  else if (isHost) show('sc-next');
+  else show('sc-view');
+  $('ov-scores').classList.add('on');
+}
+
+// Render a 3×3 mini grid of the final cards for the tally view.
+function tallyGrid(grid) {
+  return `<div class="tally-grid">` + grid.map(cell => {
+    const c = cell.card;
+    if (!c) return `<div class="tcell"></div>`;
+    const cls = c.type==='negative'?'neg':c.type==='hazard'?'haz':(c._mul?'mul':'pos');
+    const val = c.type==='hazard'?'⚠':(c.type==='mulligan'?'★':(c.value>0?'+':'')+c.value);
+    const tag = c._mul ? `<span class="mul-tag">★</span>` : '';
+    return `<div class="tcell ${cls}">${tag}${val}</div>`;
+  }).join('') + `</div>`;
+}
+
+// Draw connector lines over runs/matches (combos spanning 3 cells in a line).
+function tallyLines(breakdown) {
+  const combos = (breakdown||[]).filter(b => b.positions && b.positions.length === 3);
+  if (!combos.length) return '';
+  // Cell centres in a 138px box: 3 cols, gap 5, so each cell ≈ (138-10)/3 = 42.67
+  const W = 138, gap = 5, cell = (W - gap*2) / 3;
+  const centre = i => {
+    const r = Math.floor(i/3), c = i%3;
+    return { x: c*(cell+gap) + cell/2, y: r*(cell+gap) + cell/2 };
+  };
+  const palette = ['#88ccff','#a0e0a0','#ffc875','#f0a0d0','#c0a0ff','#80e0d0'];
+  const lines = combos.map((b,k) => {
+    const pts = b.positions.map(centre);
+    const col = palette[k % palette.length];
+    return `<line x1="${pts[0].x}" y1="${pts[0].y}" x2="${pts[2].x}" y2="${pts[2].y}"
+              stroke="${col}" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>`;
+  }).join('');
+  return `<svg class="tally-svg" viewBox="0 0 ${W} ${W}">${lines}</svg>`;
+}
+
+function closeScores() { $('ov-scores').classList.remove('on'); }
+function nextRound()   { send({ type:'next_round' }); closeScores(); }
+
+// ── Rules / How to play ──
+function openRules()  { $('rules-body').innerHTML = RULES_HTML; $('ov-rules').classList.add('on'); }
+function closeRules() { $('ov-rules').classList.remove('on'); }
+
+const RULES_HTML = `
+  <h4>Goal</h4>
+  <p>Gnome Golf is a golf-style card game: the <strong>lowest</strong> total score wins.
+  You have a 3×3 grid of cards, dealt face-down. Over several rounds you swap cards to
+  lower your score, then reveal everything and tally.</p>
+
+  <h4>On your turn</h4>
+  <ul>
+    <li>Draw the top card from the <strong>deck</strong>, or take the top of either
+        <strong>discard</strong> pile.</li>
+    <li>Either place it into your grid (face-up), swapping out whatever was there, or
+        discard it. A card you place replaces a slot; the old card is discarded
+        (or bounced — see below).</li>
+  </ul>
+
+  <h4>Card values</h4>
+  <p>
+    <span class="chip pos">+3…+8</span> positive (bad — adds to your score)
+    <span class="chip neg">−1…−4</span> negative (good — lowers your score)
+    <span class="chip haz">⚠</span> Hazard
+    <span class="chip mul">★</span> Mulligan
+  </p>
+
+  <h4>Scoring</h4>
+  <ul>
+    <li>Each face-up card scores its value (positives hurt, negatives help).</li>
+    <li><strong>Match:</strong> a full row or column of the same positive value scores
+        <strong>−(that value)</strong> instead of adding up — a big swing in your favour.</li>
+    <li><strong>Run</strong> (if enabled): a row or column of 3 consecutive values
+        (e.g. 4-5-6) scores <strong>−(the middle value)</strong>. A card can count in
+        both a run and a crossing match.</li>
+    <li><span class="chip mul">★</span> <strong>Mulligan</strong> is wild — when you
+        place it, you pick its value (3–8) to complete a run or match. One per grid.</li>
+    <li><span class="chip haz">⚠</span> <strong>Hazard:</strong> discarding one forces
+        opponents to flip a face-down card (bad for them). It scores +10 if stuck in your grid.</li>
+  </ul>
+
+  <h4>Bounce</h4>
+  <p>When you cover a face-down card and it turns out to be a positive that matches another
+  positive in your grid (including the one you just placed), you may <strong>bounce</strong>
+  it into another face-down slot instead of discarding — chaining combos.</p>
+
+  <h4>Ending a round</h4>
+  <p>When a player flips their last face-down card, everyone else gets one final turn, then
+  all cards are revealed and scored. Going out first with the lowest score earns a
+  <strong>−5 bonus</strong>; going out first <em>without</em> the lowest gets a
+  <strong>+5 penalty</strong>. Lowest total after all rounds wins. 🏆</p>
+`;
+
+// ── Card helpers ──
+function gcClass(c) { return {positive:'cp',negative:'cn',hazard:'ch',mulligan:'cm'}[c.type]||'cp'; }
+function gcVal(c)   {
+  const v = c.type==='hazard'?'⚠️':c.type==='mulligan'?'★':(c.value>0?'+':'')+c.value;
+  const cls = c.type==='negative'?'neg':c.type==='hazard'?'haz':c.type==='mulligan'?'mul':'pos';
+  return `<span class="gc-val ${cls}">${v}</span>`;
+}
+function mcClass(c) { return {positive:'cp',negative:'cn',hazard:'ch',mulligan:'cm'}[c.type]||'cp'; }
+function mcVal(c)   {
+  const v = c.type==='hazard'?'⚠️':c.type==='mulligan'?'★':(c.value>0?'+':'')+c.value;
+  const cls = c.type==='negative'?'neg':c.type==='hazard'?'haz':c.type==='mulligan'?'mul':'pos';
+  return `<span class="mini-val ${cls}">${v}</span>`;
+}
+function cLabel(c)  { return !c?'?':c.type==='hazard'?'Hazard':c.type==='mulligan'?'Mulligan':(c.value>=0?'+':'')+c.value; }
+function sClass(n)  { return n<0?'sn':n===0?'sz':'sp'; }
+
+// ── Utils ──
+function myPlayer() { return G?.players.find(p => p.id === myId) ?? null; }
+function screens(id){ document.querySelectorAll('.screen').forEach(s => s.classList.remove('active')); $(id).classList.add('active'); }
+function show(id)   { $(id)?.classList.remove('hidden'); }
+function hide(id)   { $(id)?.classList.add('hidden'); }
+function $(id)      { return document.getElementById(id); }
+function V(id)      { return $(id)?.value.trim() ?? ''; }
+function ck(id)     { return $(id)?.checked ?? false; }
+function addBtn(c, lbl, cls, fn) { const b=document.createElement('button'); b.className=`btn ${cls}`; b.textContent=lbl; b.onclick=fn; c.appendChild(b); }
+function esc(s)     { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+let toastT;
+function toast(msg, ms=3000) {
+  const el=$('toast'); el.textContent=msg; el.classList.add('on');
+  clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('on'),ms);
+}
+
+$('inp-name').addEventListener('keydown', e => { if(e.key==='Enter') goMenu(); });
+$('inp-code').addEventListener('keydown', e => { if(e.key==='Enter') joinGame(); });
+$('inp-code').addEventListener('input',   e => { e.target.value = e.target.value.toUpperCase(); });
+
+// Attempt to resume an in-progress game after an accidental refresh/disconnect.
+tryResumeSession();
+</script>
+</body>
+</html>

@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Just One — Cooperative Word Game</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --cream: #FBF6EE;
+    --ink: #1A1207;
+    --gold: #D4A017;
+    --gold-light: #F2D980;
+    --teal: #1A7A6E;
+    --teal-light: #E0F0EE;
+    --rose: #C0392B;
+    --rose-light: #FDECEA;
+    --slate: #6B7280;
+    --border: #E5D8C2;
+    --shadow: 0 2px 12px rgba(26,18,7,0.08);
+    --r: 12px;
+    --gap: 10px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── HEADER ── */
+  header {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid var(--border);
+    background: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    gap: 8px;
+  }
+
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+    flex-shrink: 0;
+  }
+  .logo em { font-style: italic; color: var(--gold); }
+
+  .header-right { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+
+  .room-badge {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--teal);
+    background: var(--teal-light);
+    border: 1.5px solid var(--teal);
+    border-radius: 99px;
+    padding: 3px 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .score-chip {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--gold-light);
+    border: 1.5px solid var(--gold);
+    border-radius: 99px;
+    padding: 3px 10px;
+  }
+
+  /* ── MAIN ── */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 24px;
+    gap: var(--gap);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 700px) {
+    main { max-width: 680px; padding: 16px 20px 32px; }
+  }
+
+  @media (min-width: 1100px) {
+    /* Two-column layout for game screen on wide displays */
+    #screen-game { display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto auto 1fr; gap: var(--gap); align-items: start; }
+    #game-sidebar { grid-column: 1; grid-row: 1 / 4; display: flex; flex-direction: column; gap: var(--gap); }
+    #game-main { grid-column: 2; grid-row: 1 / 4; display: flex; flex-direction: column; gap: var(--gap); }
+  }
+
+  /* ── SCREENS ── */
+  .screen { display: none; flex-direction: column; gap: var(--gap); }
+  .screen.active { display: flex; }
+  @media (min-width: 1100px) {
+    #screen-game.active { display: grid; }
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: var(--r);
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+  }
+
+  .card-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  /* ── HOME SCREEN ── */
+  .lobby-hero {
+    text-align: center;
+    padding: 28px 20px 20px;
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: var(--r);
+    box-shadow: var(--shadow);
+  }
+
+  .lobby-hero h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2rem, 8vw, 3rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .lobby-hero h1 em { font-style: italic; color: var(--gold); }
+
+  .lobby-hero p {
+    color: var(--slate);
+    font-size: 0.9rem;
+    max-width: 340px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+  }
+
+  .lobby-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--slate);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .lobby-divider::before, .lobby-divider::after {
+    content: '';
+    flex: 1;
+    height: 1.5px;
+    background: var(--border);
+  }
+
+  /* ── FORMS ── */
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+
+  label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--slate);
+  }
+
+  input[type="text"] {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--cream);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+    width: 100%;
+    /* prevent iOS zoom on focus */
+    font-size: max(16px, 1rem);
+  }
+  input[type="text"]:focus { border-color: var(--teal); }
+  input[type="text"]::placeholder { color: #B0A090; }
+
+  .row { display: flex; gap: 8px; align-items: flex-end; }
+  .row input { flex: 1; min-width: 0; }
+
+  /* ── BUTTONS ── */
+  .btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.12s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+    /* larger tap targets on mobile */
+    min-height: 44px;
+  }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn:active:not(:disabled) { transform: scale(0.97); }
+
+  .btn-primary { background: var(--teal); color: white; }
+  .btn-primary:not(:disabled):hover { background: #145f54; }
+
+  .btn-gold { background: var(--gold); color: var(--ink); }
+  .btn-gold:not(:disabled):hover { background: #b88a10; }
+
+  .btn-outline { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
+  .btn-outline:not(:disabled):hover { background: var(--teal-light); }
+
+  .btn-ghost { background: transparent; color: var(--slate); border: 1.5px solid var(--border); }
+  .btn-ghost:not(:disabled):hover { background: var(--cream); }
+
+  .btn-full { width: 100%; }
+  .btn-sm { padding: 7px 12px; font-size: 0.82rem; min-height: 36px; }
+
+  /* ── PLAYERS LIST ── */
+  .players-list { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .player-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: 99px;
+    border: 1.5px solid var(--border);
+    background: var(--cream);
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+  .player-chip.active-player { background: var(--gold-light); border-color: var(--gold); font-weight: 700; }
+  .player-chip.is-me { border-color: var(--teal); background: var(--teal-light); }
+
+  .avatar {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0;
+  }
+
+  /* ── PROGRESS ── */
+  .progress-bar-wrap { background: var(--border); border-radius: 99px; height: 6px; overflow: hidden; }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--teal), var(--gold));
+    border-radius: 99px;
+    transition: width 0.4s ease;
+  }
+
+  .turns-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-top: 8px; }
+  .turn-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); flex-shrink: 0; transition: background 0.3s; }
+  .turn-dot.won { background: var(--teal); }
+  .turn-dot.lost { background: var(--rose); }
+  .turn-dot.current { background: var(--gold); }
+
+  /* ── WORD CARD (choosing) ── */
+  .word-card {
+    background: linear-gradient(135deg, #fff 60%, var(--gold-light));
+    border: 2px solid var(--gold);
+    border-radius: var(--r);
+    padding: 14px 16px;
+    box-shadow: 0 4px 20px rgba(212,160,23,0.15);
+  }
+
+  .word-card-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .word-list { display: flex; flex-direction: column; gap: 6px; }
+
+  .word-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    background: white;
+    cursor: pointer;
+    transition: all 0.12s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    min-height: 44px;
+  }
+  .word-option:active:not(.disabled) { background: var(--teal-light); border-color: var(--teal); }
+  @media (hover: hover) {
+    .word-option:hover:not(.disabled) { border-color: var(--teal); background: var(--teal-light); }
+  }
+  .word-option.disabled { cursor: default; }
+
+  .word-number {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    color: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
+  }
+
+  /* ── MYSTERY WORD DISPLAY ── */
+  .mystery-word-display {
+    text-align: center;
+    padding: 16px 14px;
+    background: var(--teal-light);
+    border: 2px solid var(--teal);
+    border-radius: var(--r);
+  }
+  .mystery-word-display .label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--teal);
+    margin-bottom: 4px;
+  }
+  .mystery-word-display .word {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    font-weight: 900;
+    color: var(--ink);
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+
+  /* ── EASEL ── */
+  .easel {
+    background: #fffde7;
+    border: 2px solid var(--gold);
+    border-radius: var(--r);
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .easel-header {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gold);
+  }
+
+  .clue-input {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+    font-weight: 700;
+    padding: 10px 14px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    color: var(--ink);
+    outline: none;
+    width: 100%;
+    transition: border-color 0.15s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .clue-input:focus { border-color: var(--gold); }
+  .clue-input:disabled { background: #f5f5f5; color: var(--slate); }
+
+  /* ── CLUES BOARD ── */
+  .clues-board { display: flex; flex-direction: column; gap: 7px; }
+
+  .clue-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    background: white;
+    transition: all 0.15s;
+  }
+  .clue-row.cancelled { background: var(--rose-light); border-color: var(--rose); opacity: 0.75; }
+  .clue-row.valid { background: var(--teal-light); border-color: var(--teal); }
+
+  .clue-row .clue-text {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(1.1rem, 4vw, 1.35rem);
+    font-weight: 700;
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    word-break: break-all;
+  }
+  .clue-row.cancelled .clue-text { text-decoration: line-through; color: var(--rose); }
+  .clue-row.valid .clue-text { color: var(--teal); }
+
+  .clue-author { font-size: 0.72rem; font-weight: 600; color: var(--slate); white-space: nowrap; }
+
+  .cancel-btn {
+    background: none; border: none; cursor: pointer;
+    font-size: 1rem; padding: 6px; border-radius: 6px;
+    min-width: 32px; min-height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.1s;
+  }
+  .cancel-btn:hover { background: rgba(192,57,43,0.12); }
+
+  /* ── STATUS BANNER ── */
+  .status-banner {
+    text-align: center;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .status-banner.info { background: var(--teal-light); color: var(--teal); border: 1.5px solid var(--teal); }
+  .status-banner.warning { background: #FFF8E1; color: #7A5500; border: 1.5px solid var(--gold); }
+  .status-banner.success { background: #E8F5E9; color: #2E7D32; border: 1.5px solid #4CAF50; }
+  .status-banner.error { background: var(--rose-light); color: var(--rose); border: 1.5px solid var(--rose); }
+
+  /* ── RESULT ── */
+  .result-display { text-align: center; padding: 20px 16px; }
+  .result-emoji { font-size: 3rem; margin-bottom: 10px; display: block; }
+  .result-label { font-family: 'Fraunces', serif; font-size: 1.7rem; font-weight: 900; margin-bottom: 6px; }
+  .result-label.success { color: var(--teal); }
+  .result-label.wrong { color: var(--rose); }
+  .result-label.skip { color: var(--slate); }
+
+  /* ── GUESS INPUT ── */
+  .guess-section { display: flex; flex-direction: column; gap: 10px; }
+  .guess-input {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    font-weight: 900;
+    padding: 14px 18px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: white;
+    color: var(--ink);
+    outline: none;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: border-color 0.15s;
+  }
+  .guess-input:focus { border-color: var(--teal); }
+
+  /* ── GAME OVER ── */
+  .gameover-score { font-family: 'Fraunces', serif; font-size: 4.5rem; font-weight: 900; color: var(--gold); text-align: center; line-height: 1; }
+  .gameover-out-of { text-align: center; color: var(--slate); font-size: 1rem; margin-top: 4px; }
+
+  /* ── WAITING DOTS ── */
+  .waiting-dots::after {
+    content: '';
+    animation: dots 1.5s steps(4, end) infinite;
+  }
+  @keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+  }
+
+  /* ── SUBMITTED BADGE ── */
+  .submitted-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 0.78rem; font-weight: 700;
+    color: var(--teal); background: var(--teal-light);
+    border-radius: 99px; padding: 3px 10px;
+  }
+
+  /* ── ERROR ── */
+  .error-msg {
+    color: var(--rose); font-size: 0.85rem; font-weight: 500;
+    padding: 8px 12px; background: var(--rose-light);
+    border-radius: 8px; border: 1px solid var(--rose);
+  }
+
+  /* ── PENDING GRID ── */
+  .clue-pending-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 8px;
+  }
+  .clue-pending-item {
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 8px;
+    border: 1.5px dashed var(--border);
+    background: var(--cream);
+    font-size: 0.78rem;
+    color: var(--slate);
+  }
+  .clue-pending-item.done {
+    border-style: solid; border-color: var(--teal);
+    background: var(--teal-light); color: var(--teal); font-weight: 600;
+  }
+
+  hr { border: none; border-top: 1.5px solid var(--border); }
+
+  /* ── UTILS ── */
+  .text-center { text-align: center; }
+  .text-muted { color: var(--slate); font-size: 0.85rem; }
+  .flex { display: flex; }
+  .gap-2 { gap: 8px; }
+  .items-center { align-items: center; }
+  .justify-between { justify-content: space-between; }
+  .mt-2 { margin-top: 8px; }
+  .mt-3 { margin-top: 10px; }
+  .font-bold { font-weight: 700; }
+  .text-sm { font-size: 0.82rem; }
+  /* Rules overlay */
+  .rules-overlay {
+    position: fixed; inset: 0; background: rgba(26,18,7,.55);
+    display: none; align-items: center; justify-content: center; z-index: 400; padding: 16px;
+  }
+  .rules-overlay.show { display: flex; }
+  .rules-modal {
+    background: var(--cream); border: 1px solid var(--border); border-radius: 16px;
+    max-width: 540px; width: 100%; max-height: 90dvh; overflow-y: auto;
+    padding: 22px; box-shadow: 0 20px 60px rgba(26,18,7,.28);
+  }
+  .rules-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .rules-head h2 { font-family: 'Fraunces', serif; font-size: 1.3rem; color: var(--ink); }
+  .rules-head h2 em { color: var(--gold); font-style: italic; }
+  .rules-x { background: none; border: none; font-size: 1.2rem; color: var(--slate); cursor: pointer; }
+  .rules-body { font-size: .9rem; line-height: 1.6; color: var(--ink); margin-bottom: 16px; }
+  .rules-body h4 {
+    font-family: 'Fraunces', serif; color: var(--teal); font-size: 1.02rem;
+    margin: 16px 0 6px;
+  }
+  .rules-body h4:first-child { margin-top: 0; }
+  .rules-body p { margin-bottom: 9px; color: #44382a; }
+  .rules-body ol, .rules-body ul { margin: 0 0 10px 20px; }
+  .rules-body li { margin-bottom: 6px; }
+  .rules-body .ex {
+    background: var(--teal-light); border-left: 3px solid var(--teal);
+    border-radius: 8px; padding: 9px 12px; margin: 8px 0; font-size: .85rem; color: #1a4a44;
+  }
+  .rules-body .ex .cancel { text-decoration: line-through; color: var(--rose); opacity: .8; }
+  .rules-body strong { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Just <em>One</em></div>
+  <div class="flex gap-2 items-center">
+    <div class="room-badge" id="headerRoom" style="display:none"></div>
+    <div class="score-chip" id="headerScore" style="display:none"></div>
+    <button class="btn btn-ghost btn-sm" onclick="openRules()" title="How to play">? Rules</button>
+    <button class="btn btn-ghost btn-sm" id="headerLeaveBtn" style="display:none" onclick="leaveRoom()">Leave</button>
+  </div>
+</header>
+
+<main>
+  <!-- ── HOME ── -->
+  <div class="screen active" id="screen-home">
+    <div class="lobby-hero">
+      <h1>Play <em>Just One</em><br>together.</h1>
+      <p>A cooperative word-guessing game. Help your teammate guess the mystery word — but identical clues cancel out!</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Create a room</div>
+      <div class="form-group">
+        <label>Your name</label>
+        <div class="row">
+          <input type="text" id="createName" placeholder="Enter your name" maxlength="20" />
+          <button class="btn btn-primary" onclick="createRoom()">Create Room</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="lobby-divider">or</div>
+
+    <div class="card">
+      <div class="card-title">Join a room</div>
+      <div class="form-group">
+        <label>Room code</label>
+        <input type="text" id="joinCode" placeholder="e.g. AB3XY" maxlength="5" style="text-transform:uppercase;letter-spacing:3px" />
+      </div>
+      <div class="form-group mt-2">
+        <label>Your name</label>
+        <div class="row">
+          <input type="text" id="joinName" placeholder="Enter your name" maxlength="20" />
+          <button class="btn btn-outline" onclick="joinRoom()">Join Room</button>
+        </div>
+      </div>
+      <div id="homeError" class="error-msg mt-3" style="display:none"></div>
+    </div>
+  </div>
+
+  <!-- ── LOBBY ── -->
+  <div class="screen" id="screen-lobby">
+    <div class="card">
+      <div class="flex items-center justify-between" style="margin-bottom:16px">
+        <div class="card-title" style="margin:0">Waiting for players…</div>
+        <div class="room-badge" id="lobbyRoomCode" style="display:inline-flex"></div>
+      </div>
+      <p class="text-muted text-sm">Share the room code with your friends. You need at least 2 players.</p>
+      <div class="players-list mt-3" id="lobbyPlayers"></div>
+    </div>
+    <div id="lobbyStartBtn" style="display:none">
+      <button class="btn btn-primary btn-full" onclick="startGame()">Start Game 🎲</button>
+    </div>
+    <p class="text-center text-muted text-sm">Waiting for the host to start the game…</p>
+  </div>
+
+  <!-- ── GAME ── -->
+  <div class="screen" id="screen-game">
+
+    <div id="game-sidebar">
+      <!-- Progress -->
+      <div class="card">
+        <div class="flex items-center justify-between" style="margin-bottom:8px">
+          <span class="text-sm text-muted">Round <span id="roundNum">1</span> of 13</span>
+          <span class="text-sm font-bold">✅ <span id="successCount">0</span> guessed</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+        </div>
+        <div class="turns-row" id="turnsRow"></div>
+      </div>
+
+      <!-- Players -->
+      <div class="card">
+        <div class="players-list" id="gamePlayers"></div>
+      </div>
+    </div>
+
+    <div id="game-main">
+
+    <!-- CHOOSING phase (active player) -->
+    <div id="phase-choosing-active" style="display:none">
+      <div class="word-card">
+        <div class="word-card-label">🃏 Your card — choose a mystery word</div>
+        <div class="word-list" id="choosingWordList"></div>
+      </div>
+    </div>
+
+    <!-- CHOOSING phase (non-active) -->
+    <div id="phase-choosing-spectator" style="display:none">
+      <div class="status-banner info">
+        👀 <span id="choosingActivePlayerName"></span> is choosing a mystery word…
+      </div>
+      <div class="word-card" style="margin-top:12px">
+        <div class="word-card-label">🃏 The card (only you can see this)</div>
+        <div class="word-list" id="choosingWordListSpectator"></div>
+      </div>
+    </div>
+
+    <!-- CLUING phase (active player) -->
+    <div id="phase-cluing-active" style="display:none">
+      <div class="status-banner warning">
+        🙈 Close your eyes! Your teammates are writing their clues<span class="waiting-dots"></span>
+      </div>
+      <div class="card mt-3">
+        <div class="clue-pending-grid" id="cluePendingGrid"></div>
+      </div>
+    </div>
+
+    <!-- CLUING phase (non-active) -->
+    <div id="phase-cluing-writer" style="display:none">
+      <div class="mystery-word-display">
+        <div class="label">🔮 Mystery word to clue</div>
+        <div class="word" id="cluingMysteryWord"></div>
+      </div>
+      <div class="easel mt-3" id="easelSection">
+        <div class="easel-header">🖊 Your clue (one word only)</div>
+        <div class="clue-input-wrapper">
+          <input class="clue-input" type="text" id="clueInput1" maxlength="30" placeholder="TYPE YOUR CLUE" autocomplete="off" />
+        </div>
+        <div id="clue2section" style="display:none">
+          <div class="easel-header mt-2">🖊 Your second clue (3-player variant)</div>
+          <input class="clue-input" type="text" id="clueInput2" maxlength="30" placeholder="SECOND CLUE" autocomplete="off" style="margin-top:8px" />
+        </div>
+        <button class="btn btn-gold" id="submitClueBtn" onclick="submitClue()">Submit Clue ✓</button>
+        <div id="clueSubmittedMsg" style="display:none">
+          <div class="submitted-badge">✓ Clue submitted! Waiting for others<span class="waiting-dots"></span></div>
+          <div class="clue-pending-grid mt-3" id="cluePendingGridWriter"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARING phase (non-active) -->
+    <div id="phase-comparing" style="display:none">
+      <div class="mystery-word-display">
+        <div class="label">🔮 Mystery word</div>
+        <div class="word" id="comparingMysteryWord"></div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-title">Compare & cancel identical clues</div>
+        <p class="text-muted text-sm" style="margin-bottom:16px">Tap ✕ to cancel clues that are identical or invalid. The active player can't see this screen.</p>
+        <div class="clues-board" id="comparingCluesBoard"></div>
+        <button class="btn btn-primary btn-full mt-3" onclick="revealClues()">Reveal clues to <span id="comparingActiveName"></span> →</button>
+      </div>
+    </div>
+
+    <!-- COMPARING phase (active player) -->
+    <div id="phase-comparing-active" style="display:none">
+      <div class="status-banner info">
+        🙈 Keep your eyes closed! Your team is comparing clues<span class="waiting-dots"></span>
+      </div>
+    </div>
+
+    <!-- GUESSING phase (active player) -->
+    <div id="phase-guessing-active" style="display:none">
+      <div class="card">
+        <div class="card-title">👁 Here are your clues</div>
+        <div class="clues-board" id="guessingCluesBoard"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">💬 Your guess (one chance!)</div>
+        <div class="guess-section">
+          <input class="guess-input" type="text" id="guessInput" maxlength="30" placeholder="TYPE YOUR GUESS" autocomplete="off" />
+          <div class="flex gap-2">
+            <button class="btn btn-primary flex-1" onclick="submitGuess(false)">Submit Guess →</button>
+            <button class="btn btn-ghost" onclick="submitGuess(true)">Skip turn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUESSING phase (spectator) -->
+    <div id="phase-guessing-spectator" style="display:none">
+      <div class="mystery-word-display">
+        <div class="label">🔮 Mystery word</div>
+        <div class="word" id="guessingMysteryWord"></div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-title">Valid clues shown to <span id="guessingActiveSpectator"></span></div>
+        <div class="clues-board" id="guessingCluesBoardSpectator"></div>
+      </div>
+      <div class="status-banner info">
+        🤔 Waiting for <span id="guessingWaitName"></span> to guess<span class="waiting-dots"></span>
+      </div>
+    </div>
+
+    <!-- RESULT phase -->
+    <div id="phase-result" style="display:none">
+      <div class="card">
+        <div class="result-display">
+          <span class="result-emoji" id="resultEmoji"></span>
+          <div class="result-label" id="resultLabel"></div>
+          <p class="text-muted mt-2" id="resultDetail"></p>
+          <p class="text-muted text-sm mt-2" id="resultClueList"></p>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="nextTurn()">Next turn →</button>
+      </div>
+    </div>
+
+    <!-- GAMEOVER -->
+    <div id="phase-gameover" style="display:none">
+      <div class="card" >
+        <div class="text-center" style="margin-bottom:24px">
+          <div class="gameover-score" id="gameoverScore"></div>
+          <div class="gameover-out-of">out of 13 words guessed</div>
+        </div>
+        <div class="status-banner success text-center" id="gameoverMessage"></div>
+        <hr style="margin:24px 0" />
+        <div id="gameoverHostBtns" style="display:none">
+          <button class="btn btn-primary btn-full" onclick="newGame()">Play again 🎲</button>
+        </div>
+        <p class="text-center text-muted text-sm mt-3" id="gameoverWaitMsg" style="display:none">Waiting for the host to start a new game…</p>
+      </div>
+    </div><!-- /phase-gameover -->
+
+    </div><!-- /game-main -->
+  </div><!-- /screen-game -->
+</main>
+
+<!-- RULES OVERLAY -->
+<div class="rules-overlay" id="rulesOverlay" onclick="closeRules(event)">
+  <div class="rules-modal" onclick="event.stopPropagation()">
+    <div class="rules-head">
+      <h2>How to Play <em>Just One</em></h2>
+      <button class="rules-x" onclick="closeRules()">✕</button>
+    </div>
+    <div class="rules-body" id="justOneRulesBody"></div>
+    <button class="btn btn-primary btn-full" onclick="closeRules()">Got it</button>
+  </div>
+</div>
+
+<script>
+// ── Rules / How to Play (accurate to this implementation) ──
+function openRules() {
+  document.getElementById('justOneRulesBody').innerHTML = JUST_ONE_RULES;
+  document.getElementById('rulesOverlay').classList.add('show');
+}
+function closeRules(e) {
+  if (e && e.target && e.target.id !== 'rulesOverlay' && e.type === 'click') return;
+  document.getElementById('rulesOverlay').classList.remove('show');
+}
+const JUST_ONE_RULES = `
+  <h4>It's cooperative</h4>
+  <p>You all play as <strong>one team</strong> against the deck. There's a single shared
+  score — the goal is to guess as many mystery words as possible. A game is
+  <strong>13 cards</strong>, so the highest possible score is 13.</p>
+
+  <h4>Each round</h4>
+  <ol>
+    <li>One player is the <strong>guesser</strong>. They don't look at the card.</li>
+    <li>Everyone else sees the card's words and agrees on the <strong>mystery word</strong>.</li>
+    <li>Each other player secretly writes <strong>one single-word clue</strong> to help
+        the guesser get it.</li>
+    <li>Clues are compared — then the guesser makes one guess.</li>
+  </ol>
+
+  <h4>The twist: identical clues cancel</h4>
+  <p>Before the guesser sees anything, all clue-givers reveal their clues. Any clues that
+  are <strong>the same</strong> (including obvious plurals/variants) <strong>cancel out</strong>
+  and are hidden from the guesser. So clever, different clues help — duplicates are wasted.</p>
+  <div class="ex">
+    Mystery word: <strong>BEACH</strong><br>
+    Clues: sand · <span class="cancel">ocean</span> · <span class="cancel">ocean</span> · towel<br>
+    The two "ocean" clues cancel — the guesser only sees <strong>sand</strong> and <strong>towel</strong>.
+  </div>
+  <p>Players can also manually cancel any clue that breaks the rules (not a real word, too
+  close to the answer, etc.) before revealing them to the guesser.</p>
+
+  <h4>Scoring</h4>
+  <ul>
+    <li>Guesser gets it right → <strong>+1</strong> for the team.</li>
+    <li>Wrong guess or skip → no point; move to the next card.</li>
+  </ul>
+
+  <h4>End of game</h4>
+  <p>After all 13 cards, your total is your team score. 13 is a perfect game — see how
+  close you can get, then try to beat it!</p>
+`;
+
+// ── Native WebSocket ──
+let ws = null;
+let myState = null;
+let roomCode = null;
+let playerId = null;
+
+function connectWS() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}`);
+
+  ws.onopen = () => {
+    // Try to rejoin a previous session
+    const savedRoom = sessionStorage.getItem('roomCode');
+    const savedPlayer = sessionStorage.getItem('playerId');
+    if (savedRoom && savedPlayer) {
+      ws.send(JSON.stringify({ type: 'reconnect', roomCode: savedRoom, playerId: savedPlayer }));
+    }
+  };
+
+  ws.onmessage = e => {
+    const msg = JSON.parse(e.data);
+    if (msg.type === 'room_joined') {
+      roomCode = msg.roomCode;
+      playerId = msg.playerId;
+      sessionStorage.setItem('roomCode', roomCode);
+      sessionStorage.setItem('playerId', playerId);
+    } else if (msg.type === 'room_update') {
+      myState = msg.view;
+      render(msg.view);
+    } else if (msg.type === 'error') {
+      // If reconnect failed, clear saved session and show home
+      const savedRoom = sessionStorage.getItem('roomCode');
+      if (savedRoom && !roomCode) {
+        sessionStorage.removeItem('roomCode');
+        sessionStorage.removeItem('playerId');
+      }
+      showError('homeError', msg.message);
+      showScreen('home');
+    }
+  };
+
+  ws.onclose = () => setTimeout(connectWS, 1500);
+}
+
+function emit(type, payload) {
+  if (ws && ws.readyState === 1) ws.send(JSON.stringify({ type, ...payload }));
+}
+
+connectWS();
+
+// ── Color palette for avatars ──
+const AVATAR_COLORS = ['#1A7A6E','#D4A017','#C0392B','#2980B9','#8E44AD','#27AE60','#E67E22'];
+function avatarColor(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffffff;
+  return AVATAR_COLORS[Math.abs(h) % AVATAR_COLORS.length];
+}
+function avatarLetter(name) { return (name || '?')[0].toUpperCase(); }
+
+// ── Navigation ──
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + id).classList.add('active');
+}
+
+// ── Actions ──
+function createRoom() {
+  const name = document.getElementById('createName').value.trim();
+  if (!name) { showError('homeError', 'Please enter your name.'); return; }
+  clearError('homeError');
+  emit('create_room', { name });
+}
+
+function joinRoom() {
+  const name = document.getElementById('joinName').value.trim();
+  const code = document.getElementById('joinCode').value.trim().toUpperCase();
+  if (!name) { showError('homeError', 'Please enter your name.'); return; }
+  if (!code) { showError('homeError', 'Please enter a room code.'); return; }
+  clearError('homeError');
+  emit('join_room', { code, name });
+}
+
+function startGame() { emit('start_game', { roomCode }); }
+function nextTurn() { emit('next_turn', { roomCode }); }
+function newGame() { emit('new_game', { roomCode }); }
+
+function leaveRoom() {
+  if (!confirm('Leave the room?')) return;
+  sessionStorage.removeItem('roomCode');
+  sessionStorage.removeItem('playerId');
+  roomCode = null;
+  playerId = null;
+  myState = null;
+  // Close and reconnect to get a clean socket with no session
+  ws.close();
+  document.getElementById('headerRoom').style.display = 'none';
+  document.getElementById('headerScore').style.display = 'none';
+  document.getElementById('headerLeaveBtn').style.display = 'none';
+  showScreen('home');
+}
+
+function chooseWord(index) {
+  emit('choose_word', { roomCode, wordIndex: index });
+}
+
+function submitClue() {
+  const clue1 = document.getElementById('clueInput1').value.trim();
+  if (!clue1) { alert('Please enter a clue.'); return; }
+  emit('submit_clue', { roomCode, clue: clue1, slotIndex: 0 });
+  
+  const is3p = myState && myState.players.length === 3;
+  if (is3p) {
+    const clue2 = document.getElementById('clueInput2').value.trim();
+    if (clue2) emit('submit_clue', { roomCode, clue: clue2, slotIndex: 1 });
+  }
+
+  document.getElementById('clueInput1').disabled = true;
+  document.getElementById('clueInput2').disabled = true;
+  document.getElementById('submitClueBtn').style.display = 'none';
+  document.getElementById('clueSubmittedMsg').style.display = 'block';
+  document.getElementById('easelSection').querySelector('.easel-header').textContent = '✓ Clue submitted!';
+}
+
+function toggleCancelClue(index) {
+  emit('toggle_cancel_clue', { roomCode, clueIndex: index });
+}
+
+function revealClues() {
+  emit('reveal_clues', { roomCode });
+}
+
+function submitGuess(skip) {
+  if (skip) {
+    if (!confirm('Skip this turn? The card will be returned to the box.')) return;
+    emit('submit_guess', { roomCode, skip: true });
+    return;
+  }
+  const guess = document.getElementById('guessInput').value.trim();
+  if (!guess) { alert('Please type a guess.'); return; }
+  emit('submit_guess', { roomCode, guess });
+}
+
+// ── Render ──
+function render(v) {
+  if (!v) return;
+
+  // Header
+  const hRoom = document.getElementById('headerRoom');
+  const hScore = document.getElementById('headerScore');
+  const hLeave = document.getElementById('headerLeaveBtn');
+  if (v.state !== 'lobby') {
+    hRoom.style.display = 'inline-flex';
+    hRoom.textContent = v.roomCode;
+    hScore.style.display = 'inline-flex';
+    hScore.textContent = `✅ ${v.successCount}/13`;
+    hLeave.style.display = 'inline-flex';
+  } else {
+    hRoom.style.display = 'none';
+    hScore.style.display = 'none';
+    hLeave.style.display = 'inline-flex';
+  }
+
+  if (v.state === 'lobby') {
+    renderLobby(v);
+    return;
+  }
+
+  showScreen('game');
+  renderGameHeader(v);
+  renderPlayers(v);
+  renderPhase(v);
+}
+
+function renderLobby(v) {
+  showScreen('lobby');
+  document.getElementById('lobbyRoomCode').textContent = v.roomCode;
+
+  const list = document.getElementById('lobbyPlayers');
+  list.innerHTML = v.players.map(p => `
+    <div class="player-chip ${p.id === v.me.id ? 'is-me' : ''}">
+      <div class="avatar" style="background:${avatarColor(p.name)}">${avatarLetter(p.name)}</div>
+      ${p.name}${p.id === v.me.id ? ' <em style="font-size:.75rem;color:var(--teal)">(you)</em>' : ''}
+      ${p.isHost ? ' 👑' : ''}
+    </div>
+  `).join('');
+
+  const startBtn = document.getElementById('lobbyStartBtn');
+  const waitMsg = document.querySelector('#screen-lobby > p');
+  if (v.me.isHost) {
+    startBtn.style.display = 'block';
+    waitMsg.style.display = 'none';
+  } else {
+    startBtn.style.display = 'none';
+    waitMsg.style.display = 'block';
+  }
+}
+
+function renderGameHeader(v) {
+  const cardsDone = 13 - v.cardsLeft + 1;
+  const round = Math.min(cardsDone, 13);
+  document.getElementById('roundNum').textContent = round;
+  document.getElementById('successCount').textContent = v.successCount;
+  document.getElementById('progressFill').style.width = `${(round / 13) * 100}%`;
+
+  // Turn dots
+  const turnsRow = document.getElementById('turnsRow');
+  turnsRow.innerHTML = Array.from({ length: 13 }, (_, i) => {
+    const done = i < round - 1;
+    const current = i === round - 1;
+    return `<div class="turn-dot${done ? ' won' : current ? ' current' : ''}"></div>`;
+  }).join('');
+}
+
+function renderPlayers(v) {
+  document.getElementById('gamePlayers').innerHTML = v.players.map(p => `
+    <div class="player-chip ${p.isActive ? 'active-player' : ''} ${p.id === v.me.id ? 'is-me' : ''}">
+      <div class="avatar" style="background:${avatarColor(p.name)}">${avatarLetter(p.name)}</div>
+      ${p.name}${p.isActive ? ' 🎯' : ''}${p.id === v.me.id ? ' <em style="font-size:.75rem">(you)</em>' : ''}
+    </div>
+  `).join('');
+}
+
+function hideAllPhases() {
+  const phases = [
+    'phase-choosing-active','phase-choosing-spectator',
+    'phase-cluing-active','phase-cluing-writer',
+    'phase-comparing','phase-comparing-active',
+    'phase-guessing-active','phase-guessing-spectator',
+    'phase-result','phase-gameover'
+  ];
+  phases.forEach(id => document.getElementById(id).style.display = 'none');
+}
+
+function renderPhase(v) {
+  hideAllPhases();
+
+  switch (v.state) {
+    case 'choosing':
+      if (v.me.isActive) {
+        document.getElementById('phase-choosing-active').style.display = 'block';
+        const list = document.getElementById('choosingWordList');
+        list.innerHTML = (v.cardWords || ['?','?','?','?','?']).map((w, i) => `
+          <div class="word-option" onclick="chooseWord(${i})">
+            <div class="word-number">${i + 1}</div>
+            <span>${w}</span>
+          </div>
+        `).join('');
+      } else {
+        document.getElementById('phase-choosing-spectator').style.display = 'block';
+        document.getElementById('choosingActivePlayerName').textContent = v.activePlayerName;
+        // Show the card words with none highlighted
+        const list = document.getElementById('choosingWordListSpectator');
+        list.innerHTML = (v.cardWords || []).map((w, i) => `
+          <div class="word-option disabled">
+            <div class="word-number">${i + 1}</div>
+            <span>${w}</span>
+          </div>
+        `).join('');
+      }
+      break;
+
+    case 'cluing':
+      if (v.me.isActive) {
+        document.getElementById('phase-cluing-active').style.display = 'block';
+        renderCluePendingGrid('cluePendingGrid', v);
+      } else {
+        document.getElementById('phase-cluing-writer').style.display = 'block';
+        document.getElementById('cluingMysteryWord').textContent = v.mysteryWord || '';
+
+        const is3p = v.players.length === 3;
+        document.getElementById('clue2section').style.display = is3p ? 'block' : 'none';
+
+        if (v.myClue) {
+          // Already submitted — show locked state
+          document.getElementById('clueInput1').value = v.myClue;
+          document.getElementById('clueInput1').disabled = true;
+          document.getElementById('clueInput2').disabled = true;
+          document.getElementById('submitClueBtn').style.display = 'none';
+          document.getElementById('clueSubmittedMsg').style.display = 'block';
+          renderCluePendingGrid('cluePendingGridWriter', v);
+        } else {
+          // Fresh / not yet submitted — reset everything
+          document.getElementById('clueInput1').value = '';
+          document.getElementById('clueInput1').disabled = false;
+          document.getElementById('clueInput2').value = '';
+          document.getElementById('clueInput2').disabled = false;
+          document.getElementById('submitClueBtn').style.display = 'block';
+          document.getElementById('clueSubmittedMsg').style.display = 'none';
+        }
+      }
+      break;
+
+    case 'comparing':
+      if (v.me.isActive) {
+        document.getElementById('phase-comparing-active').style.display = 'block';
+      } else {
+        document.getElementById('phase-comparing').style.display = 'block';
+        document.getElementById('comparingMysteryWord').textContent = v.mysteryWord || '';
+        document.getElementById('comparingActiveName').textContent = v.activePlayerName;
+        renderCluesBoard('comparingCluesBoard', v.clues, true);
+      }
+      break;
+
+    case 'guessing':
+      if (v.me.isActive) {
+        document.getElementById('phase-guessing-active').style.display = 'block';
+        document.getElementById('guessInput').value = '';
+        const validClues = (v.clues || []).filter(c => !c.cancelled && c.clue);
+        renderCluesBoardReadonly('guessingCluesBoard', validClues);
+      } else {
+        document.getElementById('phase-guessing-spectator').style.display = 'block';
+        document.getElementById('guessingMysteryWord').textContent = v.mysteryWord || '';
+        document.getElementById('guessingActiveSpectator').textContent = v.activePlayerName;
+        document.getElementById('guessingWaitName').textContent = v.activePlayerName;
+        const validClues = (v.clues || []).filter(c => !c.cancelled && c.clue);
+        renderCluesBoardReadonly('guessingCluesBoardSpectator', validClues);
+      }
+      break;
+
+    case 'result':
+      document.getElementById('phase-result').style.display = 'block';
+      const s = v.lastTurnSummary;
+      if (s) {
+        const emoji = { success: '🎉', wrong: '😬', skip: '⏭' }[s.result];
+        const label = { success: 'Correct!', wrong: 'Wrong guess', skip: 'Skipped' }[s.result];
+        const detail = s.result === 'success'
+          ? `The word was "${s.mysteryWord}" — great teamwork!`
+          : s.result === 'wrong'
+          ? `The word was "${s.mysteryWord}". You guessed "${s.guess}".`
+          : `The card has been returned to the box.`;
+        document.getElementById('resultEmoji').textContent = emoji;
+        document.getElementById('resultLabel').className = `result-label ${s.result}`;
+        document.getElementById('resultLabel').textContent = label;
+        document.getElementById('resultDetail').textContent = detail;
+        document.getElementById('resultClueList').textContent = s.validClues?.length
+          ? `Clues shown: ${s.validClues.join(', ')}`
+          : 'All clues were cancelled!';
+      }
+      break;
+
+    case 'gameover':
+      document.getElementById('phase-gameover').style.display = 'block';
+      document.getElementById('gameoverScore').textContent = v.successCount;
+      document.getElementById('gameoverMessage').textContent = v.scoreMessage || '';
+      if (v.me.isHost) {
+        document.getElementById('gameoverHostBtns').style.display = 'block';
+        document.getElementById('gameoverWaitMsg').style.display = 'none';
+      } else {
+        document.getElementById('gameoverHostBtns').style.display = 'none';
+        document.getElementById('gameoverWaitMsg').style.display = 'block';
+      }
+      break;
+  }
+}
+
+function renderCluePendingGrid(containerId, v) {
+  const nonActive = v.players.filter(p => !p.isActive);
+  const is3p = v.players.length === 3;
+  const grid = document.getElementById(containerId);
+  if (!grid) return;
+  grid.innerHTML = nonActive.map(p => {
+    const slots = is3p ? 2 : 1;
+    return Array.from({ length: slots }, (_, si) => {
+      const clue = (v.clues || []).find((c, ci) =>
+        c.playerName === p.name && (is3p ? (ci % 2 === si) : true)
+      );
+      const submitted = clue && clue.submitted;
+      return `<div class="clue-pending-item ${submitted ? 'done' : ''}">
+        <div class="avatar" style="background:${avatarColor(p.name)};margin:0 auto 6px">${avatarLetter(p.name)}</div>
+        <div>${p.name}</div>
+        ${submitted ? '<div style="font-size:1.2rem;margin-top:4px">✓</div>' : '<div class="waiting-dots" style="font-size:1.2rem;margin-top:4px"></div>'}
+      </div>`;
+    }).join('');
+  }).join('');
+}
+
+function renderCluesBoard(containerId, clues, canToggle) {
+  const board = document.getElementById(containerId);
+  if (!board || !clues) return;
+  board.innerHTML = clues.map((c, i) => `
+    <div class="clue-row ${c.cancelled ? 'cancelled' : 'valid'}">
+      <div class="clue-text">${c.clue || '—'}</div>
+      <div class="clue-author">${c.playerName}</div>
+      ${canToggle ? `<button class="cancel-btn" onclick="toggleCancelClue(${i})" title="${c.cancelled ? 'Restore' : 'Cancel'}">${c.cancelled ? '↩️' : '✕'}</button>` : ''}
+    </div>
+  `).join('');
+}
+
+function renderCluesBoardReadonly(containerId, clues) {
+  const board = document.getElementById(containerId);
+  if (!board) return;
+  if (!clues || clues.length === 0) {
+    board.innerHTML = '<p class="text-muted text-center" style="padding:20px">All clues were cancelled! Try to guess anyway.</p>';
+    return;
+  }
+  board.innerHTML = clues.map(c => `
+    <div class="clue-row valid">
+      <div class="clue-text">${c.clue}</div>
+      <div class="clue-author">${c.playerName || ''}</div>
+    </div>
+  `).join('');
+}
+
+function showError(id, msg) {
+  const el = document.getElementById(id);
+  if (el) { el.textContent = msg; el.style.display = 'block'; }
+}
+function clearError(id) {
+  const el = document.getElementById(id);
+  if (el) { el.style.display = 'none'; el.textContent = ''; }
+}
+
+// Allow Enter key to trigger forms
+document.getElementById('createName').addEventListener('keydown', e => { if (e.key === 'Enter') createRoom(); });
+document.getElementById('joinName').addEventListener('keydown', e => { if (e.key === 'Enter') joinRoom(); });
+document.getElementById('joinCode').addEventListener('keydown', e => { if (e.key === 'Enter') joinRoom(); });
+document.getElementById('joinCode').addEventListener('input', e => {
+  e.target.value = e.target.value.toUpperCase();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "azul-multiplayer",
+  "version": "1.0.0",
+  "description": "Azul board game — online multiplayer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.17.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "compound-game",
+  "version": "1.0.0",
+  "description": "Compound! — a multiplayer word game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

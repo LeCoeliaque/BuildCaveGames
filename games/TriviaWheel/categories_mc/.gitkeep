@@ -1,0 +1,2 @@
+Place multiple-choice JSON files here (see README).
+Run node clean_mc.js to strip metadata before first use.

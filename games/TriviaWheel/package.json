@@ -1,0 +1,14 @@
+{
+  "name": "triviawheel",
+  "version": "4.0.0",
+  "description": "TriviaWheel — multiplayer trivia board game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "clean-mc": "node clean_mc.js",
+    "clean-fr": "node clean.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

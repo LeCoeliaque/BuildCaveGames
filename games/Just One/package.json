@@ -1,0 +1,12 @@
+{
+  "name": "just-one-game",
+  "version": "1.0.0",
+  "description": "Just One — Cooperative multiplayer word game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

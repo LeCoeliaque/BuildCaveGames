@@ -1,0 +1,4244 @@
+[
+  {
+    "question": "An American presidential term is what fraction of a decade?",
+    "answer": "B",
+    "options": {
+      "A": "1/5",
+      "B": "2/5",
+      "C": "3/7",
+      "D": "4/7",
+      "E": "5/7"
+    }
+  },
+  {
+    "question": "The least evidence that future events can be predicted on the basis of fixed laws is associated with which field?",
+    "answer": "A",
+    "options": {
+      "A": "economics",
+      "B": "electronics",
+      "C": "mathematics",
+      "D": "plate tectonics",
+      "E": "nuclear physics"
+    }
+  },
+  {
+    "question": "A right triangle with a base of 6 feet and a hypotenuse of 10 feet has an area of ---- square feet.",
+    "answer": "C",
+    "options": {
+      "A": "12",
+      "B": "16",
+      "C": "24",
+      "D": "32",
+      "E": "48"
+    }
+  },
+  {
+    "question": "A group of three is randomly chosen from a population of four women and five men.  What is the probability that exactly two are men?",
+    "answer": "E",
+    "options": {
+      "A": "5/13",
+      "B": "6/15",
+      "C": "8/17",
+      "D": "9/19",
+      "E": "10/21"
+    }
+  },
+  {
+    "question": "A fortnight is a period of ...",
+    "answer": "B",
+    "options": {
+      "A": "4 days",
+      "B": "2 weeks",
+      "C": "19 days",
+      "D": "31 days",
+      "E": "4 months"
+    }
+  },
+  {
+    "question": "How many acres are in one quarter section?",
+    "answer": "C",
+    "options": {
+      "A": "40",
+      "B": "80",
+      "C": "160",
+      "D": "320",
+      "E": "640"
+    }
+  },
+  {
+    "question": "If it takes 6 lumberjacks 4 hours to fell 40 trees, about how many hours would it take 9 lumberjacks to get the same production?",
+    "answer": "B",
+    "options": {
+      "A": "1 1/3",
+      "B": "2 2/3",
+      "C": "3 1/3",
+      "D": "4 2/3",
+      "E": "5 1/3"
+    }
+  },
+  {
+    "question": "Which cannot be the sum of the interior angles of a polygon?",
+    "answer": "C",
+    "options": {
+      "A": "1080",
+      "B": "1260",
+      "C": "1420",
+      "D": "1980",
+      "E": "3240"
+    }
+  },
+  {
+    "question": "3/8 is a simplified way of expressing the ratio of 42 to ...",
+    "answer": "B",
+    "options": {
+      "A": "108",
+      "B": "112",
+      "C": "116",
+      "D": "120",
+      "E": "124"
+    }
+  },
+  {
+    "question": "The square root of which number is rational?",
+    "answer": "D",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "5",
+      "D": "9",
+      "E": "11"
+    }
+  },
+  {
+    "question": "A kangaroo rat has a 60-yard head start on a hungry coyote.  Each second, the coyote covers 9 feet while the kangaroo rat goes 5 feet.  How many seconds will the chase last?",
+    "answer": "E",
+    "options": {
+      "A": "25",
+      "B": "30",
+      "C": "35",
+      "D": "40",
+      "E": "45"
+    }
+  },
+  {
+    "question": "How many more degrees are in the interior angles of a square than in a triangle?",
+    "answer": "E",
+    "options": {
+      "A": "30",
+      "B": "45",
+      "C": "60",
+      "D": "90",
+      "E": "180"
+    }
+  },
+  {
+    "question": "Ted has 5 more tadpoles than Tina.  If Ted's tadpoles are added to twice Tina's, the total is 65.  How many tadpoles does Tina have?",
+    "answer": "C",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    }
+  },
+  {
+    "question": "The difference between 5 miles square and 5 square miles is ---- square miles.",
+    "answer": "D",
+    "options": {
+      "A": "0",
+      "B": "5",
+      "C": "10",
+      "D": "20",
+      "E": "30"
+    }
+  },
+  {
+    "question": "There is a 2 to 3 ratio in a ...",
+    "answer": "B",
+    "options": {
+      "A": "bucket with 9 frogs and 15 toads",
+      "B": "corral with 18 emus and 27 ostriches",
+      "C": "piggy bank with 3 dimes and 2 quarters",
+      "D": "garage with 6 bikes and 12 skateboards",
+      "E": "drawer with 21 marbles and 33 pea shooters"
+    }
+  },
+  {
+    "question": "What is the largest of the three arithmetic means between 7 and 23?",
+    "answer": "D",
+    "options": {
+      "A": "12",
+      "B": "15",
+      "C": "17",
+      "D": "19",
+      "E": "21"
+    }
+  },
+  {
+    "question": "Near the center of the continental glacier covering Greenland, the ice is two miles thick, a depth of how many yards?",
+    "answer": "C",
+    "options": {
+      "A": "2,112",
+      "B": "2,640",
+      "C": "3,520",
+      "D": "5,280",
+      "E": "10,560"
+    }
+  },
+  {
+    "question": "Two sets that do not intersect are ...",
+    "answer": "D",
+    "options": {
+      "A": "finite",
+      "B": "empty",
+      "C": "closed",
+      "D": "disjoint",
+      "E": "complementary"
+    }
+  },
+  {
+    "question": "Express the quotient of 2 2/5 divided by 6 as a decimal number.",
+    "answer": "C",
+    "options": {
+      "A": ".2",
+      "B": ".3",
+      "C": ".4",
+      "D": ".5",
+      "E": ".6"
+    }
+  },
+  {
+    "question": "The fraction 3/9 has an equivalent fraction for which the sum of the numerator and the denominator is 300.  What is the numerator of that fraction?",
+    "answer": "D",
+    "options": {
+      "A": "45",
+      "B": "55",
+      "C": "65",
+      "D": "75",
+      "E": "85"
+    }
+  },
+  {
+    "question": "The triangular faces of a pyramid meet at the ...",
+    "answer": "B",
+    "options": {
+      "A": "ibex",
+      "B": "apex",
+      "C": "index",
+      "D": "annex",
+      "E": "vortex"
+    }
+  },
+  {
+    "question": "Since Earth travels about 30 kilometers per second in its orbit around the Sun, how many kilometers does it travel in 10 minutes?",
+    "answer": "A",
+    "options": {
+      "A": "18,000",
+      "B": "22,000",
+      "C": "26,000",
+      "D": "30,000",
+      "E": "34,000"
+    }
+  },
+  {
+    "question": "If x is a prime number greater than 5, factors of 10x do not include ...",
+    "answer": "C",
+    "options": {
+      "A": "2x",
+      "B": "5x",
+      "C": "x squared",
+      "D": "x to the first power",
+      "E": "the square root of 25"
+    }
+  },
+  {
+    "question": "If 1120 acres of land are divided among three families in the ratio of 2 to 5 to 7, how many acres comprise the largest parcel?",
+    "answer": "E",
+    "options": {
+      "A": "340",
+      "B": "420",
+      "C": "480",
+      "D": "500",
+      "E": "560"
+    }
+  },
+  {
+    "question": "The diagonal of a rectangular garden is 13 feet.  If the garden's area is 60 square feet, what are its dimensions?",
+    "answer": "E",
+    "options": {
+      "A": "30' x 2'",
+      "B": "20' x 3'",
+      "C": "15' x 4'",
+      "D": "10' x 6'",
+      "E": "12' x 5'"
+    }
+  },
+  {
+    "question": "A null set ...",
+    "answer": "A",
+    "options": {
+      "A": "contains no members",
+      "B": "is the same as a finite set",
+      "C": "is the same as an infinite set",
+      "D": "has a maximum number of members",
+      "E": "exists only in relation to another set"
+    }
+  },
+  {
+    "question": "In a list of scores, the most frequently appearing score is the ...",
+    "answer": "A",
+    "options": {
+      "A": "mode",
+      "B": "mean",
+      "C": "datum",
+      "D": "median",
+      "E": "average"
+    }
+  },
+  {
+    "question": "The sum of the composite numbers between 5 and 13 is ...",
+    "answer": "D",
+    "options": {
+      "A": "19",
+      "B": "27",
+      "C": "36",
+      "D": "45",
+      "E": "52"
+    }
+  },
+  {
+    "question": "When q is divided by 2/5, it changes from 80 to 200 or from ---- to 40.",
+    "answer": "E",
+    "options": {
+      "A": "8",
+      "B": "10",
+      "C": "12",
+      "D": "14",
+      "E": "16"
+    }
+  },
+  {
+    "question": "Which is not a finite set?",
+    "answer": "E",
+    "options": {
+      "A": "insects on Earth",
+      "B": "square roots of pi",
+      "C": "a googolplex of oranges",
+      "D": "number of stars in the galaxy",
+      "E": "number of lines that pass through a point"
+    }
+  },
+  {
+    "question": "In square feet, what is the total surface area of a cube measuring 1.5 feet on an edge?",
+    "answer": "C",
+    "options": {
+      "A": "6.0",
+      "B": "9.5",
+      "C": "13.5",
+      "D": "17.5",
+      "E": "23.0"
+    }
+  },
+  {
+    "question": "27 is congruent to what number in modulo 12?",
+    "answer": "B",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "A mixture consists of 6 parts flour and 19 parts sugar.  How many pounds of flour are in a 500 pound mixture of this stuff?",
+    "answer": "A",
+    "options": {
+      "A": "120",
+      "B": "240",
+      "C": "180",
+      "D": "60",
+      "E": "90"
+    }
+  },
+  {
+    "question": "An herbicide concentrate is to be mixed with water at a ratio of 7 parts water to 2 parts concentrate.  How many pints water should be added to one pint of the concentrate?",
+    "answer": "B",
+    "options": {
+      "A": "2.8",
+      "B": "3.5",
+      "C": "3.25",
+      "D": "3.75",
+      "E": "5.25"
+    }
+  },
+  {
+    "question": "Any intersection of planes in a geometric solid is a(n) ...",
+    "answer": "C",
+    "options": {
+      "A": "side",
+      "B": "base",
+      "C": "edge",
+      "D": "point",
+      "E": "vertex"
+    }
+  },
+  {
+    "question": "The Babylonians divided the day into 12 periods of 30 \"ush.\"  How many \"ush\" are there in 32 minutes?",
+    "answer": "C",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "8",
+      "D": "10",
+      "E": "12"
+    }
+  },
+  {
+    "question": "Fido is 7 years younger than Rover and their ages add up to 19.  If one dog year equals 7 human years (which it doesn't), how old is Rover in dog years?",
+    "answer": "D",
+    "options": {
+      "A": "70",
+      "B": "77",
+      "C": "84",
+      "D": "91",
+      "E": "98"
+    }
+  },
+  {
+    "question": "What forms a catenary?",
+    "answer": "D",
+    "options": {
+      "A": "the path of a bullet",
+      "B": "the orbit of the Moon",
+      "C": "an arch in a Roman aqueduct",
+      "D": "a cable suspended between posts",
+      "E": "a horizontal cross section of a cone"
+    }
+  },
+  {
+    "question": "In the ordered pair, (7, -4), the ordinate is ...",
+    "answer": "D",
+    "options": {
+      "A": "7",
+      "B": "-7",
+      "C": "4",
+      "D": "-4",
+      "E": "either 4 or -4"
+    }
+  },
+  {
+    "question": "Which is misspelled?",
+    "answer": "E",
+    "options": {
+      "A": "explain",
+      "B": "loveable",
+      "C": "operator",
+      "D": "obituary",
+      "E": "mathmatics"
+    }
+  },
+  {
+    "question": "Which number has been improperly rounded?",
+    "answer": "E",
+    "options": {
+      "A": "5.51483 to 6",
+      "B": "1428.81 to 1430",
+      "C": "46.2832 to 46.28",
+      "D": "941.358 to 941.4",
+      "E": "7.37294 to 7.372"
+    }
+  },
+  {
+    "question": "Two sets that can be put in one-to-one correspondence are ---- sets.",
+    "answer": "E",
+    "options": {
+      "A": "null",
+      "B": "open",
+      "C": "infinite",
+      "D": "identity",
+      "E": "equivalent"
+    }
+  },
+  {
+    "question": "Wild Eddie said he was heading off on an extended trip for two score fortnights.  How many days will he be gone?",
+    "answer": "E",
+    "options": {
+      "A": "400",
+      "B": "440",
+      "C": "480",
+      "D": "520",
+      "E": "560"
+    }
+  },
+  {
+    "question": "Clock x loses 1 minute per day.  Clock y gains 2 3/4 minutes per day.  Clock y is 15 minutes ahead of clock x.  How many days will it take clock y to be 30 minutes ahead of clock x?",
+    "answer": "A",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    }
+  },
+  {
+    "question": "During one 8-hour shift, an employee spent 2 1/4 hours chatting on the phone, 1 1/8 hours browsing magazines, and 1 3/8 hours on breaks.  How much time was left for work?",
+    "answer": "B",
+    "options": {
+      "A": "3 hours",
+      "B": "3 hours 15 minutes",
+      "C": "3 hours 30 minutes",
+      "D": "3 hours 45 minutes",
+      "E": "4 hours"
+    }
+  },
+  {
+    "question": "Owen owns an onion outlet.  The ratio of Vidalias to Walla Wallas is 2 to 3.  The ratio of Bermudas to Vidalias is 1 to 2.  If Owen has 51 Walla Wallas, how many Bermudas does he have?",
+    "answer": "D",
+    "options": {
+      "A": "11",
+      "B": "13",
+      "C": "15",
+      "D": "17",
+      "E": "19"
+    }
+  },
+  {
+    "question": "What is your total cost for a dinner if the meal is $14.00, the tax rate is 5%, and you leave a 15% tip based on the sum of the meal and tax amounts?",
+    "answer": "E",
+    "options": {
+      "A": "$15.60",
+      "B": "$15.80",
+      "C": "$16.20",
+      "D": "$16.50",
+      "E": "$16.90"
+    }
+  },
+  {
+    "question": "What plane figure is bounded by two radii and the included arc of a circle?",
+    "answer": "C",
+    "options": {
+      "A": "cone",
+      "B": "chord",
+      "C": "sector",
+      "D": "vertex",
+      "E": "rhombus"
+    }
+  },
+  {
+    "question": "Rancid caught 60 carp, and divided them among his four fishless friends.  Orvis got twice as many as Isaac, while Olga and Budge each got half as many as Isaac.  Isaac got ---- pounds.",
+    "answer": "B",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    }
+  },
+  {
+    "question": "A rod has a length of 3.59 meters.  It expands by 2.02%.  What is its increase in length?",
+    "answer": "E",
+    "options": {
+      "A": ".557",
+      "B": ".0081",
+      "C": ".0162",
+      "D": ".0014",
+      "E": ".00072"
+    }
+  },
+  {
+    "question": "Express the following in terms of one trigonometric function.   2 sin 35 degrees cos 35 degrees",
+    "answer": "A",
+    "options": {
+      "A": "sine 70 degrees",
+      "B": "cosine 45 degrees",
+      "C": "tangent 0 degrees",
+      "D": "cosine 85 degrees",
+      "E": "cotangent 15 degrees"
+    }
+  },
+  {
+    "question": "The sum of the volumes of a cube with two-inch sides and another cube each face of which contains sixteen square inches is ---- cubic inches.",
+    "answer": "C",
+    "options": {
+      "A": "18",
+      "B": "38",
+      "C": "72",
+      "D": "108",
+      "E": "214"
+    }
+  },
+  {
+    "question": "If two foci of an elliptical orbit are brought closer together, the orbit becomes ...",
+    "answer": "E",
+    "options": {
+      "A": "egg-shaped",
+      "B": "a straight line",
+      "C": "cardioid-shaped",
+      "D": "an elongated ellipse",
+      "E": "more nearly a circle"
+    }
+  },
+  {
+    "question": "This expression is meaningless if the variable has what value?   (2p + 1)/(2p - 1)",
+    "answer": "C",
+    "options": {
+      "A": "1",
+      "B": "-2",
+      "C": "1/2",
+      "D": "-1/4",
+      "E": "4"
+    }
+  },
+  {
+    "question": "Evaluate this expression.   6!/4!2!",
+    "answer": "B",
+    "options": {
+      "A": "12",
+      "B": "15",
+      "C": "19",
+      "D": "25",
+      "E": "31"
+    }
+  },
+  {
+    "question": "You connect the midpoints of a square to form a diamond.  The area of half that diamond is what fraction of the area of the square?",
+    "answer": "B",
+    "options": {
+      "A": "1/2",
+      "B": "1/4",
+      "C": "1/8",
+      "D": "1/16",
+      "E": "1/32"
+    }
+  },
+  {
+    "question": "If the square root of the hypotenuse is 17 feet, then what is the square root of the sum of the squares of the lengths of the two legs?",
+    "answer": "E",
+    "options": {
+      "A": "169",
+      "B": "196",
+      "C": "225",
+      "D": "256",
+      "E": "289"
+    }
+  },
+  {
+    "question": "How many quarts of a 60% solution must be added to 30 quarts of a 10% solution to produce a 20% solution?",
+    "answer": "C",
+    "options": {
+      "A": "5.1",
+      "B": "6.3",
+      "C": "7.5",
+      "D": "8.6",
+      "E": "9.7"
+    }
+  },
+  {
+    "question": "One hectare equals about how many acres?",
+    "answer": "B",
+    "options": {
+      "A": "1.5",
+      "B": "2.5",
+      "C": "3.5",
+      "D": "4.5",
+      "E": "5.5"
+    }
+  },
+  {
+    "question": "The circumference of a circle which has a diameter of 200 yards is ---- yards.",
+    "answer": "A",
+    "options": {
+      "A": "628.32",
+      "B": "719.16",
+      "C": "483.92",
+      "D": "817.54",
+      "E": "312.86"
+    }
+  },
+  {
+    "question": "2 to the 3/2 power equals the square root of ...",
+    "answer": "D",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8",
+      "E": "10"
+    }
+  },
+  {
+    "question": "In how many ways may 5 of 7 different pegs be placed in 5 different holes?",
+    "answer": "E",
+    "options": {
+      "A": "1,855",
+      "B": "1,965",
+      "C": "2,140",
+      "D": "2,330",
+      "E": "2,520"
+    }
+  },
+  {
+    "question": "Within a circle, there are four horizontal chords and three vertical chords.  What is the total number of intersections of the lines with each other and with the circle?",
+    "answer": "B",
+    "options": {
+      "A": "24",
+      "B": "26",
+      "C": "28",
+      "D": "30",
+      "E": "32"
+    }
+  },
+  {
+    "question": "Yosuf Karsh and Mathew Brady were ...",
+    "answer": "D",
+    "options": {
+      "A": "painters",
+      "B": "sculptors",
+      "C": "architects",
+      "D": "photographers",
+      "E": "political cartoonists"
+    }
+  },
+  {
+    "question": "How many nanoseconds are in one kilosecond?",
+    "answer": "D",
+    "options": {
+      "A": "1,000",
+      "B": "1,000,000",
+      "C": "1,000,000,000",
+      "D": "1,000,000,000,000",
+      "E": "1,000,000,000,000,000"
+    }
+  },
+  {
+    "question": "The cube of -5 equals ...",
+    "answer": "E",
+    "options": {
+      "A": "75",
+      "B": "-15",
+      "C": "-75",
+      "D": "125",
+      "E": "-125"
+    }
+  },
+  {
+    "question": "The sine of 30 degrees equals ...",
+    "answer": "B",
+    "options": {
+      "A": "0.025",
+      "B": "0.500",
+      "C": "0.866",
+      "D": "1.372",
+      "E": "1.732"
+    }
+  },
+  {
+    "question": "The development of the 360 degree circle is attributed to the ...",
+    "answer": "E",
+    "options": {
+      "A": "Greeks",
+      "B": "Egyptians",
+      "C": "Assyrians",
+      "D": "Phoenicians",
+      "E": "Babylonians"
+    }
+  },
+  {
+    "question": "In this question a = -1 and b = 1.  Use the values to simplify (a squared - 2b)/(2-b).",
+    "answer": "B",
+    "options": {
+      "A": "1",
+      "B": "-1",
+      "C": "0",
+      "D": "-2",
+      "E": "2"
+    }
+  },
+  {
+    "question": "What is the largest number you can make by multiplying together any two of the prime factors of 126?",
+    "answer": "B",
+    "options": {
+      "A": "18",
+      "B": "21",
+      "C": "24",
+      "D": "27",
+      "E": "30"
+    }
+  },
+  {
+    "question": "Which is not a geometric sequence?",
+    "answer": "D",
+    "options": {
+      "A": "1, 3, 9, 27, ...",
+      "B": "48, 24, 12, 6, ...",
+      "C": "10, 20, 40, 80, ...",
+      "D": "15, 20, 25, 30, ...",
+      "E": "1, 10, 100, 1000, ..."
+    }
+  },
+  {
+    "question": "A taxi charges $1.20 for the first third of a mile and $.50 for each additional third.  How much does a five-mile trip cost?",
+    "answer": "D",
+    "options": {
+      "A": "$6.40",
+      "B": "$7.20",
+      "C": "$7.60",
+      "D": "$8.20",
+      "E": "$8.60"
+    }
+  },
+  {
+    "question": "The factorial of which number is closest to one googol?",
+    "answer": "B",
+    "options": {
+      "A": "30",
+      "B": "70",
+      "C": "110",
+      "D": "150",
+      "E": "190"
+    }
+  },
+  {
+    "question": "The 6 in the number 819.321564 holds what place value?",
+    "answer": "D",
+    "options": {
+      "A": "hundredths",
+      "B": "thousandths",
+      "C": "ten thousandths",
+      "D": "hundred thousandths",
+      "E": "millionths"
+    }
+  },
+  {
+    "question": "Which is not equivalent to the others?",
+    "answer": "D",
+    "options": {
+      "A": "99.96",
+      "B": "100 - .04",
+      "C": "(9.8)(10.2)",
+      "D": "10 squared",
+      "E": "(10 - .2)(10 + .2)"
+    }
+  },
+  {
+    "question": "The area of a regular hexagon is 2,598 square inches.  The length of each of its sides is ---- inch(es).",
+    "answer": "A",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    }
+  },
+  {
+    "question": "What is the sum of just the improper fractions?   3/5    9/4    2/7    3/2    1/3    10/5",
+    "answer": "C",
+    "options": {
+      "A": "3 1/8",
+      "B": "4 1/4",
+      "C": "5 3/4",
+      "D": "6 5/8",
+      "E": "7 1/2"
+    }
+  },
+  {
+    "question": "To find out about how much you weigh in kilograms, divide your weight in pounds by ...",
+    "answer": "A",
+    "options": {
+      "A": "2.2",
+      "B": "3.3",
+      "C": "4.4",
+      "D": "5.5",
+      "E": "6.6"
+    }
+  },
+  {
+    "question": "Gimli is now three times older than Aragorn.  Four years ago, Gimli was five times as old as Aragorn was then.  How old is Gimli now?",
+    "answer": "D",
+    "options": {
+      "A": "16",
+      "B": "19",
+      "C": "21",
+      "D": "24",
+      "E": "28"
+    }
+  },
+  {
+    "question": "Find the smallest of three consecutive integers whose sum is 60.",
+    "answer": "C",
+    "options": {
+      "A": "17",
+      "B": "18",
+      "C": "19",
+      "D": "20",
+      "E": "21"
+    }
+  },
+  {
+    "question": "Which number is not equivalent with the others?",
+    "answer": "C",
+    "options": {
+      "A": "0.01",
+      "B": "1/100",
+      "C": ".01 squared",
+      "D": "1/10 squared",
+      "E": "10 to the -2 power"
+    }
+  },
+  {
+    "question": "Which is a compound denominate number?",
+    "answer": "E",
+    "options": {
+      "A": "186",
+      "B": "5.387",
+      "C": "250 bricks",
+      "D": "82 1/4 gallons",
+      "E": "9 yards 3 feet"
+    }
+  },
+  {
+    "question": "What are the two values for the unknown in this equation?   X squared - 49 = 0",
+    "answer": "D",
+    "options": {
+      "A": "4 and -4",
+      "B": "5 and -5",
+      "C": "6 and -6",
+      "D": "7 and -7",
+      "E": "8 and -8"
+    }
+  },
+  {
+    "question": "What property makes this statement true?   4(x+y) = 4x + 4y",
+    "answer": "D",
+    "options": {
+      "A": "reflexive",
+      "B": "transitive",
+      "C": "associative",
+      "D": "distributive",
+      "E": "commutative"
+    }
+  },
+  {
+    "question": "Divide the sum of 1/2 and 1/3 by 10/11.",
+    "answer": "D",
+    "options": {
+      "A": "5/6",
+      "B": "7/8",
+      "C": "9/10",
+      "D": "11/12",
+      "E": "13/14"
+    }
+  },
+  {
+    "question": "If a point is equidistant from the ends of a line segment, it must be on ...",
+    "answer": "C",
+    "options": {
+      "A": "a diagonal line",
+      "B": "the line segment",
+      "C": "the perpendicular bisector",
+      "D": "a line parallel to the line segment",
+      "E": "any line perpendicular to the line segment"
+    }
+  },
+  {
+    "question": "In the fraction, XY/Z, if the values of both X and Z are tripled, what happens to the value of the original fraction?",
+    "answer": "E",
+    "options": {
+      "A": "It is tripled.",
+      "B": "It is divided by 3.",
+      "C": "It is increased by X",
+      "D": "It is increased by Z.",
+      "E": "It remains the same."
+    }
+  },
+  {
+    "question": "Ted bought a $60,000 Porsche and its value depreciated 10% per year.  How much was it worth after three years?",
+    "answer": "B",
+    "options": {
+      "A": "$42,000",
+      "B": "$43,740",
+      "C": "$44,420",
+      "D": "$45,800",
+      "E": "$46,120"
+    }
+  },
+  {
+    "question": "Gus burned 18.5 gallons of gas during the time that his odometer changed from 35,225 to 35,484.  What was his mpg?",
+    "answer": "B",
+    "options": {
+      "A": "13",
+      "B": "14",
+      "C": "15",
+      "D": "16",
+      "E": "17"
+    }
+  },
+  {
+    "question": "The reference angle for 241 degrees is ---- degrees.",
+    "answer": "E",
+    "options": {
+      "A": "19",
+      "B": "29",
+      "C": "39",
+      "D": "49",
+      "E": "59"
+    }
+  },
+  {
+    "question": "Fifteen identical boxes sit on top of one another in a pile 3 meters high.  In millimeters, what is the height of each box?",
+    "answer": "D",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "150",
+      "D": "200",
+      "E": "250"
+    }
+  },
+  {
+    "question": "Vertical bars on either side of a number indicate ...",
+    "answer": "C",
+    "options": {
+      "A": "factorial",
+      "B": "greater than",
+      "C": "absolute value",
+      "D": "irrational number",
+      "E": "approximately equal to"
+    }
+  },
+  {
+    "question": "What kind of numbers have two or more factors?",
+    "answer": "A",
+    "options": {
+      "A": "composite",
+      "B": "computational",
+      "C": "commensurate",
+      "D": "compassionate",
+      "E": "complementary"
+    }
+  },
+  {
+    "question": "Inverse variation is not illustrated by which equation?",
+    "answer": "C",
+    "options": {
+      "A": "RD = 7",
+      "B": "15 = RT",
+      "C": "D = 45T",
+      "D": "10/y = x",
+      "E": "15 = 2 pi (rh)"
+    }
+  },
+  {
+    "question": "How many integers greater than 100 can be written using just 0, 4, and 7 if no digit is repeated in any number?",
+    "answer": "B",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    }
+  },
+  {
+    "question": "How many pieces of 18-inch long hardwood flooring 2 inches wide are needed to cover a 9 by 11 foot floor?",
+    "answer": "E",
+    "options": {
+      "A": "316",
+      "B": "336",
+      "C": "356",
+      "D": "376",
+      "E": "396"
+    }
+  },
+  {
+    "question": "A rod that measures 1.5 feet most nearly equals ---- centimeters.",
+    "answer": "B",
+    "options": {
+      "A": "28",
+      "B": "46",
+      "C": "61",
+      "D": "73",
+      "E": "84"
+    }
+  },
+  {
+    "question": "What is the square root of 1755.61?",
+    "answer": "D",
+    "options": {
+      "A": "29.04",
+      "B": "32.15",
+      "C": "37.89",
+      "D": "41.90",
+      "E": "46.02"
+    }
+  },
+  {
+    "question": "There are 7 trails from Nome to Barrow.  In how many different ways could you travel from one site to the other and return by a different route?",
+    "answer": "D",
+    "options": {
+      "A": "21",
+      "B": "28",
+      "C": "35",
+      "D": "42",
+      "E": "49"
+    }
+  },
+  {
+    "question": "Clara Barton, the \"angel\" of Civil War battlefields, was 5 feet tall.  Express this height in meters.",
+    "answer": "B",
+    "options": {
+      "A": "1.08",
+      "B": "1.52",
+      "C": "1.96",
+      "D": "2.14",
+      "E": "2.80"
+    }
+  },
+  {
+    "question": "Last year, Willy's Widget Works manufactured 8,300 widgets, but this year, it produced 5 percent less.  How many were made this year?",
+    "answer": "E",
+    "options": {
+      "A": "6,640",
+      "B": "6,690",
+      "C": "7,358",
+      "D": "7,737",
+      "E": "7,885"
+    }
+  },
+  {
+    "question": "A 200-pound cube with a volume of 125 cubic feet exerts how many pounds per square foot on the surface upon which it rests?",
+    "answer": "D",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8",
+      "E": "10"
+    }
+  },
+  {
+    "question": "If someone left home and averaged 40 miles per hour for two hours and then, after a break, drove another three hours at 65 mph, how many miles were covered?",
+    "answer": "C",
+    "options": {
+      "A": "255",
+      "B": "265",
+      "C": "275",
+      "D": "285",
+      "E": "295"
+    }
+  },
+  {
+    "question": "A card file of 1,000 cards contains 72 cards to the inch.  3 5/8 inches of the cards are removed.  How many cards are left in the file?",
+    "answer": "B",
+    "options": {
+      "A": "690",
+      "B": "739",
+      "C": "780",
+      "D": "836",
+      "E": "644"
+    }
+  },
+  {
+    "question": "Divide 8 factorial by 5 factorial.",
+    "answer": "B",
+    "options": {
+      "A": "326",
+      "B": "336",
+      "C": "346",
+      "D": "356",
+      "E": "366"
+    }
+  },
+  {
+    "question": "The graph of a biquadratic curve in comparison to that of a quadratic curve ...",
+    "answer": "C",
+    "options": {
+      "A": "is inverted",
+      "B": "is circular",
+      "C": "has steeper gradients",
+      "D": "passes through three quadrants",
+      "E": "does not pass through the y axis"
+    }
+  },
+  {
+    "question": "Which number on the left has been correctly rounded into a number in the right-hand column?",
+    "answer": "D",
+    "options": {
+      "A": ".0063872  -  .007",
+      "B": "82.00386  -  82.1",
+      "C": ".8738269  -  .873",
+      "D": "4287.391  -  4300",
+      "E": ".3972207  -  .397220"
+    }
+  },
+  {
+    "question": "The sum of two numbers is 50.  What is the smaller number if the larger one is 5 more than twice the smaller?",
+    "answer": "D",
+    "options": {
+      "A": "6",
+      "B": "9",
+      "C": "11",
+      "D": "15",
+      "E": "18"
+    }
+  },
+  {
+    "question": "The shaft of an electric motor running at 6,600 rpm is turning how many revolutions per second?",
+    "answer": "B",
+    "options": {
+      "A": "100",
+      "B": "110",
+      "C": "120",
+      "D": "130",
+      "E": "140"
+    }
+  },
+  {
+    "question": "What is the inverse function of this?   f(x) = 5x + 2",
+    "answer": "E",
+    "options": {
+      "A": "f(x) = 2/5x",
+      "B": "f(x) = 2x/5",
+      "C": "f(x) = 5x/2",
+      "D": "f(x) = (x-5)/2",
+      "E": "f(x) = (x-2)/5"
+    }
+  },
+  {
+    "question": "Lynne bought a stock for $40 per share.  She sold it six months later for $61 per share.  By what percent did its value increase?",
+    "answer": "C",
+    "options": {
+      "A": "51.5",
+      "B": "52",
+      "C": "52.5",
+      "D": "53",
+      "E": "53.5"
+    }
+  },
+  {
+    "question": "Seventeen twelfths of two hours equal how many minutes?",
+    "answer": "D",
+    "options": {
+      "A": "140",
+      "B": "150",
+      "C": "160",
+      "D": "170",
+      "E": "180"
+    }
+  },
+  {
+    "question": "Two angles are supplementary.  One is 60 degrees less than twice the other. The angles are ---- degrees.",
+    "answer": "B",
+    "options": {
+      "A": "90 and 90",
+      "B": "100 and 80",
+      "C": "120 and 60",
+      "D": "130 and 50",
+      "E": "140 and 40"
+    }
+  },
+  {
+    "question": "Using the binary system, which creature is not correctly paired with its number of legs?",
+    "answer": "D",
+    "options": {
+      "A": "primate - 10",
+      "B": "insect - 110",
+      "C": "canine - 100",
+      "D": "spider - 1100",
+      "E": "octopus - 1000"
+    }
+  },
+  {
+    "question": "How many digits are in the square root of 272,484?",
+    "answer": "B",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "Find the interest on $480 at 3.5% for two months and fifteen days.",
+    "answer": "B",
+    "options": {
+      "A": "$2.40",
+      "B": "$3.50",
+      "C": "$3.90",
+      "D": "$4.10",
+      "E": "$4.20"
+    }
+  },
+  {
+    "question": "There are 325 creepy crawlies in a bag that contains two kinds of these critters.  If there are 115 more centipedes than millipedes, how many centipedes are there?",
+    "answer": "C",
+    "options": {
+      "A": "190",
+      "B": "210",
+      "C": "220",
+      "D": "230",
+      "E": "240"
+    }
+  },
+  {
+    "question": "Which unit was set as the distance between the elbow and the tip of the middle finger?",
+    "answer": "A",
+    "options": {
+      "A": "cubit",
+      "B": "stone",
+      "C": "karat",
+      "D": "quire",
+      "E": "parsec"
+    }
+  },
+  {
+    "question": "What is the square root of 218.44?",
+    "answer": "B",
+    "options": {
+      "A": "11.22",
+      "B": "14.78",
+      "C": "15.07",
+      "D": "16.32",
+      "E": "17.24"
+    }
+  },
+  {
+    "question": "If the cost of manufacturing obsidian widgets is C(x) = 1200x + 5500, what is the difference in the cost of making 102 of them instead of 100?",
+    "answer": "E",
+    "options": {
+      "A": "$1600",
+      "B": "$1800",
+      "C": "$2000",
+      "D": "$2200",
+      "E": "$2400"
+    }
+  },
+  {
+    "question": "If p equals 4, this expression equals what improper fraction?   1/(1/p + 1/2)",
+    "answer": "B",
+    "options": {
+      "A": "3/2",
+      "B": "4/3",
+      "C": "5/4",
+      "D": "6/5",
+      "E": "7/6"
+    }
+  },
+  {
+    "question": "Which illustrates the commutative property of multiplication?",
+    "answer": "B",
+    "options": {
+      "A": "1a = a",
+      "B": "ab = ba",
+      "C": "(1/a)a = 1",
+      "D": "(ab)c = a(bc)",
+      "E": "a(b+c) = ab + ac"
+    }
+  },
+  {
+    "question": "The length of a shadow cast on the ground is proportional to the ---- of the Sun's elevation angle.",
+    "answer": "E",
+    "options": {
+      "A": "sine",
+      "B": "cosine",
+      "C": "tangent",
+      "D": "cosecant",
+      "E": "cotangent"
+    }
+  },
+  {
+    "question": "What is the largest number divisible by all whole numbers less than its square root?",
+    "answer": "A",
+    "options": {
+      "A": "24",
+      "B": "35",
+      "C": "48",
+      "D": "63",
+      "E": "80"
+    }
+  },
+  {
+    "question": "Which number is not a perfect square?",
+    "answer": "D",
+    "options": {
+      "A": "25",
+      "B": "49",
+      "C": "81",
+      "D": "102",
+      "E": "121"
+    }
+  },
+  {
+    "question": "If the wind speed of a powerful tornado is 416 kilometers per hour, that equals about how many miles per hour?",
+    "answer": "C",
+    "options": {
+      "A": "166",
+      "B": "204",
+      "C": "258",
+      "D": "292",
+      "E": "324"
+    }
+  },
+  {
+    "question": "At liftoff, a rocket weighed 1,850 tons or how many million pounds?",
+    "answer": "C",
+    "options": {
+      "A": "1.85",
+      "B": "2.65",
+      "C": "3.70",
+      "D": "4.80",
+      "E": "5.45"
+    }
+  },
+  {
+    "question": "If the sum of the edges of a cube is 60 feet, the volume of this cube is ---- cubic feet.",
+    "answer": "D",
+    "options": {
+      "A": "95",
+      "B": "105",
+      "C": "115",
+      "D": "125",
+      "E": "135"
+    }
+  },
+  {
+    "question": "What is the sum of the prime factors of 164?",
+    "answer": "C",
+    "options": {
+      "A": "41",
+      "B": "43",
+      "C": "45",
+      "D": "47",
+      "E": "49"
+    }
+  },
+  {
+    "question": "An angle formed by the horizontal ray and the line of sight when you look down at an object is the angle of ...",
+    "answer": "D",
+    "options": {
+      "A": "elevation",
+      "B": "reduction",
+      "C": "digression",
+      "D": "depression",
+      "E": "conjunction"
+    }
+  },
+  {
+    "question": "At a pressure of 752 mm of mercury, the volume of a gas is 4.63 liter.  If the temperature is constant, what is the volume of this gas at a pressure of 1380 mm of mercury?",
+    "answer": "E",
+    "options": {
+      "A": "1.72",
+      "B": "1.92",
+      "C": "2.12",
+      "D": "2.32",
+      "E": "2.52"
+    }
+  },
+  {
+    "question": "Numbers such as 3 and 7 are ---- numerals.",
+    "answer": "D",
+    "options": {
+      "A": "Greek",
+      "B": "Saxon",
+      "C": "Roman",
+      "D": "Arabic",
+      "E": "Germanic"
+    }
+  },
+  {
+    "question": "The standard deviation is a measure of ...",
+    "answer": "C",
+    "options": {
+      "A": "range",
+      "B": "frequency",
+      "C": "dispersion",
+      "D": "correlation",
+      "E": "central tendency"
+    }
+  },
+  {
+    "question": "One of two complementary angles is five degrees less than four times the other.  The larger angle is ---- degrees.",
+    "answer": "A",
+    "options": {
+      "A": "71",
+      "B": "73",
+      "C": "75",
+      "D": "77",
+      "E": "79"
+    }
+  },
+  {
+    "question": "The square of which number on the left was not correctly rounded to the 10s place on the right?",
+    "answer": "E",
+    "options": {
+      "A": "4  -  20",
+      "B": "5  -  30",
+      "C": "6  -  40",
+      "D": "7  -  50",
+      "E": "8  -  70"
+    }
+  },
+  {
+    "question": "Which decimal is not paired with its corresponding fraction?",
+    "answer": "D",
+    "options": {
+      "A": ".333 - 1/3",
+      "B": ".875 - 7/8",
+      "C": ".750 - 3/4",
+      "D": ".400 - 3/5",
+      "E": ".666 - 4/6"
+    }
+  },
+  {
+    "question": "How many dekameters are in 200 centimeters?",
+    "answer": "C",
+    "options": {
+      "A": "2",
+      "B": "20",
+      "C": ".2",
+      "D": ".02",
+      "E": ".002"
+    }
+  },
+  {
+    "question": "A circle whose center is the center of a sphere is the ---- of the sphere.",
+    "answer": "E",
+    "options": {
+      "A": "face",
+      "B": "half-plane",
+      "C": "semicircle",
+      "D": "transversal",
+      "E": "great circle"
+    }
+  },
+  {
+    "question": "Factor the following.   a squared - ba - ca + bc.",
+    "answer": "A",
+    "options": {
+      "A": "(a - b)(a -",
+      "C": "E. (-a + b)(-a - c)"
+    }
+  },
+  {
+    "question": "Two adjacent sides of a rectangle inscribed in a circle are 5 inches and 12 inches.  The diameter of the circle is how many inches?",
+    "answer": "D",
+    "options": {
+      "A": "7",
+      "B": "9",
+      "C": "11",
+      "D": "13",
+      "E": "15"
+    }
+  },
+  {
+    "question": "Anaxagoras, Anaximander, and Anaximines are remembered as ...",
+    "answer": "D",
+    "options": {
+      "A": "physicians",
+      "B": "dramatists",
+      "C": "geographers",
+      "D": "philosophers",
+      "E": "mathematicians"
+    }
+  },
+  {
+    "question": "The set of x values in a function is the ---- of a function.",
+    "answer": "D",
+    "options": {
+      "A": "set",
+      "B": "order",
+      "C": "range",
+      "D": "domain",
+      "E": "magnitude"
+    }
+  },
+  {
+    "question": "A liquid contracted to a volume of 30.5 milliliters from a volume of 32 milliliters.  The percentage change in volume was ...",
+    "answer": "D",
+    "options": {
+      "A": "5.72",
+      "B": "8.57",
+      "C": "2.08",
+      "D": "4.69",
+      "E": "6.02"
+    }
+  },
+  {
+    "question": "You cut a sheet of paper in two.  Then you stack them and cut both halves in two again, and continue until you have made a total of 7 such cuts.  The paper is now in how many pieces?",
+    "answer": "D",
+    "options": {
+      "A": "16",
+      "B": "32",
+      "C": "64",
+      "D": "128",
+      "E": "256"
+    }
+  },
+  {
+    "question": "Solve this equation for m.   2m - 6 = 7m +14",
+    "answer": "D",
+    "options": {
+      "A": "-1",
+      "B": "-2",
+      "C": "-3",
+      "D": "-4",
+      "E": "-5"
+    }
+  },
+  {
+    "question": "If an anchored speedboat rises and falls once every 5 seconds as waves pass with crests 20 meters apart, the velocity of the waves is ---- meters per minute.",
+    "answer": "E",
+    "options": {
+      "A": "100",
+      "B": "120",
+      "C": "180",
+      "D": "220",
+      "E": "240"
+    }
+  },
+  {
+    "question": "You have 252 pounds of Jerusalem artichokes to divide into 2 and 5-pound bags.  If you end up with the same number of bags of both weights, what is the total number of bags needed?",
+    "answer": "E",
+    "options": {
+      "A": "36",
+      "B": "44",
+      "C": "58",
+      "D": "66",
+      "E": "72"
+    }
+  },
+  {
+    "question": "What is the second-largest number in this list?",
+    "answer": "C",
+    "options": {
+      "A": "-7",
+      "B": ".05",
+      "C": ".14",
+      "D": "-1.03",
+      "E": "1.007"
+    }
+  },
+  {
+    "question": "The ratio of the Venusians to the number of Martians in a room is 4 to 3.  There are 32 Venusians.  How many Martians are there?",
+    "answer": "B",
+    "options": {
+      "A": "20",
+      "B": "24",
+      "C": "32",
+      "D": "36",
+      "E": "40"
+    }
+  },
+  {
+    "question": "Five kilometers equals how many miles?",
+    "answer": "C",
+    "options": {
+      "A": "2.7",
+      "B": "2.9",
+      "C": "3.1",
+      "D": "3.3",
+      "E": "3.5"
+    }
+  },
+  {
+    "question": "Bill is going to Carlsbad to hunt quail.  He will leave at 3 a.m. and drive at 55 miles per hour for 495 miles.  He will arrive at Carlsbad at ...",
+    "answer": "C",
+    "options": {
+      "A": "10 a.m.",
+      "B": "11 a.m.",
+      "C": "12 p.m.",
+      "D": "1 p.m.",
+      "E": "2 p.m."
+    }
+  },
+  {
+    "question": "A bus takes x hours to cover y miles.  How many hours will it take to travel z miles at the same rate?",
+    "answer": "B",
+    "options": {
+      "A": "xyz",
+      "B": "xz/y",
+      "C": "x/xz",
+      "D": "xy/z",
+      "E": "yz/x"
+    }
+  },
+  {
+    "question": "If chlorine and calcium combine in the weight ratio of 36 to 64, about how much calcium will combine with 5 grams of chlorine?",
+    "answer": "E",
+    "options": {
+      "A": "8.1",
+      "B": "8.3",
+      "C": "8.5",
+      "D": "8.7",
+      "E": "8.9"
+    }
+  },
+  {
+    "question": "There were 750 polar bears in a region in 1976.  In 1996 there were 590 bears left there.  The rate of change per year was ...",
+    "answer": "B",
+    "options": {
+      "A": "-6",
+      "B": "-8",
+      "C": "-10",
+      "D": "-12",
+      "E": "-14"
+    }
+  },
+  {
+    "question": "A piece of property worth $19,000 is assessed for 80% of its value.  The tax rate is $2.552 per $100.  What is the amount of tax?",
+    "answer": "A",
+    "options": {
+      "A": "$387.90",
+      "B": "$406.20",
+      "C": "$422.75",
+      "D": "$438.40",
+      "E": "$442.25"
+    }
+  },
+  {
+    "question": "The largest cube in a Fibonacci sequence is ...",
+    "answer": "B",
+    "options": {
+      "A": "1",
+      "B": "8",
+      "C": "27",
+      "D": "64",
+      "E": "125"
+    }
+  },
+  {
+    "question": "Express the fraction 5/11 as a decimal.",
+    "answer": "C",
+    "options": {
+      "A": ".41",
+      "B": ".43",
+      "C": ".45",
+      "D": ".47",
+      "E": ".49"
+    }
+  },
+  {
+    "question": "A man owned 50 shares of stock at $75 each.  The firm declared a dividend of 4% payable in stock.  How many shares did he then own?",
+    "answer": "B",
+    "options": {
+      "A": "50",
+      "B": "52",
+      "C": "53",
+      "D": "54",
+      "E": "55"
+    }
+  },
+  {
+    "question": "The product of any three consecutive natural numbers is always a multiple of ...",
+    "answer": "C",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    }
+  },
+  {
+    "question": "An auk has a sack of anchovies.  If he eats 2, he will have 3 or 4 or 5 left.  How many were originally in the sack?",
+    "answer": "E",
+    "options": {
+      "A": "0 > x > 4",
+      "B": "0 < x < 4",
+      "C": "2 > x > 8",
+      "D": "4 > x > 8",
+      "E": "4 < x < 8"
+    }
+  },
+  {
+    "question": "A subset of every set is the ...",
+    "answer": "A",
+    "options": {
+      "A": "empty set",
+      "B": "infinite set",
+      "C": "set of even numbers",
+      "D": "set of counting numbers",
+      "E": "set of multiples of the numbers in a       given set"
+    }
+  },
+  {
+    "question": "If Shoeless Slugger Slaminski's batting average is between 0.325 and 0.33, it could be ...",
+    "answer": "D",
+    "options": {
+      "A": "0.319",
+      "B": "0.321",
+      "C": "0.323",
+      "D": "0.327",
+      "E": "0.333"
+    }
+  },
+  {
+    "question": "That part of a cone between the base and an intersecting plane parallel to the base is a ...",
+    "answer": "D",
+    "options": {
+      "A": "circle",
+      "B": "nappe",
+      "C": "vertex",
+      "D": "frustum",
+      "E": "directrix"
+    }
+  },
+  {
+    "question": "Simplify x to the 2/3 power multiplied by x to the 1 1/2 power.",
+    "answer": "D",
+    "options": {
+      "A": "2x",
+      "B": "3x",
+      "C": "x squared",
+      "D": "x to the 1/6 power",
+      "E": "x to the 2/3 power"
+    }
+  },
+  {
+    "question": "The sum of the factors of a number including 1 but excluding the number itself is less than the number.  This number is ...",
+    "answer": "C",
+    "options": {
+      "A": "scant",
+      "B": "inferior",
+      "C": "deficient",
+      "D": "incomplete",
+      "E": "inadequate"
+    }
+  },
+  {
+    "question": "The Bullwinkle Company employs 15 yuppie executives.  This amounts to exactly 1/6 of the total work force of that company.  How many employees work for the Bullwinkle Company?",
+    "answer": "B",
+    "options": {
+      "A": "80",
+      "B": "90",
+      "C": "100",
+      "D": "110",
+      "E": "120"
+    }
+  },
+  {
+    "question": "x/6 could not mean ...",
+    "answer": "D",
+    "options": {
+      "A": "x divided by 6",
+      "B": "one-sixth of x",
+      "C": "the ratio of x to 6",
+      "D": "the product of 6 and x",
+      "E": "the quotient of x and 6"
+    }
+  },
+  {
+    "question": "If a 22 foot pole leans against a wall and makes an angle of 30 degrees with the wall, the wall is ---- feet from the base of the pole.",
+    "answer": "C",
+    "options": {
+      "A": "7",
+      "B": "9",
+      "C": "11",
+      "D": "13",
+      "E": "15"
+    }
+  },
+  {
+    "question": "What is the next number in this sequence?   3   5   11   29 ...",
+    "answer": "D",
+    "options": {
+      "A": "42",
+      "B": "47",
+      "C": "65",
+      "D": "83",
+      "E": "88"
+    }
+  },
+  {
+    "question": "Solve the following for y.   1/y + 2/y + 3/y = 2",
+    "answer": "B",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "If the outside diameter of a stout pipe is 21 1/2 inches and its inside diameter is 16 3/4 inches, how thick is the pipe wall?",
+    "answer": "C",
+    "options": {
+      "A": "2 1/8\"",
+      "B": "2 1/4\"",
+      "C": "2 3/8\"",
+      "D": "2 1/2\"",
+      "E": "2 5/8\""
+    }
+  },
+  {
+    "question": "Express as a base four numeral the number of lives a cat is supposed to have.",
+    "answer": "C",
+    "options": {
+      "A": "12",
+      "B": "20",
+      "C": "21",
+      "D": "22",
+      "E": "11"
+    }
+  },
+  {
+    "question": "Between 1 and 1000, there are how many multiples of 15?",
+    "answer": "E",
+    "options": {
+      "A": "22",
+      "B": "33",
+      "C": "44",
+      "D": "55",
+      "E": "66"
+    }
+  },
+  {
+    "question": "If a gear with 60 teeth is meshed with another having 40 teeth, how many revolutions does the larger one make when the smaller one makes 40 revolutions?",
+    "answer": "A",
+    "options": {
+      "A": "32",
+      "B": "34",
+      "C": "36",
+      "D": "38",
+      "E": "40"
+    }
+  },
+  {
+    "question": "A box weighs 8% as much as its contents.  It contains 275 pounds and box weighs ---- pounds.",
+    "answer": "C",
+    "options": {
+      "A": "17",
+      "B": "18",
+      "C": "22",
+      "D": "24",
+      "E": "26"
+    }
+  },
+  {
+    "question": "The circumference of a circle is 540 meters.  A central angle of 4 degrees will intercept an arc of how many meters?",
+    "answer": "B",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "12",
+      "D": "24",
+      "E": "36"
+    }
+  },
+  {
+    "question": "If a 30 acre field yields 400 bushels of corn, how many acres must be planted to yield 1200 bushels?",
+    "answer": "A",
+    "options": {
+      "A": "90",
+      "B": "120",
+      "C": "140",
+      "D": "160",
+      "E": "180"
+    }
+  },
+  {
+    "question": "A right circular cylinder has a volume of 628 cubic inches and an altitude of 5 inches.  The radius of this cylinder is ---- inches.",
+    "answer": "E",
+    "options": {
+      "A": "3.9",
+      "B": "4.8",
+      "C": "5.1",
+      "D": "5.8",
+      "E": "6.3"
+    }
+  },
+  {
+    "question": "How many pairs of positive whole numbers have 75 as their product?",
+    "answer": "C",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    }
+  },
+  {
+    "question": "The number 18 is a(n) ...",
+    "answer": "A",
+    "options": {
+      "A": "integer",
+      "B": "odd number",
+      "C": "prime number",
+      "D": "perfect number",
+      "E": "concrete number"
+    }
+  },
+  {
+    "question": "Kurt gave Fred as many dollars as Fred had. Fred then gave Kurt as many dollars as Kurt then had.  At this point, each had 12 dollars. How much did Kurt have at the beginning?",
+    "answer": "D",
+    "options": {
+      "A": "$9",
+      "B": "$11",
+      "C": "$13",
+      "D": "$15",
+      "E": "$17"
+    }
+  },
+  {
+    "question": "Add the number of faces on a cone, a cube, a triangular pyramid, and a cylinder.",
+    "answer": "C",
+    "options": {
+      "A": "11",
+      "B": "13",
+      "C": "15",
+      "D": "17",
+      "E": "19"
+    }
+  },
+  {
+    "question": "What is the product of the 4th and 6th prime numbers?",
+    "answer": "C",
+    "options": {
+      "A": "55",
+      "B": "65",
+      "C": "91",
+      "D": "119",
+      "E": "187"
+    }
+  },
+  {
+    "question": "A parallelepiped has how many faces?",
+    "answer": "D",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    }
+  },
+  {
+    "question": "The age of the Earth is estimated to be about 4.6 billion years.  In scientific notation, that is 4.6 times 10 to the ---- power years.",
+    "answer": "D",
+    "options": {
+      "A": "6th",
+      "B": "7th",
+      "C": "8th",
+      "D": "9th",
+      "E": "10th"
+    }
+  },
+  {
+    "question": "If you are looking up at something, the angle between the horizontal and your line of sight is called the angle of ...",
+    "answer": "C",
+    "options": {
+      "A": "attack",
+      "B": "repose",
+      "C": "elevation",
+      "D": "incidence",
+      "E": "reflection"
+    }
+  },
+  {
+    "question": "As a binary numeral, express the number of yards in the length of a football field.",
+    "answer": "D",
+    "options": {
+      "A": "1010100",
+      "B": "1011100",
+      "C": "1100010",
+      "D": "1100100",
+      "E": "1110110"
+    }
+  },
+  {
+    "question": "What is the reciprocal of 1.66 to the nearest hundredth?",
+    "answer": "D",
+    "options": {
+      "A": ".42",
+      "B": ".48",
+      "C": ".53",
+      "D": ".60",
+      "E": ".71"
+    }
+  },
+  {
+    "question": "Which are not twin primes?",
+    "answer": "C",
+    "options": {
+      "A": "17, 19",
+      "B": "41, 43",
+      "C": "69, 71",
+      "D": "101,103",
+      "E": "137, 139"
+    }
+  },
+  {
+    "question": "The Muse Urania was responsible for ...",
+    "answer": "D",
+    "options": {
+      "A": "botany",
+      "B": "zoology",
+      "C": "geography",
+      "D": "astronomy",
+      "E": "mathematics"
+    }
+  },
+  {
+    "question": "In an isosceles trapezoid with an area of 84, find the length of each leg if the bases are 24 and 32.",
+    "answer": "A",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8",
+      "E": "9"
+    }
+  },
+  {
+    "question": "In which line is the conversion incorrect?",
+    "answer": "D",
+    "options": {
+      "A": "60 degrees = pi/3 radians",
+      "B": "36 degrees = pi/5 radians",
+      "C": "-45 degrees = -pi/4 radians",
+      "D": "225 degrees = 5 pi/2 radians",
+      "E": "150 degrees = 5 pi/6 radians"
+    }
+  },
+  {
+    "question": "Which was written first?",
+    "answer": "A",
+    "options": {
+      "A": "Rig Veda",
+      "B": "Philippics",
+      "C": "Novum Organum",
+      "D": "Principia Mathematica",
+      "E": "The Gospel According to Matthew"
+    }
+  },
+  {
+    "question": "What would Mike Angelo charge to paint a fresco on a square ceiling 50 feet on a side at $.20 a square foot?",
+    "answer": "B",
+    "options": {
+      "A": "$400",
+      "B": "$500",
+      "C": "$600",
+      "D": "$700",
+      "E": "$800"
+    }
+  },
+  {
+    "question": "Which of these is a perfect number, i.e. a number that is the sum of all its proper divisors except itself?",
+    "answer": "D",
+    "options": {
+      "E": "29",
+      "A": "25",
+      "B": "26",
+      "C": "27",
+      "D": "28"
+    }
+  },
+  {
+    "question": "What is the decimal equivalent of a number expressed on a calculator as \"3.162e4\"?",
+    "answer": "B",
+    "options": {
+      "A": "3,162",
+      "B": "31,620",
+      "C": "316,200",
+      "D": "3,162,000",
+      "E": "31,620,000"
+    }
+  },
+  {
+    "question": "The log of A/B equals log ...",
+    "answer": "B",
+    "options": {
+      "A": "of AB",
+      "B": "A - log B",
+      "C": "A + log B",
+      "D": "A times log B",
+      "E": "of the square root of AB"
+    }
+  },
+  {
+    "question": "In a survey group, 53 preferred dobermans, 29 preferred dachshunds, and 18 preferred beagles.  How many dog lovers were surveyed?",
+    "answer": "D",
+    "options": {
+      "A": "40",
+      "B": "60",
+      "C": "80",
+      "D": "100",
+      "E": "120"
+    }
+  },
+  {
+    "question": "The assessed valuation is $3,000 and the rate is 2 1/3 cents per dollar.  What is the tax?",
+    "answer": "C",
+    "options": {
+      "A": "$58.40",
+      "B": "$57.20",
+      "C": "$69.90",
+      "D": "$63.30",
+      "E": "$73.50"
+    }
+  },
+  {
+    "question": "The base 2 numeral 11000 is equivalent to the ...",
+    "answer": "A",
+    "options": {
+      "A": "number of blackbirds in a pie",
+      "B": "title of a novel by George Orwell",
+      "C": "years in the Gettysburg Address",
+      "D": "number of wise monkeys of Nikko",
+      "E": "number of lives a cat is said to have"
+    }
+  },
+  {
+    "question": "The depth of the Grand Canyon is approximately equal to 6.3 times ten to what power inches?",
+    "answer": "C",
+    "options": {
+      "A": "2nd",
+      "B": "3rd",
+      "C": "4th",
+      "D": "5th",
+      "E": "6th"
+    }
+  },
+  {
+    "question": "How many acres are in the northwest quarter of the southeast quarter of the northwest quarter of a section?",
+    "answer": "A",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "40",
+      "D": "60",
+      "E": "80"
+    }
+  },
+  {
+    "question": "Which is not in the set of multiples of 18?",
+    "answer": "D",
+    "options": {
+      "A": "18",
+      "B": "54",
+      "C": "90",
+      "D": "112",
+      "E": "126"
+    }
+  },
+  {
+    "question": "If the number of blue marbles is six times greater than the number of red marbles, how many blue marbles are in a pot containing a total of 420 marbles?",
+    "answer": "D",
+    "options": {
+      "A": "300",
+      "B": "320",
+      "C": "340",
+      "D": "360",
+      "E": "380"
+    }
+  },
+  {
+    "question": "Which statement is not true?",
+    "answer": "B",
+    "options": {
+      "A": "Some apples are yellow.",
+      "B": "Mt. Rushmore is in Texas.",
+      "C": "Seven plus two equal nine.",
+      "D": "All quadrilaterals have 4 sides.",
+      "E": "Jack Kennedy was a U.S. president."
+    }
+  },
+  {
+    "question": "All lines that pass through a vertex and touch a circle whose center is directly below this vertex form two cone-shaped surfaces called ...",
+    "answer": "C",
+    "options": {
+      "A": "axes",
+      "B": "ogees",
+      "C": "nappes",
+      "D": "frustums",
+      "E": "conic sections"
+    }
+  },
+  {
+    "question": "What is the third number in this Pythagorean triple?   11, 60, ...",
+    "answer": "A",
+    "options": {
+      "A": "61",
+      "B": "62",
+      "C": "63",
+      "D": "64",
+      "E": "65"
+    }
+  },
+  {
+    "question": "10 liters equal ...",
+    "answer": "A",
+    "options": {
+      "A": "1 dekaliter",
+      "B": ".1 kiloliter",
+      "C": "10 picoliters",
+      "D": "100 milliliters",
+      "E": "1000 deciliters"
+    }
+  },
+  {
+    "question": "Two lines are parallel if two alternate interior angles are ...",
+    "answer": "A",
+    "options": {
+      "A": "equal",
+      "B": "reflex angles",
+      "C": "supplementary",
+      "D": "complementary",
+      "E": "inversely proportional"
+    }
+  },
+  {
+    "question": "What is the value of x in this equation?   5/(x-2) = 15/(x+4)",
+    "answer": "D",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "Change 42 base ten to a base 7 numeral.",
+    "answer": "D",
+    "options": {
+      "A": "42",
+      "B": "46",
+      "C": "51",
+      "D": "60",
+      "E": "64"
+    }
+  },
+  {
+    "question": "Between 126 and 150 there are how many prime numbers?",
+    "answer": "D",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "What is the additive identity?",
+    "answer": "A",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "10",
+      "D": "infinity",
+      "E": "any whole number"
+    }
+  },
+  {
+    "question": "Points W, X, Y, and Z lie on a line in that order.  If WZ/WY= 2/1 and WZ/WX= 3/1, what is the value of WY/XZ?",
+    "answer": "E",
+    "options": {
+      "A": "1/8",
+      "B": "1/4",
+      "C": "1/2",
+      "D": "3/8",
+      "E": "3/4"
+    }
+  },
+  {
+    "question": "Complete this sequence.   1, 20, 3, 19, 5, 18, 7 ...",
+    "answer": "A",
+    "options": {
+      "A": "17, 9",
+      "B": "15, 11",
+      "C": "9, 18",
+      "D": "14, 11",
+      "E": "11, 17"
+    }
+  },
+  {
+    "question": "Miss Kitty borrowed $600 and at the end of 9 years and 6 months returned $856.50.  What is the rate percent?",
+    "answer": "D",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "3",
+      "D": "4.5",
+      "E": "7.2"
+    }
+  },
+  {
+    "question": "7.2 times 10 to the negative fourth power equals ...",
+    "answer": "C",
+    "options": {
+      "A": ".072",
+      "B": ".0072",
+      "C": ".00072",
+      "D": ".000072",
+      "E": ".0000072"
+    }
+  },
+  {
+    "question": "What is the largest numeral which can be used by a person working with base 8?",
+    "answer": "C",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8",
+      "E": "9"
+    }
+  },
+  {
+    "question": "What number is the third proportional to 3 and 27?",
+    "answer": "E",
+    "options": {
+      "A": "30",
+      "B": "81",
+      "C": "121",
+      "D": "165",
+      "E": "243"
+    }
+  },
+  {
+    "question": "Add these Roman numerals.   XXI    LX    CM",
+    "answer": "E",
+    "options": {
+      "A": "XC",
+      "B": "XLVIII",
+      "C": "CCXIX",
+      "D": "MDCXVI",
+      "E": "CMLXXXI"
+    }
+  },
+  {
+    "question": "Mr. Jones is 28 years old and his son is 4.  In how many years will Mr. Jones be 4 times as old as his son?",
+    "answer": "B",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    }
+  },
+  {
+    "question": "25% of ---- equals 225.",
+    "answer": "B",
+    "options": {
+      "A": "750",
+      "B": "900",
+      "C": "650",
+      "D": "800",
+      "E": "850"
+    }
+  },
+  {
+    "question": "What is the percentage error if an angle that is actually 80 degrees is erroneously measured as 84 degrees?",
+    "answer": "B",
+    "options": {
+      "A": "2%",
+      "B": "5%",
+      "C": "8%",
+      "D": "10%",
+      "E": "12%"
+    }
+  },
+  {
+    "question": "A cylindrical pipe has a radius of 14 and a height of 40 inches.  About what is the area of the outside surface of this pipe in square inches?",
+    "answer": "D",
+    "options": {
+      "A": "1940",
+      "B": "2260",
+      "C": "3110",
+      "D": "3520",
+      "E": "4230"
+    }
+  },
+  {
+    "question": "A 6 foot fern casts a shadow 10 feet long at the same time that a tyrannosaurus casts a 50 foot shadow.  How tall is the tyrannosaurus?",
+    "answer": "B",
+    "options": {
+      "A": "25 feet",
+      "B": "30 feet",
+      "C": "35 feet",
+      "D": "40 feet",
+      "E": "45 feet"
+    }
+  },
+  {
+    "question": "The length of Gwendolyn's garden is 12 meters.  If the area of the garden is at least 96 square meters, the smallest width the garden could have is ---- meters.",
+    "answer": "D",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8",
+      "E": "10"
+    }
+  },
+  {
+    "question": "To multiply exponential quantities with the same base you should ...",
+    "answer": "A",
+    "options": {
+      "A": "add the exponents",
+      "B": "subtract the exponents",
+      "C": "invert and divide the exponents",
+      "D": "convert the exponents to decimals",
+      "E": "multiply the logarithms of the exponents"
+    }
+  },
+  {
+    "question": "In a frog jumping meet, two frogs hopped four times.  One averaged 2' 7\" per leap while the other averaged 2\" less than a yard per leap.  The difference in their total distances is ...",
+    "answer": "A",
+    "options": {
+      "A": "1'",
+      "B": "1' 2\"",
+      "C": "1' 4\"",
+      "D": "1' 6\"",
+      "E": "1' 8\""
+    }
+  },
+  {
+    "question": "The greatest common factor of 108 and 144 is ...",
+    "answer": "D",
+    "options": {
+      "A": "8",
+      "B": "18",
+      "C": "24",
+      "D": "36",
+      "E": "52"
+    }
+  },
+  {
+    "question": "Which is the smallest number that is evenly divisible by every whole number from 1 to 6?",
+    "answer": "E",
+    "options": {
+      "A": "18",
+      "B": "24",
+      "C": "30",
+      "D": "48",
+      "E": "60"
+    }
+  },
+  {
+    "question": "9,822,000 equals 9.822 times ten to what power?",
+    "answer": "D",
+    "options": {
+      "A": "3rd",
+      "B": "4th",
+      "C": "5th",
+      "D": "6th",
+      "E": "7th"
+    }
+  },
+  {
+    "question": "What are the numbers if five times the first number plus three times the second number equals 47, and ten times the first number minus four times the second number equals 54?",
+    "answer": "C",
+    "options": {
+      "A": "5, 4",
+      "B": "6, 5",
+      "C": "7, 4",
+      "D": "8. 3",
+      "E": "9, 2"
+    }
+  },
+  {
+    "question": "The area of a trapezoid is 300 square feet.  The length of the parallel sides are 20 and 30 feet.  The height of this figure is ---- feet.",
+    "answer": "E",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11",
+      "E": "12"
+    }
+  },
+  {
+    "question": "Find the limit as x approaches 0 of sine 7x divided by x.",
+    "answer": "E",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    }
+  },
+  {
+    "question": "One plane will carry \"P\" passengers.  How many planes are necessary to carry \"A\" passengers?",
+    "answer": "C",
+    "options": {
+      "A": "AP",
+      "B": "P/A",
+      "C": "A/P",
+      "D": "P-A",
+      "E": "AP/P"
+    }
+  },
+  {
+    "question": "The product of 22 and its reciprocal is ...",
+    "answer": "B",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "484",
+      "D": "1/2",
+      "E": "-484"
+    }
+  },
+  {
+    "question": "August F. Mobius was a founder of what branch of mathematics?",
+    "answer": "B",
+    "options": {
+      "A": "calculus",
+      "B": "topology",
+      "C": "probability",
+      "D": "game theory",
+      "E": "symbolic logic"
+    }
+  },
+  {
+    "question": "The velocity of a falling body is 2 to the ---- power feet per second per second.",
+    "answer": "B",
+    "options": {
+      "A": "4th",
+      "B": "5th",
+      "C": "6th",
+      "D": "7th",
+      "E": "8th"
+    }
+  },
+  {
+    "question": "You have a 100' string with the ends tied together.  If you lay it out to form each figure below, which would have the greatest area?",
+    "answer": "A",
+    "options": {
+      "A": "circle",
+      "B": "square",
+      "C": "triangle",
+      "D": "hexagon",
+      "E": "pentagon"
+    }
+  },
+  {
+    "question": "Which is not a surd?",
+    "answer": "C",
+    "options": {
+      "A": "cube root of 5",
+      "B": "cube root of 11",
+      "C": "cube root of 27",
+      "D": "square root of 2",
+      "E": "square root of 3"
+    }
+  },
+  {
+    "question": "The median of a trapezoid is parallel to its bases and equals one-half their ...",
+    "answer": "A",
+    "options": {
+      "A": "sum",
+      "B": "square",
+      "C": "product",
+      "D": "quotient",
+      "E": "difference"
+    }
+  },
+  {
+    "question": "Exactly three diagonals can be drawn from one vertex of a ...",
+    "answer": "A",
+    "options": {
+      "A": "hexagon",
+      "B": "octagon",
+      "C": "pentagon",
+      "D": "septagon",
+      "E": "rectangle"
+    }
+  },
+  {
+    "question": "Which is an equation for a line with a slope of -2 and a y-intercept of 3?",
+    "answer": "C",
+    "options": {
+      "A": "y = 3x - 2",
+      "B": "y = 2x - 3",
+      "C": "y = -2x + 3",
+      "D": "y = -3x + 2",
+      "E": "y = -3x - 2x"
+    }
+  },
+  {
+    "question": "Factor p(q+r) + s(q+r).",
+    "answer": "C",
+    "options": {
+      "A": "p(s+q+r)",
+      "B": "(p+q)(rs)",
+      "C": "(q+r)(p+s)",
+      "D": "(ps)(qr)",
+      "E": "(pq)(s+r)"
+    }
+  },
+  {
+    "question": "The cosine of which angle is 1/2?",
+    "answer": "C",
+    "options": {
+      "A": "30",
+      "B": "45",
+      "C": "60",
+      "D": "90",
+      "E": "180"
+    }
+  },
+  {
+    "question": "The greatest angle formed by four adjacent acute angles could not exceed ---- degrees.",
+    "answer": "E",
+    "options": {
+      "A": "45",
+      "B": "90",
+      "C": "180",
+      "D": "270",
+      "E": "360"
+    }
+  },
+  {
+    "question": "Killer tomatoes cost X cents per pack.  What is the cost of Z cases of these tomatoes if there are 10 packs to the case?",
+    "answer": "A",
+    "options": {
+      "A": "10XZ",
+      "B": "(XZ)/10",
+      "C": "(10X)/Z",
+      "D": "(10Z)/X",
+      "E": "10/(XZ)"
+    }
+  },
+  {
+    "question": "A rectangle, rhombus, and square all ...",
+    "answer": "E",
+    "options": {
+      "A": "are equilateral",
+      "B": "are equiangular",
+      "C": "have congruent diagonals",
+      "D": "have perpendicular diagonals",
+      "E": "have properties of parallelograms"
+    }
+  },
+  {
+    "question": "A stadium that has seating for 35,000 sports fans is 20% empty.  How many fans are present?",
+    "answer": "B",
+    "options": {
+      "A": "27,000",
+      "B": "28,000",
+      "C": "29,000",
+      "D": "30,000",
+      "E": "31,000"
+    }
+  },
+  {
+    "question": "Two angles are in the ratio of 5 to 4.  If they are two angles in a triangle whose third angle is their difference, the smallest angle is ---- degrees.",
+    "answer": "B",
+    "options": {
+      "A": "15",
+      "B": "18",
+      "C": "21",
+      "D": "24",
+      "E": "27"
+    }
+  },
+  {
+    "question": "Medians, altitudes, and angle bisectors are all ...",
+    "answer": "B",
+    "options": {
+      "A": "radii",
+      "B": "cevians",
+      "C": "frustums",
+      "D": "diagonals",
+      "E": "perpendiculars"
+    }
+  },
+  {
+    "question": "What figure results when you draw a straight line on paper, place a dot anywhere not on the line, and repetitively fold the dot to different places along the line?",
+    "answer": "C",
+    "options": {
+      "A": "circle",
+      "B": "ellipse",
+      "C": "parabola",
+      "D": "hyperbola",
+      "E": "circular cone"
+    }
+  },
+  {
+    "question": "1/3 is to 33 1/3% as 5/6 is to ...",
+    "answer": "C",
+    "options": {
+      "A": "76 3/5%",
+      "B": "79 3/7%",
+      "C": "83 1/3%",
+      "D": "85 5/7%",
+      "E": "91 1/8%"
+    }
+  },
+  {
+    "question": "Which choice does not guarantee equal angles?",
+    "answer": "B",
+    "options": {
+      "A": "vertical angles",
+      "B": "adjacent angles in a rhombus",
+      "C": "supplements of the same angle",
+      "D": "opposite angles in parallelograms",
+      "E": "base angles of an isosceles triangle"
+    }
+  },
+  {
+    "question": "Which example illustrates the commutative property?",
+    "answer": "C",
+    "options": {
+      "A": "a/b x 1 = a/b",
+      "B": "x c = a x (b x c)",
+      "C": "a/b x c/d = c/d x a/b",
+      "D": "a + 0 = a and 0 + a = a",
+      "E": "(a x"
+    }
+  },
+  {
+    "question": "If 8 workers pick 4 apple trees in 1 hour, how many are needed to pick 12 trees in 1 hour?",
+    "answer": "E",
+    "options": {
+      "A": "16",
+      "B": "18",
+      "C": "20",
+      "D": "22",
+      "E": "24"
+    }
+  },
+  {
+    "question": "Divide CML by XXV.",
+    "answer": "E",
+    "options": {
+      "A": "XL",
+      "B": "DIV",
+      "C": "VII",
+      "D": "LXIX",
+      "E": "XXXVIII"
+    }
+  },
+  {
+    "question": "Someone who has lived for one billion seconds is ---- year(s) old.",
+    "answer": "B",
+    "options": {
+      "A": "7/8",
+      "B": "31",
+      "C": "87",
+      "D": "430",
+      "E": "900"
+    }
+  },
+  {
+    "question": "How many colors are possible with an 8-bit digital image?",
+    "answer": "D",
+    "options": {
+      "A": "32",
+      "B": "64",
+      "C": "128",
+      "D": "256",
+      "E": "512"
+    }
+  },
+  {
+    "question": "The use of the zero to denote place value is attributed to ...",
+    "answer": "A",
+    "options": {
+      "A": "the Hindus",
+      "B": "the Romans",
+      "C": "Archimedes",
+      "D": "Rene Descartes",
+      "E": "the Babylonians"
+    }
+  },
+  {
+    "question": "The scale on a drawing says 3 inches equal 1 foot.  The drawing is what fraction of the size of the actual object?",
+    "answer": "C",
+    "options": {
+      "A": "1/8",
+      "B": "1/6",
+      "C": "1/4",
+      "D": "1/3",
+      "E": "1/2"
+    }
+  },
+  {
+    "question": "In 10 minutes, Fido types 50 letters and Rover types 40 letters.  In how many minutes can they type 360 letters working together?",
+    "answer": "D",
+    "options": {
+      "A": "34",
+      "B": "37",
+      "C": "39",
+      "D": "40",
+      "E": "42"
+    }
+  },
+  {
+    "question": "This question involves the order of operations when parentheses are not included.  Find the solution.   20 + 7 x 4 - 4 / 2",
+    "answer": "B",
+    "options": {
+      "A": "0",
+      "B": "46",
+      "C": "52",
+      "D": "240",
+      "E": "280"
+    }
+  },
+  {
+    "question": "Solve this equation for q.   (q+.80) squared = 2.5q + q squared.",
+    "answer": "E",
+    "options": {
+      "A": ".57",
+      "B": ".61",
+      "C": ".64",
+      "D": ".67",
+      "E": ".71"
+    }
+  },
+  {
+    "question": "Two sides of a triangle are 13 inches and 20 inches.  The greatest value the third side may have is slightly less than how many inches?",
+    "answer": "B",
+    "options": {
+      "A": "7",
+      "B": "33",
+      "C": "10",
+      "D": "13",
+      "E": "24"
+    }
+  },
+  {
+    "question": "A map has a scale in which 1 inch represents 50 miles.  450 miles are represented by how many inches?",
+    "answer": "D",
+    "options": {
+      "A": "4 1/2",
+      "B": "6",
+      "C": "7 1/2",
+      "D": "9",
+      "E": "10 1/2"
+    }
+  },
+  {
+    "question": "Compute the sum of all odd whole numbers between 13 and 275 inclusive.",
+    "answer": "D",
+    "options": {
+      "A": "16,864",
+      "B": "17,728",
+      "C": "18,016",
+      "D": "19,008",
+      "E": "20,262"
+    }
+  },
+  {
+    "question": "Change 400 base 10 to base 12.",
+    "answer": "B",
+    "options": {
+      "A": "148",
+      "B": "294",
+      "C": "322",
+      "D": "354",
+      "E": "400"
+    }
+  },
+  {
+    "question": "Between 18 and 44 there are how many prime numbers?",
+    "answer": "E",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    }
+  },
+  {
+    "question": "There were 960 great auks in 1810 and 1200 great auks in 1811.  How many will there be in 1812 if the rate of increase remains the same?",
+    "answer": "B",
+    "options": {
+      "A": "1,440",
+      "B": "1,500",
+      "C": "1,560",
+      "D": "1,590",
+      "E": "1,610"
+    }
+  },
+  {
+    "question": "A triangle has a base of 14 inches and an area of 98 square inches.  In inches, what is the altitude of the triangle?",
+    "answer": "B",
+    "options": {
+      "A": "7",
+      "B": "14",
+      "C": "21",
+      "D": "19",
+      "E": "26"
+    }
+  },
+  {
+    "question": "What is the vertex of this quadratic function?   f(x) = -(x-3) squared + 4",
+    "answer": "C",
+    "options": {
+      "A": "(1, 2)",
+      "B": "(2, 3)",
+      "C": "(3, 4)",
+      "D": "(4, 5)",
+      "E": "(5, 6)"
+    }
+  },
+  {
+    "question": "Express as a binary numeral the number of doughnuts in a baker's dozen.",
+    "answer": "A",
+    "options": {
+      "A": "1101",
+      "B": "1001",
+      "C": "1011",
+      "D": "1000",
+      "E": "1010"
+    }
+  },
+  {
+    "question": "What is the smallest positive value of \"x\" for which tangent \"x\" = 1?",
+    "answer": "C",
+    "options": {
+      "A": "15 degrees",
+      "B": "30 degrees",
+      "C": "45 degrees",
+      "D": "60 degrees",
+      "E": "90 degrees"
+    }
+  },
+  {
+    "question": "A gas tank is 1/8 full.  The addition of 10 gallons makes the tank 3/4 full.  The capacity of the tank is ---- gallons.",
+    "answer": "D",
+    "options": {
+      "A": "8",
+      "B": "10",
+      "C": "14",
+      "D": "16",
+      "E": "18"
+    }
+  },
+  {
+    "question": "The graph of a quadratic function has only one x-intercept.  So the discriminant ...",
+    "answer": "B",
+    "options": {
+      "A": "equals 1",
+      "B": "equals 0",
+      "C": "is greater than 1",
+      "D": "must be a negative number",
+      "E": "equals the square root of 2"
+    }
+  },
+  {
+    "question": "What is (9-2) to the negative second power?",
+    "answer": "D",
+    "options": {
+      "A": "1/7",
+      "B": "1/24",
+      "C": "1/35",
+      "D": "1/49",
+      "E": "1/56"
+    }
+  },
+  {
+    "question": "Which is not true?",
+    "answer": "B",
+    "options": {
+      "A": "Parallel lines have equal slopes.",
+      "B": "The slope of a horizontal line is 1.",
+      "C": "The slope of a vertical line is undefined.",
+      "D": "Perpendicular lines have slopes that are        negative reciprocals.",
+      "E": "The slope of a line that rises as x increases        is always positive."
+    }
+  },
+  {
+    "question": "If you fish for 5 minutes the first day, 10 the second, 15 the third, and so on, in how many days will you have fished for a total of 3 hours?",
+    "answer": "B",
+    "options": {
+      "A": "7",
+      "B": "8",
+      "C": "9",
+      "D": "10",
+      "E": "11"
+    }
+  },
+  {
+    "question": "Which is the formula for the sum of the interior angles of a polygon?",
+    "answer": "B",
+    "options": {
+      "A": "90n",
+      "B": "(n-2)180",
+      "C": "(2n+1)/45",
+      "D": "(180 + n)/2",
+      "E": "1/2(n + 90)"
+    }
+  },
+  {
+    "question": "Which is not a unit of linear measure?",
+    "answer": "A",
+    "options": {
+      "A": "gill",
+      "B": "hand",
+      "C": "bolt",
+      "D": "cubit",
+      "E": "furlong"
+    }
+  },
+  {
+    "question": "The volume of a golf ball is approximately equal to 40 cubic ...",
+    "answer": "E",
+    "options": {
+      "A": "meters",
+      "B": "decimeters",
+      "C": "millimeters",
+      "D": "nanometers",
+      "E": "centimeters"
+    }
+  },
+  {
+    "question": "A howitzer shell traveling at 1800 feet per second goes about how many miles in 1/6 minute?",
+    "answer": "B",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "5",
+      "D": "7",
+      "E": "9"
+    }
+  },
+  {
+    "question": "Parallel lines have the same ...",
+    "answer": "B",
+    "options": {
+      "A": "axis",
+      "B": "slope",
+      "C": "length",
+      "D": "midpoint",
+      "E": "x-y coordinates"
+    }
+  },
+  {
+    "question": "What is the third number in row six of Pascal's triangle?",
+    "answer": "E",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "10"
+    }
+  },
+  {
+    "question": "Which fraction is not correctly reduced to lowest terms?",
+    "answer": "B",
+    "options": {
+      "A": "16/44 = 4/11",
+      "B": "18/56 = 5/14",
+      "C": "42/126 = 1/3",
+      "D": "128/344 = 16/43",
+      "E": "144/244 = 36/61"
+    }
+  },
+  {
+    "question": "Simplify the ratio of 8 nickels to $3.60.",
+    "answer": "E",
+    "options": {
+      "A": "1 to 5",
+      "B": "1 to 6",
+      "C": "1 to 7",
+      "D": "1 to 8",
+      "E": "1 to 9"
+    }
+  },
+  {
+    "question": "The 1980 eruption of Mount St. Helens lowered its summit from 9500 feet to 8150 feet, a difference of about how many meters?",
+    "answer": "D",
+    "options": {
+      "A": "100",
+      "B": "200",
+      "C": "300",
+      "D": "400",
+      "E": "500"
+    }
+  },
+  {
+    "question": "A share of Aukco stock was $25 on Tuesday morning.  By the afternoon, its price decreased $4, then increased $6 on Wednesday, and decreased $2 on Thursday.  Its final price was ...",
+    "answer": "D",
+    "options": {
+      "A": "$19",
+      "B": "$21",
+      "C": "$23",
+      "D": "$25",
+      "E": "$27"
+    }
+  },
+  {
+    "question": "How many 4 x 8 inch bricks are needed to cover a square patio measuring 12 feet on the side?",
+    "answer": "D",
+    "options": {
+      "A": "360",
+      "B": "444",
+      "C": "554",
+      "D": "648",
+      "E": "752"
+    }
+  },
+  {
+    "question": "Max's son is 3 years older than his daughter.  Next year Max will be 6 times older than his daughter is now.  In 10 years, he will be 14 years older than the combined ages of his kids then.  How old is Max?",
+    "answer": "D",
+    "options": {
+      "A": "29",
+      "B": "33",
+      "C": "37",
+      "D": "41",
+      "E": "45"
+    }
+  },
+  {
+    "question": "How old will Olivia be in 7 years if she was 28 years old 9 years ago?",
+    "answer": "C",
+    "options": {
+      "A": "40",
+      "B": "42",
+      "C": "44",
+      "D": "46",
+      "E": "48"
+    }
+  },
+  {
+    "question": "The sine of 75 degrees equals the cosine of ---- degrees.",
+    "answer": "A",
+    "options": {
+      "A": "15",
+      "B": "30",
+      "C": "45",
+      "D": "60",
+      "E": "90"
+    }
+  },
+  {
+    "question": "From a piece of metal 30\" wide and 40\" long, you cut squares 5\" on a side out of each corner and bend up the flaps to form a box containing ---- cubic inches.",
+    "answer": "B",
+    "options": {
+      "A": "2000",
+      "B": "3000",
+      "C": "4000",
+      "D": "5000",
+      "E": "6000"
+    }
+  },
+  {
+    "question": "The suit filed by a disgruntled customer in 2009 against the Bank of America was for 1784 billion trillion dollars, which is the number 1784 followed by how many zeros?",
+    "answer": "C",
+    "options": {
+      "A": "15",
+      "B": "18",
+      "C": "21",
+      "D": "24",
+      "E": "27"
+    }
+  },
+  {
+    "question": "You need at least how many square feet of wrapping paper to completely cover a box, all the edges of which are four feet in length?",
+    "answer": "D",
+    "options": {
+      "A": "90",
+      "B": "92",
+      "C": "94",
+      "D": "96",
+      "E": "98"
+    }
+  },
+  {
+    "question": "Every nonzero real number has ...",
+    "answer": "B",
+    "options": {
+      "A": "no multiplicative inverse",
+      "B": "exactly one multiplicative inverse",
+      "C": "an irrational multiplicative inverse",
+      "D": "an infinite number of multiplicative inverses"
+    }
+  },
+  {
+    "question": "What is the probability of getting a sum of five when two dice are tossed?",
+    "answer": "B",
+    "options": {
+      "A": "1/18",
+      "B": "1/9",
+      "C": "1/6",
+      "D": "2/9",
+      "E": "5/18"
+    }
+  },
+  {
+    "question": "Represent 180/270 in simplest form.",
+    "answer": "B",
+    "options": {
+      "A": "1/5",
+      "B": "2/3",
+      "C": "3/7",
+      "D": "4/9",
+      "E": "5/6"
+    }
+  },
+  {
+    "question": "It costs 31 cents a square foot to lay tile.  How much will it cost to lay 20 square yards of tile?",
+    "answer": "D",
+    "options": {
+      "A": "$18.46",
+      "B": "$38.84",
+      "C": "$49.22",
+      "D": "$55.80",
+      "E": "$62.10"
+    }
+  },
+  {
+    "question": "Add the following.   8 to the 1/3 power   8 to the 2/3 power   8 to the 0 power",
+    "answer": "D",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    }
+  },
+  {
+    "question": "The hypotenuse of a right triangle whose legs are 12 feet and 16 feet long is ---- feet.",
+    "answer": "D",
+    "options": {
+      "A": "14",
+      "B": "16",
+      "C": "18",
+      "D": "20",
+      "E": "22"
+    }
+  },
+  {
+    "question": "What is the contrapositive of this statement?   Every dog on the team is white.",
+    "answer": "D",
+    "options": {
+      "A": "No dog on the team is white.",
+      "B": "Every dog on the team is black.",
+      "C": "Every white dog is on the team.",
+      "D": "If a dog is not white, it is not on the team.",
+      "E": "If a dog is not on the team, it is not white."
+    }
+  },
+  {
+    "question": "The first side of a triangle is 3 centimeters less than the second and the third is 14 centimeters greater than the second.  How long is the longest side if the perimeter is 71 centimeters?",
+    "answer": "C",
+    "options": {
+      "A": "30",
+      "B": "32",
+      "C": "34",
+      "D": "36",
+      "E": "38"
+    }
+  },
+  {
+    "question": "In inches, what is the approximate diameter of a circle whose area is 50 1/4 square inches?",
+    "answer": "C",
+    "options": {
+      "A": "2",
+      "B": "5",
+      "C": "8",
+      "D": "17",
+      "E": "25"
+    }
+  },
+  {
+    "question": "It takes 4.5 minutes to listen to \"Blue Moon\" on a 45 rpm record.  If this record is run at 33 1/3 rpm, the song plays in how many revolutions?",
+    "answer": "A",
+    "options": {
+      "A": "202.5",
+      "B": "208.5",
+      "C": "214.5",
+      "D": "222.5",
+      "E": "228.5"
+    }
+  },
+  {
+    "question": "On Mars, there are 3 auuks in 6 bauuks.  12 bauuks equal 1 dauuk.  How many auuks are there in 6 dauuks?",
+    "answer": "A",
+    "options": {
+      "A": "36",
+      "B": "48",
+      "C": "64",
+      "D": "72",
+      "E": "96"
+    }
+  },
+  {
+    "question": "Frodo is four years younger than Bilbo, but in five years, Bilbo will be twice Frodo's age now.  How old is Bilbo?",
+    "answer": "A",
+    "options": {
+      "A": "13",
+      "B": "14",
+      "C": "15",
+      "D": "16",
+      "E": "17"
+    }
+  },
+  {
+    "question": "Express as an improper fraction with a denominator of 2 the number of years cited in Lincoln's Gettysburg Address.",
+    "answer": "E",
+    "options": {
+      "A": "68/2",
+      "B": "87/2",
+      "C": "98/2",
+      "D": "126/2",
+      "E": "174/2"
+    }
+  },
+  {
+    "question": "If an alien beaver consumes 40 trees in a day, how many trees could five such aliens consume in five weeks?",
+    "answer": "E",
+    "options": {
+      "A": "3,000",
+      "B": "4,000",
+      "C": "5,000",
+      "D": "6,000",
+      "E": "7,000"
+    }
+  },
+  {
+    "question": "How many acres did Mrs. Heyworth have of her 172 acre farm after selling 12 acres to the Humane Society and 9 acres to the N.R.C.?",
+    "answer": "B",
+    "options": {
+      "C": "171",
+      "A": "136",
+      "B": "151",
+      "D": "149",
+      "E": "129"
+    }
+  },
+  {
+    "question": "It is not true that a number is divisible by ...",
+    "answer": "E",
+    "options": {
+      "A": "3 if the sum of its digits is divisible by 3",
+      "B": "4 if the last two digits are divisible by 4",
+      "C": "5 if the last digit is either 0 or 5",
+      "D": "6 if it is divisible by both 2 and 3",
+      "E": "7 if the sum of its digits is divisible by 7"
+    }
+  },
+  {
+    "question": "Moe must mow a yard measuring 1440 by 4800 feet.  How many lengthwise round trips must he make with his 24-inch mower to finish the job?",
+    "answer": "C",
+    "options": {
+      "A": "180",
+      "B": "240",
+      "C": "360",
+      "D": "420",
+      "E": "550"
+    }
+  },
+  {
+    "question": "A logical proposition is illustrated by which choice?",
+    "answer": "E",
+    "options": {
+      "A": "Watch out!",
+      "B": "Let's do the twist.",
+      "C": "Good morning starshine.",
+      "D": "Do you know the way to San Jose?",
+      "E": "The rain in Spain stays mainly on the plain."
+    }
+  },
+  {
+    "question": "How many pamphlets each 1/3 of an inch thick can be placed side by side on 4 shelves if each shelf is 3 feet long?",
+    "answer": "C",
+    "options": {
+      "A": "333",
+      "B": "386",
+      "C": "432",
+      "D": "464",
+      "E": "486"
+    }
+  },
+  {
+    "question": "Twenty-five pounds of bananas cost $12.  At this rate how much would a ton of bananas cost?",
+    "answer": "E",
+    "options": {
+      "A": "$740",
+      "B": "$810",
+      "C": "$880",
+      "D": "$920",
+      "E": "$960"
+    }
+  },
+  {
+    "question": "If the radius of the smaller of two concentric circles is 7 cm and that of the larger is 12 cm, the area of the annulus is about ---- square cm.",
+    "answer": "C",
+    "options": {
+      "A": "255",
+      "B": "274",
+      "C": "298",
+      "D": "312",
+      "E": "326"
+    }
+  },
+  {
+    "question": "Two triangles with their sides in proportion are ...",
+    "answer": "B",
+    "options": {
+      "A": "acute",
+      "B": "similar",
+      "C": "isosceles",
+      "D": "congruent",
+      "E": "equilateral"
+    }
+  },
+  {
+    "question": "Disjoint sets are illustrated in which line?",
+    "answer": "C",
+    "options": {
+      "A": "set A = j, k, l and set B = l, j, k",
+      "B": "set A = p, q, r and set B = p, q, r",
+      "C": "set A = q, r, s and set B = l, m, n",
+      "D": "set A = b, c, d and set B = d, f, g",
+      "E": "set A = x, y, z and set B = w, y, z"
+    }
+  },
+  {
+    "question": "Two gears, one with 48 teeth and the other with 18 teeth, mesh with one another.  In the time it takes the larger wheel to complete three revolutions, the smaller wheel turns ---- times.",
+    "answer": "E",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    }
+  },
+  {
+    "question": "The Shreveport Seagulls won X out of every Y games it played.  The team won 45 games.  How many games did it play?",
+    "answer": "A",
+    "options": {
+      "A": "45Y/X",
+      "B": "45X/Y",
+      "C": "X/45Y",
+      "D": "XY/45",
+      "E": "Y/45X"
+    }
+  },
+  {
+    "question": "What is the area in square units of a triangle with vertices at these points?   (-4, -2), (6, -2), (-4, 5)",
+    "answer": "D",
+    "options": {
+      "A": "5",
+      "B": "15",
+      "C": "25",
+      "D": "35",
+      "E": "45"
+    }
+  },
+  {
+    "question": "1/3 of a pound of red dye is needed to color the hair of 4 punk rockers.  How many pounds of red dye are needed to color the hair of 28 punk rockers?",
+    "answer": "B",
+    "options": {
+      "A": "1.6",
+      "B": "2.3",
+      "C": "2.6",
+      "D": "3.3",
+      "E": "3.6"
+    }
+  },
+  {
+    "question": "If 10 gallons of water weighs about 83 pounds, then one pint weighs approximately ---- ounces.",
+    "answer": "B",
+    "options": {
+      "A": "13",
+      "B": "17",
+      "C": "21",
+      "D": "25",
+      "E": "29"
+    }
+  },
+  {
+    "question": "How many degrees are in the next larger angle that is coterminal with an angle of -200 degrees?",
+    "answer": "C",
+    "options": {
+      "A": "120",
+      "B": "140",
+      "C": "160",
+      "D": "180",
+      "E": "200"
+    }
+  },
+  {
+    "question": "A subset of the set whose members are the first 10 counting numbers is ...",
+    "answer": "A",
+    "options": {
+      "A": "(1  3  5)",
+      "B": "(5  10  15)",
+      "C": "(10  20  30)",
+      "D": "(5  7  9  11)",
+      "E": "(2  4  6  8  10  12)"
+    }
+  },
+  {
+    "question": "A feather fanatic bought 100 birds for $100.  Parrots cost $10 each, pigeons $3 each, and parakeets were 2 for $1.  Since he got at least 1 of each, how many parrots were purchased?",
+    "answer": "E",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    }
+  },
+  {
+    "question": "The path traced by a point on a circle when the circle rolls along a line is a ...",
+    "answer": "A",
+    "options": {
+      "A": "cycloid",
+      "B": "parabaloid",
+      "C": "amygdaloid",
+      "D": "hyperbolide",
+      "E": "pterodactyloid"
+    }
+  },
+  {
+    "question": "The distance between two towns is 12 miles.  It takes a man 18 minutes to drive from one to the other.  What is his rate of speed in mph?",
+    "answer": "C",
+    "options": {
+      "A": "26",
+      "B": "34",
+      "C": "40",
+      "D": "56",
+      "E": "44"
+    }
+  },
+  {
+    "question": "The chances of rolling two dice and getting two threes is one in ...",
+    "answer": "C",
+    "options": {
+      "A": "18",
+      "B": "24",
+      "C": "36",
+      "D": "42",
+      "E": "48"
+    }
+  },
+  {
+    "question": "Ed bought a house in 1978 for $40,000.  In 2008, he sold it for $460,000.  The value of his house increased by how much annually?",
+    "answer": "B",
+    "options": {
+      "A": "$12,000",
+      "B": "$14,000",
+      "C": "$16,000",
+      "D": "$18,000",
+      "E": "$20,000"
+    }
+  },
+  {
+    "question": "Old Dan needs 8 bales of hay to walk 150 miles.  How many bales does he need to walk 400 miles?",
+    "answer": "C",
+    "options": {
+      "A": "17.5",
+      "B": "19.5",
+      "C": "21.3",
+      "D": "23.6",
+      "E": "25.0"
+    }
+  },
+  {
+    "question": "Five chips in a bag are numbered 1, 2, 3, 4, and 5.  What is the probability that, when the chips are pulled one at a time and placed in order, they will form the number 54,321?",
+    "answer": "D",
+    "options": {
+      "A": "1/60",
+      "B": "1/80",
+      "C": "1/100",
+      "D": "1/120",
+      "E": "1/140"
+    }
+  },
+  {
+    "question": "The thickness of a dime is just slightly more than one ...",
+    "answer": "C",
+    "options": {
+      "A": "decimeter",
+      "B": "nanometer",
+      "C": "millimeter",
+      "D": "centimeter",
+      "E": "micrometer"
+    }
+  },
+  {
+    "question": "The supplement of a 74 degree angle is how many degrees?",
+    "answer": "C",
+    "options": {
+      "A": "16",
+      "B": "26",
+      "C": "106",
+      "D": "186",
+      "E": "286"
+    }
+  },
+  {
+    "question": "Which are not reciprocals?",
+    "answer": "A",
+    "options": {
+      "A": "20, .5",
+      "B": "-2/3, -3/2",
+      "C": "12 3/5,  5/63",
+      "D": "-2/5,  -2 1/2",
+      "E": "3b - 2a, 1/(3b-2a)"
+    }
+  },
+  {
+    "question": "If the sum of four consecutive even integers is 124, what is the sum of the two largest numbers?",
+    "answer": "D",
+    "options": {
+      "A": "60",
+      "B": "62",
+      "C": "64",
+      "D": "66",
+      "E": "68"
+    }
+  },
+  {
+    "question": "The venturi effect was first described by what Swiss mathematician in the 18th century?",
+    "answer": "D",
+    "options": {
+      "A": "Euler",
+      "B": "Napier",
+      "C": "Hollerith",
+      "D": "Bernoulli",
+      "E": "Descartes"
+    }
+  },
+  {
+    "question": "There is a 2 in a four-digit number and a 1 in the thousands place.  The ones place is 4 times the tens place number.  The hundreds place is 3 times the thousands place.  The number is ...",
+    "answer": "E",
+    "options": {
+      "A": "2614",
+      "B": "2628",
+      "C": "1314",
+      "D": "1326",
+      "E": "1328"
+    }
+  },
+  {
+    "question": "Multiply the square root of 121 by the square root of 64.",
+    "answer": "D",
+    "options": {
+      "A": "70",
+      "B": "77",
+      "C": "80",
+      "D": "88",
+      "E": "90"
+    }
+  },
+  {
+    "question": "One bucket is half full of flour and another twice its size is one fourth full of flour.  Both buckets are filled with sugar and their contents are poured into a third bucket.  What fraction of the mixture is flour?",
+    "answer": "A",
+    "options": {
+      "A": "1/3",
+      "B": "2/5",
+      "C": "2/3",
+      "D": "3/5",
+      "E": "4/5"
+    }
+  },
+  {
+    "question": "A triangle with an area of 84 square inches and a base of 6 inches has a height of ---- inches.",
+    "answer": "D",
+    "options": {
+      "A": "14",
+      "B": "18",
+      "C": "24",
+      "D": "28",
+      "E": "34"
+    }
+  },
+  {
+    "question": "What is the 77th term of the sequence that begins with 1, 4, 7, 10?",
+    "answer": "A",
+    "options": {
+      "A": "229",
+      "B": "232",
+      "C": "235",
+      "D": "238",
+      "E": "241"
+    }
+  },
+  {
+    "question": "A repeating pattern of figures that completely covers a plane area without gaps or overlap is called a(n) ...",
+    "answer": "E",
+    "options": {
+      "A": "appellation",
+      "B": "flagellation",
+      "C": "vascillation",
+      "D": "scintillation",
+      "E": "tessellation"
+    }
+  },
+  {
+    "question": "Select the two values of z in this equation.   z squared - 16 = 0",
+    "answer": "C",
+    "options": {
+      "A": "2, -2",
+      "B": "3, -3",
+      "C": "4, -4",
+      "D": "5, -5",
+      "E": "6, -6"
+    }
+  },
+  {
+    "question": "Which rounded number could not have been rounded from the number to its right?",
+    "answer": "A",
+    "options": {
+      "A": "28  -  27.1899",
+      "B": "437.8  -  437.77",
+      "C": ".915  -  .914649",
+      "D": "190  -  186.1103",
+      "E": "5700  -  5749.4113"
+    }
+  },
+  {
+    "question": "Geology revealed by the Grand Canyon dates back two billion years.  If the canyon is one mile deep, each foot represents how many years?",
+    "answer": "D",
+    "options": {
+      "A": "380",
+      "B": "3,800",
+      "C": "38,000",
+      "D": "380,000",
+      "E": "3,800,000"
+    }
+  },
+  {
+    "question": "What is the LCM of 8, 14, and 21?",
+    "answer": "C",
+    "options": {
+      "A": "43",
+      "B": "84",
+      "C": "168",
+      "D": "210",
+      "E": "224"
+    }
+  },
+  {
+    "question": "If the Moon's average distance from Earth is 384,000 kilometers and the eccentricity of its orbit is .055, the maximum distance between these bodies is about --- kilometers.",
+    "answer": "C",
+    "options": {
+      "A": "395,000",
+      "B": "400,000",
+      "C": "405,000",
+      "D": "410,000",
+      "E": "415,000"
+    }
+  },
+  {
+    "question": "What is the closest approximation for the product of 703.89 and 3.9842?",
+    "answer": "D",
+    "options": {
+      "A": "2500",
+      "B": "2600",
+      "C": "2700",
+      "D": "2800",
+      "E": "2900"
+    }
+  },
+  {
+    "question": "Pete Piper picked 80 pecks of pickled peppers on Monday, 40 on Tuesday, 120 on Wednesday, and a total of 100 on Thursday and Friday.  What was his daily average?",
+    "answer": "D",
+    "options": {
+      "A": "56",
+      "B": "60",
+      "C": "64",
+      "D": "68",
+      "E": "72"
+    }
+  },
+  {
+    "question": "Which is true?",
+    "answer": "E",
+    "options": {
+      "A": "2 1/3 is an integer.",
+      "B": "89 is a composite number.",
+      "C": "Reciprocals of irrational numbers       are rational numbers.",
+      "D": "All prime numbers are odd numbers.",
+      "E": "The number -5/6 is a rational number."
+    }
+  },
+  {
+    "question": "Which set of numbers could represent the lengths of the sides of a right triangle?",
+    "answer": "C",
+    "options": {
+      "A": "2, 5, 7",
+      "B": "1, 3, 9",
+      "C": "6, 8, 10",
+      "D": "6, 7, 11",
+      "E": "5, 10, 13"
+    }
+  },
+  {
+    "question": "Which is not a metric unit of weight?",
+    "answer": "A",
+    "options": {
+      "A": "carat",
+      "B": "quintal",
+      "C": "kiloton",
+      "D": "milligram",
+      "E": "myriagram"
+    }
+  },
+  {
+    "question": "Jim took off on his motorcycle at 30 miles per hour and 3 hours later, Geraldine took off at 50 miles per hour trying to catch him.  She will overtake him in how many hours?",
+    "answer": "B",
+    "options": {
+      "A": "3.5",
+      "B": "4.5",
+      "C": "5.5",
+      "D": "6.5",
+      "E": "7.5"
+    }
+  },
+  {
+    "question": "If a+c = b+c then we know ...",
+    "answer": "B",
+    "options": {
+      "A": "a=c",
+      "B": "a=b",
+      "C": "a=c/b",
+      "D": "b=c/a",
+      "E": "ab=c/a"
+    }
+  },
+  {
+    "question": "1/5 is the ---- of 5.",
+    "answer": "C",
+    "options": {
+      "A": "logistical",
+      "B": "periodical",
+      "C": "reciprocal",
+      "D": "acoustical",
+      "E": "economical"
+    }
+  },
+  {
+    "question": "What is the 20th term of the progression that begins with this?   4, 9, 14, 19 ...",
+    "answer": "D",
+    "options": {
+      "A": "84",
+      "B": "89",
+      "C": "94",
+      "D": "99",
+      "E": "104"
+    }
+  },
+  {
+    "question": "There are about 57 ...",
+    "answer": "B",
+    "options": {
+      "A": "ounces in one gram",
+      "B": "degrees in one radian",
+      "C": "millimeters in one inch",
+      "D": "joules in one foot-pound",
+      "E": "watts in one horsepower"
+    }
+  },
+  {
+    "question": "What number divided by 10,000 equals 10 to the second power?",
+    "answer": "A",
+    "options": {
+      "A": "one million",
+      "B": "ten million",
+      "C": "one billion",
+      "D": "one hundred million",
+      "E": "one hundred thousand"
+    }
+  },
+  {
+    "question": "Which is not an arithmetic operation?",
+    "answer": "E",
+    "options": {
+      "A": "division",
+      "B": "addition",
+      "C": "subtraction",
+      "D": "multiplication",
+      "E": "transformation"
+    }
+  },
+  {
+    "question": "Which is a unit of apothecaries weight?",
+    "answer": "A",
+    "options": {
+      "A": "dram",
+      "B": "carat",
+      "C": "drachm",
+      "D": "long ton",
+      "E": "dekaliter"
+    }
+  },
+  {
+    "question": "What is the next term in this sequence?   2   6   30   62",
+    "answer": "B",
+    "options": {
+      "A": "96",
+      "B": "126",
+      "C": "186",
+      "D": "216",
+      "E": "312"
+    }
+  },
+  {
+    "question": "The square root of which number lies between 9 and 10?",
+    "answer": "B",
+    "options": {
+      "A": "79",
+      "B": "96",
+      "C": "109",
+      "D": "117",
+      "E": "123"
+    }
+  },
+  {
+    "question": "How many zeros are in the number representing 30 billion?",
+    "answer": "B",
+    "options": {
+      "A": "9",
+      "B": "10",
+      "C": "11",
+      "D": "12",
+      "E": "13"
+    }
+  },
+  {
+    "question": "34 is not congruent to ...",
+    "answer": "D",
+    "options": {
+      "A": "7 modulo 9",
+      "B": "2 modulo 8",
+      "C": "6 modulo 7",
+      "D": "5 modulo 6",
+      "E": "4 modulo 5"
+    }
+  },
+  {
+    "question": "A 10-inch diameter circle is internally tangent to a larger circle with an area of 300 square inches.  The area of the larger circle outside the smaller one is about ---- square inches.",
+    "answer": "E",
+    "options": {
+      "A": "173",
+      "B": "185",
+      "C": "192",
+      "D": "207",
+      "E": "221"
+    }
+  },
+  {
+    "question": "Find the midpoint of the segment from (-2, 3) to (4, 7).",
+    "answer": "D",
+    "options": {
+      "A": "(2 & -4)",
+      "B": "(3 & 7)",
+      "C": "(6 & -1)",
+      "D": "(1 & 5)",
+      "E": "(4 & -2)"
+    }
+  },
+  {
+    "question": "There are 60 bugs in Brunhilda's bed, of which 15 are green and the rest are black.  What is the ratio of green to black bugs?",
+    "answer": "A",
+    "options": {
+      "A": "1:3",
+      "B": "2:5",
+      "C": "3:5",
+      "D": "4:7",
+      "E": "5:6"
+    }
+  },
+  {
+    "question": "What number increased by 1/8th of itself is 81?",
+    "answer": "B",
+    "options": {
+      "A": "70",
+      "B": "72",
+      "C": "74",
+      "D": "76",
+      "E": "78"
+    }
+  },
+  {
+    "question": "Two cylinders have bases whose radii are of the same length.  If the ratio of the lengths of their altitudes is 3 to 1 then the ratio of their volumes is ...",
+    "answer": "A",
+    "options": {
+      "A": "3 to 1",
+      "B": "6 to 1",
+      "C": "9 to 1",
+      "D": "12 to 1",
+      "E": "15 to 1"
+    }
+  },
+  {
+    "question": "How many hawks are in a group of 400 birds if there are only hawks and doves in the group, and the ratio of hawks to doves is 3 to 1?",
+    "answer": "D",
+    "options": {
+      "A": "150",
+      "B": "200",
+      "C": "250",
+      "D": "300",
+      "E": "350"
+    }
+  },
+  {
+    "question": "Four people enter a room in which there are seven vacant chairs.  How many different ways may they be seated?",
+    "answer": "E",
+    "options": {
+      "A": "228",
+      "B": "326",
+      "C": "436",
+      "D": "784",
+      "E": "840"
+    }
+  },
+  {
+    "question": "The odds against a tossed coin coming up heads 9 times in a row are ---- to 1.",
+    "answer": "D",
+    "options": {
+      "A": "63",
+      "B": "127",
+      "C": "255",
+      "D": "511",
+      "E": "1023"
+    }
+  },
+  {
+    "question": "What is the volume in cubic feet of a right triangular pyramid with an altitude of 14 feet and a base of 7 feet on a side?",
+    "answer": "E",
+    "options": {
+      "A": "55",
+      "B": "66",
+      "C": "77",
+      "D": "88",
+      "E": "99"
+    }
+  },
+  {
+    "question": "If the third root of (x + 1) = 3, what is x?",
+    "answer": "D",
+    "options": {
+      "A": "11",
+      "B": "17",
+      "C": "23",
+      "D": "26",
+      "E": "31"
+    }
+  },
+  {
+    "question": "Cuba, with 44,218 square miles, is the largest Caribbean island.  Hispaniola, with 29,355, is the second largest.  Express Hispaniola's area in relation to Cuba's as a fraction.",
+    "answer": "A",
+    "options": {
+      "A": "2/3",
+      "B": "2/5",
+      "C": "2/7",
+      "D": "3/5",
+      "E": "5/8"
+    }
+  },
+  {
+    "question": "Every day, Big Bad Boris gains 2 pounds.  He will weigh 280 pounds in 7 days if he weighed ...",
+    "answer": "B",
+    "options": {
+      "A": "228 pounds 17 days ago",
+      "B": "230 pounds 18 days ago",
+      "C": "232 pounds 19 days ago",
+      "D": "234 pounds 20 days ago",
+      "E": "236 pounds 21 days ago"
+    }
+  },
+  {
+    "question": "Two gears, one with 36 teeth and the other with 24 teeth, mesh with one another.  In the time it takes the larger wheel to make two revolutions, the smaller wheel will turn how many times?",
+    "answer": "B",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "If the measures of two complementary angles are in the ratio of 2 to 3, the measure of the larger angle is ---- degrees.",
+    "answer": "B",
+    "options": {
+      "A": "48",
+      "B": "54",
+      "C": "60",
+      "D": "66",
+      "E": "72"
+    }
+  },
+  {
+    "question": "Which is smallest?",
+    "answer": "E",
+    "options": {
+      "A": "3/5",
+      "B": "6/10",
+      "C": "8/15",
+      "D": "11/20",
+      "E": "13/25"
+    }
+  },
+  {
+    "question": "A governor spent 1/3 of each day sleeping, 1/12 covering up skeletons in his closet, 1/6 arranging junkets and 1/4 at banquets,.  How many hours were left daily for campaigning?",
+    "answer": "C",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+    }
+  },
+  {
+    "question": "Colorado has 55 peaks over 14,000 feet high.  How many feet over two miles is 14,000 feet?",
+    "answer": "D",
+    "options": {
+      "A": "2280",
+      "B": "2650",
+      "C": "3100",
+      "D": "3440",
+      "E": "3660"
+    }
+  },
+  {
+    "question": "Ivan invested $3000 at 8% simple annual interest.  How much interest did he earn after three months?",
+    "answer": "D",
+    "options": {
+      "A": "$45",
+      "B": "$50",
+      "C": "$55",
+      "D": "$60",
+      "E": "$65"
+    }
+  },
+  {
+    "question": "Which is not a rectangular number?",
+    "answer": "B",
+    "options": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "9",
+      "E": "10"
+    }
+  },
+  {
+    "question": "An auditorium contains 540 seats.  One night, 4/9 of them were filled.  The number of seats left unoccupied was ...",
+    "answer": "C",
+    "options": {
+      "A": "200",
+      "B": "250",
+      "C": "300",
+      "D": "350",
+      "E": "400"
+    }
+  }
+]

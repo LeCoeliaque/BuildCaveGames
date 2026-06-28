@@ -1,0 +1,10 @@
+{
+  "name": "gamehub",
+  "version": "1.0.0",
+  "description": "A hub that auto-discovers and proxies Node.js games",
+  "main": "hub.js",
+  "scripts": {
+    "start": "node hub.js"
+  },
+  "license": "ISC"
+}

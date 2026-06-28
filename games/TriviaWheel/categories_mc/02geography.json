@@ -1,0 +1,3939 @@
+[
+  {
+    "question": "A plane flying due east from the Los Angeles airport would not eventually fly over ...",
+    "answer": "C",
+    "options": {
+      "A": "Texas",
+      "B": "Arizona",
+      "C": "Missouri",
+      "D": "New Mexico",
+      "E": "Mississippi"
+    }
+  },
+  {
+    "question": "In addition to Thai, Urdu, and Hindi, which are also native languages of the same continent?",
+    "answer": "E",
+    "options": {
+      "A": "Yaqui, Carib",
+      "B": "Swahili, Zulu",
+      "C": "Maori, Tahitian",
+      "D": "Celtic, Lappish",
+      "E": "Mandarin, Punjabi"
+    }
+  },
+  {
+    "question": "Which cities are geographically farthest from Cape Town?",
+    "answer": "C",
+    "options": {
+      "A": "Kigali and Entebbe",
+      "B": "Abuja and Yaounde",
+      "C": "Benghazi and Alexandria",
+      "D": "Mogadishu and Addis Ababa",
+      "E": "Windhoek and Johannesburg"
+    }
+  },
+  {
+    "question": "What is north of the Dead Sea?",
+    "answer": "D",
+    "options": {
+      "A": "Saudi Arabia",
+      "B": "Persian Gulf",
+      "C": "Gulf of Aden",
+      "D": "Sea of Galilee",
+      "E": "Sinai Peninsula"
+    }
+  },
+  {
+    "question": "Which people live in the Canadian Arctic?",
+    "answer": "B",
+    "options": {
+      "A": "Lapp",
+      "B": "Inuit",
+      "C": "Maori",
+      "D": "Bantu",
+      "E": "Basque"
+    }
+  },
+  {
+    "question": "Which includes a caldera?",
+    "answer": "B",
+    "options": {
+      "A": "Denali in Alaska",
+      "B": "Crater Lake in Oregon",
+      "C": "Devils Tower in Wyoming",
+      "D": "Niagara Falls in New York",
+      "E": "Meteor Crater in Arizona"
+    }
+  },
+  {
+    "question": "Which national cemetery is not correctly located in its state?",
+    "answer": "C",
+    "options": {
+      "A": "Shiloh - Tennessee",
+      "B": "Arlington - Virginia",
+      "C": "Yorktown - New York",
+      "D": "Vicksburg - Mississippi",
+      "E": "Andersonville - Georgia"
+    }
+  },
+  {
+    "question": "Which adjective indicates the edges of streams and rivers?",
+    "answer": "B",
+    "options": {
+      "A": "diluvian",
+      "B": "riparian",
+      "C": "ophidian",
+      "D": "thespian",
+      "E": "isthmian"
+    }
+  },
+  {
+    "question": "Part of the ancient Nubian Empire was in which modern country?",
+    "answer": "A",
+    "options": {
+      "A": "Sudan",
+      "B": "Ghana",
+      "C": "Angola",
+      "D": "Liberia",
+      "E": "Zimbabwe"
+    }
+  },
+  {
+    "question": "The line of 45 degree north latitude does not cross ...",
+    "answer": "C",
+    "options": {
+      "A": "Idaho",
+      "B": "Oregon",
+      "C": "Kentucky",
+      "D": "Wisconsin",
+      "E": "South Dakota"
+    }
+  },
+  {
+    "question": "Dakar is the capital of ...",
+    "answer": "C",
+    "options": {
+      "A": "Kenya",
+      "B": "Sudan",
+      "C": "Senegal",
+      "D": "Morocco",
+      "E": "Zimbabwe"
+    }
+  },
+  {
+    "question": "Which has a western shore?",
+    "answer": "C",
+    "options": {
+      "A": "Mali",
+      "B": "Niger",
+      "C": "Gabon",
+      "D": "Ivory Coast",
+      "E": "Mozambique"
+    }
+  },
+  {
+    "question": "Out of every one hundred people on our planet, the fewest live in ...",
+    "answer": "D",
+    "options": {
+      "A": "Asia",
+      "B": "Africa",
+      "C": "Europe",
+      "D": "Oceania",
+      "E": "North America"
+    }
+  },
+  {
+    "question": "You would not go to Australia to see the ...",
+    "answer": "A",
+    "options": {
+      "A": "Great Rift Valley",
+      "B": "Great Barrier Reef",
+      "C": "Great Ocean Road",
+      "D": "Great Victoria Desert",
+      "E": "Great Dividing Range"
+    }
+  },
+  {
+    "question": "The Kalahari and Namib are deserts in what part of Africa?",
+    "answer": "A",
+    "options": {
+      "A": "southern",
+      "B": "east-central",
+      "C": "west-central",
+      "D": "northeastern",
+      "E": "northwestern"
+    }
+  },
+  {
+    "question": "A map scale reads 1 1/2 inch equals 1 mile.  How many miles are represented by 6 inches?",
+    "answer": "A",
+    "options": {
+      "A": "4",
+      "B": "8",
+      "C": "10",
+      "D": "12",
+      "E": "16"
+    }
+  },
+  {
+    "question": "The two largest cities of Brazil are Sao Paulo and ...",
+    "answer": "E",
+    "options": {
+      "A": "Belem",
+      "B": "La Paz",
+      "C": "Asuncion",
+      "D": "Mato Grosso",
+      "E": "Rio de Janeiro"
+    }
+  },
+  {
+    "question": "Which part of Europe is least densely populated?",
+    "answer": "D",
+    "options": {
+      "A": "southern Italy",
+      "B": "eastern Poland",
+      "C": "central Germany",
+      "D": "northern Finland",
+      "E": "western Portugal"
+    }
+  },
+  {
+    "question": "What principality lies high in the Pyrenees Mountains?",
+    "answer": "C",
+    "options": {
+      "A": "Bhopal",
+      "B": "Monaco",
+      "C": "Andorra",
+      "D": "Moldavia",
+      "E": "Liechtenstein"
+    }
+  },
+  {
+    "question": "In which capital does water boil at the lowest temperature?",
+    "answer": "D",
+    "options": {
+      "A": "Boston",
+      "B": "Juneau",
+      "C": "Honolulu",
+      "D": "Santa Fe",
+      "E": "Frankfort"
+    }
+  },
+  {
+    "question": "The Vatican is in ...",
+    "answer": "A",
+    "options": {
+      "A": "Rome",
+      "B": "Paris",
+      "C": "Genoa",
+      "D": "Berlin",
+      "E": "Madrid"
+    }
+  },
+  {
+    "question": "The flag of ---- consists of a red circle centered on a white background.",
+    "answer": "B",
+    "options": {
+      "A": "Egypt",
+      "B": "Japan",
+      "C": "Portugal",
+      "D": "Guatemala",
+      "E": "Luxembourg"
+    }
+  },
+  {
+    "question": "Which is not on the Arabian Peninsula?",
+    "answer": "D",
+    "options": {
+      "A": "Qatar",
+      "B": "Dubai",
+      "C": "Oman",
+      "D": "Brunei",
+      "E": "Yemen"
+    }
+  },
+  {
+    "question": "Which island is farthest from the land mass with which it is paired?",
+    "answer": "A",
+    "options": {
+      "A": "Borneo - China",
+      "B": "Sri Lanka - India",
+      "C": "Tasmania - Australia",
+      "D": "Falklands - Argentina",
+      "E": "Madagascar - Mozambique"
+    }
+  },
+  {
+    "question": "It is light almost 24 hours a day during June in ...",
+    "answer": "B",
+    "options": {
+      "A": "Laos",
+      "B": "Iceland",
+      "C": "Tunisia",
+      "D": "Ecuador",
+      "E": "New Zealand"
+    }
+  },
+  {
+    "question": "Which nation occupies the mountainous region along the Adriatic coast between Montenegro and Greece?",
+    "answer": "C",
+    "options": {
+      "A": "Poland",
+      "B": "Monaco",
+      "C": "Albania",
+      "D": "Romania",
+      "E": "Hungary"
+    }
+  },
+  {
+    "question": "Which island is closest to the Marianas Trench?",
+    "answer": "A",
+    "options": {
+      "A": "Guam",
+      "B": "Kodiak",
+      "C": "Molokai",
+      "D": "Jamaica",
+      "E": "Madagascar"
+    }
+  },
+  {
+    "question": "Which national park is not paired with the state in which it is located?",
+    "answer": "B",
+    "options": {
+      "A": "Canyonlands - Utah",
+      "B": "Bryce Canyon - Oregon",
+      "C": "Grand Canyon - Arizona",
+      "D": "Kings Canyon - California",
+      "E": "Black Canyon of the Gunnison - Colorado"
+    }
+  },
+  {
+    "question": "The land immediately east of the Bering Strait is part of ...",
+    "answer": "E",
+    "options": {
+      "A": "China",
+      "B": "Russia",
+      "C": "Canada",
+      "D": "Norway",
+      "E": "the U.S.A."
+    }
+  },
+  {
+    "question": "The face of a cliff in the Northern Hemisphere that will generally be the warmest and sunniest all day is the ---- face.",
+    "answer": "C",
+    "options": {
+      "A": "east",
+      "B": "west",
+      "C": "south",
+      "D": "north"
+    }
+  },
+  {
+    "question": "Residents of which island make the greatest use of geothermal energy?",
+    "answer": "C",
+    "options": {
+      "A": "Crete",
+      "B": "Guam",
+      "C": "Iceland",
+      "D": "Sri Lanka",
+      "E": "Madagascar"
+    }
+  },
+  {
+    "question": "The primary agricultural export product of Burma is ...",
+    "answer": "A",
+    "options": {
+      "A": "rice",
+      "B": "corn",
+      "C": "tulips",
+      "D": "peaches",
+      "E": "soy beans"
+    }
+  },
+  {
+    "question": "Egypt is bordered by how many other African nations?",
+    "answer": "B",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    }
+  },
+  {
+    "question": "Which is not a Mexican coastal city?",
+    "answer": "E",
+    "options": {
+      "A": "Tampico",
+      "B": "Veracruz",
+      "C": "Mazatlan",
+      "D": "Acapulco",
+      "E": "Chihuahua"
+    }
+  },
+  {
+    "question": "The most easterly point in the U.S. is in ...",
+    "answer": "A",
+    "options": {
+      "A": "Maine",
+      "B": "Florida",
+      "C": "Maryland",
+      "D": "North Carolina",
+      "E": "Massachusetts"
+    }
+  },
+  {
+    "question": "Which province has no border on a body of salt water?",
+    "answer": "B",
+    "options": {
+      "A": "Quebec",
+      "B": "Alberta",
+      "C": "Manitoba",
+      "D": "the Yukon",
+      "E": "Nova Scotia"
+    }
+  },
+  {
+    "question": "Which Eastern European country does not share a border with Russia?",
+    "answer": "E",
+    "options": {
+      "A": "Latvia",
+      "B": "Ukraine",
+      "C": "Belarus",
+      "D": "Georgia",
+      "E": "Romania"
+    }
+  },
+  {
+    "question": "The general storm path in the U.S. is from ...",
+    "answer": "B",
+    "options": {
+      "A": "east to west",
+      "B": "west to east",
+      "C": "north to south",
+      "D": "south to north",
+      "E": "southeast to northwest"
+    }
+  },
+  {
+    "question": "Which city is in the northeastern region of a continent?",
+    "answer": "A",
+    "options": {
+      "A": "Cairo",
+      "B": "Lisbon",
+      "C": "Bangkok",
+      "D": "Melbourne",
+      "E": "Buenos Aires"
+    }
+  },
+  {
+    "question": "On topographical maps, contour lines never ...",
+    "answer": "B",
+    "options": {
+      "A": "close around hills",
+      "B": "cross at regions of high elevation",
+      "C": "form Vs pointing upstream when crossing        streams",
+      "D": "may close or extend to the edge of a map",
+      "E": "appear on both sides of areas where slopes        reverse directions"
+    }
+  },
+  {
+    "question": "Which is not one of the Lesser Antilles?",
+    "answer": "B",
+    "options": {
+      "A": "Grenada",
+      "B": "Jamaica",
+      "C": "Dominica",
+      "D": "Barbados",
+      "E": "Trinidad and Tobago"
+    }
+  },
+  {
+    "question": "The Himalayas form part of the northern border of ...",
+    "answer": "C",
+    "options": {
+      "A": "Iran",
+      "B": "Iraq",
+      "C": "India",
+      "D": "Austria",
+      "E": "Switzerland"
+    }
+  },
+  {
+    "question": "Between the Adriatic and the Black seas in southeastern Europe is the ---- Peninsula.",
+    "answer": "A",
+    "options": {
+      "A": "Balkan",
+      "B": "Iberian",
+      "C": "Jutland",
+      "D": "Crimean",
+      "E": "Peloponnesus"
+    }
+  },
+  {
+    "question": "Shamanism, Buddhism, and Chundo Kyo are the main religions of ...",
+    "answer": "E",
+    "options": {
+      "A": "Qatar",
+      "B": "Sudan",
+      "C": "Guyana",
+      "D": "Jamaica",
+      "E": "North Korea"
+    }
+  },
+  {
+    "question": "Which nation is not paired with its capital?",
+    "answer": "D",
+    "options": {
+      "A": "Italy - Rome",
+      "B": "Greece - Athens",
+      "C": "Austria - Vienna",
+      "D": "Portugal - Madrid",
+      "E": "Switzerland - Bern"
+    }
+  },
+  {
+    "question": "Mount St. Helens is in what part of Washington?",
+    "answer": "A",
+    "options": {
+      "A": "southwest",
+      "B": "northeast",
+      "C": "northwest",
+      "D": "southeast",
+      "E": "east central"
+    }
+  },
+  {
+    "question": "Which is on the eastern shore of Australia?",
+    "answer": "C",
+    "options": {
+      "A": "Perth",
+      "B": "Darwin",
+      "C": "Brisbane",
+      "D": "Adelaide",
+      "E": "Alice Springs"
+    }
+  },
+  {
+    "question": "Which lack a common border?",
+    "answer": "C",
+    "options": {
+      "A": "Italy, France",
+      "B": "Portugal, Spain",
+      "C": "Greece, Austria",
+      "D": "Norway, Sweden",
+      "E": "Germany, Poland"
+    }
+  },
+  {
+    "question": "What is on the west bank of the Hudson River?",
+    "answer": "B",
+    "options": {
+      "A": "Fort Knox",
+      "B": "West Point",
+      "C": "the Pentagon",
+      "D": "the U.S. Capitol",
+      "E": "Independence Hall"
+    }
+  },
+  {
+    "question": "A climate in which water lost by evaporation exceeds that brought in by precipitation is characteristic of which region of the U.S.?",
+    "answer": "B",
+    "options": {
+      "A": "Midwest",
+      "B": "Southwest",
+      "C": "Gulf States",
+      "D": "Pacific Northwest",
+      "E": "New England States"
+    }
+  },
+  {
+    "question": "A longitude of zero degrees runs through ...",
+    "answer": "B",
+    "options": {
+      "A": "India",
+      "B": "France",
+      "C": "Ethiopia",
+      "D": "Argentina",
+      "E": "New Zealand"
+    }
+  },
+  {
+    "question": "Major petroleum-producing countries do not include ...",
+    "answer": "B",
+    "options": {
+      "A": "Nigeria, Libya",
+      "B": "Spain and Greece",
+      "C": "Saudi Arabia, Kuwait",
+      "D": "Venezuela, Argentina",
+      "E": "the United Kingdom, Norway"
+    }
+  },
+  {
+    "question": "Two countries that are adjacent to Iran's eastern border are ...",
+    "answer": "E",
+    "options": {
+      "A": "Iraq and Kuwait",
+      "B": "Egypt and Somalia",
+      "C": "India and Bangladesh",
+      "D": "Thailand and Cambodia",
+      "E": "Pakistan and Afghanistan"
+    }
+  },
+  {
+    "question": "Which is not in the Central Standard time zone?",
+    "answer": "A",
+    "options": {
+      "A": "Ohio",
+      "B": "Illinois",
+      "C": "Alabama",
+      "D": "Oklahoma",
+      "E": "Minnesota"
+    }
+  },
+  {
+    "question": "Which Alaskan city is farthest south?",
+    "answer": "B",
+    "options": {
+      "A": "Nome",
+      "B": "Juneau",
+      "C": "Barrow",
+      "D": "Fairbanks",
+      "E": "Anchorage"
+    }
+  },
+  {
+    "question": "Volcanoes, fiords, geysers, glaciers, and hot springs are found in ...",
+    "answer": "E",
+    "options": {
+      "A": "Iran",
+      "B": "Nepal",
+      "C": "Austria",
+      "D": "Paraguay",
+      "E": "New Zealand"
+    }
+  },
+  {
+    "question": "Which does not use river transportation for shipping its products?",
+    "answer": "A",
+    "options": {
+      "A": "Nevada",
+      "B": "Arkansas",
+      "C": "Washington",
+      "D": "Pennsylvania",
+      "E": "West Virginia"
+    }
+  },
+  {
+    "question": "Petroleum is not a major export of ...",
+    "answer": "B",
+    "options": {
+      "A": "Oman",
+      "B": "Malta",
+      "C": "Mexico",
+      "D": "Venezuela",
+      "E": "the United Kingdom"
+    }
+  },
+  {
+    "question": "The theodolite is mostly used in ...",
+    "answer": "A",
+    "options": {
+      "A": "surveying",
+      "B": "plotting trajectories",
+      "C": "earthquake forecasting",
+      "D": "measuring water depths",
+      "E": "measuring high temperatures"
+    }
+  },
+  {
+    "question": "The Ionian Sea lies ...",
+    "answer": "A",
+    "options": {
+      "A": "south of Italy",
+      "B": "east of Greece",
+      "C": "south of France",
+      "D": "north of Germany",
+      "E": "west of Yugoslavia"
+    }
+  },
+  {
+    "question": "Mt. Merapi, which has erupted regularly since 1548, is the most active volcano in ...",
+    "answer": "C",
+    "options": {
+      "A": "India",
+      "B": "Thailand",
+      "C": "Indonesia",
+      "D": "New Zealand",
+      "E": "the Philippines"
+    }
+  },
+  {
+    "question": "The line of longitude closest to western Ireland is also closest to the west coast of which country?",
+    "answer": "E",
+    "options": {
+      "A": "France",
+      "B": "Angola",
+      "C": "Iceland",
+      "D": "Norway",
+      "E": "Morocco"
+    }
+  },
+  {
+    "question": "The deepest lake in the United States ...",
+    "answer": "E",
+    "options": {
+      "A": "fills an ancient fault",
+      "B": "has highly saline water",
+      "C": "was gouged out by glacial action",
+      "D": "occupies a basin below sea level",
+      "E": "is in the crater of an extinct volcano"
+    }
+  },
+  {
+    "question": "Which expression indicates Australia?",
+    "answer": "E",
+    "options": {
+      "A": "far out",
+      "B": "way back",
+      "C": "long gone",
+      "D": "way below",
+      "E": "down under"
+    }
+  },
+  {
+    "question": "The Prime Meridian passes through ...",
+    "answer": "A",
+    "options": {
+      "A": "Spain and Britain",
+      "B": "Germany and Italy",
+      "C": "Russia and Poland",
+      "D": "Greece and Turkey",
+      "E": "Sweden and Finland"
+    }
+  },
+  {
+    "question": "Which country is landlocked to its west?",
+    "answer": "B",
+    "options": {
+      "A": "Peru",
+      "B": "Libya",
+      "C": "Greece",
+      "D": "Portugal",
+      "E": "Saudi Arabia"
+    }
+  },
+  {
+    "question": "Southeast Asia does not include ...",
+    "answer": "B",
+    "options": {
+      "A": "Laos",
+      "B": "Yemen",
+      "C": "Vietnam",
+      "D": "Thailand",
+      "E": "Cambodia"
+    }
+  },
+  {
+    "question": "It would not be possible to fly due south from Egypt to ...",
+    "answer": "D",
+    "options": {
+      "A": "Sudan",
+      "B": "Uganda",
+      "C": "Tanzania",
+      "D": "Morocco",
+      "E": "Zimbabwe"
+    }
+  },
+  {
+    "question": "A person could enter Switzerland by traveling ...",
+    "answer": "E",
+    "options": {
+      "A": "south from Italy",
+      "B": "west from France",
+      "C": "east from Australia",
+      "D": "west from Portugal",
+      "E": "south from Germany"
+    }
+  },
+  {
+    "question": "Lake Victoria is the headwaters of the ---- River.",
+    "answer": "A",
+    "options": {
+      "A": "Nile",
+      "B": "Niger",
+      "C": "Congo",
+      "D": "Limpopo",
+      "E": "Zambezi"
+    }
+  },
+  {
+    "question": "Which is landlocked?",
+    "answer": "A",
+    "options": {
+      "A": "Laos",
+      "B": "Bahrain",
+      "C": "Malaysia",
+      "D": "Indonesia",
+      "E": "Bangladesh"
+    }
+  },
+  {
+    "question": "Which is not a first world country?",
+    "answer": "B",
+    "options": {
+      "A": "Japan",
+      "B": "Angola",
+      "C": "Denmark",
+      "D": "Portugal",
+      "E": "Luxembourg"
+    }
+  },
+  {
+    "question": "On the flag of which country is there Arabic writing and a sword?",
+    "answer": "E",
+    "options": {
+      "A": "Iraq",
+      "B": "Egypt",
+      "C": "Kuwait",
+      "D": "Morocco",
+      "E": "Saudi Arabia"
+    }
+  },
+  {
+    "question": "Which national park would not be of particular interest to a volcanologist?",
+    "answer": "B",
+    "options": {
+      "A": "Katmai",
+      "B": "Biscayne",
+      "C": "Haleakala",
+      "D": "Crater Lake",
+      "E": "Yellowstone"
+    }
+  },
+  {
+    "question": "The two smallest Central American countries are Belize and ...",
+    "answer": "E",
+    "options": {
+      "A": "Panama",
+      "B": "Honduras",
+      "C": "Nicaragua",
+      "D": "Guatemala",
+      "E": "El Salvador"
+    }
+  },
+  {
+    "question": "Which is in Africa?",
+    "answer": "C",
+    "options": {
+      "A": "Guyana",
+      "B": "Borneo",
+      "C": "Uganda",
+      "D": "Ceylon",
+      "E": "Sumatra"
+    }
+  },
+  {
+    "question": "Name the cease-fire line established by the Geneva Conference of 1954 dividing Vietnam into two parts.",
+    "answer": "A",
+    "options": {
+      "A": "17th parallel",
+      "B": "38th parallel",
+      "C": "Maginot Line",
+      "D": "Siegfried Line",
+      "E": "Mason-Dixon Line"
+    }
+  },
+  {
+    "question": "The Sahul Shelf lies between ...",
+    "answer": "E",
+    "options": {
+      "A": "Cuba and Haiti",
+      "B": "Morocco and Spain",
+      "C": "Alaska and Siberia",
+      "D": "Sri Lanka and India",
+      "E": "Australia and New Guinea"
+    }
+  },
+  {
+    "question": "East Germany was the ...",
+    "answer": "B",
+    "options": {
+      "A": "Bundestag",
+      "B": "German Democratic Republic",
+      "C": "Federal Republic Of Germany",
+      "D": "German Federal Democratic Republic",
+      "E": "Federal Democratic Republic of Germany"
+    }
+  },
+  {
+    "question": "Which of these mountains is located farthest south?",
+    "answer": "E",
+    "options": {
+      "A": "Denali",
+      "B": "Elbrus",
+      "C": "Aconcagua",
+      "D": "Kilimanjaro",
+      "E": "Vinson Massif"
+    }
+  },
+  {
+    "question": "What continent is nearest the point where the equator and prime meridian cross?",
+    "answer": "B",
+    "options": {
+      "A": "Asia",
+      "B": "Africa",
+      "C": "Australia",
+      "D": "North America",
+      "E": "South America"
+    }
+  },
+  {
+    "question": "Which is on the banks of the Thames River?",
+    "answer": "E",
+    "options": {
+      "A": "Paris",
+      "B": "Lisbon",
+      "C": "Venice",
+      "D": "Madrid",
+      "E": "London"
+    }
+  },
+  {
+    "question": "The Sulu Sea is southwest of the ...",
+    "answer": "C",
+    "options": {
+      "A": "Canaries",
+      "B": "Seychelles",
+      "C": "Philippines",
+      "D": "West Indies",
+      "E": "Greater Antilles"
+    }
+  },
+  {
+    "question": "The southernmost point in Asia is at Pulau Dana in ...",
+    "answer": "D",
+    "options": {
+      "A": "India",
+      "B": "China",
+      "C": "Vietnam",
+      "D": "Indonesia",
+      "E": "South Korea"
+    }
+  },
+  {
+    "question": "The Green Mountains are in which mountain range?",
+    "answer": "D",
+    "options": {
+      "A": "Rockies",
+      "B": "Cascades",
+      "C": "Bitterroots",
+      "D": "Appalachians",
+      "E": "Sierra Nevada"
+    }
+  },
+  {
+    "question": "Which is most densely populated?",
+    "answer": "E",
+    "options": {
+      "A": "Egypt",
+      "B": "Mexico",
+      "C": "Greece",
+      "D": "Argentina",
+      "E": "Singapore"
+    }
+  },
+  {
+    "question": "Moses received the Ten Commandments on Mount Sinai in ...",
+    "answer": "E",
+    "options": {
+      "A": "southern Iraq",
+      "B": "eastern Syria",
+      "C": "western Egypt",
+      "D": "west of Jerusalem",
+      "E": "north of the Red Sea"
+    }
+  },
+  {
+    "question": "Hawthorne's Old Manse, Alcott's Orchard House, and the Minute Man statue are in what Massachusetts town?",
+    "answer": "B",
+    "options": {
+      "A": "Boston",
+      "B": "Concord",
+      "C": "Pittsfield",
+      "D": "Worcester",
+      "E": "New Bedford"
+    }
+  },
+  {
+    "question": "The Great Australian Bight is a(n) ...",
+    "answer": "A",
+    "options": {
+      "A": "enormous bay",
+      "B": "mountain range",
+      "C": "expansive desert",
+      "D": "tropical rain forest",
+      "E": "eroded canyon country"
+    }
+  },
+  {
+    "question": "It is not true that Italy is ...",
+    "answer": "C",
+    "options": {
+      "A": "larger than Belgium",
+      "B": "essentially a peninsula",
+      "C": "bordered to the west by Spain",
+      "D": "bordered to the north by Austria",
+      "E": "contiguous with the Adriatic Sea"
+    }
+  },
+  {
+    "question": "The Amazon and Nile rivers are each about ---- miles long.",
+    "answer": "D",
+    "options": {
+      "A": "1000",
+      "B": "2000",
+      "C": "3000",
+      "D": "4000",
+      "E": "5000"
+    }
+  },
+  {
+    "question": "A right angle does not describe the southeastern border of ...",
+    "answer": "D",
+    "options": {
+      "A": "Oregon",
+      "B": "Kansas",
+      "C": "Montana",
+      "D": "Tennessee",
+      "E": "New Mexico"
+    }
+  },
+  {
+    "question": "Which is a city of the country that occupies Java, Sumatra, the Moluccas, and parts of Borneo and New Guinea?",
+    "answer": "B",
+    "options": {
+      "A": "Taipei",
+      "B": "Jakarta",
+      "C": "Rangoon",
+      "D": "Bangkok",
+      "E": "Shanghai"
+    }
+  },
+  {
+    "question": "Which does not border Canada?",
+    "answer": "A",
+    "options": {
+      "A": "Ohio",
+      "B": "Idaho",
+      "C": "Vermont",
+      "D": "Minnesota",
+      "E": "Washington"
+    }
+  },
+  {
+    "question": "Which capital is farthest from an ocean?",
+    "answer": "B",
+    "options": {
+      "A": "Dakar",
+      "B": "Kigali",
+      "C": "Algiers",
+      "D": "Djibouti",
+      "E": "Mogadishu"
+    }
+  },
+  {
+    "question": "Which national historic site is not paired with the state in which it is located?",
+    "answer": "A",
+    "options": {
+      "A": "Nez Perce - Illinois",
+      "B": "Golden Spike - Utah",
+      "C": "Andersonville - Georgia",
+      "D": "Minute Man - Massachusetts",
+      "E": "Harpers Ferry - West Virginia"
+    }
+  },
+  {
+    "question": "The Snake River begins in Yellowstone National Park at an altitude of 9500 feet.  Where it joins the Columbia River 1036 miles downstream, its altitude is 340 feet.  About how many feet does it drop per mile?",
+    "answer": "B",
+    "options": {
+      "A": "6",
+      "B": "9",
+      "C": "12",
+      "D": "15",
+      "E": "18"
+    }
+  },
+  {
+    "question": "Punjabi, Urdu, Sindhi, Pushtu, and Baluchi are some of the major languages of ...",
+    "answer": "E",
+    "options": {
+      "A": "Syria",
+      "B": "Tahiti",
+      "C": "Yemen",
+      "D": "Malaysia",
+      "E": "Pakistan"
+    }
+  },
+  {
+    "question": "Garden is to New Jersey as Keystone is to ...",
+    "answer": "E",
+    "options": {
+      "A": "Ohio",
+      "B": "Virginia",
+      "C": "Maryland",
+      "D": "Delaware",
+      "E": "Pennsylvania"
+    }
+  },
+  {
+    "question": "Which country is closest to the mouth of the Orinoco River?",
+    "answer": "A",
+    "options": {
+      "A": "Trinidad and Tobago",
+      "B": "Antigua and Barbuda",
+      "C": "Sao Tome and Principe",
+      "D": "Serbia and Montenegro",
+      "E": "Bosnia and Herzegovina"
+    }
+  },
+  {
+    "question": "The Hohokam culture developed around the ...",
+    "answer": "B",
+    "options": {
+      "A": "Brazos and Trinity valleys of Texas",
+      "B": "Gila and Salt River valleys of Arizona",
+      "C": "Missouri and Yellowstone valleys of        Montana",
+      "D": "Snake and Columbia valleys of Washington",
+      "E": "Penobscot and Aroostook valleys of Maine"
+    }
+  },
+  {
+    "question": "El Paso, Texas is ...",
+    "answer": "C",
+    "options": {
+      "A": "just south of Arizona",
+      "B": "just east of Louisiana",
+      "C": "in westernmost Texas",
+      "D": "just west of New Mexico",
+      "E": "in the northernmost part of Texas"
+    }
+  },
+  {
+    "question": "What nation forms the eastern boundary of El Salvador?",
+    "answer": "B",
+    "options": {
+      "A": "Panama",
+      "B": "Honduras",
+      "C": "Nicaragua",
+      "D": "Guatemala",
+      "E": "Costa Rica"
+    }
+  },
+  {
+    "question": "Your nationality could be French if you were a native of the ---- Mountains",
+    "answer": "E",
+    "options": {
+      "A": "Ural",
+      "B": "Atlas",
+      "C": "Apennine",
+      "D": "Carpathian",
+      "E": "Jura and Vosges"
+    }
+  },
+  {
+    "question": "The junction of the prime meridian and the equator is closest to ...",
+    "answer": "B",
+    "options": {
+      "A": "Asia",
+      "B": "Africa",
+      "C": "Europe",
+      "D": "Australia",
+      "E": "North America"
+    }
+  },
+  {
+    "question": "It is a greater distance from the northern to the southern border than from the eastern to the western border of ...",
+    "answer": "E",
+    "options": {
+      "A": "Montana",
+      "B": "Oklahoma",
+      "C": "Tennessee",
+      "D": "Massachusetts",
+      "E": "New Hampshire"
+    }
+  },
+  {
+    "question": "In 1995, the Supreme Court ruled that gerrymandering based on what factor is unconstitutional?",
+    "answer": "A",
+    "options": {
+      "A": "race",
+      "B": "wealth",
+      "C": "geography",
+      "D": "population concentration",
+      "E": "political party membership"
+    }
+  },
+  {
+    "question": "The mouths of which rivers are in the Bay of Bengal?",
+    "answer": "E",
+    "options": {
+      "A": "Nile, Niger",
+      "B": "Indus, Huang Ho",
+      "C": "Mekong, Yangtze",
+      "D": "Tigris, Euphrates",
+      "E": "Irrawaddy, Ganges"
+    }
+  },
+  {
+    "question": "Which state does not border Canada?",
+    "answer": "E",
+    "options": {
+      "A": "Idaho",
+      "B": "Vermont",
+      "C": "Minnesota",
+      "D": "New Hampshire",
+      "E": "Massachusetts"
+    }
+  },
+  {
+    "question": "Which has no ocean port?",
+    "answer": "C",
+    "options": {
+      "A": "Poland",
+      "B": "France",
+      "C": "Austria",
+      "D": "Germany",
+      "E": "Yugoslavia"
+    }
+  },
+  {
+    "question": "Which city is not paired with the river flowing through it?",
+    "answer": "A",
+    "options": {
+      "A": "Bonn - Ob",
+      "B": "Paris - Seine",
+      "C": "Rome - Tiber",
+      "D": "Vienna - Danube",
+      "E": "London - Thames"
+    }
+  },
+  {
+    "question": "In 1908, members of Ernest Shackleton's expedition were the first to reach the summit of Mt. Erebus, an active volcano on a continental island of ...",
+    "answer": "C",
+    "options": {
+      "A": "Asia",
+      "B": "Africa",
+      "C": "Antarctica",
+      "D": "North America",
+      "E": "South America"
+    }
+  },
+  {
+    "question": "For what does the Z stand in the time notation, 1830Z?",
+    "answer": "A",
+    "options": {
+      "A": "Zulu",
+      "B": "Zuni",
+      "C": "Zurich",
+      "D": "Zugspitze",
+      "E": "Zuckerman"
+    }
+  },
+  {
+    "question": "Among other places, the nomadic Bedouins have lived for many centuries in ...",
+    "answer": "E",
+    "options": {
+      "A": "South Africa",
+      "B": "Eastern Mongolia",
+      "C": "the Greek Islands",
+      "D": "Northern Scandinavia",
+      "E": "the Arabian Peninsula"
+    }
+  },
+  {
+    "question": "A 1988 Time magazine story referred to what nation as a \"country under water\" when almost three-quarters of its land was inundated?",
+    "answer": "E",
+    "options": {
+      "A": "Italy",
+      "B": "Nepal",
+      "C": "Burma",
+      "D": "Thailand",
+      "E": "Bangladesh"
+    }
+  },
+  {
+    "question": "The ---- Sea is adjacent to Denmark.",
+    "answer": "B",
+    "options": {
+      "A": "Red",
+      "B": "North",
+      "C": "Bering",
+      "D": "Caribbean",
+      "E": "Mediterranean"
+    }
+  },
+  {
+    "question": "There is no tropical rain forest in ...",
+    "answer": "C",
+    "options": {
+      "A": "Java",
+      "B": "India",
+      "C": "Latvia",
+      "D": "Belize",
+      "E": "Nicaragua"
+    }
+  },
+  {
+    "question": "In 2003, American Marines cleared the way for Nigerian peacekeepers when they seized control of Monrovia in ...",
+    "answer": "B",
+    "options": {
+      "A": "Kenya",
+      "B": "Liberia",
+      "C": "Angola",
+      "D": "Somalia",
+      "E": "Zimbabwe"
+    }
+  },
+  {
+    "question": "The crater would be in what country if a meteorite hit Earth halfway between the eastern shore of the Mediterranean and the western border of India?",
+    "answer": "A",
+    "options": {
+      "A": "Iran",
+      "B": "Syria",
+      "C": "Israel",
+      "D": "Jordan",
+      "E": "Pakistan"
+    }
+  },
+  {
+    "question": "Which is not an African national anthem?",
+    "answer": "D",
+    "options": {
+      "A": "Angola Avante",
+      "B": "Burundi Bwacu",
+      "C": "Debout Congolais",
+      "D": "Mujalah Singapura",
+      "E": "Somaliyaay Toosoo"
+    }
+  },
+  {
+    "question": "Which national park includes the world's largest known caves?",
+    "answer": "E",
+    "options": {
+      "A": "Wind Cave",
+      "B": "Crater Lake",
+      "C": "Capitol Reef",
+      "D": "Mammoth Cave",
+      "E": "Carlsbad Caverns"
+    }
+  },
+  {
+    "question": "Which community in Alaska is farthest north?",
+    "answer": "D",
+    "options": {
+      "A": "Nome",
+      "B": "Sitka",
+      "C": "Haines",
+      "D": "Barrow",
+      "E": "Skagway"
+    }
+  },
+  {
+    "question": "Which national park is a picturesque range of high mountain peaks?",
+    "answer": "E",
+    "options": {
+      "A": "Zion",
+      "B": "Biscayne",
+      "C": "Voyageurs",
+      "D": "Isle Royale",
+      "E": "Grand Teton"
+    }
+  },
+  {
+    "question": "Part of the border of ---- is not formed by the Atlantic Ocean.",
+    "answer": "E",
+    "options": {
+      "A": "Spain",
+      "B": "Angola",
+      "C": "Guyana",
+      "D": "Iceland",
+      "E": "El Salvador"
+    }
+  },
+  {
+    "question": "The Mackenzie River is the longest river in ...",
+    "answer": "A",
+    "options": {
+      "A": "Canada",
+      "B": "Ireland",
+      "C": "Australia",
+      "D": "New Zealand",
+      "E": "Great Britain"
+    }
+  },
+  {
+    "question": "Which river has no delta?",
+    "answer": "C",
+    "options": {
+      "A": "Nile",
+      "B": "Indus",
+      "C": "Congo",
+      "D": "Yangtze",
+      "E": "Brahmaputra"
+    }
+  },
+  {
+    "question": "The headwaters of which river are in the Valdai Hills northwest of Moscow?",
+    "answer": "C",
+    "options": {
+      "A": "Po",
+      "B": "Seine",
+      "C": "Volga",
+      "D": "Rhine",
+      "E": "Danube"
+    }
+  },
+  {
+    "question": "Which U.S. national park is farthest east?",
+    "answer": "A",
+    "options": {
+      "A": "Acadia",
+      "B": "Sequoia",
+      "C": "Big Bend",
+      "D": "Hot Springs",
+      "E": "Mammoth Cave"
+    }
+  },
+  {
+    "question": "A common line of latitude passes through which seas?",
+    "answer": "E",
+    "options": {
+      "A": "Black Sea, Red Sea",
+      "B": "Sea of Okhotsk, Java Sea",
+      "C": "Barents Sea, Caspian Sea",
+      "D": "Sea of Japan, Celebes Sea",
+      "E": "Arabian Sea, South China Sea"
+    }
+  },
+  {
+    "question": "Which language is used by the fewest people?",
+    "answer": "B",
+    "options": {
+      "A": "Hindi",
+      "B": "French",
+      "C": "English",
+      "D": "Russian",
+      "E": "Mandarin"
+    }
+  },
+  {
+    "question": "Which has the largest population?",
+    "answer": "E",
+    "options": {
+      "A": "Texas",
+      "B": "Illinois",
+      "C": "Michigan",
+      "D": "New York",
+      "E": "California"
+    }
+  },
+  {
+    "question": "The Dardanelles is a strait linking the Sea of Marmara with the ---- Sea.",
+    "answer": "C",
+    "options": {
+      "A": "Red",
+      "B": "Baltic",
+      "C": "Aegean",
+      "D": "Caspian",
+      "E": "Arabian"
+    }
+  },
+  {
+    "question": "The Karakoram Range is along the border of ...",
+    "answer": "A",
+    "options": {
+      "A": "China and India",
+      "B": "France and Austria",
+      "C": "Sweden and Finland",
+      "D": "Burma and Thailand",
+      "E": "United States and Canada"
+    }
+  },
+  {
+    "question": "Nairobi is the capital of ...",
+    "answer": "C",
+    "options": {
+      "A": "Chad",
+      "B": "Niger",
+      "C": "Kenya",
+      "D": "Liberia",
+      "E": "Namibia"
+    }
+  },
+  {
+    "question": "The Seine and what other river join in Paris?",
+    "answer": "D",
+    "options": {
+      "A": "Elbe",
+      "B": "Rhine",
+      "C": "Tiber",
+      "D": "Marne",
+      "E": "Danube"
+    }
+  },
+  {
+    "question": "The headwaters of which river are in the Appalachians?",
+    "answer": "A",
+    "options": {
+      "A": "Hudson",
+      "B": "Missouri",
+      "C": "Columbia",
+      "D": "Rio Grande",
+      "E": "Sacramento"
+    }
+  },
+  {
+    "question": "Hispaniola is between ...",
+    "answer": "B",
+    "options": {
+      "A": "Jamaica and Florida",
+      "B": "Cuba and Puerto Rico",
+      "C": "Grenada and Barbados",
+      "D": "the Virgin Islands and Venezuela",
+      "E": "the Cayman Islands and Honduras"
+    }
+  },
+  {
+    "question": "After crossing the Continental Divide, the Lewis and Clark expedition came to a creek running westward, a tributary of the ---- River.",
+    "answer": "C",
+    "options": {
+      "A": "Yukon",
+      "B": "Missouri",
+      "C": "Columbia",
+      "D": "Colorado",
+      "E": "Sacramento"
+    }
+  },
+  {
+    "question": "Riyadh is the capital of ...",
+    "answer": "E",
+    "options": {
+      "A": "Iraq",
+      "B": "Israel",
+      "C": "Kuwait",
+      "D": "Jordan",
+      "E": "Saudi Arabia"
+    }
+  },
+  {
+    "question": "The Malay Peninsula lies west of the ...",
+    "answer": "E",
+    "options": {
+      "A": "Black Sea",
+      "B": "White Sea",
+      "C": "Bering Sea",
+      "D": "Sea of Cortes",
+      "E": "South China Sea"
+    }
+  },
+  {
+    "question": "Which is the leading producer of potassium salts and uranium?",
+    "answer": "D",
+    "options": {
+      "A": "Iowa",
+      "B": "Hawaii",
+      "C": "Oregon",
+      "D": "New Mexico",
+      "E": "Rhode Island"
+    }
+  },
+  {
+    "question": "Which is in the vicinity of a delta coast?",
+    "answer": "A",
+    "options": {
+      "A": "Cairo, Egypt",
+      "B": "Paris, France",
+      "C": "Baghdad, Iraq",
+      "D": "Moscow, Russia",
+      "E": "Asuncion, Paraguay"
+    }
+  },
+  {
+    "question": "The Circassians are natives of a region near the ...",
+    "answer": "E",
+    "options": {
+      "A": "Arctic Circle",
+      "B": "Cascade Range",
+      "C": "Chittagong Hills",
+      "D": "Cape of Good Hope",
+      "E": "Caucasus Mountains"
+    }
+  },
+  {
+    "question": "Which is landlocked?",
+    "answer": "C",
+    "options": {
+      "A": "Benin",
+      "B": "Ghana",
+      "C": "Malawi",
+      "D": "Liberia",
+      "E": "Djibouti"
+    }
+  },
+  {
+    "question": "Which city on the Florida Peninsula is on the side opposite from the others?",
+    "answer": "B",
+    "options": {
+      "A": "Miami",
+      "B": "Tampa",
+      "C": "Hialeah",
+      "D": "Daytona Beach",
+      "E": "Fort Lauderdale"
+    }
+  },
+  {
+    "question": "Which capital is not approximately due south from the capital of Minnesota?",
+    "answer": "A",
+    "options": {
+      "A": "Columbus",
+      "B": "Des Moines",
+      "C": "Little Rock",
+      "D": "Baton Rouge",
+      "E": "Jefferson City"
+    }
+  },
+  {
+    "question": "Which is in Central America?",
+    "answer": "D",
+    "options": {
+      "A": "Peru",
+      "B": "Guyana",
+      "C": "Suriname",
+      "D": "Guatemala",
+      "E": "Dominican Republic"
+    }
+  },
+  {
+    "question": "The Panama Canal enabled ships to avoid the Straits of ...",
+    "answer": "D",
+    "options": {
+      "A": "Florida",
+      "B": "Hormuz",
+      "C": "Malacca",
+      "D": "Magellan",
+      "E": "Mackinac"
+    }
+  },
+  {
+    "question": "A map scale reads \"1 inch equals 3 miles.\"  Two points on the map are 1 foot 3 inches apart.  How many miles are represented?",
+    "answer": "E",
+    "options": {
+      "A": "9",
+      "B": "18",
+      "C": "26",
+      "D": "39",
+      "E": "45"
+    }
+  },
+  {
+    "question": "Which is a cash crop of the American Midwest?",
+    "answer": "D",
+    "options": {
+      "A": "rice",
+      "B": "cocoa",
+      "C": "tobacco",
+      "D": "soybeans",
+      "E": "sugar cane"
+    }
+  },
+  {
+    "question": "The northern part of which country is characterized by lofty, rugged mountains?",
+    "answer": "A",
+    "options": {
+      "A": "India",
+      "B": "Libya",
+      "C": "Sudan",
+      "D": "Yemen",
+      "E": "Cambodia"
+    }
+  },
+  {
+    "question": "Hawaii is about how many miles southwest of Southern California?",
+    "answer": "C",
+    "options": {
+      "A": "800",
+      "B": "1400",
+      "C": "2300",
+      "D": "3500",
+      "E": "4200"
+    }
+  },
+  {
+    "question": "Columbus is the capital of ...",
+    "answer": "A",
+    "options": {
+      "A": "Ohio",
+      "B": "Iowa",
+      "C": "Missouri",
+      "D": "Kentucky",
+      "E": "Arkansas"
+    }
+  },
+  {
+    "question": "No river forms at least part of the border between which states?",
+    "answer": "D",
+    "options": {
+      "A": "Oregon and Idaho",
+      "B": "Indiana and Kentucky",
+      "C": "Arizona and California",
+      "D": "North Dakota and Montana",
+      "E": "South Carolina and Georgia"
+    }
+  },
+  {
+    "question": "Which biome is not characteristic of the region with which it is paired?",
+    "answer": "E",
+    "options": {
+      "A": "taiga - Siberia",
+      "B": "rain forest - East Indies",
+      "C": "tundra - northern Canada",
+      "D": "desert - central Australia",
+      "E": "grasslands - Arabian Peninsula"
+    }
+  },
+  {
+    "question": "Which are Michigan newspapers?",
+    "answer": "B",
+    "options": {
+      "A": "Yazoo Herald, the Vicksburg Post",
+      "B": "Flint Journal, Cheboygan Daily Tribune",
+      "C": "The Missoulian, Big Horn County News",
+      "D": "Tahoe Daily Tribune, Elko County News",
+      "E": "The Lowell Sun, Martha's Vineyard Times"
+    }
+  },
+  {
+    "question": "Which is at the same longitude as Louisiana?",
+    "answer": "E",
+    "options": {
+      "A": "Ohio",
+      "B": "Idaho",
+      "C": "Nevada",
+      "D": "Alabama",
+      "E": "Missouri"
+    }
+  },
+  {
+    "question": "Edvard Grieg was interested in the folk music of the country ...",
+    "answer": "B",
+    "options": {
+      "A": "shaped like a boot",
+      "B": "known for its fiords",
+      "C": "with polders and dikes",
+      "D": "that spans two continents",
+      "E": "adjacent to the Atlantic and Mediterranean"
+    }
+  },
+  {
+    "question": "Which sea is farthest from the others?",
+    "answer": "D",
+    "options": {
+      "A": "Java Sea",
+      "B": "Timor Sea",
+      "C": "Banda Sea",
+      "D": "Yellow Sea",
+      "E": "Arafura Sea"
+    }
+  },
+  {
+    "question": "Which is actually the remnant of an enormous terminal moraine?",
+    "answer": "A",
+    "options": {
+      "A": "Cape Cod",
+      "B": "Galveston Bay",
+      "C": "Baja California",
+      "D": "Cape Canaveral",
+      "E": "Vancouver Island"
+    }
+  },
+  {
+    "question": "Australia is not really known for ...",
+    "answer": "E",
+    "options": {
+      "A": "wool production",
+      "B": "meat production",
+      "C": "its gold deposits",
+      "D": "iron ore resources",
+      "E": "its many navigable rivers"
+    }
+  },
+  {
+    "question": "Which German town is adjacent to the Rhine River?",
+    "answer": "E",
+    "options": {
+      "A": "Berlin",
+      "B": "Leipzig",
+      "C": "Bremen",
+      "D": "Dresden",
+      "E": "Remagen"
+    }
+  },
+  {
+    "question": "Which borders the Red Sea?",
+    "answer": "D",
+    "options": {
+      "A": "Mali",
+      "B": "Kenya",
+      "C": "Gabon",
+      "D": "Ethiopia",
+      "E": "Mauritania"
+    }
+  },
+  {
+    "question": "The highest high temperatures are recorded each year in ...",
+    "answer": "D",
+    "options": {
+      "A": "Texas",
+      "B": "Nevada",
+      "C": "Arizona",
+      "D": "California",
+      "E": "New Mexico"
+    }
+  },
+  {
+    "question": "In the 19th and early 20th centuries, Slovakia was under ---- rule.",
+    "answer": "D",
+    "options": {
+      "A": "French",
+      "B": "Spanish",
+      "C": "Romanian",
+      "D": "Hungarian",
+      "E": "Yugoslavian"
+    }
+  },
+  {
+    "question": "O'Hare, one of America's busiest airports, is in ...",
+    "answer": "B",
+    "options": {
+      "A": "Denver",
+      "B": "Chicago",
+      "C": "New York",
+      "D": "San Francisco",
+      "E": "Washington, D.C."
+    }
+  },
+  {
+    "question": "Which cities are not in Arizona?",
+    "answer": "B",
+    "options": {
+      "A": "Bisbee - Globe",
+      "B": "Provo - Ogden",
+      "C": "Mesa - Douglas",
+      "D": "Yuma - Flagstaff",
+      "E": "Nogales - Casa Grande"
+    }
+  },
+  {
+    "question": "What major mountain system occupies most of Switzerland?",
+    "answer": "A",
+    "options": {
+      "A": "Alps",
+      "B": "Urals",
+      "C": "Andes",
+      "D": "Sierras",
+      "E": "Himalayas"
+    }
+  },
+  {
+    "question": "You have the shortest trip when traveling between which two national parks?",
+    "answer": "E",
+    "options": {
+      "A": "Denali, Glacier",
+      "B": "Mammoth Cave, Zion",
+      "C": "Yosemite, Death Valley",
+      "D": "Rocky Mountain, Olympic",
+      "E": "Yellowstone, Grand Teton"
+    }
+  },
+  {
+    "question": "What body of water is adjacent to and east of Central America?",
+    "answer": "B",
+    "options": {
+      "A": "Pacific Ocean",
+      "B": "Caribbean Sea",
+      "C": "Gulf of Mexico",
+      "D": "Atlantic Ocean",
+      "E": "Gulf of California"
+    }
+  },
+  {
+    "question": "Which lies between Russia and China?",
+    "answer": "B",
+    "options": {
+      "A": "Ukraine",
+      "B": "Mongolia",
+      "C": "Caucasus",
+      "D": "Bangladesh",
+      "E": "Yangtze River Valley"
+    }
+  },
+  {
+    "question": "Which community has an annual average of more than 9000 degree days?",
+    "answer": "B",
+    "options": {
+      "A": "Honolulu, Hawaii",
+      "B": "Leadville, Colorado",
+      "C": "Pine Bluff, Arkansas",
+      "D": "Bakersfield, California",
+      "E": "Greensboro, South Carolina"
+    }
+  },
+  {
+    "question": "Which desert classification is correctly paired with an example?",
+    "answer": "D",
+    "options": {
+      "A": "coastal - Gobi",
+      "B": "polar - Kalahari",
+      "C": "interior - Atacama",
+      "D": "rainshadow - Mojave",
+      "E": "subtropical - Antarctica"
+    }
+  },
+  {
+    "question": "The fewest number of people per square mile are in ...",
+    "answer": "D",
+    "options": {
+      "A": "Utah",
+      "B": "Texas",
+      "C": "Maine",
+      "D": "Alaska",
+      "E": "Nevada"
+    }
+  },
+  {
+    "question": "Which is a French seaport?",
+    "answer": "C",
+    "options": {
+      "A": "Paris",
+      "B": "Lyons",
+      "C": "Calais",
+      "D": "Chartres",
+      "E": "Grenoble"
+    }
+  },
+  {
+    "question": "The Grand Coulee Dam is on what river?",
+    "answer": "B",
+    "options": {
+      "A": "Potomac",
+      "B": "Columbia",
+      "C": "Colorado",
+      "D": "Savannah",
+      "E": "Sacramento"
+    }
+  },
+  {
+    "question": "Ginger, peppers, molasses, rum, and coffee are among the major exports of ...",
+    "answer": "D",
+    "options": {
+      "A": "Oman",
+      "B": "Poland",
+      "C": "Tunisia",
+      "D": "Jamaica",
+      "E": "New Zealand"
+    }
+  },
+  {
+    "question": "Which continents lie entirely in the Western Hemisphere?",
+    "answer": "E",
+    "options": {
+      "A": "Europe, Asia",
+      "B": "Africa, Australia",
+      "C": "Antarctica, Africa",
+      "D": "South America, Antarctica",
+      "E": "North America, South America"
+    }
+  },
+  {
+    "question": "A catchment area is an area ...",
+    "answer": "D",
+    "options": {
+      "A": "where salmon are trapped",
+      "B": "for storing hazardous waste",
+      "C": "in which wildlife congregates",
+      "D": "draining into a river or reservoir",
+      "E": "where windblown sediments settle"
+    }
+  },
+  {
+    "question": "Timberline is highest on Mount ...",
+    "answer": "E",
+    "options": {
+      "A": "Fuji",
+      "B": "Rainier",
+      "C": "Everest",
+      "D": "McKinley",
+      "E": "Kilimanjaro"
+    }
+  },
+  {
+    "question": "A relief map ...",
+    "answer": "A",
+    "options": {
+      "A": "exhibits variations in elevations",
+      "B": "portrays the distribution of man",
+      "C": "is synonymous to a Mollweide projection",
+      "D": "shows agricultural distribution of various       plant types",
+      "E": "is synonymous with a homolosine projection"
+    }
+  },
+  {
+    "question": "You cross the South China Sea if you fly from ...",
+    "answer": "E",
+    "options": {
+      "A": "Japan to India",
+      "B": "Burma to Nepal",
+      "C": "Australia to New Guinea",
+      "D": "Mongolia to South Korea",
+      "E": "Vietnam to the Philippines"
+    }
+  },
+  {
+    "question": "A compass heading of ---- degrees is exactly opposite a heading of 200 degrees.",
+    "answer": "B",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "40",
+      "E": "50"
+    }
+  },
+  {
+    "question": "The southern half of Lake ---- contains fresh water while the northern half is brackish.",
+    "answer": "E",
+    "options": {
+      "A": "Baikal",
+      "B": "Victoria",
+      "C": "Titicaca",
+      "D": "Winnipeg",
+      "E": "Maracaibo"
+    }
+  },
+  {
+    "question": "The two nations primarily involved in the feasibility study for building a tunnel beneath the Strait of Gibraltar are Spain and ...",
+    "answer": "E",
+    "options": {
+      "A": "Libya",
+      "B": "Egypt",
+      "C": "Algeria",
+      "D": "Tunisia",
+      "E": "Morocco"
+    }
+  },
+  {
+    "question": "Frobisher Bay, named in honor of the 16th-century explorer Martin Frobisher, is in ...",
+    "answer": "E",
+    "options": {
+      "A": "India",
+      "B": "Brazil",
+      "C": "Mexico",
+      "D": "Canada",
+      "E": "Australia"
+    }
+  },
+  {
+    "question": "What sea is between Indochina and the Philippines?",
+    "answer": "E",
+    "options": {
+      "A": "Ionian Sea",
+      "B": "Tasman Sea",
+      "C": "Barents Sea",
+      "D": "Sea of Cortes",
+      "E": "South China Sea"
+    }
+  },
+  {
+    "question": "Land in which state was not included in the Mexican Cession of 1848?",
+    "answer": "A",
+    "options": {
+      "A": "Utah",
+      "B": "Texas",
+      "C": "Colorado",
+      "D": "Oklahoma",
+      "E": "New Mexico"
+    }
+  },
+  {
+    "question": "Which occupies a peninsula?",
+    "answer": "C",
+    "options": {
+      "A": "Austria",
+      "B": "Hungary",
+      "C": "Denmark",
+      "D": "Switzerland",
+      "E": "Luxembourg"
+    }
+  },
+  {
+    "question": "Roman Catholicism is the primary religion of ...",
+    "answer": "D",
+    "options": {
+      "A": "India",
+      "B": "Oman",
+      "C": "Japan",
+      "D": "Nicaragua",
+      "E": "Saudi Arabia"
+    }
+  },
+  {
+    "question": "Which has no border on the Great Lakes?",
+    "answer": "E",
+    "options": {
+      "A": "Illinois",
+      "B": "Indiana",
+      "C": "New York",
+      "D": "Wisconsin",
+      "E": "New Hampshire"
+    }
+  },
+  {
+    "question": "North and South Korea occupy ...",
+    "answer": "A",
+    "options": {
+      "A": "a peninsula",
+      "B": "a subcontinent",
+      "C": "one large island",
+      "D": "a highland plateau",
+      "E": "four separate islands"
+    }
+  },
+  {
+    "question": "The western half of ---- is primarily comprised of desert.",
+    "answer": "D",
+    "options": {
+      "A": "Asia",
+      "B": "Europe",
+      "C": "Africa",
+      "D": "Australia",
+      "E": "South America"
+    }
+  },
+  {
+    "question": "A city crisscrossed with canals is ...",
+    "answer": "E",
+    "options": {
+      "A": "Rome",
+      "B": "Zurich",
+      "C": "Athens",
+      "D": "Frankfurt",
+      "E": "Amsterdam"
+    }
+  },
+  {
+    "question": "Which is not a coastal city of Alaska?",
+    "answer": "B",
+    "options": {
+      "A": "Sitka",
+      "B": "Fairbanks",
+      "C": "Kotzebue",
+      "D": "Ketchikan",
+      "E": "Anchorage"
+    }
+  },
+  {
+    "question": "The highest diversity of plant and animal species lives in ...",
+    "answer": "C",
+    "options": {
+      "A": "Spain",
+      "B": "Japan",
+      "C": "Brazil",
+      "D": "Finland",
+      "E": "Pakistan"
+    }
+  },
+  {
+    "question": "Which is not part of the Far East?",
+    "answer": "A",
+    "options": {
+      "A": "Iran",
+      "B": "Laos",
+      "C": "Burma",
+      "D": "Cambodia",
+      "E": "South Korea"
+    }
+  },
+  {
+    "question": "The Dead Sea is between ...",
+    "answer": "B",
+    "options": {
+      "A": "Libya and Egypt",
+      "B": "Israel and Jordan",
+      "C": "India and Pakistan",
+      "D": "China and Mongolia",
+      "E": "Argentina and Brazil"
+    }
+  },
+  {
+    "question": "Which is a New England state?",
+    "answer": "D",
+    "options": {
+      "A": "Ohio",
+      "B": "Illinois",
+      "C": "Georgia",
+      "D": "Vermont",
+      "E": "Louisiana"
+    }
+  },
+  {
+    "question": "The capital farthest from the Golden Gate is ...",
+    "answer": "B",
+    "options": {
+      "A": "Salem",
+      "B": "Albany",
+      "C": "Helena",
+      "D": "Topeka",
+      "E": "Madison"
+    }
+  },
+  {
+    "question": "A state and capital named Madras are in ...",
+    "answer": "A",
+    "options": {
+      "A": "India",
+      "B": "China",
+      "C": "Burma",
+      "D": "Borneo",
+      "E": "Bangladesh"
+    }
+  },
+  {
+    "question": "A speleologist would be most interested in visiting the national park in the general region of ...",
+    "answer": "E",
+    "options": {
+      "A": "Moab, Utah",
+      "B": "Hilo, Hawaii",
+      "C": "Fairbanks, Alaska",
+      "D": "Cooke City, Montana",
+      "E": "Carlsbad, New Mexico"
+    }
+  },
+  {
+    "question": "Which is not paired with the state in which it is located?",
+    "answer": "A",
+    "options": {
+      "A": "Mauna Kea  - Alaska",
+      "B": "Mount Hood - Oregon",
+      "C": "Pikes Peak - Colorado",
+      "D": "Mount Whitney - California",
+      "E": "Mount Mitchell - North Carolina"
+    }
+  },
+  {
+    "question": "Geographically speaking, Israel is about the size of ...",
+    "answer": "E",
+    "options": {
+      "A": "Utah",
+      "B": "Maine",
+      "C": "Alaska",
+      "D": "California",
+      "E": "New Jersey"
+    }
+  },
+  {
+    "question": "What is in a state with just a single member in the House of Representatives?",
+    "answer": "E",
+    "options": {
+      "A": "Yosemite",
+      "B": "Everglades",
+      "C": "Mount Rainier",
+      "D": "Mammoth Cave",
+      "E": "Mount Rushmore"
+    }
+  },
+  {
+    "question": "A person in standing in the extreme northeast corner of Tennessee.  His next step could take him into either ...",
+    "answer": "D",
+    "options": {
+      "A": "Ohio or West Virginia",
+      "B": "Maryland or Delaware",
+      "C": "South Carolina or Georgia",
+      "D": "Virginia or North Carolina",
+      "E": "Pennsylvania or New Jersey"
+    }
+  },
+  {
+    "question": "Mississippi and Texas are the nation's largest producers of ...",
+    "answer": "D",
+    "options": {
+      "A": "corn",
+      "B": "dates",
+      "C": "wheat",
+      "D": "cotton",
+      "E": "soybeans"
+    }
+  },
+  {
+    "question": "The ---- Sea is adjacent to a demilitarized zone.",
+    "answer": "B",
+    "options": {
+      "A": "Bering",
+      "B": "Yellow",
+      "C": "Tasman",
+      "D": "Labrador",
+      "E": "Sargasso"
+    }
+  },
+  {
+    "question": "Iran borders Afghanistan and what other Moslem country to the east?",
+    "answer": "D",
+    "options": {
+      "A": "Iraq",
+      "B": "Iran",
+      "C": "India",
+      "D": "Pakistan",
+      "E": "Saudi Arabia"
+    }
+  },
+  {
+    "question": "Average humidity is lowest in the ...",
+    "answer": "D",
+    "options": {
+      "A": "Pampas",
+      "B": "Steppes",
+      "C": "Klondike",
+      "D": "Atacama",
+      "E": "Rhineland"
+    }
+  },
+  {
+    "question": "Which is closest to the Florida Keys?",
+    "answer": "A",
+    "options": {
+      "A": "Miami",
+      "B": "Tampa",
+      "C": "Tallahassee",
+      "D": "Jacksonville",
+      "E": "St. Augustine"
+    }
+  },
+  {
+    "question": "Astronomical observations at which sites are least affected by atmospheric interference?",
+    "answer": "B",
+    "options": {
+      "A": "Aleppo, Kiev",
+      "B": "Lhasa, Cuzco",
+      "C": "Veracruz, Karachi",
+      "D": "Sapporo, Khartoum",
+      "E": "El Alamein, Alice Springs"
+    }
+  },
+  {
+    "question": "Which exports the largest amount of oil?",
+    "answer": "A",
+    "options": {
+      "A": "Libya",
+      "B": "Sudan",
+      "C": "Angola",
+      "D": "Morocco",
+      "E": "South Africa"
+    }
+  },
+  {
+    "question": "Mulattos comprise about 65% of the population of the ...",
+    "answer": "C",
+    "options": {
+      "A": "Czech Republic",
+      "B": "Republic of Latvia",
+      "C": "Dominican Republic",
+      "D": "Republic of the Congo",
+      "E": "People's Republic of China"
+    }
+  },
+  {
+    "question": "Evidence of glaciation is obvious around ...",
+    "answer": "B",
+    "options": {
+      "A": "Death Valley and White Sands",
+      "B": "Cape Cod and Yosemite Valley",
+      "C": "Mauna Loa and the Everglades",
+      "D": "Big Bend and the Grand Canyon",
+      "E": "Mesa Verde and the Petrified Forest"
+    }
+  },
+  {
+    "question": "Khartoum is at the juncture of the ---- rivers.",
+    "answer": "C",
+    "options": {
+      "A": "Lena and Ob",
+      "B": "Ganges and Indus",
+      "C": "Blue and White Nile",
+      "D": "Yellow and Yangtze",
+      "E": "Tigris and Euphrates"
+    }
+  },
+  {
+    "question": "Which is northeast of the capital of Kentucky?",
+    "answer": "B",
+    "options": {
+      "A": "Nashville",
+      "B": "Columbus",
+      "C": "Richmond",
+      "D": "Des Moines",
+      "E": "Little Rock"
+    }
+  },
+  {
+    "question": "In terms of square miles of land area, Canada ranks in the world as the ---- largest country.",
+    "answer": "B",
+    "options": {
+      "A": "1st",
+      "B": "2nd",
+      "C": "3rd",
+      "D": "4th",
+      "E": "5th"
+    }
+  },
+  {
+    "question": "Which island is larger than Borneo but smaller than Greenland?",
+    "answer": "E",
+    "options": {
+      "A": "Cuba",
+      "B": "Iceland",
+      "C": "Britain",
+      "D": "Ellesmere",
+      "E": "New Guinea"
+    }
+  },
+  {
+    "question": "Which region of the U.S. has a desert climate?",
+    "answer": "C",
+    "options": {
+      "A": "Great Plains",
+      "B": "the Southeast",
+      "C": "the Southwest",
+      "D": "the Pacific Northwest",
+      "E": "Rocky Mountain states"
+    }
+  },
+  {
+    "question": "Trafalgar is best described as a(n) ...",
+    "answer": "B",
+    "options": {
+      "A": "sea",
+      "B": "cape",
+      "C": "plain",
+      "D": "fiord",
+      "E": "island"
+    }
+  },
+  {
+    "question": "Which area is least well-defined in terms of the land it encompasses?",
+    "answer": "D",
+    "options": {
+      "A": "Indonesia",
+      "B": "Antarctica",
+      "C": "Scandinavia",
+      "D": "the Middle East",
+      "E": "Central America"
+    }
+  },
+  {
+    "question": "Which river is geographically farthest from the other four?",
+    "answer": "E",
+    "options": {
+      "A": "Po",
+      "B": "Tiber",
+      "C": "Seine",
+      "D": "Rhine",
+      "E": "Mekong"
+    }
+  },
+  {
+    "question": "In one of his tales, Ray Bradbury created a virtual reality playroom mimicking what grassland area in southern Africa?",
+    "answer": "A",
+    "options": {
+      "A": "veldt",
+      "B": "Nubia",
+      "C": "Sahel",
+      "D": "Sudan",
+      "E": "Kalahari"
+    }
+  },
+  {
+    "question": "Which are not Middle East countries?",
+    "answer": "A",
+    "options": {
+      "A": "Laos, Nepal",
+      "B": "Qatar, Israel",
+      "C": "Bahrain, Iran",
+      "D": "Jordan, Kuwait",
+      "E": "Lebanon, Oman"
+    }
+  },
+  {
+    "question": "Andrew Jackson's forces scored a decisive victory against the British in a city now known as the ...",
+    "answer": "E",
+    "options": {
+      "A": "Big Apple",
+      "B": "Windy City",
+      "C": "City of Angels",
+      "D": "Cradle of Liberty",
+      "E": "Birthplace of Jazz"
+    }
+  },
+  {
+    "question": "An estuary is not at the mouth of the ---- River.",
+    "answer": "A",
+    "options": {
+      "A": "Ohio",
+      "B": "Hudson",
+      "C": "Colorado",
+      "D": "Rio Grande",
+      "E": "Mississippi"
+    }
+  },
+  {
+    "question": "Mongolia is ...",
+    "answer": "C",
+    "options": {
+      "A": "in northern Asia",
+      "B": "just north of India",
+      "C": "in east central Asia",
+      "D": "just east of Afghanistan",
+      "E": "between Burma and China"
+    }
+  },
+  {
+    "question": "Coniferous forest is most typical of ...",
+    "answer": "A",
+    "options": {
+      "A": "Siberia",
+      "B": "the Sahara",
+      "C": "Southeast Asia",
+      "D": "the Amazon Basin",
+      "E": "the Australian Outback"
+    }
+  },
+  {
+    "question": "Which is at the northern extreme of the Bay of Bengal?",
+    "answer": "E",
+    "options": {
+      "A": "Nepal",
+      "B": "Thailand",
+      "C": "Pakistan",
+      "D": "Malaysia",
+      "E": "Bangladesh"
+    }
+  },
+  {
+    "question": "Which cities are east of the Sierra Madre Oriental?",
+    "answer": "B",
+    "options": {
+      "A": "Culiacan, Mazatlan",
+      "B": "Tampico, Veracruz",
+      "C": "Tijuana, Guadalajara",
+      "D": "Hermosillo, Guaymas",
+      "E": "Acapulco, Mexico City"
+    }
+  },
+  {
+    "question": "Karate originated in the Ryukyu Islands in what is now ...",
+    "answer": "E",
+    "options": {
+      "A": "Java",
+      "B": "Luzon",
+      "C": "Taiwan",
+      "D": "Hainan",
+      "E": "Okinawa"
+    }
+  },
+  {
+    "question": "Which does not border any of the others?",
+    "answer": "E",
+    "options": {
+      "A": "Chad",
+      "B": "Niger",
+      "C": "Libya",
+      "D": "Sudan",
+      "E": "Senegal"
+    }
+  },
+  {
+    "question": "Latitude lines are equidistant from one another about how many miles apart?",
+    "answer": "D",
+    "options": {
+      "A": "7",
+      "B": "15",
+      "C": "36",
+      "D": "69",
+      "E": "100"
+    }
+  },
+  {
+    "question": "Which body of water is closest to the Kara Sea?",
+    "answer": "C",
+    "options": {
+      "A": "Caspian Sea",
+      "B": "Arabian Sea",
+      "C": "Barents Sea",
+      "D": "Sea of Cortes",
+      "E": "Sea of Okhotsk"
+    }
+  },
+  {
+    "question": "Which national park is in South Dakota?",
+    "answer": "C",
+    "options": {
+      "A": "Katmai",
+      "B": "Haleakala",
+      "C": "Wind Cave",
+      "D": "Voyageurs",
+      "E": "Grand Teton"
+    }
+  },
+  {
+    "question": "Numbers on maps such as 1:600, 1:24,000 or 1:250,000 tell you the ...",
+    "answer": "A",
+    "options": {
+      "A": "scale",
+      "B": "elevations",
+      "C": "dimensions",
+      "D": "population density",
+      "E": "longitude and latitude"
+    }
+  },
+  {
+    "question": "A ship is on a heading of 326 degrees and the relative bearing of a buoy is 124 degrees.  The buoy is what direction from the ship?",
+    "answer": "A",
+    "options": {
+      "A": "due east",
+      "B": "due south",
+      "C": "southwest",
+      "D": "north by northwest",
+      "E": "south by southeast"
+    }
+  },
+  {
+    "question": "For three or four months every winter, most ports on the ---- Sea are icebound.",
+    "answer": "B",
+    "options": {
+      "A": "Red",
+      "B": "Baltic",
+      "C": "Yellow",
+      "D": "Arabian",
+      "E": "Adriatic"
+    }
+  },
+  {
+    "question": "What island lies between the South China Sea and Manila Bay?",
+    "answer": "D",
+    "options": {
+      "A": "Matsu",
+      "B": "Honshu",
+      "C": "Sri Lanka",
+      "D": "Corregidor",
+      "E": "Bougainville"
+    }
+  },
+  {
+    "question": "The International Court of Justice is in ...",
+    "answer": "E",
+    "options": {
+      "A": "Bonn",
+      "B": "Paris",
+      "C": "Venice",
+      "D": "Prague",
+      "E": "The Hague"
+    }
+  },
+  {
+    "question": "The headwaters of which river are in the Adirondacks?",
+    "answer": "C",
+    "options": {
+      "A": "Snake",
+      "B": "Platte",
+      "C": "Hudson",
+      "D": "Roanoke",
+      "E": "Chattahoochee"
+    }
+  },
+  {
+    "question": "St. Peter's Basilica is within the same city as ...",
+    "answer": "A",
+    "options": {
+      "A": "the Roman Forum",
+      "B": "Westminster Abbey",
+      "C": "the Arc de Triomphe",
+      "D": "the Hapsburg Palaces",
+      "E": "the Empire State Building"
+    }
+  },
+  {
+    "question": "It is not true that Denmark is ...",
+    "answer": "B",
+    "options": {
+      "A": "north of Germany",
+      "B": "on the Iberian Peninsula",
+      "C": "bordered by the Baltic Sea",
+      "D": "contiguous with the North Sea",
+      "E": "the smallest Scandinavian country"
+    }
+  },
+  {
+    "question": "Founded in the 11th century, the city of Timbuktu is in ...",
+    "answer": "A",
+    "options": {
+      "A": "Mali",
+      "B": "Libya",
+      "C": "Guinea",
+      "D": "Ethiopia",
+      "E": "Madagascar"
+    }
+  },
+  {
+    "question": "The Via Dolorosa, the Mount of Olives, and the Garden of Gethsemane are in or near ...",
+    "answer": "D",
+    "options": {
+      "A": "Troy",
+      "B": "Mecca",
+      "C": "Babylon",
+      "D": "Jerusalem",
+      "E": "Damascus"
+    }
+  },
+  {
+    "question": "Which does not have a tropical climate?",
+    "answer": "C",
+    "options": {
+      "A": "Togo",
+      "B": "Nigeria",
+      "C": "Algeria",
+      "D": "Cameroon",
+      "E": "Burkina Faso"
+    }
+  },
+  {
+    "question": "In the 1980s, ---- was a Marxist People's Republic.",
+    "answer": "A",
+    "options": {
+      "A": "Angola",
+      "B": "Denmark",
+      "C": "Pakistan",
+      "D": "Argentina",
+      "E": "South Korea"
+    }
+  },
+  {
+    "question": "Where is the best place to photograph cirques?",
+    "answer": "E",
+    "options": {
+      "A": "Devils Tower",
+      "B": "Petrified Forest",
+      "C": "Carlsbad Caverns",
+      "D": "Mississippi River Valley",
+      "E": "Rocky Mountain National Park"
+    }
+  },
+  {
+    "question": "When going from Colombia to Mexico, you travel last through ...",
+    "answer": "C",
+    "options": {
+      "A": "Panama",
+      "B": "Nicaragua",
+      "C": "Guatemala",
+      "D": "Costa Rica",
+      "E": "El Salvador"
+    }
+  },
+  {
+    "question": "The capital of which state is farthest from that state's geographic center?",
+    "answer": "A",
+    "options": {
+      "A": "Alaska",
+      "B": "Indiana",
+      "C": "New Mexico",
+      "D": "South Dakota",
+      "E": "South Carolina"
+    }
+  },
+  {
+    "question": "Which is not a member of the Organization of Central American States?",
+    "answer": "A",
+    "options": {
+      "A": "Guyana",
+      "B": "Honduras",
+      "C": "Guatemala",
+      "D": "Costa Rica",
+      "E": "El Salvador"
+    }
+  },
+  {
+    "question": "The Java Sea is adjacent to ...",
+    "answer": "A",
+    "options": {
+      "A": "Borneo",
+      "B": "Honshu",
+      "C": "Okinawa",
+      "D": "Tasmania",
+      "E": "Sri Lanka"
+    }
+  },
+  {
+    "question": "New Bedford on Buzzards Bay, once the greatest whaling port in the world, is in ...",
+    "answer": "E",
+    "options": {
+      "A": "Maine",
+      "B": "Virginia",
+      "C": "New York",
+      "D": "Rhode Island",
+      "E": "Massachusetts"
+    }
+  },
+  {
+    "question": "In what direction do you travel to get from the Black Sea to the Caspian Sea?",
+    "answer": "A",
+    "options": {
+      "A": "east",
+      "B": "north",
+      "C": "due west",
+      "D": "southwest",
+      "E": "northwest"
+    }
+  },
+  {
+    "question": "Which cities are on the West Bank?",
+    "answer": "C",
+    "options": {
+      "A": "Tours, Nantes",
+      "B": "Memphis, Giza",
+      "C": "Hebron, Nablus",
+      "D": "Baghdad, Basra",
+      "E": "Beijing, Shanghai"
+    }
+  },
+  {
+    "question": "Which is the easternmost nation of Africa?",
+    "answer": "D",
+    "options": {
+      "A": "Guinea",
+      "B": "Uganda",
+      "C": "Namibia",
+      "D": "Somalia",
+      "E": "Morocco"
+    }
+  },
+  {
+    "question": "An abundance of water led to the development of many factories in the ...",
+    "answer": "E",
+    "options": {
+      "A": "Gulf States",
+      "B": "Great Plains",
+      "C": "Rocky Mountains",
+      "D": "Pacific Northwest",
+      "E": "Middle Atlantic states"
+    }
+  },
+  {
+    "question": "A maple leaf is the emblem of ...",
+    "answer": "C",
+    "options": {
+      "A": "Sudan",
+      "B": "Mexico",
+      "C": "Canada",
+      "D": "New Zealand",
+      "E": "the Netherlands"
+    }
+  },
+  {
+    "question": "What landform results from sediment deposited at the mouth of a river?",
+    "answer": "A",
+    "options": {
+      "A": "delta",
+      "B": "oxbow",
+      "C": "peninsula",
+      "D": "escarpment",
+      "E": "continental shelf"
+    }
+  },
+  {
+    "question": "The U.S. Federal Silver Reserve is in ...",
+    "answer": "D",
+    "options": {
+      "A": "Denver, Colorado",
+      "B": "Annapolis, Maryland",
+      "C": "Fort Knox, Kentucky",
+      "D": "West Point, New York",
+      "E": "San Francisco, California"
+    }
+  },
+  {
+    "question": "The Canadian Shield is also known as the ---- Plateau.",
+    "answer": "D",
+    "options": {
+      "A": "Ozark",
+      "B": "Mogollon",
+      "C": "Columbia",
+      "D": "Laurentian",
+      "E": "Cumberland"
+    }
+  },
+  {
+    "question": "Which is closest to Turkey?",
+    "answer": "C",
+    "options": {
+      "A": "Sicily",
+      "B": "Malta",
+      "C": "Cyprus",
+      "D": "Majorca",
+      "E": "Sardinia"
+    }
+  },
+  {
+    "question": "The city of La Paz in Mexico is ...",
+    "answer": "D",
+    "options": {
+      "A": "on the Gulf of Mexico",
+      "B": "southeast of Mexico City",
+      "C": "near the Guatemala border",
+      "D": "adjacent to the Gulf of California",
+      "E": "just across the border from Laredo"
+    }
+  },
+  {
+    "question": "A person traveling directly north from the Czech Republic to the Baltic Sea must travel through either Germany or ...",
+    "answer": "A",
+    "options": {
+      "A": "Poland",
+      "B": "Monaco",
+      "C": "Austria",
+      "D": "Romania",
+      "E": "Denmark"
+    }
+  },
+  {
+    "question": "The largest island of the Philippines is ...",
+    "answer": "C",
+    "options": {
+      "A": "Leyte",
+      "B": "Panay",
+      "C": "Luzon",
+      "D": "Negros",
+      "E": "Mindanao"
+    }
+  },
+  {
+    "question": "A single large yellow star on a red background describes the flag of ...",
+    "answer": "C",
+    "options": {
+      "A": "Spain",
+      "B": "Kenya",
+      "C": "Vietnam",
+      "D": "Romania",
+      "E": "New Zealand"
+    }
+  },
+  {
+    "question": "Charles Darwin made many important biological observations on the Galapagos Islands.  These islands 600 miles west of South America are possessions of ...",
+    "answer": "C",
+    "options": {
+      "A": "Peru",
+      "B": "Chile",
+      "C": "Ecuador",
+      "D": "Colombia",
+      "E": "Argentina"
+    }
+  },
+  {
+    "question": "The coastline of which nation faces south?",
+    "answer": "C",
+    "options": {
+      "A": "Sudan",
+      "B": "Angola",
+      "C": "Nigeria",
+      "D": "Morocco",
+      "E": "Tanzania"
+    }
+  },
+  {
+    "question": "Manchuria is contiguous to ...",
+    "answer": "A",
+    "options": {
+      "A": "North Korea",
+      "B": "western China",
+      "C": "northern India",
+      "D": "western Thailand",
+      "E": "eastern Afghanistan"
+    }
+  },
+  {
+    "question": "Which is not an Italian seaport?",
+    "answer": "B",
+    "options": {
+      "A": "Genoa",
+      "B": "Milan",
+      "C": "Venice",
+      "D": "Naples",
+      "E": "Salerno"
+    }
+  },
+  {
+    "question": "Collinear points do not form the northern border of ...",
+    "answer": "E",
+    "options": {
+      "A": "Iowa",
+      "B": "Arizona",
+      "C": "Alabama",
+      "D": "Montana",
+      "E": "Kentucky"
+    }
+  },
+  {
+    "question": "The Andros Barrier Reef is in the vicinity of ...",
+    "answer": "C",
+    "options": {
+      "A": "Sicily",
+      "B": "Tasmania",
+      "C": "the Bahamas",
+      "D": "Easter Island",
+      "E": "Tahiti and Tinian"
+    }
+  },
+  {
+    "question": "Which are not part of the Coast Ranges?",
+    "answer": "D",
+    "options": {
+      "A": "Olympic Mountains",
+      "B": "Klamath Mountains",
+      "C": "Wrangell Mountains",
+      "D": "Cumberland Mountains",
+      "E": "Santa Monica Mountains"
+    }
+  },
+  {
+    "question": "Water covers approximately what percentage of the Earth?",
+    "answer": "C",
+    "options": {
+      "A": "50",
+      "B": "60",
+      "C": "70",
+      "D": "80",
+      "E": "90"
+    }
+  },
+  {
+    "question": "Which European cities are at the highest elevations?",
+    "answer": "A",
+    "options": {
+      "A": "Basel and Geneva",
+      "B": "Naples and Venice",
+      "C": "Limerick and Dublin",
+      "D": "Valencia and Barcelona",
+      "E": "Rotterdam and Amsterdam"
+    }
+  },
+  {
+    "question": "Which is not in the same country as the others?",
+    "answer": "C",
+    "options": {
+      "A": "Munich",
+      "B": "Hamburg",
+      "C": "Innsbruck",
+      "D": "Frankfurt",
+      "E": "Nuremberg"
+    }
+  },
+  {
+    "question": "Which river has the greatest number of mouths?",
+    "answer": "D",
+    "options": {
+      "A": "Po",
+      "B": "Elbe",
+      "C": "Indus",
+      "D": "Ganges",
+      "E": "Euphrates"
+    }
+  },
+  {
+    "question": "A German river that flows into the North Sea is the ...",
+    "answer": "B",
+    "options": {
+      "A": "Po",
+      "B": "Elbe",
+      "C": "Seine",
+      "D": "Danube",
+      "E": "Thames"
+    }
+  },
+  {
+    "question": "An alien spacecraft notifies the earth that it intends to land at 80 degrees east longitude and 20 degrees north latitude.  So apparently it intends to land in ...",
+    "answer": "A",
+    "options": {
+      "A": "India",
+      "B": "Brazil",
+      "C": "Canada",
+      "D": "Mexico",
+      "E": "Algeria"
+    }
+  },
+  {
+    "question": "The world's most congested river valley is the ...",
+    "answer": "B",
+    "options": {
+      "A": "Mekong",
+      "B": "Ganges",
+      "C": "Amazon",
+      "D": "Colorado",
+      "E": "Irrawaddy"
+    }
+  },
+  {
+    "question": "Which is not in the Alaskan Panhandle?",
+    "answer": "D",
+    "options": {
+      "A": "Sitka",
+      "B": "Juneau",
+      "C": "Skagway",
+      "D": "Kotzebue",
+      "E": "Ketchikan"
+    }
+  },
+  {
+    "question": "Bananas, coconuts, coffee, oranges, and sugarcane are products of which island?",
+    "answer": "C",
+    "options": {
+      "A": "Baffin",
+      "B": "Kodiak",
+      "C": "Jamaica",
+      "D": "Hokkaido",
+      "E": "Vancouver"
+    }
+  },
+  {
+    "question": "Vanuatu is a country of ...",
+    "answer": "C",
+    "options": {
+      "A": "Africa",
+      "B": "Europe",
+      "C": "Oceania",
+      "D": "the Mideast",
+      "E": "western Asia"
+    }
+  },
+  {
+    "question": "Which is adjacent to the Arabian Sea?",
+    "answer": "B",
+    "options": {
+      "A": "Macao",
+      "B": "Mumbai",
+      "C": "Bangkok",
+      "D": "Kolkata",
+      "E": "Haiphong"
+    }
+  },
+  {
+    "question": "The Florida Keys are the exposed portions of an old ...",
+    "answer": "D",
+    "options": {
+      "A": "caldera",
+      "B": "isthmus",
+      "C": "moraine",
+      "D": "coral reef",
+      "E": "alluvial fan"
+    }
+  },
+  {
+    "question": "Which city is closest to Everglades and Biscayne national parks?",
+    "answer": "A",
+    "options": {
+      "A": "Miami",
+      "B": "Tampa",
+      "C": "Orlando",
+      "D": "Tallahassee",
+      "E": "Jacksonville"
+    }
+  },
+  {
+    "question": "The Yalu River empties into the ---- Sea.",
+    "answer": "D",
+    "options": {
+      "A": "Red",
+      "B": "Dead",
+      "C": "Coral",
+      "D": "Yellow",
+      "E": "Celebes"
+    }
+  },
+  {
+    "question": "At the northernmost tip of Chile is ...",
+    "answer": "A",
+    "options": {
+      "A": "Peru",
+      "B": "Ecuador",
+      "C": "Paraguay",
+      "D": "Colombia",
+      "E": "Venezuela"
+    }
+  },
+  {
+    "question": "Which includes the fewest square miles?",
+    "answer": "D",
+    "options": {
+      "A": "Denmark",
+      "B": "Austria",
+      "C": "Portugal",
+      "D": "Luxembourg",
+      "E": "Switzerland"
+    }
+  },
+  {
+    "question": "Which is closest to the Bering Strait?",
+    "answer": "A",
+    "options": {
+      "A": "Nome",
+      "B": "Valdez",
+      "C": "Juneau",
+      "D": "Fairbanks",
+      "E": "Anchorage"
+    }
+  },
+  {
+    "question": "Which nation is not paired with a country that forms part of its border?",
+    "answer": "C",
+    "options": {
+      "A": "Niger - Chad",
+      "B": "Pakistan - China",
+      "C": "Ireland - Scotland",
+      "D": "Iraq - Saudi Arabia",
+      "E": "Guyana - Venezuela"
+    }
+  },
+  {
+    "question": "Nisqually, Carbon, Emmons, and Cowlitz glaciers are in ---- National Park.",
+    "answer": "B",
+    "options": {
+      "A": "Sequoia",
+      "B": "Mt. Rainier",
+      "C": "Shenandoah",
+      "D": "Kings Canyon",
+      "E": "Guadalupe Mountains"
+    }
+  },
+  {
+    "question": "The ---- State has the smallest population.",
+    "answer": "A",
+    "options": {
+      "A": "Silver",
+      "B": "Sooner",
+      "C": "Palmetto",
+      "D": "Keystone",
+      "E": "Volunteer"
+    }
+  },
+  {
+    "question": "Which is on Galveston Bay?",
+    "answer": "B",
+    "options": {
+      "A": "El Paso",
+      "B": "Houston",
+      "C": "Amarillo",
+      "D": "Arlington",
+      "E": "San Antonio"
+    }
+  },
+  {
+    "question": "Which is a source for maritime tropical air affecting the U.S.?",
+    "answer": "C",
+    "options": {
+      "A": "the Arctic",
+      "B": "Hudson Bay",
+      "C": "Caribbean Sea",
+      "D": "North Atlantic",
+      "E": "western Pacific"
+    }
+  },
+  {
+    "question": "What British crown colony guards the entrance to the Mediterranean?",
+    "answer": "A",
+    "options": {
+      "A": "Gibraltar",
+      "B": "Grenada",
+      "C": "Bermuda",
+      "D": "Singapore",
+      "E": "Roanoke Island"
+    }
+  },
+  {
+    "question": "Which river valley has the flattest topography?",
+    "answer": "D",
+    "options": {
+      "A": "Bighorn River in Wyoming",
+      "B": "Green River Valley in Utah",
+      "C": "Salmon River Valley in Idaho",
+      "D": "Red River Valley in Minnesota",
+      "E": "Rio Grande Valley in New Mexico"
+    }
+  },
+  {
+    "question": "Thermopylae is a ...",
+    "answer": "A",
+    "options": {
+      "A": "pass",
+      "B": "plain",
+      "C": "fortress",
+      "D": "seaport",
+      "E": "peninsula"
+    }
+  },
+  {
+    "question": "The ---- Islands are a British overseas territory.",
+    "answer": "D",
+    "options": {
+      "A": "Ionian",
+      "B": "Canary",
+      "C": "Pribilof",
+      "D": "Pitcairn",
+      "E": "Marshall"
+    }
+  },
+  {
+    "question": "Which are cities of the Crimea?",
+    "answer": "D",
+    "options": {
+      "A": "Corinth, Piraeus",
+      "B": "Gdansk, Krakow",
+      "C": "Utrecht, Antwerp",
+      "D": "Sevastopol, Yalta",
+      "E": "Salzburg, Innsbruck"
+    }
+  },
+  {
+    "question": "There is a major salmon fishing industry in ...",
+    "answer": "E",
+    "options": {
+      "A": "Hawaii",
+      "B": "Georgia",
+      "C": "Delaware",
+      "D": "Mississippi",
+      "E": "Washington"
+    }
+  },
+  {
+    "question": "What ceased to exist in 1979?",
+    "answer": "E",
+    "options": {
+      "A": "Soviet Union",
+      "B": "East Pakistan",
+      "C": "East Germany",
+      "D": "Orange Free State",
+      "E": "Panama Canal Zone"
+    }
+  },
+  {
+    "question": "The Thames and the Severn Rivers are in ...",
+    "answer": "E",
+    "options": {
+      "A": "France",
+      "B": "Ireland",
+      "C": "Canada",
+      "D": "Australia",
+      "E": "Great Britain"
+    }
+  },
+  {
+    "question": "The Nile River does not drain any part of ...",
+    "answer": "A",
+    "options": {
+      "A": "Mali",
+      "B": "Sudan",
+      "C": "Uganda",
+      "D": "Rwanda",
+      "E": "Ethiopia"
+    }
+  },
+  {
+    "question": "Identify the American national park at Montana's northern border.",
+    "answer": "A",
+    "options": {
+      "A": "Glacier",
+      "B": "Olympic",
+      "C": "Yosemite",
+      "D": "Mt. Rainier",
+      "E": "Yellowstone"
+    }
+  },
+  {
+    "question": "A continental climate is in ...",
+    "answer": "D",
+    "options": {
+      "A": "Haiti",
+      "B": "Burma",
+      "C": "Ireland",
+      "D": "Romania",
+      "E": "South Africa"
+    }
+  },
+  {
+    "question": "The two great grassland areas of Latin America include the Pampas and the ...",
+    "answer": "C",
+    "options": {
+      "A": "Sahel",
+      "B": "Andes",
+      "C": "Llanos",
+      "D": "Iguacu",
+      "E": "Orinoco"
+    }
+  },
+  {
+    "question": "Which has a 100 percent urban population?",
+    "answer": "B",
+    "options": {
+      "A": "Taiwan",
+      "B": "Monaco",
+      "C": "Somalia",
+      "D": "El Salvador",
+      "E": "Liechtenstein"
+    }
+  },
+  {
+    "question": "The Kenai Peninsula is adjacent to the ...",
+    "answer": "D",
+    "options": {
+      "A": "Red Sea",
+      "B": "Indian Ocean",
+      "C": "Bay of Biscay",
+      "D": "Pacific Ocean",
+      "E": "Caribbean Sea"
+    }
+  },
+  {
+    "question": "A dacha is a Russian ...",
+    "answer": "A",
+    "options": {
+      "A": "villa",
+      "B": "county",
+      "C": "highway",
+      "D": "army post",
+      "E": "office building"
+    }
+  },
+  {
+    "question": "A small, secluded, wooded valley is a(n) ...",
+    "answer": "A",
+    "options": {
+      "A": "dell",
+      "B": "knoll",
+      "C": "ravine",
+      "D": "crater",
+      "E": "arroyo"
+    }
+  },
+  {
+    "question": "It is possible to step across the border of Paraguay into ...",
+    "answer": "A",
+    "options": {
+      "A": "Bolivia",
+      "B": "Guyana",
+      "C": "Ecuador",
+      "D": "Colombia",
+      "E": "Venezuela"
+    }
+  },
+  {
+    "question": "Which national monument is in South Dakota?",
+    "answer": "A",
+    "options": {
+      "A": "Jewel Cave",
+      "B": "Russell Cave",
+      "C": "Oregon Caves",
+      "D": "Lehman Caves",
+      "E": "Timpanogos Cave"
+    }
+  },
+  {
+    "question": "The northeastern corner of Colorado is adjacent to ...",
+    "answer": "C",
+    "options": {
+      "A": "Kansas",
+      "B": "Wyoming",
+      "C": "Nebraska",
+      "D": "Oklahoma",
+      "E": "South Dakota"
+    }
+  },
+  {
+    "question": "Among the greatest waterfalls of the world are ---- Falls.",
+    "answer": "A",
+    "options": {
+      "A": "Iguacu and Victoria",
+      "B": "Santorini and Topkapi",
+      "C": "Abu Simbel and Matterhorn",
+      "D": "Ngorongoro and Katmandu",
+      "E": "Chichen Itza and Cappadocia"
+    }
+  },
+  {
+    "question": "The boiling point of water is lowest in ...",
+    "answer": "A",
+    "options": {
+      "A": "Denver",
+      "B": "Chicago",
+      "C": "Honolulu",
+      "D": "Anchorage",
+      "E": "New Orleans"
+    }
+  },
+  {
+    "question": "Which is a region in southeastern Germany?",
+    "answer": "B",
+    "options": {
+      "A": "Saxony",
+      "B": "Bavaria",
+      "C": "Rhineland",
+      "D": "Brandenburg",
+      "E": "Schleswig-Holstein"
+    }
+  },
+  {
+    "question": "The river that carved Hells Canyon, the deepest canyon in the U.S., was named after a(n) ...",
+    "answer": "B",
+    "options": {
+      "A": "Indian tribe",
+      "B": "legless reptile",
+      "C": "explorer's ship",
+      "D": "additive primary color",
+      "E": "mountain sheep of the Rockies"
+    }
+  },
+  {
+    "question": "The northernmost capital city in South America is ...",
+    "answer": "C",
+    "options": {
+      "A": "Quito",
+      "B": "Bogota",
+      "C": "Caracas",
+      "D": "Brasilia",
+      "E": "Montevideo"
+    }
+  },
+  {
+    "question": "In the 1980s, some Nicaraguan refugees sought asylum by traveling north across the Coco River into ...",
+    "answer": "B",
+    "options": {
+      "A": "Belize",
+      "B": "Honduras",
+      "C": "Guatemala",
+      "D": "Costa Rica",
+      "E": "El Salvador"
+    }
+  },
+  {
+    "question": "Which is the northernmost of these Japanese cities?",
+    "answer": "C",
+    "options": {
+      "A": "Kyoto",
+      "B": "Tokyo",
+      "C": "Sapporo",
+      "D": "Nagasaki",
+      "E": "Hiroshima"
+    }
+  },
+  {
+    "question": "A straight line is least descriptive of the western border of ...",
+    "answer": "D",
+    "options": {
+      "A": "Yukon",
+      "B": "Alberta",
+      "C": "Manitoba",
+      "D": "Newfoundland",
+      "E": "Saskatchewan"
+    }
+  },
+  {
+    "question": "Key West is associated with ...",
+    "answer": "C",
+    "options": {
+      "A": "Texas",
+      "B": "Hawaii",
+      "C": "Florida",
+      "D": "Alabama",
+      "E": "Louisiana"
+    }
+  },
+  {
+    "question": "The industrial center of Canada is in the ...",
+    "answer": "E",
+    "options": {
+      "A": "interior plains",
+      "B": "Atlantic provinces",
+      "C": "Canadian Cordillera",
+      "D": "Northwest Territories",
+      "E": "St. Lawrence lowlands"
+    }
+  },
+  {
+    "question": "Which is not a city of Germany?",
+    "answer": "A",
+    "options": {
+      "A": "Bern",
+      "B": "Bremen",
+      "C": "Hanover",
+      "D": "Cologne",
+      "E": "Stuttgart"
+    }
+  },
+  {
+    "question": "The only region in the U.S. where natural methane emissions are especially intense is in the vicinity of the ...",
+    "answer": "C",
+    "options": {
+      "A": "Everglades",
+      "B": "Great Lakes",
+      "C": "Four Corners",
+      "D": "Ozark Plateau",
+      "E": "Idaho Panhandle"
+    }
+  },
+  {
+    "question": "The Tamil Tigers were extremists on an island off the ...",
+    "answer": "E",
+    "options": {
+      "A": "cliffs of Dover",
+      "B": "Mosquito Coast",
+      "C": "Iberian Peninsula",
+      "D": "Great Barrier Reef",
+      "E": "Indian subcontinent"
+    }
+  },
+  {
+    "question": "The rainshadow effect is a major factor influencing the amount of precipitation that falls in ...",
+    "answer": "E",
+    "options": {
+      "A": "Peoria, Illinois",
+      "B": "Houston, Texas",
+      "C": "Syracuse, New York",
+      "D": "Tacoma, Washington",
+      "E": "Carson City, Nevada"
+    }
+  },
+  {
+    "question": "At its deepest point, the Colorado River is about how many feet below the North Rim of the Grand Canyon?",
+    "answer": "D",
+    "options": {
+      "A": "3000",
+      "B": "4000",
+      "C": "5000",
+      "D": "6000",
+      "E": "7000"
+    }
+  },
+  {
+    "question": "Just west of Austin, Texas, is the ---- Country.",
+    "answer": "A",
+    "options": {
+      "A": "Hill",
+      "B": "Ozark",
+      "C": "Big Sur",
+      "D": "Bluegrass",
+      "E": "Mother Lode"
+    }
+  },
+  {
+    "question": "Which is not in India?",
+    "answer": "A",
+    "options": {
+      "A": "Basra",
+      "B": "Madras",
+      "C": "Mumbai",
+      "D": "Kolkata",
+      "E": "New Delhi"
+    }
+  },
+  {
+    "question": "The Gateway Arch is in ...",
+    "answer": "C",
+    "options": {
+      "A": "Boston",
+      "B": "El Paso",
+      "C": "St. Louis",
+      "D": "San Francisco",
+      "E": "New York City"
+    }
+  },
+  {
+    "question": "Which city is farthest north?",
+    "answer": "D",
+    "options": {
+      "A": "Osaka",
+      "B": "Rangoon",
+      "C": "Shanghai",
+      "D": "Vladivostok",
+      "E": "Kuala Lumpur"
+    }
+  },
+  {
+    "question": "Which is not a landlocked African nation?",
+    "answer": "B",
+    "options": {
+      "A": "Mali",
+      "B": "Ghana",
+      "C": "Uganda",
+      "D": "Zimbabwe",
+      "E": "Burkina Faso"
+    }
+  },
+  {
+    "question": "What mountains are in western Oregon and Washington?",
+    "answer": "C",
+    "options": {
+      "A": "Ozarks",
+      "B": "Catskills",
+      "C": "Cascades",
+      "D": "Bitterroots",
+      "E": "Adirondacks"
+    }
+  },
+  {
+    "question": "Algiers is the largest city in which region?",
+    "answer": "D",
+    "options": {
+      "A": "Levant",
+      "B": "Punjab",
+      "C": "Riviera",
+      "D": "Maghreb",
+      "E": "Caucasus"
+    }
+  },
+  {
+    "question": "Which river flows in an easterly direction?",
+    "answer": "E",
+    "options": {
+      "A": "Nile",
+      "B": "Indus",
+      "C": "Fraser",
+      "D": "Darling",
+      "E": "Thames"
+    }
+  },
+  {
+    "question": "Which national park is in the same state as Appomattox Court House and George Washington's birthplace?",
+    "answer": "A",
+    "options": {
+      "A": "Shenandoah",
+      "B": "Crater Lake",
+      "C": "Grand Teton",
+      "D": "Mammoth Cave",
+      "E": "Petrified Forest"
+    }
+  },
+  {
+    "question": "Which is a peninsula?",
+    "answer": "E",
+    "options": {
+      "A": "Mississippi",
+      "B": "Bangladesh",
+      "C": "South Africa",
+      "D": "Great Britain",
+      "E": "Baja California"
+    }
+  },
+  {
+    "question": "A relief map maker would need to use the fewest contour lines when mapping ...",
+    "answer": "B",
+    "options": {
+      "A": "central Vermont",
+      "B": "central Nebraska",
+      "C": "western Colorado",
+      "D": "eastern California",
+      "E": "southeastern Alaska"
+    }
+  },
+  {
+    "question": "The cartographic technique by which points on the sphere of the Earth are transferred to points on the plane surface of a map is ...",
+    "answer": "B",
+    "options": {
+      "A": "trajection",
+      "B": "projection",
+      "C": "intersection",
+      "D": "interpolation",
+      "E": "approximation"
+    }
+  },
+  {
+    "question": "What city is closest to the U.S. Air Force Academy?",
+    "answer": "E",
+    "options": {
+      "A": "Dayton, Ohio",
+      "B": "Tucson, Arizona",
+      "C": "Las Vegas, Nevada",
+      "D": "Annapolis, Maryland",
+      "E": "Colorado Springs, Colorado"
+    }
+  },
+  {
+    "question": "Nations on the Iberian Peninsula include ...",
+    "answer": "A",
+    "options": {
+      "A": "Portugal and Spain",
+      "B": "Norway and Sweden",
+      "C": "Bulgaria and Greece",
+      "D": "England and Scotland",
+      "E": "Denmark and the Netherlands"
+    }
+  },
+  {
+    "question": "The compass direction, \"200 degrees west,\" indicates ...",
+    "answer": "B",
+    "options": {
+      "A": "NE",
+      "B": "SW",
+      "C": "SE",
+      "D": "due west",
+      "E": "due south"
+    }
+  },
+  {
+    "question": "Which is not adjacent to the Gulf of Guinea?",
+    "answer": "E",
+    "options": {
+      "A": "Togo",
+      "B": "Benin",
+      "C": "Gabon",
+      "D": "Cameroon",
+      "E": "Mauritania"
+    }
+  },
+  {
+    "question": "Tehran is the capital of ...",
+    "answer": "B",
+    "options": {
+      "A": "Iraq",
+      "B": "Iran",
+      "C": "Syria",
+      "D": "Qatar",
+      "E": "Pakistan"
+    }
+  },
+  {
+    "question": "Which is farthest west?",
+    "answer": "A",
+    "options": {
+      "A": "Reno",
+      "B": "Boise",
+      "C": "Phoenix",
+      "D": "Bozeman",
+      "E": "San Diego"
+    }
+  },
+  {
+    "question": "The capital of Australia is ...",
+    "answer": "D",
+    "options": {
+      "A": "Perth",
+      "B": "Hobart",
+      "C": "Adelaide",
+      "D": "Canberra",
+      "E": "Melbourne"
+    }
+  },
+  {
+    "question": "In which city does water boil at about 93 degrees Celsius?",
+    "answer": "E",
+    "options": {
+      "A": "Mecca",
+      "B": "Montreal",
+      "C": "Melbourne",
+      "D": "Montevideo",
+      "E": "Mexico City"
+    }
+  },
+  {
+    "question": "Lake Volta is a man-made lake in ...",
+    "answer": "C",
+    "options": {
+      "A": "Egypt",
+      "B": "Kenya",
+      "C": "Ghana",
+      "D": "Sudan",
+      "E": "Uganda"
+    }
+  },
+  {
+    "question": "Which is in the heart of Canada's vast, flat, agricultural prairie?",
+    "answer": "A",
+    "options": {
+      "A": "Regina",
+      "B": "Halifax",
+      "C": "Calgary",
+      "D": "Montreal",
+      "E": "St. Johns"
+    }
+  },
+  {
+    "question": "Coral reefs are the main attraction at ---- National Park.",
+    "answer": "C",
+    "options": {
+      "A": "Denali",
+      "B": "Saguaro",
+      "C": "Biscayne",
+      "D": "Isle Royale",
+      "E": "Capitol Reef"
+    }
+  },
+  {
+    "question": "Which is not part of Southeast Asia?",
+    "answer": "E",
+    "options": {
+      "A": "Laos",
+      "B": "Cambodia",
+      "C": "Singapore",
+      "D": "Philippines",
+      "E": "Bangladesh"
+    }
+  },
+  {
+    "question": "Cork and wine are two major exports of ...",
+    "answer": "C",
+    "options": {
+      "A": "Brunei",
+      "B": "Somalia",
+      "C": "Portugal",
+      "D": "Netherlands",
+      "E": "Saudi Arabia"
+    }
+  },
+  {
+    "question": "The Brooks Range is in northern ...",
+    "answer": "B",
+    "options": {
+      "A": "Maine",
+      "B": "Alaska",
+      "C": "Wisconsin",
+      "D": "Washington",
+      "E": "Pennsylvania"
+    }
+  },
+  {
+    "question": "Which has the smallest population?",
+    "answer": "C",
+    "options": {
+      "A": "Africa",
+      "B": "Europe",
+      "C": "Oceania",
+      "D": "Latin America",
+      "E": "North America"
+    }
+  },
+  {
+    "question": "Which is closest to Edmonton?",
+    "answer": "C",
+    "options": {
+      "A": "Quebec",
+      "B": "Ottawa",
+      "C": "Calgary",
+      "D": "Toronto",
+      "E": "Winnipeg"
+    }
+  }
+]

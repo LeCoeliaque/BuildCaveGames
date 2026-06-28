@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>TriviaWheel</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0e14;--surf:#141a23;--surf2:#1e2530;--bdr:#2a3441;--txt:#e6edf3;--muted:#8b97a5;--accent:#7c3aed;--accent2:#60a5fa;}
+html,body{height:100%;overscroll-behavior:none;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);background-image:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(124,58,237,0.08),transparent),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(96,165,250,0.05),transparent);color:var(--txt);display:flex;flex-direction:column;height:100%;}
+
+header{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 1rem;border-bottom:1px solid var(--bdr);background:var(--surf);flex-shrink:0;}
+header h1{font-size:1.1rem;font-weight:800;letter-spacing:.06em;background:linear-gradient(135deg,#60a5fa,#a78bfa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.rpill{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;background:var(--surf2);border:1px solid var(--bdr);border-radius:20px;padding:.18rem .6rem;color:var(--muted);display:none;}
+.rpill span{color:var(--txt);}
+
+.screen{display:none;flex:1;overflow:hidden;}
+.screen.active{display:flex;}
+
+/* LOBBY / WAITING */
+#sl,#sw{flex-direction:column;align-items:center;justify-content:center;gap:.9rem;padding:1.5rem 1rem;overflow-y:auto;}
+.card{background:var(--surf);border:1px solid var(--bdr);border-radius:12px;padding:1.3rem;width:100%;max-width:400px;display:flex;flex-direction:column;gap:.85rem;}
+.card h2{font-size:.92rem;font-weight:700;}
+.fl label{display:block;font-size:.63rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.25rem;}
+input[type=text]{width:100%;padding:.58rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.86rem;background:var(--surf2);border:1px solid var(--bdr);border-radius:7px;color:var(--txt);outline:none;transition:border-color .15s;}
+input[type=text]:focus{border-color:#60a5fa;}
+input[type=text].nc{text-transform:none;}
+.btn{font-family:'Outfit',sans-serif;font-size:.86rem;font-weight:700;padding:.62rem 1.2rem;border:none;border-radius:8px;cursor:pointer;transition:all .12s;touch-action:manipulation;}
+.bp{background:#2563eb;color:#fff;}.bp:hover{background:#1d4ed8;}
+.btn:disabled{opacity:.4;cursor:not-allowed;}
+.bw{width:100%;}
+.bigcode{font-family:'JetBrains Mono',monospace;font-size:2.2rem;font-weight:700;letter-spacing:.15em;color:#60a5fa;text-align:center;}
+.prow{display:flex;align-items:center;gap:.55rem;padding:.48rem .75rem;background:var(--surf2);border:1px solid var(--bdr);border-radius:7px;}
+.pdot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.prow .pn{flex:1;font-weight:600;font-size:.86rem;}
+.prow .pt{font-size:.66rem;color:var(--muted);}
+.emsg{background:#450a0a;border:1px solid #991b1b;color:#fca5a5;padding:.48rem .75rem;border-radius:6px;font-size:.78rem;display:none;}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.28rem;}
+.cchip{display:flex;align-items:center;gap:.35rem;padding:.28rem .48rem;background:var(--surf2);border:1px solid var(--bdr);border-radius:6px;font-size:.7rem;font-weight:600;}
+.csw{width:7px;height:7px;border-radius:2px;flex-shrink:0;}
+
+/* GAME */
+#sg{flex-direction:column;height:calc(100dvh - 42px);}
+.game-main{display:flex;flex:1;min-height:0;}
+.board-wrap{flex:1;display:flex;align-items:center;justify-content:center;background:var(--bg);overflow:hidden;padding:.4rem;}
+#bc{display:block;max-width:100%;max-height:100%;}
+.rpanel{width:285px;flex-shrink:0;background:linear-gradient(180deg,rgba(20,26,35,0.95),rgba(14,18,24,0.98));border-left:1px solid var(--bdr);display:flex;flex-direction:column;overflow:hidden;backdrop-filter:blur(10px);}
+.rpi{padding:.9rem;display:flex;flex-direction:column;gap:.6rem;overflow-y:auto;flex:1;}
+.scorebar{border-top:1px solid var(--bdr);background:var(--surf);padding:.35rem .7rem;display:flex;gap:.65rem;overflow-x:auto;flex-shrink:0;align-items:center;min-height:36px;}
+#devToggle{position:fixed;bottom:50px;right:10px;width:40px;height:40px;border-radius:50%;background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:1.1rem;cursor:pointer;z-index:90;opacity:0.5;transition:opacity .2s;}
+#devToggle:hover{opacity:1;}
+.dev-panel{position:fixed;bottom:0;left:0;right:0;max-height:60vh;overflow-y:auto;background:#0f172a;border-top:2px solid #7c3aed;z-index:100;padding:.8rem;box-shadow:0 -4px 20px rgba(0,0,0,0.5);}
+.dev-header{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.9rem;color:#c4b5fd;margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:1px solid #334155;}
+.dev-section{margin-bottom:.7rem;}
+.dev-section-title{font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;color:#64748b;font-weight:700;margin-bottom:.3rem;}
+.dev-btns{display:flex;flex-wrap:wrap;gap:.3rem;}
+.dev-btn{padding:.35rem .6rem;font-size:.72rem;font-weight:600;background:#1e293b;border:1px solid #334155;border-radius:6px;color:#cbd5e1;cursor:pointer;font-family:'Outfit',sans-serif;}
+.dev-btn:hover{background:#334155;border-color:#7c3aed;}
+.dev-btn.danger{background:#450a0a;border-color:#991b1b;color:#f87171;}
+.dev-btn.danger:hover{background:#7f1d1d;}
+.dev-btn.warn{background:#451a03;border-color:#b45309;color:#fbbf24;}
+.dev-ack{font-size:.72rem;color:#4ade80;padding:.3rem 0;}
+.se{display:flex;align-items:center;gap:.3rem;white-space:nowrap;flex-shrink:0;}
+.sdot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sn{font-size:.72rem;font-weight:600;}
+.sc{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;}
+.sat{font-size:.68rem;color:#f0c040;margin-left:auto;flex-shrink:0;font-weight:700;}
+
+/* PANEL */
+.plbl{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.cbadge{display:inline-flex;align-items:center;padding:.2rem .65rem;border-radius:20px;font-size:.66rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;width:fit-content;box-shadow:0 2px 8px rgba(0,0,0,0.3);}
+.qtxt{font-size:.94rem;font-weight:600;line-height:1.55;letter-spacing:-0.01em;}
+.arow{display:flex;gap:.28rem;}
+.arow input{flex:1;padding:.55rem .7rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;background:var(--surf2);border:1.5px solid var(--bdr);border-radius:7px;color:var(--txt);outline:none;transition:border-color .15s;}
+.arow input:focus{border-color:#60a5fa;}
+.arow button{padding:.55rem .8rem;background:#2563eb;color:#fff;border:none;border-radius:7px;font-size:.88rem;font-weight:700;cursor:pointer;touch-action:manipulation;}
+.lbox{background:var(--surf2);border:1px solid var(--bdr);border-radius:7px;padding:.52rem .72rem;font-size:.78rem;line-height:1.4;}
+.trow{display:flex;align-items:center;gap:.5rem;}
+.tn{font-family:'JetBrains Mono',monospace;font-size:.92rem;font-weight:700;min-width:1.7rem;}
+.tbg{flex:1;height:4px;background:var(--bdr);border-radius:2px;overflow:hidden;}
+.tf{height:100%;background:#60a5fa;border-radius:2px;transition:width .9s linear,background .3s;}
+.tf.urg{background:#ef4444;}
+.stbanner{background:#7f1d1d;border:1px solid #ef4444;border-radius:7px;padding:.52rem .72rem;font-weight:700;font-size:.8rem;color:#fca5a5;text-align:center;}
+.buzzbtn{width:100%;padding:.85rem;background:#c0392b;color:#fff;border:none;border-radius:9px;font-family:'Outfit',sans-serif;font-size:.92rem;font-weight:800;cursor:pointer;touch-action:manipulation;letter-spacing:.02em;}
+.buzzbtn:hover{background:#a93226;}
+.bonusbanner{background:linear-gradient(135deg,#78350f,#92400e);border:1px solid #f59e0b;border-radius:8px;padding:.65rem;text-align:center;font-weight:700;line-height:1.35;font-size:.85rem;}
+.rvrow{display:flex;align-items:center;gap:.35rem;padding:.28rem 0;border-top:1px solid var(--bdr);font-size:.74rem;flex-wrap:wrap;}
+.cans{font-size:.88rem;font-weight:700;color:#22c55e;}
+.mb{font-size:.58rem;font-weight:700;padding:.08rem .32rem;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0;}
+.me{background:#052e16;color:#4ade80;border:1px solid #16a34a;}
+.mc{background:#1c2a10;color:#a3e635;border:1px solid #4d7c0f;}
+.mpa{background:#082f49;color:#38bdf8;border:1px solid #0369a1;}
+.mw{background:#2d0404;color:#f87171;border:1px solid #991b1b;}
+.mov{background:#451a03;color:#fbbf24;border:1px solid #f59e0b;}
+.hqbadge{display:inline-flex;align-items:center;gap:.28rem;padding:.18rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700;background:#78350f;border:1px solid #f59e0b;color:#fbbf24;}
+.rollbtn{width:100%;padding:.9rem;background:#7c3aed;color:#fff;border:none;border-radius:9px;font-family:'Outfit',sans-serif;font-size:1rem;font-weight:800;cursor:pointer;touch-action:manipulation;letter-spacing:.02em;}
+.rollbtn:hover{background:#6d28d9;}
+
+/* 3D Dice */
+.diceWrap{width:90px;height:90px;position:relative;margin:0 auto;perspective:400px;}
+.diceWrap::after{content:'';position:absolute;width:70%;height:10%;top:90%;left:15%;background:rgba(0,0,0,0.3);border-radius:100%;filter:blur(6px);}
+.dice3d{width:50px;height:50px;position:absolute;top:50%;left:50%;margin:-25px 0 0 -25px;transform-style:preserve-3d;transform:rotate3d(0.4,0.9,0.2,180deg);transition:transform .6s cubic-bezier(0.42,1.57,0.62,0.86);}
+.dice3d.rolling{animation:diceRoll3d 1.2s cubic-bezier(0.42,1.57,0.62,0.86) infinite;}
+.diceFace3d{box-sizing:border-box;position:absolute;width:50px;height:50px;background:#1e293b;border:1.5px solid #334155;border-radius:8px;transform-style:preserve-3d;}
+.diceFace3d::before{position:absolute;content:'';width:100%;height:100%;background:#1e293b;border-radius:7px;transform:translateZ(-1px);}
+.dice3d .front {transform:translateZ(25px);}
+.dice3d .back  {transform:rotateX(180deg) translateZ(25px);}
+.dice3d .up    {transform:rotateX(90deg) translateZ(25px);}
+.dice3d .bottom{transform:rotateX(-90deg) translateZ(25px);}
+.dice3d .left  {transform:rotateY(-90deg) translateZ(25px);}
+.dice3d .right {transform:rotateY(90deg) translateZ(25px);}
+/* Dots */
+.dot{position:absolute;width:8px;height:8px;border-radius:50%;background:#60a5fa;}
+.dot.red{background:#e74c3c;}
+/* Face dot layouts */
+.face1 .dot:nth-child(1){top:50%;left:50%;margin:-4px 0 0 -4px;}
+.face2 .dot:nth-child(1){top:25%;left:25%;margin:-4px 0 0 -4px;} .face2 .dot:nth-child(2){top:75%;left:75%;margin:-4px 0 0 -4px;}
+.face3 .dot:nth-child(1){top:20%;left:20%;margin:-4px;} .face3 .dot:nth-child(2){top:50%;left:50%;margin:-4px;} .face3 .dot:nth-child(3){top:80%;left:80%;margin:-4px;}
+.face4 .dot:nth-child(1){top:25%;left:25%;margin:-4px;} .face4 .dot:nth-child(2){top:25%;left:75%;margin:-4px;} .face4 .dot:nth-child(3){top:75%;left:25%;margin:-4px;} .face4 .dot:nth-child(4){top:75%;left:75%;margin:-4px;}
+.face5 .dot:nth-child(1){top:20%;left:20%;margin:-4px;} .face5 .dot:nth-child(2){top:20%;left:80%;margin:-4px;} .face5 .dot:nth-child(3){top:50%;left:50%;margin:-4px;} .face5 .dot:nth-child(4){top:80%;left:20%;margin:-4px;} .face5 .dot:nth-child(5){top:80%;left:80%;margin:-4px;}
+.face6 .dot:nth-child(1){top:20%;left:25%;margin:-4px;} .face6 .dot:nth-child(2){top:20%;left:75%;margin:-4px;} .face6 .dot:nth-child(3){top:50%;left:25%;margin:-4px;} .face6 .dot:nth-child(4){top:50%;left:75%;margin:-4px;} .face6 .dot:nth-child(5){top:80%;left:25%;margin:-4px;} .face6 .dot:nth-child(6){top:80%;left:75%;margin:-4px;}
+@keyframes diceRoll3d{
+  0%  {transform:rotate3d(-0.1,0.3,-1,180deg);}
+  16% {transform:rotate3d(-0.1,0.6,-0.4,180deg);}
+  32% {transform:rotate3d(-0.85,-0.42,0.73,180deg);}
+  48% {transform:rotate3d(-0.8,0.3,-0.75,180deg);}
+  64% {transform:rotate3d(0.3,0.45,0.9,180deg);}
+  80% {transform:rotate3d(-0.16,0.6,0.18,180deg);}
+  100%{transform:rotate3d(-0.1,0.3,-1,180deg);}
+}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@keyframes popIn{0%{transform:scale(0.7);opacity:0}70%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+@keyframes diceRoll{0%{transform:rotate(0deg) scale(1)}25%{transform:rotate(15deg) scale(1.2)}50%{transform:rotate(-10deg) scale(1.1)}75%{transform:rotate(5deg) scale(1.15)}100%{transform:rotate(0deg) scale(1)}}
+.anim-fadein{animation:fadeInUp .3s ease both;}
+.anim-shake{animation:shake .4s ease;}
+.anim-pop{animation:popIn .35s cubic-bezier(.34,1.56,.64,1) both;}
+.wrong-answer-wrap{position:relative;display:inline-block;}
+.crossout-line{position:absolute;top:50%;left:0;height:2.5px;background:#ef4444;border-radius:2px;width:0;animation:crossout .4s ease-out .1s forwards;}
+.dice-anim{display:inline-block;animation:diceRoll .5s ease-out;}
+.mc-grid{display:flex;flex-direction:column;gap:.32rem;}
+.mc-opt{display:flex;align-items:center;gap:.55rem;padding:.6rem .75rem;background:var(--surf2);border:1.5px solid var(--bdr);border-radius:10px;color:var(--txt);font-family:'Outfit',sans-serif;font-size:.83rem;font-weight:600;cursor:pointer;text-align:left;transition:all .15s cubic-bezier(.4,0,.2,1);touch-action:manipulation;width:100%;}
+.mc-opt:hover:not(:disabled){border-color:var(--accent2);background:#1e2a3a;transform:translateX(2px);}
+.mc-opt:active:not(:disabled){transform:scale(0.98);}
+.mc-opt:disabled{cursor:default;}
+.mc-selected{border-color:var(--accent2)!important;background:linear-gradient(135deg,#1e3a5f,#1e2a4a)!important;box-shadow:0 0 0 1px var(--accent2),0 4px 12px rgba(96,165,250,0.2);}
+.mc-letter{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;background:var(--bdr);width:1.4rem;height:1.4rem;display:inline-flex;align-items:center;justify-content:center;border-radius:5px;flex-shrink:0;}
+.mc-selected .mc-letter{background:var(--accent2);color:#0a0e14;}
+.dicedisp{background:var(--surf2);border:2px solid var(--bdr);border-radius:9px;padding:.5rem;text-align:center;font-size:1.5rem;font-family:'JetBrains Mono',monospace;font-weight:700;}
+.wheelrow{display:flex;align-items:center;gap:.45rem;padding-top:.45rem;border-top:1px solid var(--bdr);flex-shrink:0;margin-top:auto;}
+
+/* GAMEOVER */
+#sgo{flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;padding:2rem 1rem;overflow-y:auto;}
+.wtxt{font-size:1.7rem;font-weight:800;text-align:center;background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.frow{display:flex;align-items:center;gap:.6rem;padding:.62rem .85rem;background:var(--surf);border:1px solid var(--bdr);border-radius:8px;width:100%;max-width:400px;}
+.frank{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--muted);min-width:1.3rem;}
+
+/* MOBILE */
+@media(max-width:660px){
+  #sg{height:calc(100dvh - 42px);}
+  .game-main{flex-direction:column;}
+  .board-wrap{flex:0 0 auto;height:44vw;min-height:195px;max-height:255px;padding:.25rem;}
+  .rpanel{width:100%;flex:1;border-left:none;border-top:1px solid var(--bdr);overflow:hidden;}
+  .rpi{padding:.6rem;}
+  .qtxt{font-size:.84rem;}
+  .cgrid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>TRIVIAWHEEL</h1>
+  <div style="display:flex;align-items:center;gap:.5rem;">
+    <div class="rpill" id="rpill">Room: <span id="pcode">—</span></div>
+    <button onclick="openRules()" title="How to play" style="width:30px;height:30px;border-radius:50%;border:1px solid var(--bdr);background:var(--surf2);color:var(--txt);font-weight:700;cursor:pointer;font-size:.9rem;flex-shrink:0;">?</button>
+  </div>
+</header>
+
+<div id="sl" class="screen active">
+  <div class="card">
+    <h2>Join or create a game</h2>
+    <div class="fl"><label>Your name</label><input type="text" id="iname" placeholder="Name" class="nc" maxlength="16"></div>
+    <div class="fl"><label>Room code</label><input type="text" id="iroom" placeholder="ROOM CODE" maxlength="8"></div>
+    <div class="emsg" id="lerr"></div>
+    <button class="btn bp bw" onclick="joinGame()">Join / Create Room</button>
+  </div>
+  <p style="font-size:.74rem;color:var(--muted);text-align:center;max-width:320px">Answer questions to roll and move. Land on ★ HQ squares to earn wedges. Complete your wheel then answer a final question at the centre to win!</p>
+</div>
+
+<div id="sw" class="screen" style="flex-direction:column;align-items:center;justify-content:center;gap:.9rem;padding:1.5rem 1rem;overflow-y:auto;">
+  <p style="font-size:.74rem;color:var(--muted)">Share this code</p>
+  <div class="bigcode" id="wcode">----</div>
+  <div style="width:100%;max-width:400px;display:flex;flex-direction:column;gap:.32rem" id="wplayers"></div>
+  <div style="width:100%;max-width:400px">
+    <p style="font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:.32rem">Categories</p>
+    <div class="cgrid" id="wcats"></div>
+  </div>
+  <div class="emsg" id="werr"></div>
+  <div style="width:100%;max-width:400px;display:flex;flex-direction:column;gap:.32rem">
+    <button id="bstart" class="btn bp bw" onclick="startGame()" disabled>Start Game</button>
+    <p id="whint" style="font-size:.74rem;color:var(--muted);text-align:center">Need at least 2 players</p>
+  </div>
+</div>
+
+<div id="sg" class="screen">
+  <div class="game-main">
+    <div class="board-wrap"><canvas id="bc"></canvas></div>
+    <div class="rpanel"><div class="rpi" id="rpi"></div></div>
+  </div>
+  <div class="scorebar" id="scorebar"></div>
+  <button id="devToggle" onclick="toggleDev()" title="Dev mode" style="display:none">🛠</button>
+  <div id="devPanel" class="dev-panel" style="display:none">
+    <div class="dev-header">
+      <span>🛠 Dev Mode</span>
+      <button onclick="toggleDev()" style="background:none;border:none;color:#888;cursor:pointer;font-size:1rem">✕</button>
+    </div>
+    <div id="devBody"></div>
+  </div>
+</div>
+
+<div id="sgo" class="screen">
+  <div class="wtxt" id="gowinner">Game Over!</div>
+  <div id="goscores" style="display:flex;flex-direction:column;gap:.38rem;width:100%;max-width:400px;align-items:center"></div>
+  <button id="breset" class="btn bp" onclick="resetGame()" style="display:none">Play Again</button>
+</div>
+
+<div id="trivia-rules-overlay" onclick="closeRules(event)" style="position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;z-index:200;padding:16px;">
+  <div onclick="event.stopPropagation()" style="background:var(--surf);border:1px solid var(--bdr);border-radius:14px;max-width:540px;width:100%;max-height:90dvh;overflow-y:auto;padding:22px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+      <h2 style="font-size:1.15rem;background:linear-gradient(135deg,#60a5fa,#a78bfa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">🎯 How to Play TriviaWheel</h2>
+      <button onclick="closeRules()" style="background:none;border:none;color:var(--muted);font-size:1.1rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="trules-body" id="trivia-rules-body"></div>
+    <button class="btn bp bw" style="margin-top:8px;width:100%;" onclick="closeRules()">Got it</button>
+  </div>
+</div>
+
+<style>
+.trules-body{font-size:.86rem;line-height:1.6;color:var(--txt);margin-bottom:8px;}
+.trules-body h4{color:#a78bfa;font-size:.95rem;margin:15px 0 6px;font-weight:700;}
+.trules-body h4:first-child{margin-top:0;}
+.trules-body p{margin-bottom:9px;color:#c8d2dc;}
+.trules-body ul{margin:0 0 10px 18px;}
+.trules-body li{margin-bottom:6px;}
+.trules-body .star{color:#f0c040;font-weight:700;}
+.trules-body strong{color:var(--txt);}
+.trules-body .badge{display:inline-block;background:var(--surf2);border:1px solid var(--bdr);border-radius:5px;padding:1px 7px;font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#60a5fa;}
+</style>
+
+<script>
+// ── Rules / How to Play (accurate to this implementation) ──
+function openRules(){
+  document.getElementById('trivia-rules-body').innerHTML = TRIVIA_RULES;
+  document.getElementById('trivia-rules-overlay').style.display='flex';
+}
+function closeRules(e){
+  if(e&&e.target&&e.target.id!=='trivia-rules-overlay'&&e.type==='click')return;
+  document.getElementById('trivia-rules-overlay').style.display='none';
+}
+const TRIVIA_RULES=`
+  <h4>Goal</h4>
+  <p>A trivia race around the wheel. Collect all <strong>8 category wedges</strong>, then
+  reach the centre and answer one final question correctly to win.</p>
+
+  <h4>Your turn</h4>
+  <ul>
+    <li>Roll the die and move around the outer ring.</li>
+    <li>You answer the question for the square you land on — either typing a
+        <strong>free-response</strong> answer (it's matched leniently) or picking a
+        <strong>multiple-choice</strong> option, depending on the category.</li>
+    <li><strong>Answer correctly → roll again</strong> and keep going.</li>
+    <li>Answer wrong → it opens for a <strong>steal</strong>: other players can buzz in to
+        try to answer it themselves.</li>
+  </ul>
+
+  <h4><span class="star">★</span> HQ squares &amp; wedges</h4>
+  <ul>
+    <li>Eight special <span class="star">★ HQ</span> squares sit around the board — one per
+        category. Answer correctly on an HQ you don't own yet to earn that
+        <strong>category wedge</strong>.</li>
+    <li>As you move, you'll <strong>stop on HQ squares you haven't claimed</strong> so you
+        get the chance to win their wedge.</li>
+  </ul>
+
+  <h4>The centre &amp; winning</h4>
+  <ul>
+    <li>Once you've collected all <strong>8 wedges</strong>, head down a spoke toward the
+        centre.</li>
+    <li>Try to enter the centre without all wedges and you'll be turned back with a
+        reminder of how many you still need.</li>
+    <li>At the centre, answer the final question correctly to <strong>win the game</strong> 🏆.
+        Miss it and you'll have to come back around and try again.</li>
+  </ul>
+
+  <h4>Fair play</h4>
+  <p>Because free-response answers are matched loosely, players can <strong>challenge</strong>
+  a ruling they think is wrong — the group votes to decide whether it counts.</p>
+`;
+
+let ws,playerId,roomCode,isHost=false,gs=null;
+let hasActed=false,myAns=null,qStart=null;
+let CM={};
+function syncCats(cats){
+  CM={};
+  (cats?.ring||cats||[]).forEach(c=>CM[c.id]=c);
+  if(cats?.centre) CM[cats.centre.id]={...cats.centre};
+}
+function cc(id){return CM[id]?.color||'#888';}
+function cl(id){return CM[id]?.label||id||'';}
+function ha(hex,a){
+  if(!hex||hex.length<7) return `rgba(136,136,136,${a})`;
+  const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${a})`;
+}
+
+// ── BOARD PIXEL MAP (2048×2048 source image) ────────────────
+// 40 ring tile centres, clockwise from TL corner
+const TILE_PX=[
+  [278,278],[467,278],[590,278],[713,278],[834,278],
+  [1027,278],[1213,278],[1336,278],[1459,278],[1580,278],
+  [1772,278],[1772,467],[1772,590],[1772,713],[1772,834],
+  [1772,1027],[1772,1213],[1772,1336],[1772,1459],[1772,1580],
+  [1772,1755],[1580,1755],[1459,1755],[1336,1755],[1213,1755],
+  [1027,1755],[834,1755],[711,1755],[588,1755],[467,1755],
+  [280,1755],[280,1580],[280,1459],[280,1336],[280,1213],
+  [280,1027],[280,834],[280,713],[280,590],[280,467],
+];
+// Spoke tile centres (5 per spoke, outermost first)
+const SPOKE_PX=[
+  [[1027,454],[1027,551],[1027,648],[1027,745],[1027,837]],
+  [[1593,1027],[1496,1027],[1399,1027],[1302,1027],[1211,1027]],
+  [[1027,1593],[1027,1496],[1027,1399],[1027,1302],[1027,1211]],
+  [[454,1027],[551,1027],[648,1027],[745,1027],[837,1027]],
+];
+const CENTRE_PX=[1023,1027];
+
+function sqPx(board,sqId){
+  if(sqId===board.centreId) return CENTRE_PX;
+  if(sqId<40) return TILE_PX[sqId]||CENTRE_PX;
+  const off=sqId-40;
+  const sIdx=Math.floor(off/board.SPOKE_LEN);
+  const pip=off%board.SPOKE_LEN;
+  return (SPOKE_PX[sIdx]&&SPOKE_PX[sIdx][pip])||CENTRE_PX;
+}
+
+// ── BOARD IMAGE ───────────────────────────────────────────────
+const boardImg=new Image();
+// Relative path so it works both standalone and behind the hub proxy (/triviawheel/).
+boardImg.src='assets/board.png';
+boardImg.onload=()=>{if(gs)drawBoard(gs);};
+
+function getScale(){
+  const canvas=document.getElementById('bc');if(!canvas)return 1;
+  return canvas.width/2048;
+}
+
+function resizeCanvas(){
+  const canvas=document.getElementById('bc');if(!canvas)return;
+  const wrap=canvas.parentElement;
+  const SZ=Math.min(wrap.clientWidth||300,wrap.clientHeight||300);
+  if(canvas.width!==SZ){canvas.width=SZ;canvas.height=SZ;}
+}
+const AC=new(window.AudioContext||window.webkitAudioContext)();
+function beep(freq,type,dur,vol=0.3){
+  const o=AC.createOscillator(),g=AC.createGain();
+  o.connect(g);g.connect(AC.destination);
+  o.type=type;o.frequency.value=freq;
+  g.gain.setValueAtTime(vol,AC.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001,AC.currentTime+dur);
+  o.start();o.stop(AC.currentTime+dur);
+}
+function playWrong(){beep(180,'sawtooth',0.3,0.25);setTimeout(()=>beep(140,'sawtooth',0.2,0.2),120);}
+function playCorrect(){beep(660,'sine',0.15,0.25);setTimeout(()=>beep(880,'sine',0.2,0.2),120);}
+function playRoll(){beep(400,'triangle',0.08,0.15);setTimeout(()=>beep(600,'triangle',0.06,0.1),60);}
+
+// ── ANIMATION SYSTEM ─────────────────────────────────────────
+const tokenPrevPx={};
+const tokenAnimFrom={};
+let animFrame=null,animStartTime=null;
+const ANIM_DUR=700;
+// (dice animation handled via CSS 3D + post-render RAF hook)
+
+function animateTokens(state,targets){
+  const now=performance.now();
+  if(!animStartTime)animStartTime=now;
+  const t=Math.min(1,(now-animStartTime)/ANIM_DUR);
+  const ease=t<0.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+  const hop=Math.sin(t*Math.PI); // parabolic arc peak at t=0.5
+  drawBoardFrame(state,targets,ease,hop);
+  if(t<1){animFrame=requestAnimationFrame(()=>animateTokens(state,targets));}
+  else{
+    animStartTime=null;animFrame=null;
+    Object.entries(targets).forEach(([id,p])=>{tokenPrevPx[id]={x:p.x,y:p.y};});
+    drawBoardFrame(state,targets,1,0);
+  }
+}
+
+const lastAnimatedPos={}; // playerId → sqId last animated to
+
+function drawBoard(state){
+  if(!state?.board)return;
+  resizeCanvas();
+  const board=state.board;
+  const scale=getScale();
+  const targets={};
+  (state.players||[]).forEach(p=>{
+    const [ix,iy]=sqPx(board,p.pos??0);
+    targets[p.id]={x:ix*scale,y:iy*scale,color:p.color,name:p.name,sqId:p.pos??0};
+  });
+
+  const activeId=state.activePlayerId;
+  const path=state.movePath;
+  const activeTgt=targets[activeId];
+  const activePrev=tokenPrevPx[activeId];
+
+  // Only animate if: active player, movePath provided, position changed, and not already animated to this sq
+  const destSq=activeTgt?.sqId;
+  const alreadyDone=lastAnimatedPos[activeId]===destSq;
+  const needAnim=!alreadyDone&&activeId&&activeTgt&&activePrev&&path&&path.length>0&&
+    (Math.abs(activePrev.x-activeTgt.x)>2||Math.abs(activePrev.y-activeTgt.y)>2);
+
+  // Snap all non-animating players
+  Object.entries(targets).forEach(([id,pos])=>{
+    if(id!==activeId||!needAnim) tokenPrevPx[id]={x:pos.x,y:pos.y};
+  });
+
+  if(needAnim){
+    console.log('[ANIM] hopping',activeId,'path',path,'from',activePrev,'to',activeTgt);
+    lastAnimatedPos[activeId]=destSq;
+    if(animFrame){cancelAnimationFrame(animFrame);animFrame=null;}
+    const pixelPath=[{x:activePrev.x,y:activePrev.y}];
+    path.forEach(sqId=>{const[ix,iy]=sqPx(board,sqId);pixelPath.push({x:ix*scale,y:iy*scale});});
+    animStartTime=null;animHopPath=pixelPath;animHopIdx=0;animActiveId=activeId;
+    animFrame=requestAnimationFrame(()=>animHop(state,targets));
+  }else{
+    if(path&&path.length>0)console.log('[ANIM] skipped — alreadyDone:',alreadyDone,'activePrev:',activePrev,'destSq:',destSq);
+    drawBoardFrame(state,targets,{});
+  }
+}
+
+// Per-square hop state
+let animHopPath=[],animHopIdx=0,animActiveId=null;
+const HOP_STEP=220; // ms per square
+
+function animHop(state,targets){
+  const now=performance.now();
+  if(!animStartTime)animStartTime=now;
+  const elapsed=now-animStartTime;
+  const stepT=Math.min(1,elapsed/HOP_STEP);
+  const ease=stepT<0.5?2*stepT*stepT:1-Math.pow(-2*stepT+2,2)/2;
+  const hop=Math.sin(stepT*Math.PI);
+
+  const from=animHopPath[animHopIdx];
+  const to=animHopPath[animHopIdx+1]||animHopPath[animHopPath.length-1];
+  const animPos={
+    x:from.x+(to.x-from.x)*ease,
+    y:from.y+(to.y-from.y)*ease - hop*40,
+  };
+
+  // Draw with overridden position for active player
+  const overrides={[animActiveId]:animPos};
+  drawBoardFrame(state,targets,overrides);
+
+  if(stepT>=1){
+    animHopIdx++;
+    if(animHopIdx<animHopPath.length-1){
+      animStartTime=null;
+      try{playRoll();}catch(e){}
+      animFrame=requestAnimationFrame(()=>animHop(state,targets));
+    }else{
+      animFrame=null;animStartTime=null;
+      tokenPrevPx[animActiveId]={...to};
+      drawBoardFrame(state,targets,{});
+    }
+  }else{
+    animFrame=requestAnimationFrame(()=>animHop(state,targets));
+  }
+}
+
+function drawBoardFrame(state,targets,overrides){
+  overrides=overrides||{};
+  const canvas=document.getElementById('bc');
+  if(!canvas||!state?.board)return;
+  const board=state.board;
+  const scale=getScale();
+
+  const ctx=canvas.getContext('2d');
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  // Board image
+  if(boardImg.complete&&boardImg.naturalWidth>0){
+    ctx.drawImage(boardImg,0,0,canvas.width,canvas.height);
+  }else{
+    ctx.fillStyle='#111520';ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle='rgba(255,255,255,0.3)';ctx.font=`${canvas.width*0.04}px Outfit,sans-serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText('Loading board…',canvas.width/2,canvas.height/2);
+  }
+
+  // Target highlight
+  if(state.targetSquareId!=null){
+    const [ix,iy]=sqPx(board,state.targetSquareId);
+    const spx=ix*scale,spy=iy*scale;
+    const sq=board.squares?.find(s=>s.id===state.targetSquareId);
+    const r=sq?.isHQ?canvas.width*0.068:canvas.width*0.036;
+    ctx.beginPath();ctx.arc(spx,spy,r*1.45,0,Math.PI*2);
+    ctx.fillStyle='rgba(255,255,255,0.22)';ctx.fill();
+    ctx.beginPath();ctx.arc(spx,spy,r,0,Math.PI*2);
+    ctx.strokeStyle='#fff';ctx.lineWidth=Math.max(2,canvas.width*0.003);ctx.stroke();
+  }
+
+  // Player tokens (animated positions)
+  const TOK=canvas.width*0.029;
+  const byPos={};
+  Object.entries(targets).forEach(([id,tgt])=>{
+    const pos=overrides[id]||tgt;
+    const key=`${Math.round(pos.x)},${Math.round(pos.y)}`;
+    if(!byPos[key])byPos[key]=[];
+    byPos[key].push({...tgt,id,px:pos.x,py:pos.y});
+  });
+
+  Object.values(byPos).forEach(ps=>{
+    const spread=ps.length>1?TOK*1.25:0;
+    ps.forEach((p,i)=>{
+      const a2=ps.length>1?(i/ps.length)*Math.PI*2:0;
+      const tx=p.px+Math.cos(a2)*spread;
+      const ty=p.py+Math.sin(a2)*spread;
+      const isActive=p.id===gs?.activePlayerId;
+      // Soft drop shadow
+      ctx.beginPath();ctx.arc(tx,ty+TOK*0.18,TOK*1.02,0,Math.PI*2);
+      ctx.fillStyle='rgba(0,0,0,0.45)';ctx.fill();
+      // Active player glow ring
+      if(isActive){
+        ctx.beginPath();ctx.arc(tx,ty,TOK*1.32,0,Math.PI*2);
+        ctx.strokeStyle=p.color;ctx.globalAlpha=0.5;ctx.lineWidth=Math.max(2,canvas.width*0.004);ctx.stroke();ctx.globalAlpha=1;
+      }
+      // Token body with radial gradient for depth
+      const grad=ctx.createRadialGradient(tx-TOK*0.3,ty-TOK*0.3,TOK*0.1,tx,ty,TOK);
+      grad.addColorStop(0,lighten(p.color,30));
+      grad.addColorStop(1,p.color);
+      ctx.beginPath();ctx.arc(tx,ty,TOK,0,Math.PI*2);
+      ctx.fillStyle=grad;ctx.fill();
+      ctx.strokeStyle='#fff';ctx.lineWidth=Math.max(1.5,canvas.width*0.0022);ctx.stroke();
+      // Gloss highlight
+      ctx.beginPath();ctx.arc(tx-TOK*0.28,ty-TOK*0.28,TOK*0.38,0,Math.PI*2);
+      ctx.fillStyle='rgba(255,255,255,0.25)';ctx.fill();
+      // Initial
+      ctx.fillStyle='#fff';
+      ctx.font=`800 ${TOK*1.05}px Outfit,sans-serif`;
+      ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.shadowColor='rgba(0,0,0,0.5)';ctx.shadowBlur=2;
+      ctx.fillText(p.name[0].toUpperCase(),tx,ty);
+      ctx.shadowBlur=0;
+    });
+  });
+}
+
+function lighten(hex,pct){
+  if(!hex||hex.length<7)return hex;
+  let r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+  r=Math.min(255,r+pct);g=Math.min(255,g+pct);b=Math.min(255,b+pct);
+  return `rgb(${r},${g},${b})`;
+}
+
+
+
+function hexRGB(hex){
+  if(!hex||hex.length<7) return '136,136,136';
+  return `${parseInt(hex.slice(1,3),16)},${parseInt(hex.slice(3,5),16)},${parseInt(hex.slice(5,7),16)}`;
+}
+
+// ── WHEEL ────────────────────────────────────────────────────
+function drawWheel(canvas,wedges,catIds,playerColor,size){
+  const ctx=canvas.getContext('2d');
+  canvas.width=size;canvas.height=size;
+  const cx=size/2,cy=size/2,r=size/2-2,n=catIds.length;
+  if(!n)return;
+  ctx.clearRect(0,0,size,size);
+  catIds.forEach((id,i)=>{
+    const sa=(i/n)*Math.PI*2-Math.PI/2,ea=((i+1)/n)*Math.PI*2-Math.PI/2;
+    const filled=wedges?.[id]||false,col=cc(id);
+    ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,r,sa,ea);ctx.closePath();
+    ctx.fillStyle=filled?col:ha(col,0.14);ctx.fill();
+    ctx.strokeStyle='#0d1117';ctx.lineWidth=1.5;ctx.stroke();
+    const mid=(sa+ea)/2,lr=r*.62;
+    const lbl=cl(id),abbr=lbl.length>4?lbl.slice(0,2).toUpperCase():lbl.slice(0,3).toUpperCase();
+    ctx.save();ctx.font=`bold ${size*.09}px Outfit,sans-serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillStyle=filled?'rgba(255,255,255,.9)':ha(col,.65);
+    ctx.fillText(abbr,cx+Math.cos(mid)*lr,cy+Math.sin(mid)*lr);
+    ctx.restore();
+  });
+  ctx.beginPath();ctx.arc(cx,cy,r*.2,0,Math.PI*2);
+  ctx.fillStyle=playerColor;ctx.fill();
+  ctx.strokeStyle='#0d1117';ctx.lineWidth=1.5;ctx.stroke();
+  ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+  ctx.strokeStyle=playerColor;ctx.lineWidth=2.5;ctx.stroke();
+}
+
+// ── TIMER ────────────────────────────────────────────────────
+function tr2(t,tot){
+  const p=Math.max(0,(t/tot)*100),u=t<=Math.ceil(tot*.22);
+  return `<div class="trow"><span class="tn" id="tn">${t}</span><div class="tbg"><div class="tf${u?' urg':''}" id="tf" style="width:${p}%"></div></div></div>`;
+}
+function cbadge(catId){const col=cc(catId);return `<div class="cbadge" style="background:${ha(col,.2)};color:${col}">${cl(catId)}</div>`;}
+function mbadge(mt){const l={exact:'Exact',close:'Close',contained:'Partial',wrong:'Wrong',override:'Override'},c={exact:'me',close:'mc',contained:'mpa',wrong:'mw',override:'mov'};return `<span class="mb ${c[mt]||'mw'}">${l[mt]||'—'}</span>`;}
+function hostOverride(winnerId){wsSend({type:'hostOverride',winnerId});}
+
+function renderMyWheel(state,me,catIds){
+  let wrap=document.getElementById('mywrap');
+  if(!me||!catIds.length){if(wrap)wrap.remove();return;}
+  if(!wrap){
+    wrap=document.createElement('div');
+    wrap.id='mywrap';wrap.className='wheelrow';
+    wrap.innerHTML=`<canvas id="mywhl" width="50" height="50"></canvas><div><p style="font-size:.68rem;font-weight:700">Your wheel</p><p id="mywc" style="font-size:.66rem;color:var(--muted);font-family:'JetBrains Mono',monospace"></p></div>`;
+    document.getElementById('rpi').appendChild(wrap);
+  }
+  const c=document.getElementById('mywhl');
+  if(c)drawWheel(c,me.wedges,catIds,me.color,50);
+  const wc=document.getElementById('mywc');
+  if(wc)wc.textContent=`${me.wedgeCount||0}/${catIds.length} wedges`;
+}
+
+function renderPanel(state){
+  const panel=document.getElementById('rpi');if(!panel)return;
+  const amActive=state.activePlayerId===playerId;
+  const aName=(state.players||[]).find(p=>p.id===state.activePlayerId)?.name||'…';
+  const me=(state.players||[]).find(p=>p.id===playerId);
+  const catIds=(state.categories?.ring||[]).map(c=>c.id);
+
+  // ── QUESTION ──
+  if(state.state==='roll'){
+    const diceVal=state.diceRoll;
+    const D=n=>Array(n).fill('<div class="dot"></div>').join('');
+    const spinningDice=`<div class="diceWrap">
+      <div class="dice3d rolling" id="dice3d">
+        <div class="diceFace3d front face1">${D(1)}</div>
+        <div class="diceFace3d back face6">${D(6)}</div>
+        <div class="diceFace3d up face2">${D(2)}</div>
+        <div class="diceFace3d bottom face5">${D(5)}</div>
+        <div class="diceFace3d left face3">${D(3)}</div>
+        <div class="diceFace3d right face4">${D(4)}</div>
+      </div>
+    </div>`;
+
+    if(amActive){
+      if(!diceVal&&!gs._rolledLocally){
+        // Show button only — no dice yet
+        panel.innerHTML=`<p class="plbl">Your turn — roll!</p>
+          <button class="rollbtn" onclick="doRoll()" style="margin-top:.5rem">🎲 Roll the Dice!</button>
+          ${tr2(state.timeLeft??30,30)}`;
+      }else{
+        // Clicked — show spinning dice (or settling if result arrived)
+        panel.innerHTML=`<p class="plbl">Your turn</p>${spinningDice}
+          ${diceVal?`<p id="dicenum" style="text-align:center;font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace;margin:.3rem 0;opacity:0">${diceVal}</p>`:''}
+          ${tr2(state.timeLeft??30,30)}`;
+      }
+    } else {
+      if(!diceVal&&!gs._rolledLocally){
+        // Active player hasn't rolled yet — just show waiting text
+        panel.innerHTML=`<p class="plbl">Waiting for <strong>${esc(aName)}</strong> to roll…</p>
+          ${tr2(state.timeLeft??30,30)}`;
+      }else{
+        // They've rolled — show spinning dice (settling via post-render hook)
+        panel.innerHTML=`<p class="plbl"><strong>${esc(aName)}</strong> rolled!</p>
+          ${spinningDice}
+          ${diceVal?`<p id="dicenum" style="text-align:center;font-size:1.6rem;font-weight:800;font-family:'JetBrains Mono',monospace;margin:.3rem 0;opacity:0">${diceVal}</p>`:''}
+          ${tr2(state.timeLeft??30,30)}`;
+      }
+    }
+
+    // Post-render: settle dice if value known
+    if(diceVal){
+      const faceRots=['rotate3d(-0.1,0.3,-1,180deg)','rotate3d(-0.1,0.6,-0.4,180deg)','rotate3d(-0.85,-0.42,0.73,180deg)','rotate3d(-0.8,0.3,-0.75,180deg)','rotate3d(0.3,0.45,0.9,180deg)','rotate3d(-0.16,0.6,0.18,180deg)'];
+      requestAnimationFrame(()=>{
+        const d=document.getElementById('dice3d');
+        if(d){
+          d.classList.remove('rolling');
+          d.style.transition='transform 0.7s cubic-bezier(0.42,1.57,0.62,0.86)';
+          d.style.transform=faceRots[diceVal-1];
+        }
+        const num=document.getElementById('dicenum');
+        if(num){
+          num.style.transition='opacity 0.3s';
+          setTimeout(()=>{num.style.opacity='1';},500);
+        }
+        try{playRoll();}catch(e){}
+      });
+    }
+
+    renderMyWheel(state,me,catIds); return;
+  }
+
+  // ── CENTRE QUESTION ──
+  if(state.state==='centre_question'&&state.currentQ){
+    const centreLabel=state.categories?.centre?.label||'Centre';
+    panel.innerHTML=`
+      <div class="bonusbanner">★ CENTRE QUESTION<br><span style="font-size:.74rem;font-weight:400">Answer correctly to WIN!</span></div>
+      <div class="cbadge" style="background:rgba(240,192,64,0.2);color:#f0c040">${esc(centreLabel)}</div>
+      <p class="qtxt">${esc(state.currentQ.text)}</p>
+      ${amActive
+        ? hasActed
+          ? `<div class="lbox">Submitted: <strong>${esc(myAns)}</strong></div>`
+          : `<div class="arow"><input type="text" id="ains" placeholder="Your answer…" autocomplete="off" spellcheck="false" maxlength="100"><button onclick="subAns()">→</button></div>`
+        : `<div class="lbox">${esc(aName)} is answering…</div>`}
+      ${tr2(state.timeLeft??45,45)}`;
+    if(amActive&&!hasActed){setTimeout(()=>document.getElementById('ains')?.focus(),30);document.onkeydown=e=>{if(e.key==='Enter')subAns();};}
+    renderMyWheel(state,me,catIds);return;
+  }
+
+  // ── QUESTION (MC or FR) ──
+  if(state.state==='question'&&state.currentQ){
+    const q=state.currentQ;
+    const sq=state.board?.squares?.find(s=>s.id===state.targetSquareId);
+    const dieHtml=state.diceRoll?`<div class="dicedisp">🎲 ${state.diceRoll}</div>`:'';
+    const hqBadge=sq?.isHQ?`<div class="hqbadge">★ HQ — earn the ${cl(q.catId)} wedge!</div>`:'';
+    const hqWatch=sq?.isHQ?`<div class="hqbadge">★ HQ — ${cl(q.catId)} wedge at stake!</div>`:'';
+
+    if(q.isMC){
+      const optLetters=Object.keys(q.options||{}).sort();
+      const activeAns=state.mcAnswer; // always public from server
+      const optHtml=optLetters.map(l=>{
+        const isMine=amActive&&hasActed&&myAns===l;
+        const isTheirChoice=activeAns===l;
+        const sel=isMine||isTheirChoice;
+        const canClick=amActive&&!hasActed;
+        return `<button onclick="${canClick?`subMC('${l}')`:''}" class="mc-opt${sel?' mc-selected':''}" ${!canClick?'disabled':''}><span class="mc-letter">${l}</span> ${esc(q.options[l])}</button>`;
+      }).join('');
+      const theyAnswered=activeAns&&!amActive?`<div class="lbox anim-fadein" style="font-size:.8rem"><strong>${esc(aName)}</strong> chose <strong>${activeAns}</strong> — buzz in if you think that's wrong!</div>`:'';
+      panel.innerHTML=`<p class="plbl">${amActive?'Your turn':esc(aName)+' is answering…'}</p>
+        ${dieHtml}${hqBadge}${cbadge(q.catId)}<p class="qtxt">${esc(q.text)}</p>
+        ${theyAnswered}
+        <div class="mc-grid">${optHtml}</div>
+        ${tr2(state.timeLeft??45,45)}`;
+    }else{
+      // FR — show active player's submitted answer to everyone
+      const submittedAns=state.activeAnswer?.answer;
+      if(amActive){
+        panel.innerHTML=`<p class="plbl">Your turn</p>${dieHtml}${hqBadge}${cbadge(q.catId)}
+          <p class="qtxt">${esc(q.text)}</p>
+          ${hasActed
+            ?`<div class="lbox anim-fadein">Submitted: <strong>${esc(myAns)}</strong></div>`
+            :`<div class="arow"><input type="text" id="ains" placeholder="Your answer…" autocomplete="off" spellcheck="false" maxlength="100"><button onclick="subAns()">→</button></div>
+              <p style="font-size:.66rem;color:var(--muted)">Enter to submit</p>`}
+          ${tr2(state.timeLeft??45,45)}`;
+        if(!hasActed){setTimeout(()=>document.getElementById('ains')?.focus(),30);document.onkeydown=e=>{if(e.key==='Enter')subAns();};}
+      }else{
+        const theyAnsweredFR=submittedAns?`<div class="lbox anim-fadein" style="font-size:.8rem"><strong>${esc(aName)}</strong> answered: <strong>${esc(submittedAns)}</strong> — buzz in if you think that's wrong!</div>`:'<div class="lbox">Watch — buzz in if they get it wrong!</div>';
+        panel.innerHTML=`<p class="plbl"><strong>${esc(aName)}</strong> is answering…</p>
+          ${dieHtml}${hqWatch}${cbadge(q.catId)}<p class="qtxt">${esc(q.text)}</p>
+          ${theyAnsweredFR}
+          ${tr2(state.timeLeft??45,45)}`;
+      }
+    }
+    renderMyWheel(state,me,catIds);return;
+  }
+
+  // ── STEAL (sequential hidden answers) ──
+  if(state.state==='steal'){
+    const q=state.currentQ;
+    const buzzer=state.stealBuzzerId;
+    const isBuzzer=buzzer===playerId;
+    const bzName=(state.players||[]).find(p=>p.id===buzzer)?.name||'';
+    const triedIds=state.stealTriedIds||[];
+    const alreadyTried=triedIds.includes(playerId);
+    const canBuzz=!amActive&&!buzzer&&!alreadyTried;
+    const sq=state.board?.squares?.find(s=>s.id===state.targetSquareId);
+    const attempts=state.stealAttempts||[];
+    const triedHtml=attempts.length?`<div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.25rem">${
+      attempts.map(a=>{const p2=(state.players||[]).find(p=>p.id===a.playerId);
+        return `<span style="font-size:.68rem;background:var(--surf2);border:1px solid var(--bdr);border-radius:4px;padding:.1rem .38rem;color:${p2?.color||'#888'}">${esc(a.name)} tried</span>`;
+      }).join('')}</div>`:'';
+    let inner='';
+    const activeWrongAns=state.activeAnswer?.answer||(state.mcAnswer&&q?.isMC?state.mcAnswer:null);
+    // For FR: show shaking red display. For MC: show it struck-through in the options grid below.
+    const frWrongDisplay=(!q?.isMC&&activeWrongAns)?`<div id="wrongAns" class="lbox anim-fadein" style="border-color:#ef4444;background:#2d0404;color:#fca5a5;font-size:.9rem;font-weight:700">${esc(activeWrongAns)}</div>`:'';
+    if(amActive){
+      inner=`<div class="stbanner">✗ Wrong! Others can steal…</div>${frWrongDisplay}`;
+    }else if(isBuzzer){
+      let answerInput='';
+      if(q?.isMC){
+        const wrongLetter=state.mcAnswer; // the wrong choice to show struck through
+        const optLetters=Object.keys(q.options||{}).sort();
+        answerInput=`<div class="mc-grid">${optLetters.map(l=>{
+          const isWrong=l===wrongLetter;
+          const sel=hasActed&&myAns===l;
+          const style=isWrong?'text-decoration:line-through;color:#f87171;background:#2d0404;border-color:#7f1d1d;opacity:0.7;':'';
+          return `<button onclick="${!hasActed?`subMCSteal('${l}')`:''}" class="mc-opt${sel?' mc-selected':''}" ${hasActed||isWrong?'disabled':''} style="${style}"><span class="mc-letter">${l}</span> ${esc(q.options[l])}</button>`;
+        }).join('')}</div>`;
+      }else{
+        answerInput=hasActed
+          ?`<div class="lbox">Submitted ✓ — waiting for others</div>`
+          :`<div class="arow"><input type="text" id="sins" placeholder="Your answer (hidden)…" autocomplete="off" spellcheck="false" maxlength="100"><button onclick="subSteal()" style="background:#c0392b">→</button></div>`;
+        if(!hasActed){setTimeout(()=>document.getElementById('sins')?.focus(),30);document.onkeydown=e=>{if(e.key==='Enter')subSteal();};}
+      }
+      inner=`<p class="plbl" style="color:#ef4444">You buzzed in — answer now (hidden from others)!</p>${answerInput}`;    }else if(buzzer){
+      inner=`<div class="stbanner" style="background:#1a1025;border-color:#7c3aed;color:#c4b5fd"><strong>${esc(bzName)}</strong> is answering secretly…</div>`;
+    }else if(canBuzz){
+      let wrongShowHtml='';
+      if(q?.isMC&&state.mcAnswer){
+        const wrongLetter=state.mcAnswer;
+        const opts=Object.keys(q.options||{}).sort().map(l=>{
+          const isWrong=l===wrongLetter;
+          const style=isWrong?'text-decoration:line-through;color:#f87171;background:#2d0404;border-color:#7f1d1d;opacity:0.7;':'';
+          return `<button class="mc-opt" disabled style="${style}"><span class="mc-letter">${l}</span> ${esc(q.options[l])}</button>`;
+        }).join('');
+        wrongShowHtml=`<div class="mc-grid">${opts}</div>`;
+      }else if(frWrongDisplay){
+        wrongShowHtml=frWrongDisplay;
+      }
+      inner=`${wrongShowHtml}
+        ${sq?.isHQ?`<div class="hqbadge">★ ${cl(q?.catId)} wedge up for grabs!</div>`:''}
+        <button class="buzzbtn" onclick="buzzIn()">⚡ BUZZ IN TO STEAL</button>`;
+    }else if(alreadyTried){
+      inner=`<div class="lbox" style="color:var(--muted)">You already tried — waiting for others…</div>`;
+    }else{
+      inner=`<div class="lbox" style="color:var(--muted)">Waiting for someone to buzz in…</div>`;
+    }
+    panel.innerHTML=`${cbadge(q?.catId)}<p class="qtxt">${esc(q?.text)}</p>
+      ${inner}${triedHtml}
+      ${tr2(state.timeLeft??15,buzzer?10:15)}`;
+    renderMyWheel(state,me,catIds);return;
+  }
+
+  // ── CHALLENGE ──
+  if(state.state==='challenge'||state.state==='challenge_vote'){
+    const chName=(state.players||[]).find(p=>p.id===state.challengerId)?.name||'';
+    const rev=state.reveal||{};
+    const rulingDesc=rev.activeCorrect
+      ?`"${esc(rev.activePlayerName)}" got it right`
+      :rev.stealWinnerId
+        ?`"${esc(rev.stealWinnerName)}" stole correctly`
+        :`nobody got it right`;
+
+    if(state.state==='challenge'&&state.challengerId===playerId){
+      // Challenger picks who they think got it right
+      const opts=(state.players||[]).map(p=>`<button class="btn" style="flex:1;font-size:.78rem;padding:.55rem;background:#1e3a5f;color:${p.color};border:1px solid ${p.color}" onclick="claimWinner('${p.id}')">${esc(p.name)}</button>`).join('');
+      panel.innerHTML=`<p class="plbl">Your Challenge</p>
+        <p style="font-size:.8rem;color:var(--muted)">The ruling was: <em>${rulingDesc}</em></p>
+        <p style="font-size:.82rem;font-weight:600">Who do you think actually got it right?</p>
+        <div style="display:flex;gap:.35rem;flex-wrap:wrap">${opts}</div>
+        ${tr2(state.timeLeft??15,15)}`;
+    }else if(state.state==='challenge'){
+      panel.innerHTML=`<p class="plbl">Challenge!</p>
+        <p style="font-size:.82rem"><strong>${esc(chName)}</strong> is challenging the ruling…</p>
+        <p style="font-size:.76rem;color:var(--muted)">Ruling: ${rulingDesc}</p>
+        ${tr2(state.timeLeft??15,15)}`;
+    }else{
+      // challenge_vote — agree/disagree
+      const voterIds=state.challengeVoterIds||[];
+      const canVote=voterIds.includes(playerId);
+      const myVote=state.challengeVotes?.[playerId]; // true/false/null
+      const claimedP=(state.players||[]).find(p=>p.id===state.challengeClaimedWinnerId);
+      const voteCount=Object.values(state.challengeVotes||{}).filter(v=>v!=null).length;
+      if(canVote&&myVote==null){
+        panel.innerHTML=`<p class="plbl">Vote</p>
+          <p style="font-size:.82rem"><strong>${esc(chName)}</strong> says <span style="color:${claimedP?.color||'#fff'}"><strong>${esc(claimedP?.name||'?')}</strong></span> got it right.</p>
+          <p style="font-size:.76rem;color:var(--muted)">Original ruling: ${rulingDesc}</p>
+          <div style="display:flex;gap:.5rem;margin-top:.3rem">
+            <button class="btn" style="flex:1;padding:.65rem;background:#14532d;color:#4ade80;border:1px solid #16a34a;font-size:.88rem;font-weight:700" onclick="castVote(true)">✓ Agree</button>
+            <button class="btn" style="flex:1;padding:.65rem;background:#450a0a;color:#f87171;border:1px solid #991b1b;font-size:.88rem;font-weight:700" onclick="castVote(false)">✗ Disagree</button>
+          </div>
+          <p style="font-size:.7rem;color:var(--muted);margin-top:.3rem">${voteCount}/${voterIds.length} voted</p>
+          ${tr2(state.timeLeft??20,20)}`;
+      }else{
+        const myVoteLabel=myVote===true?'Agreed ✓':myVote===false?'Disagreed ✗':'Not voting';
+        panel.innerHTML=`<p class="plbl">Voting in progress…</p>
+          <p style="font-size:.82rem"><strong>${esc(chName)}</strong> says <span style="color:${claimedP?.color||'#fff'}"><strong>${esc(claimedP?.name||'?')}</strong></span> got it right.</p>
+          ${myVote!=null?`<div class="lbox">Your vote: <strong>${myVoteLabel}</strong></div>`:'<div class="lbox" style="color:var(--muted)">You are not voting this round</div>'}
+          <p style="font-size:.7rem;color:var(--muted)">${voteCount}/${voterIds.length} voted</p>
+          ${tr2(state.timeLeft??20,20)}`;
+      }
+    }
+    renderMyWheel(state,me,catIds);return;
+  }
+
+  // ── REVEAL ──
+  if(state.state==='reveal'&&state.reveal){
+    const rev=state.reveal;
+    if(rev.noop){
+      panel.innerHTML=`<p style="font-size:.82rem;line-height:1.5;color:#f0c040">${esc(rev.message)}</p>
+        <p style="font-size:.72rem;color:var(--muted);text-align:center">Next turn starting…</p>`;
+      renderMyWheel(state,me,catIds);return;
+    }
+    if(rev.offerRouteChoice){
+      const isSpokeEntry=rev.spokeEntry;
+      const col=rev.catId?cc(rev.catId):'#f0c040';
+      const heading=isSpokeEntry
+        ?`<p class="plbl" style="color:#f0c040">🏆 All wedges collected!</p>
+          <p style="font-size:.82rem;color:var(--muted)">You're at a midpoint. Head inward toward the centre, or keep circling.</p>`
+        :`<p class="plbl">★ Wedge earned!</p>
+          <div class="cbadge" style="background:${ha(col,.2)};color:${col}">★ ${cl(rev.catId)}</div>`;
+      panel.innerHTML=amActive?`
+        ${heading}
+        <p style="font-size:.85rem;font-weight:600;margin-top:.3rem">Choose your route:</p>
+        <div style="display:flex;gap:.4rem">
+          <button class="btn bp" style="flex:1;font-size:.8rem" onclick="chooseRoute('ring')">↺ Stay on ring</button>
+          <button class="btn" style="flex:1;font-size:.8rem;background:#7c3aed;color:#fff" onclick="chooseRoute('spoke')">→ Go inward (centre)</button>
+        </div>`
+        :`<p class="plbl">Waiting for <strong>${esc(rev.activePlayerName)}</strong> to choose route…</p>
+         ${isSpokeEntry?'<p style="font-size:.78rem;color:#f0c040">🏆 They have all wedges — heading for the centre?</p>':`<div class="cbadge" style="background:${ha(cc(rev.catId),.2)};color:${cc(rev.catId)}">★ ${cl(rev.catId)} wedge earned!</div>`}`;
+      renderMyWheel(state,me,catIds);return;
+    }
+    const ap=(state.players||[]).find(p=>p.id===rev.activePlayerId);
+    const stealWinner=(state.players||[]).find(p=>p.id===rev.stealWinnerId);
+    const aa=rev.activeAnswer;
+    const attempts=rev.stealAttempts||[];
+    let outcome='';
+    if(rev.overridden){
+      // Override outcome takes priority in messaging
+      const ow=(state.players||[]).find(p=>p.id===rev.overrideWinnerId);
+      if(rev.overrideWinnerId){
+        outcome=`⚖️ Challenge upheld! <span style="color:${ow?.color}"><strong>${esc(rev.overrideWinnerName)}</strong></span> ${rev.wedgeEarned?`earned the <strong style="color:#f0c040">${cl(rev.catId)}</strong> wedge!`:'gets the square!'}`;
+      }else{
+        outcome=`⚖️ Challenge resolved.`;
+      }
+    }
+    else if(rev.activeCorrect&&rev.wedgeEarned) outcome=`<span style="color:${ap?.color}">${esc(rev.activePlayerName)}</span> earned the <strong style="color:#f0c040">${cl(rev.catId)}</strong> wedge! 🎉`;
+    else if(rev.activeCorrect) outcome=`✓ Correct! <span style="color:${ap?.color}">${esc(rev.activePlayerName)}</span> rolls again.`;
+    else if(rev.stealWinnerId&&rev.wedgeEarned) outcome=`<span style="color:${stealWinner?.color}">${esc(rev.stealWinnerName)}</span> stole the <strong style="color:#f0c040">${cl(rev.catId)}</strong> wedge!`;
+    else if(rev.stealWinnerId) outcome=`<span style="color:${stealWinner?.color}">${esc(rev.stealWinnerName)}</span> answered correctly on the steal!`;
+    else outcome=`Nobody got it — turn ends.`;
+    if(rev.wheelComplete||rev.stealWheelComplete) outcome+=` <span style="color:#f0c040">🏆 Wheel complete — get to the centre!</span>`;
+    // Show vote tally if there was a challenge
+    let challengeBanner='';
+    if(rev.challengeResult){
+      const cr=rev.challengeResult;
+      challengeBanner=`<div class="lbox anim-fadein" style="border-color:${cr.succeeded?'#16a34a':'#991b1b'};background:${cr.succeeded?'#0a2f17':'#2d0404'};font-size:.74rem;color:${cr.succeeded?'#4ade80':'#f87171'}">
+        ⚖️ Challenge ${cr.succeeded?'succeeded':'rejected'} — ${cr.agrees} agreed, ${cr.disagrees} disagreed${cr.succeeded?'. Ruling overturned.':'. Original ruling stands.'}
+      </div>`;
+    }
+
+    let html=`<p style="font-size:.82rem;line-height:1.5">${outcome}</p>
+      ${challengeBanner}
+      <div style="background:var(--surf2);border:1px solid var(--bdr);border-radius:8px;padding:.52rem .7rem;display:flex;flex-direction:column;gap:.2rem">
+        <p style="font-size:.6rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em">Correct answer</p>
+        <p class="cans">${esc(rev.correctAnswer)}</p>
+        <div class="rvrow">
+          <span>${aa?.correct?'✓':'✗'}</span>
+          <span style="flex:1"><strong>${esc(rev.activePlayerName)}</strong></span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.72rem">${aa?.answer?esc(aa.answer):`<em style="color:var(--muted)">—</em>`}</span>
+          ${mbadge(aa?.correct?aa.matchType:'wrong')}
+        </div>`;
+    if(attempts.length){
+      html+=`<p style="font-size:.6rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-top:.3rem">Steal attempts</p>`;
+      attempts.forEach(a=>{
+        const sp2=(state.players||[]).find(p=>p.id===a.playerId);
+        html+=`<div class="rvrow">
+          <span>${a.correct?'✓':'✗'}</span>
+          <span style="flex:1;color:${sp2?.color||'#888'}"><strong>${esc(a.name)}</strong></span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.72rem">${a.answer?esc(a.answer):`<em style="color:var(--muted)">—</em>`}</span>
+          ${mbadge(a.correct?a.matchType:'wrong')}
+        </div>`;
+      });
+    }
+    html+=`</div>`;
+    if(rev.rollAgain) html+=`<p style="font-size:.74rem;color:#60a5fa;text-align:center">Rolling again in a moment…</p>`;
+    else html+=`<p style="font-size:.74rem;color:var(--muted);text-align:center">Next turn starting…</p>`;
+    panel.innerHTML=html;
+    renderMyWheel(state,me,catIds);return;
+  }
+  panel.innerHTML=`<p style="color:var(--muted);font-size:.8rem;text-align:center;margin-top:1.5rem">Waiting…</p>`;
+  renderMyWheel(state,me,catIds);
+}
+
+function renderScorebar(state){
+  const bar=document.getElementById('scorebar');if(!bar)return;
+  const catIds=(state.categories?.ring||[]).map(c=>c.id);
+  const active=(state.players||[]).find(p=>p.id===state.activePlayerId);
+  // Show persistent challenge button when there's a last reveal to challenge
+  const canChallenge=state.reveal&&state.state==='reveal'&&!state.reveal?.offerRouteChoice&&!state.reveal?.overridden&&!state.reveal?.gameOver;
+  bar.innerHTML=(state.players||[]).map(p=>`
+    <div class="se">
+      <div class="sdot" style="background:${p.color}"></div>
+      <span class="sn" style="color:${p.color}">${esc(p.name)}</span>
+      <span class="sc" style="color:${p.color}">${p.wedgeCount||0}/${catIds.length}</span>
+    </div>`).join('')
+    +(active?`<div class="sat">▶ ${esc(active.name)}</div>`:'')
+    +(canChallenge?`<button onclick="initChallenge()" style="margin-left:auto;flex-shrink:0;padding:.18rem .5rem;font-size:.65rem;font-weight:700;background:#451a7a;color:#c4b5fd;border:1px solid #7c3aed;border-radius:5px;cursor:pointer;font-family:'Outfit',sans-serif">⚖ Challenge</button>`:'');
+}
+
+function updateTimer(t){
+  const tn=document.getElementById('tn'),tf=document.getElementById('tf');if(!tn||!tf)return;
+  const tot={question:45,steal:15,bonus:30}[gs?.state]||45;
+  tn.textContent=t;tf.style.width=`${Math.max(0,(t/tot)*100)}%`;
+  tf.classList.toggle('urg',t<=Math.ceil(tot*.22));
+}
+
+// ── WS ────────────────────────────────────────────────────────
+function connect(onOpen){
+  const proto=location.protocol==='https:'?'wss':'ws';
+  ws=new WebSocket(`${proto}://${location.host}`);
+  ws.onopen=onOpen;ws.onmessage=e=>handle(JSON.parse(e.data));
+  ws.onclose=()=>setTimeout(()=>connect(rejoin),2000);
+}
+function rejoin(){if(!roomCode||!playerId)return;ws.send(JSON.stringify({type:'join',roomCode,playerId,name:sessionStorage.getItem('twn')||'Player'}));}
+function joinGame(){
+  const name=document.getElementById('iname').value.trim();
+  const room=document.getElementById('iroom').value.trim();
+  if(!name){showErr('lerr','Enter your name.');return;}
+  if(!room){showErr('lerr','Enter a room code.');return;}
+  roomCode=room.toUpperCase();sessionStorage.setItem('twn',name);
+  connect(()=>ws.send(JSON.stringify({type:'join',roomCode,playerId,name})));
+}
+function startGame(){wsSend({type:'start'});}
+function resetGame(){wsSend({type:'resetGame'});}
+function nextTurn(){wsSend({type:'nextTurn'});}
+function chooseRoute(route){wsSend({type:'chooseRoute',route});}
+function wsSend(msg){if(ws&&ws.readyState===WebSocket.OPEN)ws.send(JSON.stringify(msg));}
+function doRoll(){
+  if(gs)gs._rolledLocally=true;
+  renderPanel(gs); // immediately show spinning dice
+  wsSend({type:'roll'});
+}
+function buzzIn(){wsSend({type:'stealBuzz'});}
+function subMC(letter){
+  if(hasActed)return;
+  hasActed=true;myAns=letter;
+  wsSend({type:'mcAnswer',letter});
+  renderPanel(gs);
+}
+function subMCSteal(letter){
+  if(hasActed)return;
+  hasActed=true;myAns=letter;
+  wsSend({type:'stealAnswer',letter});
+  renderPanel(gs);
+}
+function initChallenge(){wsSend({type:'initChallenge'});}function claimWinner(id){wsSend({type:'challengeClaim',winnerId:id});}
+function castVote(agree){wsSend({type:'challengeVote',agree});}
+
+// ── DEV MODE ──────────────────────────────────────────────────
+let devOpen=false;
+let devUnlocked=false;
+// Unlock dev mode with the backtick/tilde key (`) — avoids browser shortcut collisions
+window.addEventListener('keydown',e=>{
+  // Ignore if typing in an input
+  const tag=(e.target.tagName||'').toLowerCase();
+  if(tag==='input'||tag==='textarea')return;
+  if(e.key==='`'||e.key==='~'){
+    devUnlocked=!devUnlocked;
+    const btn=document.getElementById('devToggle');
+    if(btn)btn.style.display=devUnlocked?'block':'none';
+    if(!devUnlocked&&devOpen)toggleDev();
+    if(gs)renderGame(gs);
+  }
+});
+// Mobile: triple-tap top-right corner
+let cornerTaps=[],cornerTimer=null;
+window.addEventListener('touchstart',e=>{
+  const t=e.touches[0];
+  if(t&&t.clientX>window.innerWidth-60&&t.clientY<60){
+    cornerTaps.push(Date.now());
+    cornerTaps=cornerTaps.filter(ts=>Date.now()-ts<1500);
+    if(cornerTaps.length>=3){
+      cornerTaps=[];
+      devUnlocked=!devUnlocked;
+      const btn=document.getElementById('devToggle');
+      if(btn)btn.style.display=devUnlocked?'block':'none';
+      if(!devUnlocked&&devOpen)toggleDev();
+      if(gs)renderGame(gs);
+    }
+  }
+});
+function toggleDev(){
+  devOpen=!devOpen;
+  const panel=document.getElementById('devPanel');
+  if(panel)panel.style.display=devOpen?'block':'none';
+  if(devOpen)renderDev();
+}
+function devCmd(cmd,extra){wsSend({type:'devCommand',cmd,...(extra||{})});}
+function renderDev(){
+  const body=document.getElementById('devBody');
+  if(!body||!gs)return;
+  const players=gs.players||[];
+  const cats=gs.categories?.ring||[];
+  const curState=gs.state||'?';
+  const curQ=gs.currentQ;
+  body.innerHTML=`
+    <div class="dev-section">
+      <div class="dev-section-title">State: ${curState}${gs.activePlayerId?' · '+esc((players.find(p=>p.id===gs.activePlayerId)||{}).name||''):''}</div>
+    </div>
+    ${curQ?`<div class="dev-section">
+      <div class="dev-section-title">Current Question</div>
+      <p style="font-size:.72rem;color:#94a3b8;margin-bottom:.3rem">${esc((curQ.text||'').slice(0,80))}…</p>
+      <div class="dev-btns">
+        <button class="dev-btn warn" onclick="devCmd('flagQuestion')">🚩 Flag & Remove</button>
+        <button class="dev-btn" onclick="devCmd('skipQuestion')">⏭ Skip</button>
+      </div>
+    </div>`:''}
+    <div class="dev-section">
+      <div class="dev-section-title">My Wedges</div>
+      <div class="dev-btns">
+        <button class="dev-btn" onclick="devCmd('giveAllWedges')">Give all 8</button>
+        <button class="dev-btn danger" onclick="devCmd('clearWedges')">Clear</button>
+        ${cats.map(c=>`<button class="dev-btn" style="border-color:${c.color};padding:.3rem .45rem" onclick="devCmd('giveWedge',{catId:'${c.id}'})" title="${esc(c.label)}">+${esc(c.label.slice(0,4))}</button>`).join('')}
+      </div>
+    </div>
+    <div class="dev-section">
+      <div class="dev-section-title">Teleport Me</div>
+      <div class="dev-btns">
+        <button class="dev-btn" onclick="devCmd('teleport',{squareId:0})">Corner</button>
+        <button class="dev-btn" onclick="devCmd('teleport',{squareId:5})">Midpoint</button>
+        <button class="dev-btn" onclick="devTeleportInput()">Custom…</button>
+      </div>
+    </div>
+    <div class="dev-section">
+      <div class="dev-section-title">Turn</div>
+      <div class="dev-btns">
+        <button class="dev-btn" onclick="devCmd('endTurn')">End turn</button>
+        ${players.map(p=>`<button class="dev-btn" style="border-color:${p.color}" onclick="devCmd('setActivePlayer',{targetId:'${p.id}'})">▶ ${esc(p.name)}</button>`).join('')}
+      </div>
+    </div>
+    <div id="devAckMsg" class="dev-ack"></div>`;
+}
+function devTeleportInput(){
+  const v=prompt('Square ID (0-39 ring, 40-59 spokes, 60 centre):');
+  if(v!==null){const n=parseInt(v);if(!isNaN(n))devCmd('teleport',{squareId:n});}
+}
+function subAns(){
+  if(hasActed)return;
+  const inp=document.getElementById('ains');
+  const v=(inp?.value||myAns||'').trim();
+  if(!v)return;
+  hasActed=true;myAns=v;
+  wsSend({type:'answer',answer:v,timeMs:qStart?Date.now()-qStart:30000});
+  renderPanel(gs);
+}
+function subSteal(){
+  if(hasActed)return;
+  const inp=document.getElementById('sins');
+  const v=(inp?.value||myAns||'').trim();
+  if(!v)return;
+  hasActed=true;myAns=v;
+  wsSend({type:'stealAnswer',answer:v,timeMs:qStart?Date.now()-qStart:5000});
+  renderPanel(gs);
+}
+function subBonus(){
+  if(hasActed)return;
+  const inp=document.getElementById('bins');
+  const v=(inp?.value||myAns||'').trim();
+  if(!v)return;
+  hasActed=true;myAns=v;
+  wsSend({type:'bonusAnswer',answer:v,timeMs:qStart?Date.now()-qStart:15000});
+  renderPanel(gs);
+}
+
+function handle(msg){
+  if(msg.type==='joined'){
+    playerId=msg.playerId;roomCode=msg.roomCode;
+    sessionStorage.setItem('twpid',playerId);
+    document.getElementById('pcode').textContent=roomCode;
+    document.getElementById('rpill').style.display='flex';
+    showScr('w');renderWaiting({players:[],categories:[]});return;
+  }
+  if(msg.type==='error'){showErr('lerr',msg.message);return;}
+  if(msg.type==='devAck'){
+    const el=document.getElementById('devAckMsg');
+    if(el){el.textContent=msg.message;setTimeout(()=>{if(el)el.textContent='';},4000);}
+    return;
+  }
+  if(msg.type==='rolling'){
+    // Active player rolled — show spinning dice for everyone immediately
+    if(gs)gs._rolledLocally=true;
+    renderPanel(gs);
+    return;
+  }
+  if(msg.type==='answerAck'){
+    // Server confirmed it received our answer — update display if still on question
+    if(gs&&(gs.state==='question'||gs.state==='steal')){
+      hasActed=true;
+      // Update the panel to show submitted state clearly
+      const panel=document.getElementById('rpi');
+      const lbox=panel?.querySelector('.lbox');
+      if(lbox)lbox.textContent=`Submitted: ${msg.answer} — waiting…`;
+    }
+    return;
+  }
+  if(msg.type==='tick'){
+    if(gs)gs.timeLeft=msg.timeLeft;
+    updateTimer(msg.timeLeft);
+    return;
+  }
+  if(msg.type==='state'){
+    const prev=gs?.state;
+    const wasRolledLocally=gs?._rolledLocally;
+    gs=msg;
+    if(msg.state==='roll'&&wasRolledLocally)gs._rolledLocally=true;
+    if(msg.categories)syncCats(msg.categories);
+    const me=(msg.players||[]).find(p=>p.id===playerId);
+    isHost=me?.isHost||false;
+    const resets=['roll','question','steal','centre_question','challenge','challenge_vote'];
+    if(prev!==msg.state&&resets.includes(msg.state)){hasActed=false;myAns=null;}
+    if(msg.state!=='roll'&&gs?._rolledLocally)delete gs._rolledLocally;
+    if(msg.state==='question'&&prev==='roll'&&msg.diceRoll){try{playRoll();}catch(e){}}
+    if((msg.state==='question'||msg.state==='steal')&&prev!==msg.state)qStart=Date.now();
+    // Sound effects on state change
+    if(msg.state==='question'&&prev==='roll'&&msg.diceRoll){try{playRoll();}catch(e){}}
+    if(msg.state==='steal'&&prev==='question'){
+      try{playWrong();}catch(e){}
+      // Shake the wrong answer element if it appears
+      setTimeout(()=>{const el=document.getElementById('wrongAns');if(el)el.classList.add('anim-shake');},50);
+    }
+    if(msg.state==='reveal'&&msg.reveal?.activeCorrect){try{playCorrect();}catch(e){}}
+    if(msg.state==='roll'&&prev!=='lobby'){try{playRoll();}catch(e){}}
+    if(msg.state==='lobby'){showScr('w');renderWaiting(msg);}
+    else if(['roll','question','steal','centre_question','challenge','challenge_vote','reveal'].includes(msg.state)){showScr('g');renderGame(msg);}
+    else if(msg.state==='gameover')renderGameOver(msg);
+    if(devOpen)renderDev();
+  }
+}
+
+function showScr(id){
+  const map={l:'sl',w:'sw',g:'sg',go:'sgo'};
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(map[id]||id).classList.add('active');
+}
+function showErr(id,m){const el=document.getElementById(id);if(!el)return;el.textContent=m;el.style.display='block';setTimeout(()=>el.style.display='none',4000);}
+
+function renderWaiting(state){
+  document.getElementById('wcode').textContent=roomCode||'----';
+  if(state.categories)syncCats(state.categories);
+  document.getElementById('wplayers').innerHTML=(state.players||[]).map(p=>`
+    <div class="prow"><div class="pdot" style="background:${p.color||'#888'}"></div>
+    <span class="pn">${esc(p.name)}</span>
+    ${p.isHost?'<span class="pt">host</span>':''}${p.id===playerId?'<span class="pt">(you)</span>':''}
+    </div>`).join('');
+  const cats=Object.values(CM);
+  document.getElementById('wcats').innerHTML=cats.length
+    ?cats.map(c=>`<div class="cchip"><div class="csw" style="background:${c.color}"></div>${esc(c.label)}</div>`).join('')
+    :'<p style="color:var(--muted);font-size:.74rem;grid-column:span 3">No categories loaded</p>';
+  const btn=document.getElementById('bstart'),hint=document.getElementById('whint');
+  if(isHost){btn.style.display='block';btn.disabled=(state.players||[]).length<2;hint.textContent=(state.players||[]).length<2?'Need at least 2 players':'Ready!';}
+  else{btn.style.display='none';hint.textContent='Waiting for host to start…';}
+}
+
+function renderGame(state){
+  drawBoard(state);
+  renderScorebar(state);
+  renderPanel(state);
+}
+
+function renderGameOver(state){
+  showScr('go');
+  const rev=state.reveal||{};
+  document.getElementById('gowinner').textContent=rev.gameWinnerName?`${rev.gameWinnerName} wins! 🏆`:'Game Over!';
+  const sorted=[...(state.players||[])].sort((a,b)=>(b.wedgeCount||0)-(a.wedgeCount||0));
+  const nc=(state.categories?.ring||[]).length;
+  document.getElementById('goscores').innerHTML=sorted.map((p,i)=>`
+    <div class="frow">
+      <span class="frank">${i+1}</span>
+      <div class="pdot" style="background:${p.color}"></div>
+      <span style="flex:1;font-weight:700">${esc(p.name)}${p.id===playerId?' <span style="color:var(--muted);font-size:.72rem">(you)</span>':''}</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-weight:700;color:${p.color}">${p.wedgeCount||0}/${nc} wedges</span>
+    </div>`).join('');
+  document.getElementById('breset').style.display=isHost?'block':'none';
+}
+
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/\u003c/g,'&lt;').replace(/\u003e/g,'&gt;');}
+document.getElementById('iroom').addEventListener('keydown',e=>{if(e.key==='Enter')joinGame();});
+document.getElementById('iname').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('iroom').focus();});
+window.addEventListener('resize',()=>{if(gs&&document.getElementById('sg')?.classList.contains('active'))drawBoard(gs);});
+</script>
+</body>
+</html>
