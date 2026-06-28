@@ -174,7 +174,7 @@ input[type=text].nc{text-transform:none;}
   .cgrid{grid-template-columns:repeat(2,1fr);}
 }
 </style>
-<script src="/assets/audio.js"></script>
+<script src="/assets/audio.js" onerror="window.__noAudio=true"></script>
 </head>
 <body>
 <header>
@@ -289,7 +289,7 @@ function sqPx(board,sqId){
 
 // ── BOARD IMAGE ───────────────────────────────────────────────
 const boardImg=new Image();
-boardImg.src='/assets/board.png';
+boardImg.src='assets/board.png';
 boardImg.onload=()=>{if(gs)drawBoard(gs);};
 
 function getScale(){
@@ -378,7 +378,6 @@ function drawBoard(state){
   });
 
   if(needAnim){
-    console.log('[ANIM] hopping',activeId,'path',path,'from',activePrev,'to',activeTgt);
     lastAnimatedPos[activeId]=destSq;
     if(animFrame){cancelAnimationFrame(animFrame);animFrame=null;}
     const pixelPath=[{x:activePrev.x,y:activePrev.y}];
@@ -386,7 +385,8 @@ function drawBoard(state){
     animStartTime=null;animHopPath=pixelPath;animHopIdx=0;animActiveId=activeId;
     animFrame=requestAnimationFrame(()=>animHop(state,targets));
   }else{
-    if(path&&path.length>0)console.log('[ANIM] skipped — alreadyDone:',alreadyDone,'activePrev:',activePrev,'destSq:',destSq);
+    // Snapped (no path) — record this as the last position so we don't animate it later
+    if(activeId&&destSq!=null)lastAnimatedPos[activeId]=destSq;
     drawBoardFrame(state,targets,{});
   }
 }
