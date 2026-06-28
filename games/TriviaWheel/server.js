@@ -101,8 +101,16 @@ function buildBoard(){
     }
     squares.push({id:i,type:'ring',catIdx,isHQ,isCorner,isMid,hqCatIdx:isHQ?HQ_POS.indexOf(i):-1});
   }
+  // Spoke tile categories are read directly off the painted board (sampled per tile).
+  // Each entry is a catIdx into the ring category order (Math,Geo,Phil,Eng,Sci,Hist,Tech,Legal).
+  const SPOKE_CAT_IDX=[
+    [2,3,4,5,7], // spoke 0: Phil, Eng, Sci, Hist, Legal
+    [4,5,7,0,1], // spoke 1: Sci, Hist, Legal, Math, Geo
+    [6,7,0,1,2], // spoke 2: Tech, Legal, Math, Geo, Phil
+    [0,1,2,3,4], // spoke 3: Math, Geo, Phil, Eng, Sci
+  ];
   for(let s=0;s<4;s++)for(let j=0;j<SPOKE_LEN;j++)
-    squares.push({id:RING_SIZE+s*SPOKE_LEN+j,type:'spoke',catIdx:(s*2+1)%8,isHQ:false,spokeIdx:s,posInSpoke:j});
+    squares.push({id:RING_SIZE+s*SPOKE_LEN+j,type:'spoke',catIdx:SPOKE_CAT_IDX[s]?.[j]??0,isHQ:false,spokeIdx:s,posInSpoke:j});
   const centreId=RING_SIZE+4*SPOKE_LEN;
   squares.push({id:centreId,type:'centre',catIdx:-1,isHQ:false});
   return{squares,centreId,RING:RING_SIZE,SPOKE_LEN,HQ_POS,CORNER_POS,MID_POS};
@@ -126,8 +134,14 @@ function moveRing(pos,steps,board,wedges){
   return{newPos:cur,stoppedAtHQ:false,hqCatIdx:-1,atMidpoint:hasAll&&finalSq?.isMid};
 }
 function getRingCat(catIdx){
-  if(MC.length>0)return MC[catIdx%MC.length];
-  return FR.ring[catIdx%Math.max(FR.ring.length,1)]||null;
+  const ringCat=FR.ring[catIdx%Math.max(FR.ring.length,1)]||null;
+  if(MC.length>0&&ringCat){
+    // Prefer the MC category with the SAME id as the ring category (robust if orders differ).
+    const mcMatch=MC.find(c=>c.id===ringCat.id);
+    if(mcMatch)return mcMatch;
+    return MC[catIdx%MC.length];
+  }
+  return ringCat;
 }
 function getHQCat(hqCatIdx){return FR.ring[hqCatIdx%Math.max(FR.ring.length,1)]||null;}
 
@@ -255,7 +269,16 @@ function startTurn(room){
   Object.values(room.players).forEach(p=>{p._pendingPos=null;});
   if(!room.turnOrder.length)room.turnOrder=shuffle(Object.keys(room.players));
   room.turnOrder=room.turnOrder.filter(id=>room.players[id]);
-  room.activePlayerId=room.turnOrder[(room.round-1)%room.turnOrder.length];
+  if(!room.turnOrder.length)return; // no players left
+
+  // Skip players who are currently disconnected (don't stall the game on their timers).
+  // Try up to one full lap; if everyone is disconnected, fall back to the next in order.
+  let activeId=null;
+  for(let k=0;k<room.turnOrder.length;k++){
+    const cand=room.turnOrder[(room.round-1+k)%room.turnOrder.length];
+    if(room.players[cand]&&!room.players[cand]._disconnected){activeId=cand;room.round+=k;break;}
+  }
+  room.activePlayerId=activeId||room.turnOrder[(room.round-1)%room.turnOrder.length];
   room.state='roll';bcast(room,snap(room));
   countdown(room,30,()=>doMove(room));
 }
@@ -338,7 +361,7 @@ function doMove(room){
 
   let cat,isMC=false;
   if(stoppedAtHQ){cat=getHQCat(hqCatIdx);isMC=false;}
-  else if(landedSq?.type==='spoke'){const sIdx=Math.floor((landedSq.id-board.RING)/board.SPOKE_LEN);cat=getRingCat(sIdx%8);isMC=cat?.isMC||false;}
+  else if(landedSq?.type==='spoke'){cat=getRingCat(landedSq.catIdx);isMC=cat?.isMC||false;}
   else{cat=getRingCat(landedSq?.catIdx||0);isMC=cat?.isMC||false;}
 
   room.currentCatId=cat?.id;room.currentQ=pickQ(cat,room.usedQ);room.isCurrentMC=isMC;
@@ -865,9 +888,17 @@ wss.on('connection',ws=>{
 
     else if(msg.type==='resetGame'){
       if(pid!==room.hostId)return;
-      clrTimer(room);
-      const nr=mkRoom(rcode);nr.players=room.players;nr.hostId=room.hostId;
-      Object.values(nr.players).forEach(p=>{p.pos=0;p.wedges={};p._pendingPos=null;});
+      clrTimer(room);clrAdv(room);
+      const nr=mkRoom(rcode);
+      nr.players=room.players;nr.hostId=room.hostId;
+      // Fresh game: reset every player's game state but keep identity & connection.
+      Object.values(nr.players).forEach(p=>{
+        p.pos=0;p.wedges={};p._pendingPos=null;
+        if(p._dcTimer){clearTimeout(p._dcTimer);p._dcTimer=null;}
+        // Drop players who are still disconnected from the new game's roster handling
+      });
+      nr.turnOrder=shuffle(Object.keys(nr.players)); // reshuffle for fairness
+      nr.round=0;
       rooms[rcode]=nr;bcast(nr,snap(nr));
     }
   });
