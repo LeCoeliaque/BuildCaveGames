@@ -506,17 +506,6 @@
     }
   },
   {
-    "question": "Who was a philosopher?",
-    "answer": "C",
-    "options": {
-      "A": "Telly Savalas",
-      "B": "William Saroyan",
-      "C": "George Santayana",
-      "D": "Arthur Schlesinger",
-      "E": "John Singer Sargent"
-    }
-  },
-  {
     "question": "According to Socrates, \"the ---- life is not worth living.\"",
     "answer": "E",
     "options": {
@@ -847,17 +836,6 @@
     }
   },
   {
-    "question": "Who was a philosopher?",
-    "answer": "B",
-    "options": {
-      "A": "Juan Peron",
-      "B": "Blaise Pascal",
-      "C": "Vance Packard",
-      "D": "Nicolo Paganini",
-      "E": "Boris Pasternak"
-    }
-  },
-  {
     "question": "A person who emphasizes man's freedom of choice and responsibility for the consequences of his acts is a(n) ...",
     "answer": "D",
     "options": {
@@ -1020,17 +998,6 @@
       "C": "hawk",
       "D": "dove",
       "E": "eagle"
-    }
-  },
-  {
-    "question": "A teleologist is mainly concerned with ...",
-    "answer": "B",
-    "options": {
-      "A": "mythical beings",
-      "B": "ultimate purposes",
-      "C": "archetypal images",
-      "D": "human accomplishments",
-      "E": "mechanical explanations"
     }
   },
   {

@@ -888,10 +888,6 @@
     "Answer": "6 inches"
   },
   {
-    "Question": "She was the daughter of a Tyrian king and was given as much land as could be enclosed in a bull's hide.  She sliced the skin into one very thin strip and enclosed a huge amount of land.  Name her.",
-    "Answer": "Dido"
-  },
-  {
     "Question": "What is the product of 1112 and 893?",
     "Answer": "993,016"
   },
@@ -978,10 +974,6 @@
   {
     "Question": "Find the area of a triangle with a base of 16 inches and an altitude of 21 inches.",
     "Answer": "168 square inches"
-  },
-  {
-    "Question": "If the area of each shoe sole of a 200-pound guy is 40 square inches, what is the total pressure per square inch that he exerts on the ground?",
-    "Answer": "2.5 pounds"
   },
   {
     "Question": "What is the axis of symmetry of this parabola?   y = (x-3)squared + 4",
@@ -1226,10 +1218,6 @@
   {
     "Question": "The altitude of an equilateral triangle with 10-inch sides equals how many times the square root of 3?",
     "Answer": "5"
-  },
-  {
-    "Question": "It takes about one millisecond for a neuron to fire.  Some switches in computers can close in one picosecond.  How many times faster can such a switch close than a neuron fire?",
-    "Answer": "1 billion times"
   },
   {
     "Question": "What is  y in this proportion?   y/(25-y) = 3/7",
@@ -2630,10 +2618,6 @@
   {
     "Question": "Find the sixth term of this geometric progression.   2   6   18   54 ...",
     "Answer": "486"
-  },
-  {
-    "Question": "What is the acceleration of a vehicle that accelerates uniformly from rest and goes 650 meters in 12 seconds?",
-    "Answer": "9 meters per second per second"
   },
   {
     "Question": "By what percent is the area of a circle diminished if the radius of a circle is diminished by 20%?",

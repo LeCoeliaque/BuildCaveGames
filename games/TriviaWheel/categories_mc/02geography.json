@@ -1572,17 +1572,6 @@
     }
   },
   {
-    "question": "Which is landlocked?",
-    "answer": "C",
-    "options": {
-      "A": "Benin",
-      "B": "Ghana",
-      "C": "Malawi",
-      "D": "Liberia",
-      "E": "Djibouti"
-    }
-  },
-  {
     "question": "Which city on the Florida Peninsula is on the side opposite from the others?",
     "answer": "B",
     "options": {
@@ -3241,17 +3230,6 @@
       "C": "Amarillo",
       "D": "Arlington",
       "E": "San Antonio"
-    }
-  },
-  {
-    "question": "Which is a source for maritime tropical air affecting the U.S.?",
-    "answer": "C",
-    "options": {
-      "A": "the Arctic",
-      "B": "Hudson Bay",
-      "C": "Caribbean Sea",
-      "D": "North Atlantic",
-      "E": "western Pacific"
     }
   },
   {

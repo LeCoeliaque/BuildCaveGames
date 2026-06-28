@@ -11,6 +11,17 @@
     }
   },
   {
+    "question": "Who is artistically depicted in a torn cloak, accompanied by a dog, and carrying a lantern?",
+    "answer": "D",
+    "options": {
+      "A": "Thales",
+      "B": "Pericles",
+      "C": "Socrates",
+      "D": "Diogenes",
+      "E": "Thucidides"
+    }
+  },
+  {
     "question": "Concentrations of high-energy protons and electrons trapped within the Earth's magnetic field were named after whom?",
     "answer": "B",
     "options": {
@@ -206,6 +217,17 @@
       "C": "Gloucester",
       "D": "New Bedford",
       "E": "Martha's Vineyard"
+    }
+  },
+  {
+    "question": "The Girondists were a group of Jacobins who gained control of French diplomacy.  They specialized in ...",
+    "answer": "A",
+    "options": {
+      "A": "oratory",
+      "B": "philosophy",
+      "C": "military planning",
+      "D": "the practice of law",
+      "E": "international banking"
     }
   },
   {
@@ -957,6 +979,17 @@
     }
   },
   {
+    "question": "Who was not a French philosopher?",
+    "answer": "E",
+    "options": {
+      "A": "Montesquieu",
+      "B": "Denis Diderot",
+      "C": "Jean Rousseau",
+      "D": "Jean Paul Sartre",
+      "E": "Antoine Lavoisier"
+    }
+  },
+  {
     "question": "Who routinely depended on an astrolabe?",
     "answer": "D",
     "options": {
@@ -1020,6 +1053,17 @@
       "C": "fifty-niners",
       "D": "sixty-niners",
       "E": "seventy-niners"
+    }
+  },
+  {
+    "question": "Who wrote that people should do what they are best qualified to do in \"The Republic\"?",
+    "answer": "A",
+    "options": {
+      "A": "Plato",
+      "B": "Hobbes",
+      "C": "Churchill",
+      "D": "Machiavelli",
+      "E": "Aristophanes"
     }
   },
   {
@@ -1177,6 +1221,17 @@
     }
   },
   {
+    "question": "The flag of ---- consists of a red circle centered on a white background.",
+    "answer": "B",
+    "options": {
+      "A": "Egypt",
+      "B": "Japan",
+      "C": "Portugal",
+      "D": "Guatemala",
+      "E": "Luxembourg"
+    }
+  },
+  {
     "question": "The jitterbug and what other dance were popular about the same time?",
     "answer": "D",
     "options": {
@@ -1229,6 +1284,17 @@
       "C": "CCCP",
       "D": "RCMP",
       "E": "NAFTA"
+    }
+  },
+  {
+    "question": "Which science originated with the recognition that oddly-shaped stones found in the 18th century in ancient gravels were artifacts?",
+    "answer": "E",
+    "options": {
+      "A": "embryology",
+      "B": "opthamology",
+      "C": "epidemiology",
+      "D": "pharmacology",
+      "E": "paleoanthropology"
     }
   },
   {
@@ -1342,6 +1408,17 @@
     }
   },
   {
+    "question": "A rocket used by the Soviet Union to launch heavy satellites and probes was the ...",
+    "answer": "A",
+    "options": {
+      "A": "Proton",
+      "B": "Lepton",
+      "C": "Neutron",
+      "D": "Electron",
+      "E": "Positron"
+    }
+  },
+  {
     "question": "Captain Cook's vessel used in the exploration of New Zealand and Australia was the ...",
     "answer": "C",
     "options": {
@@ -1449,6 +1526,17 @@
       "C": "Susan Anthony",
       "D": "Victoria Woodhull",
       "E": "Margaret Mitchell"
+    }
+  },
+  {
+    "question": "Aside from the ABC, historians usually say the first electronic computer was the ...",
+    "answer": "B",
+    "options": {
+      "A": "Cray",
+      "B": "Eniac",
+      "C": "Bell X-1",
+      "D": "Univac I",
+      "E": "Hal 5000"
     }
   },
   {
@@ -1815,6 +1903,17 @@
     }
   },
   {
+    "question": "Otto Lilienthal first predicted that high lift and low drag could be produced by ...",
+    "answer": "A",
+    "options": {
+      "A": "airfoils",
+      "B": "airways",
+      "C": "airheads",
+      "D": "airwaves",
+      "E": "airstrips"
+    }
+  },
+  {
     "question": "In the original U.S. Constitution, each slave was worth what fraction of a person?",
     "answer": "B",
     "options": {
@@ -2101,6 +2200,17 @@
     }
   },
   {
+    "question": "The Ariane rocket was developed in ...",
+    "answer": "E",
+    "options": {
+      "A": "Iran",
+      "B": "India",
+      "C": "Japan",
+      "D": "China",
+      "E": "France"
+    }
+  },
+  {
     "question": "Generalissimo Chiang Kai-shek is associated with the government of ...",
     "answer": "B",
     "options": {
@@ -2208,6 +2318,17 @@
       "C": "veterans",
       "D": "corporations",
       "E": "the handicapped"
+    }
+  },
+  {
+    "question": "Which city is not associated with automobile manufacturing?",
+    "answer": "B",
+    "options": {
+      "A": "Akron",
+      "B": "Salem",
+      "C": "Toledo",
+      "D": "Detroit",
+      "E": "Kenosha"
     }
   },
   {
@@ -2494,6 +2615,17 @@
       "C": "Knesset",
       "D": "mujahideen",
       "E": "Tamil Tigers"
+    }
+  },
+  {
+    "question": "The greatest happiness of the greatest number is associated with ...",
+    "answer": "E",
+    "options": {
+      "A": "Aristotle",
+      "B": "Henry James",
+      "C": "Arnold Toynbee",
+      "D": "Rene Descartes",
+      "E": "Jeremy Bentham"
     }
   },
   {
@@ -3014,6 +3146,17 @@
     }
   },
   {
+    "question": "Guglielmo Marconi's invention was based on a discovery made by ...",
+    "answer": "D",
+    "options": {
+      "A": "Karl Benz",
+      "B": "Robert Fulton",
+      "C": "Gregor Mendel",
+      "D": "Heinrich Hertz",
+      "E": "Louis Daguerre"
+    }
+  },
+  {
     "question": "The American Constitution was to go into effect as soon as how many states had ratified it?",
     "answer": "C",
     "options": {
@@ -3055,6 +3198,17 @@
       "C": "Paraguay and Uruguay",
       "D": "Turkmenistan and Uzbekistan",
       "E": "Transvaal and Orange Free State"
+    }
+  },
+  {
+    "question": "Terrible conditions in which industry were exposed in Upton Sinclair's novel, \"The Jungle\"?",
+    "answer": "A",
+    "options": {
+      "A": "meat packing",
+      "B": "oil production",
+      "C": "steel production",
+      "D": "textile production",
+      "E": "automobile manufacturing"
     }
   },
   {
@@ -3385,6 +3539,17 @@
       "C": "John Foucault",
       "D": "Albert Einstein",
       "E": "Arthur Compton"
+    }
+  },
+  {
+    "question": "Which concept is fundamental in the U.S. legal system?",
+    "answer": "E",
+    "options": {
+      "A": "immutable laws",
+      "B": "an eye for an eye",
+      "C": "indisputable guilt",
+      "D": "right based on might",
+      "E": "presumption of innocence"
     }
   },
   {

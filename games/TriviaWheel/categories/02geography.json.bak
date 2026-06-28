@@ -132,6 +132,10 @@
     "Answer": "Arizona"
   },
   {
+    "Question": "Which river in the western part of the lower 48 states has the greatest discharge?",
+    "Answer": "Columbia River"
+  },
+  {
     "Question": "Corsica belongs to what country?",
     "Answer": "France"
   },
@@ -1104,6 +1108,10 @@
     "Answer": "New York"
   },
   {
+    "Question": "In 1638, Dutch colonists in the Indian Ocean settled on what island, then home to all the world's dodo birds, named for the late Prince Maurice of Nassau?",
+    "Answer": "Mauritius"
+  },
+  {
     "Question": "The southern border of Oklahoma is formed by what state?",
     "Answer": "Texas"
   },
@@ -1768,6 +1776,10 @@
     "Answer": "New Jersey"
   },
   {
+    "Question": "What type of dam curves from one bank to the other rather than spanning the river in a straight line?",
+    "Answer": "arch dam"
+  },
+  {
     "Question": "Brittany is a peninsula in what European country?",
     "Answer": "France"
   },
@@ -1810,6 +1822,10 @@
   {
     "Question": "What two letters are at the end of the demonyms for people living in places such as Dublin, Berlin, New Zealand, and New England?",
     "Answer": "er"
+  },
+  {
+    "Question": "The Black Hills gold rush took place in what state?",
+    "Answer": "South Dakota"
   },
   {
     "Question": "A world map that depicts Greenland as a land mass larger than South America or Africa is using what kind of projection?",

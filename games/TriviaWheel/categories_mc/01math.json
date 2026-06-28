@@ -11,17 +11,6 @@
     }
   },
   {
-    "question": "The least evidence that future events can be predicted on the basis of fixed laws is associated with which field?",
-    "answer": "A",
-    "options": {
-      "A": "economics",
-      "B": "electronics",
-      "C": "mathematics",
-      "D": "plate tectonics",
-      "E": "nuclear physics"
-    }
-  },
-  {
     "question": "A right triangle with a base of 6 feet and a hypotenuse of 10 feet has an area of ---- square feet.",
     "answer": "C",
     "options": {
@@ -426,17 +415,6 @@
       "C": "4",
       "D": "-4",
       "E": "either 4 or -4"
-    }
-  },
-  {
-    "question": "Which is misspelled?",
-    "answer": "E",
-    "options": {
-      "A": "explain",
-      "B": "loveable",
-      "C": "operator",
-      "D": "obituary",
-      "E": "mathmatics"
     }
   },
   {
@@ -1306,17 +1284,6 @@
       "C": "15.07",
       "D": "16.32",
       "E": "17.24"
-    }
-  },
-  {
-    "question": "If the cost of manufacturing obsidian widgets is C(x) = 1200x + 5500, what is the difference in the cost of making 102 of them instead of 100?",
-    "answer": "E",
-    "options": {
-      "A": "$1600",
-      "B": "$1800",
-      "C": "$2000",
-      "D": "$2200",
-      "E": "$2400"
     }
   },
   {
@@ -2241,17 +2208,6 @@
     }
   },
   {
-    "question": "Which statement is not true?",
-    "answer": "B",
-    "options": {
-      "A": "Some apples are yellow.",
-      "B": "Mt. Rushmore is in Texas.",
-      "C": "Seven plus two equal nine.",
-      "D": "All quadrilaterals have 4 sides.",
-      "E": "Jack Kennedy was a U.S. president."
-    }
-  },
-  {
     "question": "All lines that pass through a vertex and touch a circle whose center is directly below this vertex form two cone-shaped surfaces called ...",
     "answer": "C",
     "options": {
@@ -2835,17 +2791,6 @@
     }
   },
   {
-    "question": "How many colors are possible with an 8-bit digital image?",
-    "answer": "D",
-    "options": {
-      "A": "32",
-      "B": "64",
-      "C": "128",
-      "D": "256",
-      "E": "512"
-    }
-  },
-  {
     "question": "The use of the zero to denote place value is attributed to ...",
     "answer": "A",
     "options": {
@@ -3041,17 +2986,6 @@
       "C": "1/35",
       "D": "1/49",
       "E": "1/56"
-    }
-  },
-  {
-    "question": "Which is not true?",
-    "answer": "B",
-    "options": {
-      "A": "Parallel lines have equal slopes.",
-      "B": "The slope of a horizontal line is 1.",
-      "C": "The slope of a vertical line is undefined.",
-      "D": "Perpendicular lines have slopes that are        negative reciprocals.",
-      "E": "The slope of a line that rises as x increases        is always positive."
     }
   },
   {

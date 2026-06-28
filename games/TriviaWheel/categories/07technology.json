@@ -56,10 +56,6 @@
     "Answer": "superhigh frequency"
   },
   {
-    "Question": "What is a one-word synonym for a variable resistor in an electrical circuit?",
-    "Answer": "rheostat (potentiometer)"
-  },
-  {
     "Question": "What adjective indicates an electrical cable consisting of a solid central conductor insulated from and surrounded by a braided conducting sheath?",
     "Answer": "coaxial"
   },
@@ -84,16 +80,8 @@
     "Answer": "automation"
   },
   {
-    "Question": "Name the hair-thin cables that can carry vast amounts of information, including high-quality video and audio signals by means of laser light.",
-    "Answer": "fiber optics"
-  },
-  {
     "Question": "What device changes an alternating voltage from a low potential to a high potential or vice versa?",
     "Answer": "transformer"
-  },
-  {
-    "Question": "Space and satellite communication relies on SHF waves.  For what does this abbreviation stand?",
-    "Answer": "superhigh frequency"
   },
   {
     "Question": "What devices consisting of rapidly rotating containers are necessary to enrich uranium to a weapons-grade material?",
@@ -132,16 +120,8 @@
     "Answer": "liquid crystal display"
   },
   {
-    "Question": "Smoke screens disrupt laser ranging devices.  Chaff disrupts radar guidance.  Flares dropped from planes counter infrared guidance systems.  Any such systems that prevent sensor-based weapons from locking onto a target are called what?",
-    "Answer": "countermeasures"
-  },
-  {
     "Question": "Just before there were microchips there were transistors and just before transistors there were what other electronic devices?",
     "Answer": "(vacuum) tubes"
-  },
-  {
-    "Question": "An amplifier increases what property of sound waves?",
-    "Answer": "amplitude"
   },
   {
     "Question": "A common analog computer is the domestic electric watt-hour meter which computes the sum over time of the product of two continuously variable quantities.  One is current.  Name the other.",
@@ -162,10 +142,6 @@
   {
     "Question": "Playing video or audio in real time as it is downloaded over the Internet is called what?",
     "Answer": "streaming"
-  },
-  {
-    "Question": "What unit of light illuminance measures the low-light recording capability of video cameras?",
-    "Answer": "lux"
   },
   {
     "Question": "An error in a computer program causing it to fail or at least do something unexpected is called a what?",
@@ -196,10 +172,6 @@
     "Answer": "transceiver"
   },
   {
-    "Question": "What kind of tubular lamps rely on electrons, mercury vapor, and a phosphor coating to emit visible light?",
-    "Answer": "fluorescent lamps"
-  },
-  {
     "Question": "In finance, buying and selling shares of stock using a computer to generate orders automatically whenever there is an appreciable movement in price is what kind of trading?",
     "Answer": "program trading"
   },
@@ -208,36 +180,12 @@
     "Answer": "gravity"
   },
   {
-    "Question": "What is the general term for the process of removing salt and other minerals from ocean water?",
-    "Answer": "desalination (desalinization, desalting)"
-  },
-  {
-    "Question": "What device is described here?   Flowing water is directed from a source to   cups or buckets attached to the perimeter of a   wheel.  Then, the rotating axle of the device   may be used to turn a machine or mill.",
-    "Answer": "waterwheel"
-  },
-  {
     "Question": "Consider a resistor with an orange band, a blue band, a yellow band, and a gold band.  The gold band, which represents 5%, means the resistor has a 5% margin of what?",
     "Answer": "error"
   },
   {
-    "Question": "The use of machines rather than people to perform tasks is called what?",
-    "Answer": "automation"
-  },
-  {
     "Question": "What kind of light-emitting device has applications in dentistry, metal cutting, latent fingerprint detection, bloodless surgery, barcode scanning, light shows, burning optical discs, and shooting down missiles?",
     "Answer": "laser"
-  },
-  {
-    "Question": "What did Archimedes invent that raises water into irrigation ditches?",
-    "Answer": "Archimedes' screw"
-  },
-  {
-    "Question": "What unit of electrical conductance, also known as a siemens, is an ananym for \"ohm\"?",
-    "Answer": "mho"
-  },
-  {
-    "Question": "There are two types of broadcast radio stations, based on the type of modulation used.  The waves produced by which does not bounce off the ionosphere?",
-    "Answer": "FM"
   },
   {
     "Question": "Name the kind of transducer that converts sounds in air into electrical signals.",
@@ -252,16 +200,8 @@
     "Answer": "microwave"
   },
   {
-    "Question": "In 1895, a twenty-year-old Italian created a device that transmitted and received electromagnetic radio waves over one kilometer.  By 1897, he transmitted signals to ships 29 kilometers from shore and soon sent wireless messages across the Atlantic.  Name him.",
-    "Answer": "Guglielmo Marconi"
-  },
-  {
     "Question": "What is the abbreviation for radio waves with frequencies between 30 million and 300 million hertz?",
     "Answer": "VHF"
-  },
-  {
-    "Question": "What thin, flexible, transparent wrapping material is made from the cellulose in wood pulp?",
-    "Answer": "cellophane"
   },
   {
     "Question": "In electronic equipment, name the little cylindrical devices with colored bands encircling them.",
@@ -274,10 +214,6 @@
   {
     "Question": "The Universal Product Code is based on series of vertical lines of varying width printed on packages of consumer goods.  What is another name for this type of pattern?",
     "Answer": "barcode"
-  },
-  {
-    "Question": "The transistor replaced what relatively cumbersome, heat-producing device that had been widely used through the early 1950s?",
-    "Answer": "vacuum tube"
   },
   {
     "Question": "The time required for a computer to reach a specific location in memory, on a disk, or on a flash drive is called what kind of time?",
@@ -296,10 +232,6 @@
     "Answer": "governor"
   },
   {
-    "Question": "What is the three-letter abbreviation for the type of scanning that provides archaeologists with detailed, internal, cross-sectional views of mummies?",
-    "Answer": "CAT"
-  },
-  {
     "Question": "What powered the Roman aqueducts?",
     "Answer": "gravity"
   },
@@ -308,32 +240,16 @@
     "Answer": "Sputnik"
   },
   {
-    "Question": "What German physicist was first to produce radio waves artificially?",
-    "Answer": "Heinrich Hertz"
-  },
-  {
     "Question": "Name the office machine used to combine sets of pages into a desired sequence.",
     "Answer": "collator"
-  },
-  {
-    "Question": "In the 17th century, what Dutch scientist introduced the use of a pendulum into the mechanical clock?",
-    "Answer": "Christiaan Huygens"
   },
   {
     "Question": "What kind of thermometer commonly used in thermostats uses the expanding properties of two different metals to gauge temperature?",
     "Answer": "bimetallic thermometer"
   },
   {
-    "Question": "The range of frequencies that a communication channel can carry is known as what width?",
-    "Answer": "bandwidth"
-  },
-  {
     "Question": "Name the element of a triode that controls the speed of electron flow.",
     "Answer": "grid"
-  },
-  {
-    "Question": "Name the thin strands of glass that use the principle of total internal reflection to transmit information at the speed of light.",
-    "Answer": "fiber optics"
   },
   {
     "Question": "For what does the abbreviation stand in this quip?   The truth is out there.  Anybody got the URL?",
@@ -360,24 +276,8 @@
     "Answer": "cyberwarfare (cyber attack)"
   },
   {
-    "Question": "What is the compound name for a device containing both a transmitter and a receiver?",
-    "Answer": "transceiver"
-  },
-  {
-    "Question": "The Bergius process and the Fischer-Tropsch process were developed in Germany to make gasoline from what abundant substance?",
-    "Answer": "coal"
-  },
-  {
     "Question": "Sonar depends upon the transmission and reception of what kind of waves?",
     "Answer": "sound waves"
-  },
-  {
-    "Question": "What kind of electrical signal has continuously varying voltages, frequencies, or phases?",
-    "Answer": "analog signal"
-  },
-  {
-    "Question": "The structure that encloses a nuclear reactor as a barrier to any release of radiation is called what building?",
-    "Answer": "containment building"
   },
   {
     "Question": "What kind of automobile combines an internal combustion engine with an electrical propulsion system?",
@@ -400,10 +300,6 @@
     "Answer": "cogeneration"
   },
   {
-    "Question": "In 1901 he sent the Morse code for \"s\" from Cornwall, England to St. Johns, Newfoundland.  Who sent this first transatlantic radio signal?",
-    "Answer": "Guglielmo Marconi"
-  },
-  {
     "Question": "Transferring information from a host computer to a personal computer is called what?",
     "Answer": "downloading"
   },
@@ -416,32 +312,8 @@
     "Answer": "high definition"
   },
   {
-    "Question": "Any unwanted disturbance within a useful frequency band in a communication channel is called what?",
-    "Answer": "noise"
-  },
-  {
-    "Question": "In what household device does a magnetron produce waves with wavelengths of about five thousandths of an inch which cause water molecules to vibrate?",
-    "Answer": "microwave"
-  },
-  {
-    "Question": "The analytical engine designed by Charles Babbage was a mechanical predecessor of what modern device?",
-    "Answer": "computer"
-  },
-  {
     "Question": "To a computer manufacturer, what is the meaning of the acronym, PROM?",
     "Answer": "programmable read-only memory"
-  },
-  {
-    "Question": "In 2015, as part of its journey around the world, what aircraft broke the records for the longest solar-powered flight in terms of both distance and duration?",
-    "Answer": "Solar Impulse"
-  },
-  {
-    "Question": "What kind of cable used to transmit high-frequency signals consists of a conducting outer metal layer enclosing and insulated from a central conducting core?",
-    "Answer": "coaxial cable"
-  },
-  {
-    "Question": "Named for its inventor, what electrical coil invented in 1891 would later be used in radios and televisions to produce high-frequency, high-voltage electric current?",
-    "Answer": "Tesla coil"
   },
   {
     "Question": "How many bytes are in a gigabyte?",
@@ -450,18 +322,6 @@
   {
     "Question": "How many colored bands are on a resistor?",
     "Answer": "4"
-  },
-  {
-    "Question": "Name the kind of transducer that converts sounds in air into electrical signals.",
-    "Answer": "microphone"
-  },
-  {
-    "Question": "What kind of train developed in Japan and Germany has no wheels and no engine but can move at speeds up to 300 miles per hour?",
-    "Answer": "Maglev (magnetic levitation)"
-  },
-  {
-    "Question": "What is the abbreviation for radio waves with frequencies between 30 million and 300 million hertz?",
-    "Answer": "VHF"
   },
   {
     "Question": "In response to a U.S. Army request for a jellied gasoline incendiary that would increase the effective range of flamethrowers, Harvard chemist Louis Fieser developed what substance?",
@@ -476,48 +336,16 @@
     "Answer": "transistors"
   },
   {
-    "Question": "In 1895, what German engineer developed an engine with no ignition system that operates on a petroleum fuel less refined than gasoline?",
-    "Answer": "Rudolf Diesel"
-  },
-  {
-    "Question": "Name the vacuum tube that is at the heart of the microwave oven.",
-    "Answer": "magnetron"
-  },
-  {
     "Question": "Most electronic appliances such as radios and televisions use alternating current as their primary source of power.  Because they also need direct current to operate internal circuits, they include what devices that change alternating into direct current?",
     "Answer": "rectifiers"
-  },
-  {
-    "Question": "Using no wheels, axles, or bearings, what is the term for the technology used by some new trains that relies on electromagnetism for levitation and propulsion?",
-    "Answer": "maglev"
-  },
-  {
-    "Question": "What is the abbreviation for radio waves with frequencies between 300 million and 3 billion hertz?",
-    "Answer": "UHF"
-  },
-  {
-    "Question": "What device changes an alternating voltage from a low potential to a high potential or vice versa?",
-    "Answer": "transformer"
-  },
-  {
-    "Question": "What currents were central in the \"War of the Currents\" in which the belligerents were Nikola Tesla and Thomas Edison?",
-    "Answer": "alternating vs. direct current"
   },
   {
     "Question": "How many colors are possible with a one-bit image?",
     "Answer": "2"
   },
   {
-    "Question": "What electronic devices first replaced vacuum tubes?",
-    "Answer": "transistors"
-  },
-  {
     "Question": "What is the name for the long, strong cables that keep tall radio towers from blowing over in strong winds?",
     "Answer": "guy wires"
-  },
-  {
-    "Question": "Name the device that provides starting voltage and limits the current during normal operation in fluorescent lamps.",
-    "Answer": "ballast"
   },
   {
     "Question": "A collection of computers or workstations all having access to a common file server is referred to with the acronym, LAN, which stands for what?",
@@ -526,26 +354,6 @@
   {
     "Question": "What fraction of a second is a microsecond?",
     "Answer": "one-millionth"
-  },
-  {
-    "Question": "Most electronic appliances such as radios and televisions use alternating current as their primary source of power.  Because they also need direct current to operate internal circuits, they include what devices that change alternating into direct current?",
-    "Answer": "rectifiers"
-  },
-  {
-    "Question": "In 1735, John Harrison invented the first accurate chronometer for keeping time at sea, which was crucial for determining angular distance on the Earth's surface, otherwise known as what?",
-    "Answer": "longitude"
-  },
-  {
-    "Question": "What kind of vehicle floats on a cushion of compressed air?",
-    "Answer": "hovercraft (air-cushion vehicle)"
-  },
-  {
-    "Question": "A common analog computer is the domestic electric watt-hour meter which computes the sum over time of the product of two continuously variable quantities.  One is current.  Name the other.",
-    "Answer": "voltage"
-  },
-  {
-    "Question": "When James Watt was asked to repair a Newcomen engine, he realized it was a waste of energy to keep heating and cooling the steam cylinder so he added a separate chamber where the steam was cooled.  Name this chamber.",
-    "Answer": "condenser"
   },
   {
     "Question": "What term indicates either a heavy shoe or \"to turn on a computer\"?",
@@ -560,18 +368,6 @@
     "Answer": "zeppelin"
   },
   {
-    "Question": "What kind of vehicle is the maglev?",
-    "Answer": "train (magnetically levitated)"
-  },
-  {
-    "Question": "What kind of light-emitting device has applications in dentistry, metal cutting, latent fingerprint detection, bloodless surgery, barcode scanning, light shows, burning optical discs, and shooting down missiles?",
-    "Answer": "laser"
-  },
-  {
-    "Question": "NASA's X-43A broke the speed record for a plane powered by an \"air-breathing\" engine by going Mach 10 in 2004.  But this speed is still a long way from Mach 26, known as what velocity?",
-    "Answer": "escape velocity"
-  },
-  {
     "Question": "In 1951, for the first time, a telephone call traveled through a system of 107 steel and concrete towers 30 miles apart between New York and San Francisco by means of what kind of high-frequency electromagnetic waves?",
     "Answer": "microwaves"
   },
@@ -580,24 +376,8 @@
     "Answer": "merging"
   },
   {
-    "Question": "In 1951, for the first time, a telephone call traveled through a system of 107 steel and concrete towers 30 miles apart between New York and San Francisco by means of what kind of high-frequency electromagnetic waves?",
-    "Answer": "microwaves"
-  },
-  {
-    "Question": "What device stores an electric charge and discharges it all at once?",
-    "Answer": "capacitor"
-  },
-  {
     "Question": "What is the term for the interconnected system that distributes electricity across a state or region?",
     "Answer": "grid"
-  },
-  {
-    "Question": "What kind of thermometer commonly used in thermostats uses the expanding properties of two different metals to gauge temperature?",
-    "Answer": "bimetallic thermometer"
-  },
-  {
-    "Question": "Name the common electrical device which uses a dielectric material to separate charged metal plates.",
-    "Answer": "capacitor"
   },
   {
     "Question": "What is the collective name for the electronic systems and equipment on aircraft?",
@@ -612,44 +392,12 @@
     "Answer": "256"
   },
   {
-    "Question": "In 1834, Jacob Perkins allowed a volatile liquid to evaporate and absorb heat from its surroundings and then he compressed the vapor, turning it back to a liquid, giving off heat.  What had Perkins invented?",
-    "Answer": "refrigeration (a refrigerator)"
-  },
-  {
     "Question": "What adjective indicates either of the two frequencies just above or just below the frequency of the carrier wave in a telecommunications system?",
     "Answer": "sideband"
   },
   {
-    "Question": "Sonar depends upon the transmission and reception of what kind of waves?",
-    "Answer": "sound waves"
-  },
-  {
-    "Question": "What devices consisting of rapidly rotating containers are necessary to enrich uranium to a weapons-grade material?",
-    "Answer": "centrifuges"
-  },
-  {
-    "Question": "What is the acronym for the technology developed during World War II called radio detection and ranging?",
-    "Answer": "radar"
-  },
-  {
-    "Question": "How many bytes are in a gigabyte?",
-    "Answer": "1 billion"
-  },
-  {
     "Question": "With respect to computers, what does USB mean?",
     "Answer": "Universal Serial Bus"
-  },
-  {
-    "Question": "Water is converted into steam in vessels that feed the steam turbines that produce electricity or drive old locomotives.  Name these vessels.",
-    "Answer": "boilers"
-  },
-  {
-    "Question": "What powered the Roman aqueducts?",
-    "Answer": "gravity"
-  },
-  {
-    "Question": "Nikola Tesla's discovery of the rotating electromagnetic field led to devices using what kind of electrical current?",
-    "Answer": "alternating current"
   },
   {
     "Question": "What device was used in medieval times to hurl massive stones at castles?",
@@ -668,52 +416,16 @@
     "Answer": "geosynchronous"
   },
   {
-    "Question": "Creating a plutonium atom from uranium-238 in a nuclear reactor is called what?",
-    "Answer": "breeding"
-  },
-  {
-    "Question": "What adjective indicates either of the two frequencies just above or just below the frequency of the carrier wave in a telecommunications system?",
-    "Answer": "sideband"
-  },
-  {
     "Question": "The communication mode in which signals can be transmitted and received simultaneously is called full what?",
     "Answer": "duplex"
-  },
-  {
-    "Question": "What one-time director of the Nazi Peenemunde facility played a major role in the development of the American space program?",
-    "Answer": "Wernher von Braun"
-  },
-  {
-    "Question": "What term is used by electric utilities companies for an interconnected system of electric cables and power stations that distributes electricity over large geographic areas?",
-    "Answer": "grid"
-  },
-  {
-    "Question": "What is the term for the simultaneous generation of both electricity and useful heat?",
-    "Answer": "cogeneration"
   },
   {
     "Question": "What is the name for a complete set of printing characters of a given size and design?",
     "Answer": "font"
   },
   {
-    "Question": "In response to a U.S. Army request for a jellied gasoline incendiary that would increase the effective range of flamethrowers, Harvard chemist Louis Fieser developed what substance?",
-    "Answer": "napalm"
-  },
-  {
     "Question": "What term can mean either an animal that feeds on vegetation or a program used to surf around in the World Wide Web?",
     "Answer": "browser"
-  },
-  {
-    "Question": "In what annual machine contest named after a cartoonist are participants given an elementary challenge such as peeling an apple or sharpening a pencil and required to make the solution as complicated and convoluted as possible?",
-    "Answer": "Rube Goldberg"
-  },
-  {
-    "Question": "In 1836, the French began coating iron with zinc, thus inventing what kind of iron?",
-    "Answer": "galvanized iron"
-  },
-  {
-    "Question": "The American chemist Wallace Carothers was searching for a less expensive alternative to silk.  By squirting a certain type of hot melted plastic through tiny holes, he made what artificial fiber in 1935?",
-    "Answer": "nylon"
   },
   {
     "Question": "In what annual machine contest named after a cartoonist are participants given an elementary challenge such as peeling an apple or sharpening a pencil and required to make the solution as complicated and convoluted as possible?",

@@ -473,17 +473,6 @@
     }
   },
   {
-    "question": "Which career will probably offer the fewest new jobs in this decade?",
-    "answer": "A",
-    "options": {
-      "A": "grain farmers",
-      "B": "legal secretaries",
-      "C": "dental hygienists",
-      "D": "registered nurses",
-      "E": "computer operators"
-    }
-  },
-  {
     "question": "Legal proceedings that occur in a judge's chambers and not in open court are in ...",
     "answer": "C",
     "options": {
@@ -910,17 +899,6 @@
       "C": "detention of illegal immigrants",
       "D": "penalties imposed on criminals by courts",
       "E": "conditions under which welfare is received"
-    }
-  },
-  {
-    "question": "Illegal copying of cassette tapes, video tapes, and computer software is ...",
-    "answer": "A",
-    "options": {
-      "A": "piracy",
-      "B": "bigamy",
-      "C": "bribery",
-      "D": "larceny",
-      "E": "conspiracy"
     }
   },
   {
@@ -1482,17 +1460,6 @@
       "C": "was deranged at the time of the offense",
       "D": "was forced to commit the crime by others",
       "E": "was lured by cops into committing a crime"
-    }
-  },
-  {
-    "question": "Most of those involved in the Tea Party movement do not oppose ...",
-    "answer": "C",
-    "options": {
-      "A": "illegal immigration",
-      "B": "pork barrel spending",
-      "C": "federal deficit reduction",
-      "D": "government control of health care",
-      "E": "federal management of corporations"
     }
   },
   {

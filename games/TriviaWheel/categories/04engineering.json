@@ -36,14 +36,6 @@
     "Answer": "load"
   },
   {
-    "Question": "Name the outermost end supports on a bridge that carry the load from the deck.",
-    "Answer": "abutments"
-  },
-  {
-    "Question": "What structure is an airfoil with a leading edge, a trailing edge, and camber?",
-    "Answer": "a wing"
-  },
-  {
     "Question": "Name the curve extending from the leading edge to the trailing edge of an airfoil.",
     "Answer": "camber"
   },
@@ -88,14 +80,6 @@
     "Answer": "aerospace engineering"
   },
   {
-    "Question": "The Verrazano-Narrows, Tacoma, Delaware Memorial, and Golden Gate are what kind of bridges?",
-    "Answer": "suspension bridges"
-  },
-  {
-    "Question": "Name the curve extending from the leading edge to the trailing edge of an airfoil.",
-    "Answer": "camber"
-  },
-  {
     "Question": "With respect to aircraft, for what does \"c.g.\" stand?",
     "Answer": "center of gravity"
   },
@@ -104,44 +88,12 @@
     "Answer": "2"
   },
   {
-    "Question": "With respect to aircraft, for what does \"c.g.\" stand?",
-    "Answer": "center of gravity"
-  },
-  {
     "Question": "What field of engineering involves designing artificial limbs, joints, and organs?",
     "Answer": "bioengineering"
   },
   {
-    "Question": "The Verrazano-Narrows, Tacoma, Delaware Memorial, and Golden Gate are what kind of bridges?",
-    "Answer": "suspension bridges"
-  },
-  {
-    "Question": "The dead load of a bridge is the eight of the bridge itself.  What is the name for the weight and forces applied to the bridge as a result of vehicles and people on the bridge, wind, and precipitation accumulation?",
-    "Answer": "live load"
-  },
-  {
-    "Question": "What field of engineering involves work on all varieties of spacecraft and aircraft?",
-    "Answer": "aerospace engineering"
-  },
-  {
-    "Question": "What is the term for the box-like enclosure or casing used in building bridge piers and other underwater structures?",
-    "Answer": "caisson"
-  },
-  {
     "Question": "What is the phrase for the distance between the front and rear axles of a vehicle?",
     "Answer": "wheel base"
-  },
-  {
-    "Question": "What term can indicate the weight supported by a pillar, the weight on a bridge, or the weight moved by a lever?",
-    "Answer": "load"
-  },
-  {
-    "Question": "The twenty longest spans in the world all are what type of bridges?",
-    "Answer": "suspension bridges"
-  },
-  {
-    "Question": "Large structures like bridges may be built of many triangles joined together to form what kind of rigid framework?",
-    "Answer": "truss"
   },
   {
     "Question": "In manufacturing, supervisors and executives are concerned with QC, which stands for what?",
@@ -232,16 +184,8 @@
     "Answer": "height"
   },
   {
-    "Question": "A generator converts mechanical energy into electric energy.  What device changes electric energy into mechanical energy?",
-    "Answer": "motor"
-  },
-  {
     "Question": "In what devices may mechanical energy be converted into electrical energy by rotating a coil of wire in a magnetic field?",
     "Answer": "generators (dynamos, turbines)"
-  },
-  {
-    "Question": "Under what circumstances it is possible to take heat from a source and convert all of it to mechanical energy or work?",
-    "Answer": "none"
   },
   {
     "Question": "When the fulcrum is exactly in the middle of a lever, what is the mechanical advantage?",
@@ -260,24 +204,8 @@
     "Answer": "pulley"
   },
   {
-    "Question": "What is the mechanical advantage of a simple machine that requires an effort of 40 newtons to lift a load of 200 newtons?",
-    "Answer": "5"
-  },
-  {
     "Question": "What is the mechanical advantage of a wedge that has a slope length of six inches and is two inches wide at its thick end?",
     "Answer": "3"
-  },
-  {
-    "Question": "A gear with 12 teeth drives a gear with 54 teeth.  What is the mechanical advantage?",
-    "Answer": "4.5"
-  },
-  {
-    "Question": "When the fulcrum is exactly in the middle of a lever, what is the mechanical advantage?",
-    "Answer": "1"
-  },
-  {
-    "Question": "What is the ideal mechanical advantage of a lever if the length of the effort arm is ten feet and the length of the resistance arm is two feet?",
-    "Answer": "5"
   },
   {
     "Question": "You get a measure of what by dividing resistance by mechanical advantage?",
@@ -300,10 +228,6 @@
     "Answer": "thermal (heat)"
   },
   {
-    "Question": "1000 linear feet of highway rises 50 feet.  What is the ideal mechanical advantage of the highway?",
-    "Answer": "20"
-  },
-  {
     "Question": "The mechanical advantage of a pair of gears equals the ratio of the number of what on the two gears?",
     "Answer": "teeth"
   },
@@ -316,32 +240,12 @@
     "Answer": "2"
   },
   {
-    "Question": "What is the numerical coefficient for the ideal mechanical advantage of a single movable pulley?",
-    "Answer": "2"
-  },
-  {
-    "Question": "A gear has 12 teeth on a shaft 6 cm in diameter.  It drives another gear with 54 teeth with a 2 cm diameter shaft.  What is the mechanical advantage of the gears?",
-    "Answer": "4.5 (or 9:2)"
-  },
-  {
-    "Question": "To the nearest tenth, what is the mechanical advantage of a screw with a pitch of 1/8 and a circumference of .79 inches?",
-    "Answer": "6.3"
-  },
-  {
     "Question": "You are lifting a safe using a block and tackle with two pulleys on the top and two on the bottom, so that you pull one line to lift a weight being pulled by four lines.  Assuming 100% efficiency, if you could pull with a 50-newton force, what output force could you generate?",
     "Answer": "200 newtons"
   },
   {
     "Question": "What device converts the energy in a stream of fluid into mechanical energy by passing the stream through a system of fixed and moving fan blades, causing the latter to rotate?",
     "Answer": "turbine"
-  },
-  {
-    "Question": "You get a measure of what by dividing resistance by mechanical advantage?",
-    "Answer": "effort"
-  },
-  {
-    "Question": "What is the ideal mechanical advantage of a 4-meter lever if the pivot point is .5 meters from the load?",
-    "Answer": "7"
   },
   {
     "Question": "The ideal mechanical advantage of a lever can be expressed as the length of the effort arm divided by the length of what other arm?",
@@ -352,32 +256,8 @@
     "Answer": "4"
   },
   {
-    "Question": "Hammering a nail converts mechanical energy into what other form of energy?",
-    "Answer": "thermal (heat)"
-  },
-  {
-    "Question": "Which law of thermodynamics notes that it is possible to convert mechanical energy to heat energy more efficiently than heat can be converted to mechanical energy?",
-    "Answer": "second law"
-  },
-  {
-    "Question": "While a motor uses electrical energy to create mechanical energy, what other electrical device does just the opposite?",
-    "Answer": "generator"
-  },
-  {
     "Question": "Of the two types of mechanical advantage, which takes friction into account?",
     "Answer": "actual mechanical advantage"
-  },
-  {
-    "Question": "What is the ideal mechanical advantage of a 6-meter lever if the pivot point is .4 meters from the load?",
-    "Answer": "14"
-  },
-  {
-    "Question": "What is the mechanical advantage of a machine that does not reduce either the force or distance but does change the direction between the force and the movement?",
-    "Answer": "1"
-  },
-  {
-    "Question": "The ideal mechanical advantage of a lever can be expressed as the length of the effort arm divided by the length of what other arm?",
-    "Answer": "resistance arm"
   },
   {
     "Question": "A machine has an ideal mechanical advantage of 8 but an actual mechanical advantage of 6.  What is its efficiency?",
@@ -388,48 +268,12 @@
     "Answer": "chemical"
   },
   {
-    "Question": "What kind of machine converts mechanical energy into electrical energy by rotating an armature, which contains conductors, through a magnetic field?",
-    "Answer": "generator (dynamo, alternator)"
-  },
-  {
-    "Question": "An effort of 150 pounds on a first class lever can lift 600 pounds.  What is the mechanical advantage?",
-    "Answer": "4"
-  },
-  {
-    "Question": "Of the two types of mechanical advantage, which takes friction into account?",
-    "Answer": "actual mechanical advantage"
-  },
-  {
-    "Question": "The ideal mechanical advantage of what simple machine equals its length divided by its height?",
-    "Answer": "inclined plane"
-  },
-  {
-    "Question": "A machine has an ideal mechanical advantage of 8 but an actual mechanical advantage of 6.  What is its efficiency?",
-    "Answer": "75%"
-  },
-  {
-    "Question": "Since a machine such as an oar with a mechanical advantage of less than 1 does not multiply the strength of the force, what does it multiply?",
-    "Answer": "speed (or distance)"
-  },
-  {
-    "Question": "To determine the mechanical advantage of a wheel and axle, you divide the wheel diameter by what?",
-    "Answer": "axle diameter"
-  },
-  {
     "Question": "The mechanical energy of a pendulum is all kinetic at the bottom of its swing and all ---- at the top of its swing.",
     "Answer": "potential"
   },
   {
-    "Question": "The mechanical advantage of a lever equals the ratio of its two what?",
-    "Answer": "arms"
-  },
-  {
     "Question": "A pulley is a circular lever.  Where is its fulcrum?",
     "Answer": "at its center (axis)"
-  },
-  {
-    "Question": "The mechanical advantage of a ramp equals the length of the ramp divided by what?",
-    "Answer": "its height"
   },
   {
     "Question": "A spike is most similar to what simple machine?",
@@ -456,18 +300,6 @@
     "Answer": "piston"
   },
   {
-    "Question": "Since a machine such as an oar with a mechanical advantage of less than 1 does not multiply the strength of the force, what does it multiply?",
-    "Answer": "speed (or distance)"
-  },
-  {
-    "Question": "What is the ideal mechanical advantage of a 4-meter lever if the pivot point is .5 meters from the load?",
-    "Answer": "7"
-  },
-  {
-    "Question": "A block and tackle with one rope and a six-wheel pulley allows you to lift a load how many times heavier than you could lift without it?",
-    "Answer": "six times"
-  },
-  {
     "Question": "Tongs are what class of levers?",
     "Answer": "third class"
   },
@@ -492,20 +324,8 @@
     "Answer": "mechanical advantage"
   },
   {
-    "Question": "What term can indicate the weight supported by a pillar, the weight on a bridge, or the weight moved by a lever?",
-    "Answer": "load"
-  },
-  {
-    "Question": "A machine has an ideal mechanical advantage of 8 but an actual mechanical advantage of 6.  What is its efficiency?",
-    "Answer": "75%"
-  },
-  {
     "Question": "The maximum angle at which a load will remain stationary on an inclined plane is called the angle of friction or the angle of what?",
     "Answer": "repose"
-  },
-  {
-    "Question": "The effort force distance divided by the resistance force distance equals what?",
-    "Answer": "ideal mechanical advantage"
   },
   {
     "Question": "The resistance against which a machine acts is called what?",
@@ -520,24 +340,12 @@
     "Answer": "linear (straight line) motion"
   },
   {
-    "Question": "What two simple machines are used in a bench vice?",
-    "Answer": "lever, screw"
-  },
-  {
-    "Question": "What is the mechanical advantage of a simple machine that requires an effort of 40 newtons to lift a load of 200 newtons?",
-    "Answer": "5"
-  },
-  {
     "Question": "Some machines such as oars are designed to increase the distance through which the output force acts.  The output force is decreased to increase the distance, but there is a significant gain in what?",
     "Answer": "speed"
   },
   {
     "Question": "The formula for finding the pitch, p, of a screw thread is p = 1/N.  Solve for N in terms of p.",
     "Answer": "N = 1/p"
-  },
-  {
-    "Question": "A machine has an ideal mechanical advantage of 8 but an actual mechanical advantage of 6.  What is its efficiency?",
-    "Answer": "75%"
   },
   {
     "Question": "What class of lever has these characteristics?   -the fulcrum is at one end   -the effort is at the other end   -the resistance is between the ends",
@@ -548,56 +356,20 @@
     "Answer": "hydrometer"
   },
   {
-    "Question": "A gear with 12 teeth drives a gear with 54 teeth.  What is the mechanical advantage?",
-    "Answer": "4.5"
-  },
-  {
-    "Question": "What is last on a list of the six simple machines arranged alphabetically?",
-    "Answer": "wedge"
-  },
-  {
-    "Question": "What is the ideal mechanical advantage of a lever if the length of the effort arm is ten feet and the length of the resistance arm is two feet?",
-    "Answer": "5"
-  },
-  {
     "Question": "A screwdriver is actually a kind of wheel and axle.  Which part of the tool is the wheel?",
     "Answer": "handle"
-  },
-  {
-    "Question": "By dividing the number of teeth on the driven gear by the number of teeth on the gear driving it, you can calculate what property of the gear system?",
-    "Answer": "mechanical advantage"
   },
   {
     "Question": "Name the device used to change circular motion into back-and-forth motion.",
     "Answer": "cam"
   },
   {
-    "Question": "The mechanical advantage of a lever equals the ratio of its two what?",
-    "Answer": "arms"
-  },
-  {
     "Question": "What kind of gears surround a sun gear?",
     "Answer": "planetary gears"
   },
   {
-    "Question": "If the driver gear in a gear train is rotating in a clockwise direction, in what direction does the gear adjacent to it called the follower rotate?",
-    "Answer": "counterclockwise"
-  },
-  {
     "Question": "What adjective indicates a fuel-air mixture for an engine that contains too little gasoline?",
     "Answer": "lean"
-  },
-  {
-    "Question": "A plank twenty meters in length is used as an inclined plane with one end of the plank four meters off the ground.  What is the ideal mechanical advantage?",
-    "Answer": "5"
-  },
-  {
-    "Question": "What is the mechanical advantage of a simple machine that requires an effort of 40 newtons to lift a load of 200 newtons?",
-    "Answer": "5"
-  },
-  {
-    "Question": "With two intermeshed bevel gears, if one gear rotates in a clockwise direction, in what direction does the other gear rotate?",
-    "Answer": "counterclockwise"
   },
   {
     "Question": "What is the name for the disturbed water behind a moving boat?",
@@ -606,10 +378,6 @@
   {
     "Question": "What is the name for the pivot point of a lever?",
     "Answer": "fulcrum"
-  },
-  {
-    "Question": "The number of strands supporting a movable block equals the ideal mechanical advantage of what device?",
-    "Answer": "pulley"
   },
   {
     "Question": "What number provides a measure of the ability of a fuel to resist knocking when burned in a spark-ignition engine?",
@@ -622,17 +390,5 @@
   {
     "Question": "Name the smaller gear in a gear pair.",
     "Answer": "pinion"
-  },
-  {
-    "Question": "The mechanical advantage of what simple machine is determined by dividing the slope length by the vertical height?",
-    "Answer": "inclined plane"
-  },
-  {
-    "Question": "Some machines such as oars are designed to increase the distance through which the output force acts.  The output force is decreased to increase the distance, but there is a significant gain in what?",
-    "Answer": "speed"
-  },
-  {
-    "Question": "The ideal mechanical advantage of an inclined plane is the ratio of length to what?",
-    "Answer": "height"
   }
 ]

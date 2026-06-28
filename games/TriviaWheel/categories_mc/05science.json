@@ -418,17 +418,6 @@
     }
   },
   {
-    "question": "A transformer has windings of 2 to 1 ratio in the primary and secondary coils respectively.  It puts out 220 volts if it receives ---- volts.",
-    "answer": "A",
-    "options": {
-      "A": "440",
-      "B": "330",
-      "C": "220",
-      "D": "880",
-      "E": "110"
-    }
-  },
-  {
     "question": "Which is least useful in developing endurance, flexibility, and cardiovascular efficiency?",
     "answer": "C",
     "options": {
@@ -822,39 +811,6 @@
       "C": "chromium and cadmium",
       "D": "calcium and magnesium",
       "E": "potassium and dilithium"
-    }
-  },
-  {
-    "question": "Demerol and morphine are ...",
-    "answer": "B",
-    "options": {
-      "A": "placebos",
-      "B": "analgesics",
-      "C": "hallucinogens",
-      "D": "decongestants",
-      "E": "immunosuppressants"
-    }
-  },
-  {
-    "question": "In an electrical storm, the storm clouds are charged like giant ...",
-    "answer": "D",
-    "options": {
-      "A": "diodes",
-      "B": "rectifiers",
-      "C": "resistors",
-      "D": "capacitors",
-      "E": "transistors"
-    }
-  },
-  {
-    "question": "A lever rests upon what post or point?",
-    "answer": "E",
-    "options": {
-      "A": "axis",
-      "B": "farad",
-      "C": "vertex",
-      "D": "gnomon",
-      "E": "fulcrum"
     }
   },
   {
@@ -2233,17 +2189,6 @@
     }
   },
   {
-    "question": "An absorber is a photovoltaic device that readily absorbs ...",
-    "answer": "E",
-    "options": {
-      "A": "futons",
-      "B": "leptons",
-      "C": "plutons",
-      "D": "nektons",
-      "E": "photons"
-    }
-  },
-  {
     "question": "Stress is expressed in ...",
     "answer": "E",
     "options": {
@@ -2431,17 +2376,6 @@
     }
   },
   {
-    "question": "Radar is not used to ...",
-    "answer": "A",
-    "options": {
-      "A": "locate tumors",
-      "B": "measure speed",
-      "C": "detect icebergs",
-      "D": "monitor aircraft",
-      "E": "track hurricanes"
-    }
-  },
-  {
     "question": "What type of variables that may influence the outcome of an experiment are not the independent variables actually being tested?",
     "answer": "E",
     "options": {
@@ -2494,17 +2428,6 @@
       "C": "twine",
       "D": "spine",
       "E": "whine"
-    }
-  },
-  {
-    "question": "Which appliance has a compressor?",
-    "answer": "C",
-    "options": {
-      "A": "disposal",
-      "B": "microwave",
-      "C": "refrigerator",
-      "D": "dishwasher",
-      "E": "water heater"
     }
   },
   {
@@ -2761,17 +2684,6 @@
     }
   },
   {
-    "question": "A discharging wet-cell battery illustrates which energy pair transformation?",
-    "answer": "C",
-    "options": {
-      "A": "light to mechanical",
-      "B": "chemical to thermal",
-      "C": "chemical to electrical",
-      "D": "electrical to potential",
-      "E": "thermal to mechanical"
-    }
-  },
-  {
     "question": "Which material best exhibits plasticity?",
     "answer": "B",
     "options": {
@@ -2857,17 +2769,6 @@
       "C": "peneplain",
       "D": "thrust plane",
       "E": "reverse fault"
-    }
-  },
-  {
-    "question": "In the electrolysis of aluminum, aluminum is ...",
-    "answer": "C",
-    "options": {
-      "A": "coated by electricity",
-      "B": "deposited at the anode",
-      "C": "deposited at the cathode",
-      "D": "converted from an oxide to a sulfide",
-      "E": "converted from a sulfide to an oxide"
     }
   },
   {

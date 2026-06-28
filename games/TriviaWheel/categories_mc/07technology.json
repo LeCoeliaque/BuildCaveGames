@@ -11,39 +11,6 @@
     }
   },
   {
-    "question": "A miniaturized electrical circuit built on a microchip is a(n) ---- circuit.",
-    "answer": "E",
-    "options": {
-      "A": "short",
-      "B": "closed",
-      "C": "series",
-      "D": "chitlin",
-      "E": "integrated"
-    }
-  },
-  {
-    "question": "What kind of computer program searches through a text or series of texts and indexes every occurrence of every word?",
-    "answer": "D",
-    "options": {
-      "A": "freelancer",
-      "B": "conveyancer",
-      "C": "necromancer",
-      "D": "concordancer",
-      "E": "encumbrancer"
-    }
-  },
-  {
-    "question": "Regarding computers, what is the meaning of the abbreviation, LAN?",
-    "answer": "C",
-    "options": {
-      "A": "log-analog",
-      "B": "laser nanosecond",
-      "C": "local area network",
-      "D": "light-activated neuron",
-      "E": "language-aided numeration"
-    }
-  },
-  {
     "question": "Components of computers include ---- chips.",
     "answer": "B",
     "options": {
@@ -85,17 +52,6 @@
       "C": "resonation",
       "D": "scintillation",
       "E": "fragmentation"
-    }
-  },
-  {
-    "question": "While a neuron takes about one millisecond to fire, certain computer switches can close a billion times faster.  Such switches close in a ...",
-    "answer": "A",
-    "options": {
-      "A": "picosecond",
-      "B": "attosecond",
-      "C": "nanosecond",
-      "D": "microsecond",
-      "E": "femtosecond"
     }
   },
   {
@@ -187,17 +143,6 @@
     }
   },
   {
-    "question": "Sonar relies on ...",
-    "answer": "B",
-    "options": {
-      "A": "halos",
-      "B": "echoes",
-      "C": "photons",
-      "D": "shadows",
-      "E": "overtones"
-    }
-  },
-  {
     "question": "Another name for recombinant DNA technology is ...",
     "answer": "B",
     "options": {
@@ -231,17 +176,6 @@
     }
   },
   {
-    "question": "Samuel Morse put the work of what two scientists to practical use?",
-    "answer": "C",
-    "options": {
-      "A": "Charles Richter, Robert Boyle",
-      "B": "Louis Pasteur, Charles Darwin",
-      "C": "Alessandro Volta, Andre Ampere",
-      "D": "Alexander Fleming, Joseph Lister",
-      "E": "Marie Curie, Anton van Leeuwenhoek"
-    }
-  },
-  {
     "question": "In the early 21st century, some automobile manufacturers began marketing ---- vehicles combining electric motors with internal combustion engines.",
     "answer": "A",
     "options": {
@@ -253,17 +187,6 @@
     }
   },
   {
-    "question": "How many colors are possible with an 8-bit digital image?",
-    "answer": "D",
-    "options": {
-      "A": "32",
-      "B": "64",
-      "C": "128",
-      "D": "256",
-      "E": "512"
-    }
-  },
-  {
     "question": "Electromagnets are not used in ...",
     "answer": "B",
     "options": {
@@ -272,138 +195,6 @@
       "C": "generators",
       "D": "disk drives",
       "E": "loudspeakers"
-    }
-  },
-  {
-    "question": "Neurons take 1 millisecond to fire while some computer switches can close in 1 picosecond.  Those switches are how many times faster?",
-    "answer": "D",
-    "options": {
-      "A": "1 hundred times",
-      "B": "1 thousand times",
-      "C": "1 million times",
-      "D": "1 billion times",
-      "E": "1 trillion times"
-    }
-  },
-  {
-    "question": "Radar equipment and microwave ovens incorporate ...",
-    "answer": "B",
-    "options": {
-      "A": "heliostats",
-      "B": "magnetrons",
-      "C": "venturi tubes",
-      "D": "electroscopes",
-      "E": "eudiometer tubes"
-    }
-  },
-  {
-    "question": "About how many colors are possible in a digital image with 24 bits allocated for the storage of each pixel?",
-    "answer": "E",
-    "options": {
-      "A": "1,020",
-      "B": "32,000",
-      "C": "524,000",
-      "D": "1,048,000",
-      "E": "17,000,000"
-    }
-  },
-  {
-    "question": "Albert Michelson invented the ...",
-    "answer": "D",
-    "options": {
-      "A": "anemometer",
-      "B": "psychrometer",
-      "C": "hemacytometer",
-      "D": "interferometer",
-      "E": "sphygmomanometer"
-    }
-  },
-  {
-    "question": "Which was invented first?",
-    "answer": "D",
-    "options": {
-      "A": "neoprene",
-      "B": "AC motor",
-      "C": "transistor",
-      "D": "barbed wire",
-      "E": "aerosol spray"
-    }
-  },
-  {
-    "question": "What are the initials for the type of electronic memory associated with plug-in cartridges for video games?",
-    "answer": "C",
-    "options": {
-      "A": "REM",
-      "B": "RAM",
-      "C": "ROM",
-      "D": "RUM",
-      "E": "RIM"
-    }
-  },
-  {
-    "question": "Microlithography is a process widely used in manufacturing ...",
-    "answer": "B",
-    "options": {
-      "A": "jewelry",
-      "B": "semiconductors",
-      "C": "telescope lenses",
-      "D": "nuclear warheads",
-      "E": "drilling equipment"
-    }
-  },
-  {
-    "question": "Most plastic shapes are formed through ...",
-    "answer": "B",
-    "options": {
-      "A": "casting",
-      "B": "extrusion",
-      "C": "embossing",
-      "D": "distillation",
-      "E": "lithification"
-    }
-  },
-  {
-    "question": "The term for unsolicited commercial email messages is the same as that for ...",
-    "answer": "A",
-    "options": {
-      "A": "a brand of canned meat",
-      "B": "something which is frothy",
-      "C": "Popeye's favorite vegetable",
-      "D": "a popular cream-filled dessert roll",
-      "E": "the sediment at the bottom of a coffee pot"
-    }
-  },
-  {
-    "question": "A long helically-wound coil is a ...",
-    "answer": "C",
-    "options": {
-      "A": "dry cell",
-      "B": "rheostat",
-      "C": "solenoid",
-      "D": "electrolyte",
-      "E": "thermocouple"
-    }
-  },
-  {
-    "question": "Components of computers include ---- chips.",
-    "answer": "B",
-    "options": {
-      "A": "sodium",
-      "B": "silicon",
-      "C": "selenium",
-      "D": "scandium",
-      "E": "strontium"
-    }
-  },
-  {
-    "question": "Electric motors and loudspeakers are alike in that both contain ...",
-    "answer": "B",
-    "options": {
-      "A": "lenses",
-      "B": "magnets",
-      "C": "amplifiers",
-      "D": "gyroscopes",
-      "E": "diaphragms"
     }
   },
   {
@@ -440,39 +231,6 @@
     }
   },
   {
-    "question": "Over 80% of the ammonia produced around the world is used to make ...",
-    "answer": "C",
-    "options": {
-      "A": "fuels",
-      "B": "plastics",
-      "C": "fertilizers",
-      "D": "explosives",
-      "E": "refrigerants"
-    }
-  },
-  {
-    "question": "Devices with mirrors used in solar power generation are called ...",
-    "answer": "C",
-    "options": {
-      "A": "rheostats",
-      "B": "gyrostats",
-      "C": "heliostats",
-      "D": "hemostats",
-      "E": "thermostats"
-    }
-  },
-  {
-    "question": "The most common method of uranium enrichment is ...",
-    "answer": "E",
-    "options": {
-      "A": "recapitulation",
-      "B": "pasteurization",
-      "C": "biodegradation",
-      "D": "eutrophication",
-      "E": "centrifugation"
-    }
-  },
-  {
     "question": "Desalination is a process used to remove ...",
     "answer": "D",
     "options": {
@@ -484,17 +242,6 @@
     }
   },
   {
-    "question": "Which requires the greatest amount of electrical power?",
-    "answer": "A",
-    "options": {
-      "A": "toaster",
-      "B": "ceiling fan",
-      "C": "refrigerator",
-      "D": "personal computer",
-      "E": "200-watt light bulb"
-    }
-  },
-  {
     "question": "Many scientists project that space will provide a better environment than Earth for the ...",
     "answer": "C",
     "options": {
@@ -503,28 +250,6 @@
       "C": "manufacture of crystals",
       "D": "raising of bacterial cultures",
       "E": "investigation of parapsychology"
-    }
-  },
-  {
-    "question": "Microlithography is a process widely used in manufacturing ...",
-    "answer": "B",
-    "options": {
-      "A": "jewelry",
-      "B": "semiconductors",
-      "C": "telescope lenses",
-      "D": "nuclear warheads",
-      "E": "drilling equipment"
-    }
-  },
-  {
-    "question": "A supercomputer could sort the fewest number of records in one ...",
-    "answer": "E",
-    "options": {
-      "A": "millisecond",
-      "B": "picosecond",
-      "C": "nanosecond",
-      "D": "microsecond",
-      "E": "femtosecond"
     }
   },
   {
@@ -550,72 +275,6 @@
     }
   },
   {
-    "question": "Proposed as a cheap way to mine the entire solar system, a device that is able to build a working copy of itself using materials in its environment is called a ---- machine.",
-    "answer": "C",
-    "options": {
-      "A": "Von Trapp",
-      "B": "Von Guericke",
-      "C": "Von Neumann",
-      "D": "Von Bismarck",
-      "E": "Von Hindenburg"
-    }
-  },
-  {
-    "question": "NASA's X-43A scramjet achieved a speed of Mach 10 which is about how many miles per second?",
-    "answer": "A",
-    "options": {
-      "A": "2",
-      "B": "3",
-      "C": "4",
-      "D": "5",
-      "E": "6"
-    }
-  },
-  {
-    "question": "What kind of apparatuses are essential to the uranium-enrichment process?",
-    "answer": "D",
-    "options": {
-      "A": "incubators",
-      "B": "heliostats",
-      "C": "autoclaves",
-      "D": "centrifuges",
-      "E": "stroboscopes"
-    }
-  },
-  {
-    "question": "In the early 21st century, some automobile manufacturers began marketing ---- vehicles combining electric motors with internal combustion engines.",
-    "answer": "A",
-    "options": {
-      "A": "hybrid",
-      "B": "dual fuel",
-      "C": "composite",
-      "D": "hydroelectric",
-      "E": "rotary turbine"
-    }
-  },
-  {
-    "question": "The Gossamer Albatross is best described as a ...",
-    "answer": "C",
-    "options": {
-      "A": "film of cobwebs",
-      "B": "web-footed bird",
-      "C": "human-powered aircraft",
-      "D": "constant and worrisome burden",
-      "E": "watercraft equipped with hydrofoils"
-    }
-  },
-  {
-    "question": "Submarines detect the presence of ships and underwater objects by sonar, a technology that depends on ...",
-    "answer": "C",
-    "options": {
-      "A": "heat",
-      "B": "light",
-      "C": "sound",
-      "D": "gravity",
-      "E": "magnetism"
-    }
-  },
-  {
     "question": "Which is not an abbreviation for some form of medical imaging technology?",
     "answer": "B",
     "options": {
@@ -624,50 +283,6 @@
       "C": "PET",
       "D": "MRI",
       "E": "DSA"
-    }
-  },
-  {
-    "question": "The batteries that power watches, cardiac pacemakers, and computer memory backup are usually made of ...",
-    "answer": "B",
-    "options": {
-      "A": "silicon",
-      "B": "lithium",
-      "C": "zinc and carbon",
-      "D": "lead and an acid",
-      "E": "nickel and cadmium"
-    }
-  },
-  {
-    "question": "Providing directional stability for torpedoes was one application for ...",
-    "answer": "A",
-    "options": {
-      "A": "gyroscopes",
-      "B": "horoscopes",
-      "C": "oscilloscopes",
-      "D": "kaleidoscopes",
-      "E": "spectroscopes"
-    }
-  },
-  {
-    "question": "The doctrine of fair use allows the limited public use of what without obtaining permission?",
-    "answer": "D",
-    "options": {
-      "A": "public lands",
-      "B": "navigable waters",
-      "C": "patented technology",
-      "D": "copyrighted material",
-      "E": "government equipment"
-    }
-  },
-  {
-    "question": "Otto Lilienthal first predicted that high lift and low drag could be produced by ...",
-    "answer": "A",
-    "options": {
-      "A": "airfoils",
-      "B": "airways",
-      "C": "airheads",
-      "D": "airwaves",
-      "E": "airstrips"
     }
   },
   {
@@ -690,39 +305,6 @@
       "C": "Jacobites",
       "D": "Canaanites",
       "E": "Muscovites"
-    }
-  },
-  {
-    "question": "Which is not a computer peripheral?",
-    "answer": "A",
-    "options": {
-      "A": "the CPU",
-      "B": "a printer",
-      "C": "a terminal",
-      "D": "the hard disk",
-      "E": "an optical scanner"
-    }
-  },
-  {
-    "question": "A 2008 report indicated that Iran had more than 5,000 --- in operation to enrich uranium.",
-    "answer": "C",
-    "options": {
-      "A": "cyclotrons",
-      "B": "autoclaves",
-      "C": "centrifuges",
-      "D": "magnetrons",
-      "E": "spectroscopes"
-    }
-  },
-  {
-    "question": "Which depends on reflection?",
-    "answer": "A",
-    "options": {
-      "A": "sonar",
-      "B": "solar cell",
-      "C": "gyroscope",
-      "D": "thermostat",
-      "E": "electromagnet"
     }
   },
   {
@@ -759,61 +341,6 @@
     }
   },
   {
-    "question": "Platinum didn't work.  Who then tried 6000 species of carbonized vegetable fiber and found bamboo was best for his invention?",
-    "answer": "D",
-    "options": {
-      "A": "Eli Whitney",
-      "B": "Samuel Colt",
-      "C": "Robert Fulton",
-      "D": "Thomas Edison",
-      "E": "George Eastman"
-    }
-  },
-  {
-    "question": "Which acronym used in the computer field does not refer to a programming language?",
-    "answer": "A",
-    "options": {
-      "A": "GIGO",
-      "B": "Basic",
-      "C": "Algol",
-      "D": "COBOL",
-      "E": "FORTRAN"
-    }
-  },
-  {
-    "question": "The minimum number of light-emitting diodes required to display numerals from 0 to 9 is ...",
-    "answer": "C",
-    "options": {
-      "A": "3",
-      "B": "5",
-      "C": "7",
-      "D": "9",
-      "E": "11"
-    }
-  },
-  {
-    "question": "Which requires the greatest amount of electrical power?",
-    "answer": "A",
-    "options": {
-      "A": "toaster",
-      "B": "ceiling fan",
-      "C": "refrigerator",
-      "D": "personal computer",
-      "E": "200-watt light bulb"
-    }
-  },
-  {
-    "question": "Devices with mirrors used in solar power generation are called ...",
-    "answer": "C",
-    "options": {
-      "A": "rheostats",
-      "B": "gyrostats",
-      "C": "heliostats",
-      "D": "hemostats",
-      "E": "thermostats"
-    }
-  },
-  {
     "question": "Quadrants, verniers, sextants, and compasses directly related to the development of ...",
     "answer": "A",
     "options": {
@@ -822,116 +349,6 @@
       "C": "choreography",
       "D": "crystallography",
       "E": "cinematography"
-    }
-  },
-  {
-    "question": "The $10 million Ansari X Prize relates to ...",
-    "answer": "A",
-    "options": {
-      "A": "space flight",
-      "B": "nuclear fusion",
-      "C": "agricultural research",
-      "D": "environmental cleanup",
-      "E": "weapons of mass destruction"
-    }
-  },
-  {
-    "question": "Northrop Grumman is working on an unmanned fighter plane called the X-47A ...",
-    "answer": "C",
-    "options": {
-      "A": "Cupid",
-      "B": "Icarus",
-      "C": "Pegasus",
-      "D": "Unicorn",
-      "E": "Minotaur"
-    }
-  },
-  {
-    "question": "What technology uses a split laser beam to produce three-dimensional images?",
-    "answer": "A",
-    "options": {
-      "A": "holography",
-      "B": "topography",
-      "C": "choreography",
-      "D": "spectrography",
-      "E": "photomicrography"
-    }
-  },
-  {
-    "question": "Quadrants, verniers, sextants, and compasses directly related to the development of ...",
-    "answer": "A",
-    "options": {
-      "A": "cartography",
-      "B": "cryptography",
-      "C": "choreography",
-      "D": "crystallography",
-      "E": "cinematography"
-    }
-  },
-  {
-    "question": "Which aircraft had a canard biplane configuration?",
-    "answer": "B",
-    "options": {
-      "A": "Enola Gay",
-      "B": "Wright Flyer",
-      "C": "Curtis Jenny",
-      "D": "Glamorous Glennis",
-      "E": "Spirit of St. Louis"
-    }
-  },
-  {
-    "question": "Which airplane has the longest wing span?",
-    "answer": "C",
-    "options": {
-      "A": "Boeing 707",
-      "B": "Douglas DC-10",
-      "C": "Lockheed C-5A",
-      "D": "Grumman F-14B",
-      "E": "McDonnell Douglas F-4E"
-    }
-  },
-  {
-    "question": "Desalination is a process used to remove ...",
-    "answer": "D",
-    "options": {
-      "A": "metals from ore",
-      "B": "bacteria from food",
-      "C": "pollutants from air",
-      "D": "salt from seawater",
-      "E": "impurities from drugs"
-    }
-  },
-  {
-    "question": "Which is not a type of digital image file?",
-    "answer": "C",
-    "options": {
-      "A": "GIF",
-      "B": "JPG",
-      "C": "EXE",
-      "D": "PNG",
-      "E": "TIFF"
-    }
-  },
-  {
-    "question": "Who patented a fuel system and designs for multistage rockets?",
-    "answer": "C",
-    "options": {
-      "A": "Enrico Fermi",
-      "B": "Edward Teller",
-      "C": "Robert Goddard",
-      "D": "Arthur Compton",
-      "E": "Albert Michelson"
-    }
-  },
-  {
-    "question": "A decision statement belongs in what shape when flowcharting a computer program?",
-    "answer": "D",
-    "options": {
-      "A": "oval",
-      "B": "circle",
-      "C": "square",
-      "D": "diamond",
-      "E": "rectangle"
     }
   },
   {
@@ -946,138 +363,6 @@
     }
   },
   {
-    "question": "A program that translates a high-level computer language into machine language is a ...",
-    "answer": "B",
-    "options": {
-      "A": "buffer",
-      "B": "compiler",
-      "C": "word processor",
-      "D": "microprocessor",
-      "E": "acoustic coupler"
-    }
-  },
-  {
-    "question": "The Ariane rocket was developed in ...",
-    "answer": "E",
-    "options": {
-      "A": "Iran",
-      "B": "India",
-      "C": "Japan",
-      "D": "China",
-      "E": "France"
-    }
-  },
-  {
-    "question": "In 1916, who broadcast the first radio news?",
-    "answer": "D",
-    "options": {
-      "A": "Elias Howe",
-      "B": "Eli Whitney",
-      "C": "Cyrus Field",
-      "D": "Lee De Forest",
-      "E": "James Hargreaves"
-    }
-  },
-  {
-    "question": "Scientists in ---- are attempting to produce devices one billionth of a meter in size.",
-    "answer": "D",
-    "options": {
-      "A": "biotechnology",
-      "B": "aerotechnology",
-      "C": "cryotechnology",
-      "D": "nanotechnology",
-      "E": "hydrotechnology"
-    }
-  },
-  {
-    "question": "The batteries that power watches, cardiac pacemakers, and computer memory backup are usually made of ...",
-    "answer": "B",
-    "options": {
-      "A": "silicon",
-      "B": "lithium",
-      "C": "zinc and carbon",
-      "D": "lead and an acid",
-      "E": "nickel and cadmium"
-    }
-  },
-  {
-    "question": "An absorber is a photovoltaic device that readily absorbs ...",
-    "answer": "E",
-    "options": {
-      "A": "futons",
-      "B": "leptons",
-      "C": "plutons",
-      "D": "nektons",
-      "E": "photons"
-    }
-  },
-  {
-    "question": "Electromagnets are not used in ...",
-    "answer": "B",
-    "options": {
-      "A": "doorbells",
-      "B": "light bulbs",
-      "C": "generators",
-      "D": "disk drives",
-      "E": "loudspeakers"
-    }
-  },
-  {
-    "question": "Which depends on reflection?",
-    "answer": "A",
-    "options": {
-      "A": "sonar",
-      "B": "solar cell",
-      "C": "gyroscope",
-      "D": "thermostat",
-      "E": "electromagnet"
-    }
-  },
-  {
-    "question": "The world's first commercial jet airliner took its maiden flight in 1949.  It was called the De Havilland ...",
-    "answer": "B",
-    "options": {
-      "A": "Star",
-      "B": "Comet",
-      "C": "Rocket",
-      "D": "Meteor",
-      "E": "Streak"
-    }
-  },
-  {
-    "question": "A long helically-wound coil is a ...",
-    "answer": "C",
-    "options": {
-      "A": "dry cell",
-      "B": "rheostat",
-      "C": "solenoid",
-      "D": "electrolyte",
-      "E": "thermocouple"
-    }
-  },
-  {
-    "question": "Lasers are not used to ...",
-    "answer": "C",
-    "options": {
-      "A": "cut metals",
-      "B": "transmit data",
-      "C": "propel aircraft",
-      "D": "reshape corneas",
-      "E": "survey distances"
-    }
-  },
-  {
-    "question": "As you might surmise from their names, in the 1970s, Herbert Saffir and Robert Simpson worked for the ...",
-    "answer": "A",
-    "options": {
-      "A": "National Hurricane Center",
-      "B": "Centers for Disease Control",
-      "C": "United States Geological Survey",
-      "D": "Office of Technology Assessment",
-      "E": "United States Department of Agriculture"
-    }
-  },
-  {
     "question": "Every device connected to the Internet has an identifying ---- address.",
     "answer": "A",
     "options": {
@@ -1086,39 +371,6 @@
       "C": "VD",
       "D": "AC",
       "E": "MO"
-    }
-  },
-  {
-    "question": "Magnetic levitation is used in a vehicle called a maglev.  The maglev is a ...",
-    "answer": "B",
-    "options": {
-      "A": "ship",
-      "B": "train",
-      "C": "dirigible",
-      "D": "aircraft",
-      "E": "automobile"
-    }
-  },
-  {
-    "question": "The Boeing X-37 is a ...",
-    "answer": "E",
-    "options": {
-      "A": "biplane",
-      "B": "seaplane",
-      "C": "sailplane",
-      "D": "gyroplane",
-      "E": "spaceplane"
-    }
-  },
-  {
-    "question": "Reminiscent of the spacecraft described in \"Rendezvous with Rama,\" a futuristic space habitat design is called the ---- cylinder.",
-    "answer": "A",
-    "options": {
-      "A": "O'Neill",
-      "B": "O'Casey",
-      "C": "O'Connor",
-      "D": "O'Keeffe",
-      "E": "O'Higgins"
     }
   },
   {
@@ -1141,171 +393,6 @@
       "C": "silver",
       "D": "paraffin",
       "E": "selenium"
-    }
-  },
-  {
-    "question": "The purpose of desalination plants is to ...",
-    "answer": "C",
-    "options": {
-      "A": "recycle garbage",
-      "B": "purify grey water",
-      "C": "remove salt from seawater",
-      "D": "restore denuded landscapes",
-      "E": "extract impurities from coal"
-    }
-  },
-  {
-    "question": "Which abbreviation indicates an optical storage technology that can record vast amounts of information?",
-    "answer": "E",
-    "options": {
-      "A": "VTR",
-      "B": "MTV",
-      "C": "IFR",
-      "D": "VHF",
-      "E": "DVD"
-    }
-  },
-  {
-    "question": "Which was invented first?",
-    "answer": "E",
-    "options": {
-      "A": "revolver",
-      "B": "telephone",
-      "C": "lightning rod",
-      "D": "sewing machine",
-      "E": "reflecting telescope"
-    }
-  },
-  {
-    "question": "Shortwave radiation from the Sun passes freely into this unit but its glass traps the longer infra-red rays inside raising the temperature.  What is this unit?",
-    "answer": "B",
-    "options": {
-      "A": "telescope",
-      "B": "greenhouse",
-      "C": "planetarium",
-      "D": "bathysphere",
-      "E": "spectroscope"
-    }
-  },
-  {
-    "question": "Photographs are typically sent over the Internet as what kind of file?",
-    "answer": "B",
-    "options": {
-      "A": ".DOC",
-      "B": ".JPG",
-      "C": ".DBF",
-      "D": ".WAV",
-      "E": ".EXE"
-    }
-  },
-  {
-    "question": "The Glomar Challenger was a(n) ...",
-    "answer": "B",
-    "options": {
-      "A": "submarine",
-      "B": "drilling ship",
-      "C": "aircraft carrier",
-      "D": "supersonic aircraft",
-      "E": "mock-up of the space shuttle"
-    }
-  },
-  {
-    "question": "In computer science, parity is ...",
-    "answer": "A",
-    "options": {
-      "A": "odd or even",
-      "B": "positive or negative",
-      "C": "duplex or half-duplex",
-      "D": "volatile or non-volatile",
-      "E": "synchronous or asynchronous"
-    }
-  },
-  {
-    "question": "A function of heliostats is to ...",
-    "answer": "B",
-    "options": {
-      "A": "absorb sound",
-      "B": "reflect sunlight",
-      "C": "increase precipitation",
-      "D": "desalinate ocean water",
-      "E": "reduce atmospheric pollution"
-    }
-  },
-  {
-    "question": "The Otto cycle is a(n) ...",
-    "answer": "E",
-    "options": {
-      "A": "bicycle",
-      "B": "blast furnace",
-      "C": "electrical circuit",
-      "D": "desalination system",
-      "E": "internal combustion engine"
-    }
-  },
-  {
-    "question": "Sadi Carnot was a 19th-century French engineer who was associated with ...",
-    "answer": "B",
-    "options": {
-      "A": "cryogenics",
-      "B": "heat engines",
-      "C": "wave mechanics",
-      "D": "geostationary satellites",
-      "E": "electromagnetic induction"
-    }
-  },
-  {
-    "question": "If the binary code for the character A is 1000001 and the binary code for B is 1000010, then 1001011 is the code for ...",
-    "answer": "A",
-    "options": {
-      "A": "K",
-      "B": "M",
-      "C": "O",
-      "D": "Q",
-      "E": "S"
-    }
-  },
-  {
-    "question": "Computerized axial tomography ...",
-    "answer": "C",
-    "options": {
-      "A": "estimates fossil age",
-      "B": "controls spacecraft attitude",
-      "C": "produces images of the brain",
-      "D": "locates earthquake epicenters",
-      "E": "synthesizes transuranium elements"
-    }
-  },
-  {
-    "question": "In 2004, NASA broke the speed record for a plane powered by an air-breathing engine by reaching Mach 10 with its X-43A ...",
-    "answer": "E",
-    "options": {
-      "A": "fanjet",
-      "B": "laserjet",
-      "C": "pulsejet",
-      "D": "turbojet",
-      "E": "scramjet"
-    }
-  },
-  {
-    "question": "The greatest amount of which industrial chemical is produced annually around the world?",
-    "answer": "D",
-    "options": {
-      "A": "ethanol",
-      "B": "styrene",
-      "C": "chlorine",
-      "D": "sulfuric acid",
-      "E": "ammonium nitrate"
-    }
-  },
-  {
-    "question": "Bundles of thin glass strands that transmit data are called ---- optics.",
-    "answer": "A",
-    "options": {
-      "A": "fiber",
-      "B": "string",
-      "C": "thread",
-      "D": "strand",
-      "E": "filament"
     }
   }
 ]
