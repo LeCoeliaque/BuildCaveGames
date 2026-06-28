@@ -422,90 +422,61 @@ function hubPage() {
       position: relative;
       z-index: 1;
       text-align: center;
-      padding: 64px 24px 48px;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex;
+      padding: 56px 24px 48px;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 20px;
     }
 
-    .hero-eyebrow::before,
-    .hero-eyebrow::after {
-      content: '';
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--green-dim);
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 16px;
-    }
-
-    .hero h1 span {
-      background: linear-gradient(135deg, #22c55e 0%, #4ade80 50%, #86efac 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero p {
-      color: var(--muted2);
-      font-size: 1rem;
-      max-width: 480px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    /* ── STATS BAR ── */
-    .stats-bar {
-      position: relative;
-      z-index: 1;
+    .hero-logo {
+      width: 110px;
+      height: 110px;
+      background: rgba(34,197,94,0.06);
+      border: 1px solid rgba(34,197,94,0.18);
+      border-radius: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 32px;
-      padding: 16px 24px;
-      margin: 0 auto 48px;
-      max-width: 600px;
+      margin-bottom: 28px;
+      position: relative;
     }
 
-    .stat {
-      text-align: center;
+    .hero-logo::before {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,197,94,0.1) 0%, transparent 70%);
+      pointer-events: none;
     }
 
-    .stat-value {
-      font-size: 1.8rem;
+    .hero-logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 800;
-      color: var(--green);
-      line-height: 1;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 10px;
     }
 
-    .stat-label {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .hero p {
       color: var(--muted);
-      margin-top: 4px;
+      font-size: 0.95rem;
+      margin: 0;
     }
 
-    .stat-divider {
-      width: 1px;
-      height: 40px;
-      background: var(--border);
+    .hero-divider {
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), transparent);
+      border-radius: 2px;
+      margin-top: 20px;
     }
 
     /* ── SECTION LABEL ── */
@@ -700,7 +671,6 @@ function hubPage() {
       .hero { padding: 40px 16px 32px; }
       .grid { padding: 0 16px; grid-template-columns: 1fr; }
       .section-label { padding: 0 16px; }
-      .stats-bar { gap: 20px; }
       footer { flex-direction: column; gap: 8px; text-align: center; }
     }
   </style>
@@ -714,26 +684,12 @@ function hubPage() {
   </nav>
 
   <div class="hero">
-    <div class="hero-eyebrow">Applied Creative Engineering</div>
-    <h1>Pick Your<br><span>Game</span></h1>
-    <p>Choose from our collection of multiplayer games. Each one starts instantly and runs right in your browser.</p>
-  </div>
-
-  <div class="stats-bar">
-    <div class="stat">
-      <div class="stat-value">${GAMES.length}</div>
-      <div class="stat-label">Games</div>
+    <div class="hero-logo">
+      <img src="/assets/logo.png" alt="Buildcave" />
     </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-value">∞</div>
-      <div class="stat-label">Players</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-value">0s</div>
-      <div class="stat-label">Setup</div>
-    </div>
+    <h1>Pick Your Game</h1>
+    <p>Choose a game and start playing instantly.</p>
+    <div class="hero-divider"></div>
   </div>
 
   <div class="section-label">
