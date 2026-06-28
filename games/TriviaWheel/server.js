@@ -56,7 +56,9 @@ function loadFR(){
       if(qs.length){centre={id,label,color:'#f0c040',questions:qs,isMC:false};console.log(`  ✓ Centre ${label} (${qs.length})`);}
     }catch(e){console.error(`  ✗ ${cf}:`,e.message);}
   }
-  if(!centre&&ring.length)centre={...ring[0],color:'#f0c040'};
+  // Fallback: if no dedicated centre file, reuse the first ring category's questions
+  // but give it a DISTINCT id so it never collides with a real ring category.
+  if(!centre&&ring.length)centre={...ring[0],id:'__centre__',label:'Centre',color:'#f0c040'};
   return{ring,centre};
 }
 function loadMC(){
@@ -85,9 +87,19 @@ const RING_SIZE=40,SPOKE_LEN=5;
 const CORNER_POS=[0,10,20,30],MID_POS=[5,15,25,35],HQ_POS=[0,5,10,15,20,25,30,35];
 function buildBoard(){
   const squares=[];
+  // Ring categories are painted by counting only NON-HQ tiles, cycling cats[counter%8]
+  // starting at cat index 1 (Geo) for the first non-HQ tile after corner 0.
+  let nonHqCounter=0;
   for(let i=0;i<RING_SIZE;i++){
     const isCorner=CORNER_POS.includes(i),isMid=MID_POS.includes(i),isHQ=isCorner||isMid;
-    squares.push({id:i,type:'ring',catIdx:i%8,isHQ,isCorner,isMid,hqCatIdx:isHQ?HQ_POS.indexOf(i):-1});
+    let catIdx;
+    if(isHQ){
+      catIdx=HQ_POS.indexOf(i); // HQ tile uses its fixed category
+    }else{
+      nonHqCounter++;
+      catIdx=nonHqCounter%8; // matches the painted board exactly
+    }
+    squares.push({id:i,type:'ring',catIdx,isHQ,isCorner,isMid,hqCatIdx:isHQ?HQ_POS.indexOf(i):-1});
   }
   for(let s=0;s<4;s++)for(let j=0;j<SPOKE_LEN;j++)
     squares.push({id:RING_SIZE+s*SPOKE_LEN+j,type:'spoke',catIdx:(s*2+1)%8,isHQ:false,spokeIdx:s,posInSpoke:j});
@@ -187,7 +199,8 @@ function pSnap(room,p){
   return{id:p.id,name:p.name,color:PLAYER_COLORS[p.colorIndex],
     pos:showPending?p._pendingPos:(p.pos??0),
     wedges:p.wedges||{},wedgeCount:catIds.filter(id=>p.wedges?.[id]).length,
-    isHost:p.id===room.hostId,isActive:p.id===room.activePlayerId};
+    isHost:p.id===room.hostId,isActive:p.id===room.activePlayerId,
+    disconnected:!!p._disconnected};
 }
 function snap(room){
   const mcQ=room.currentQ&&room.isCurrentMC?{text:room.currentQ.question,options:room.currentQ.options,catId:room.currentCatId,isMC:true}:null;
@@ -631,12 +644,23 @@ wss.on('connection',ws=>{
       const name=(msg.name||'Player').trim().slice(0,16);
       if(!rooms[rcode])rooms[rcode]=mkRoom(rcode);
       const room=rooms[rcode];
-      if(room.state!=='lobby'){sendTo(ws,{type:'error',message:'Game in progress.'});return;}
-      const ci=Object.keys(room.players).length%PLAYER_COLORS.length;
-      if(!room.players[pid])room.players[pid]={id:pid,name,ws,colorIndex:ci,pos:0,wedges:{},_pendingPos:null};
-      else room.players[pid].ws=ws;
+      const isExisting=!!room.players[pid];
+      if(room.state!=='lobby'&&!isExisting){
+        // Game in progress and this is a brand-new player — reject
+        sendTo(ws,{type:'error',message:'Game already in progress.'});return;
+      }
+      if(isExisting){
+        // Reconnecting player — just swap their socket back in
+        room.players[pid].ws=ws;
+        room.players[pid]._disconnected=false;
+        if(room.players[pid]._dcTimer){clearTimeout(room.players[pid]._dcTimer);room.players[pid]._dcTimer=null;}
+        console.log(`[RECONNECT] ${name} (${pid}) rejoined ${rcode}`);
+      }else{
+        const ci=Object.keys(room.players).length%PLAYER_COLORS.length;
+        room.players[pid]={id:pid,name,ws,colorIndex:ci,pos:0,wedges:{},_pendingPos:null};
+      }
       if(!room.hostId)room.hostId=pid;
-      sendTo(ws,{type:'joined',playerId:pid,roomCode:rcode});
+      sendTo(ws,{type:'joined',playerId:pid,roomCode:rcode,reconnected:isExisting});
       bcast(room,snap(room));return;
     }
 
@@ -690,7 +714,10 @@ wss.on('connection',ws=>{
       room.activeAnswer={answer,timeMs:msg.timeMs||30000,...result};
       clrTimer(room);
       sendTo(ws,{type:'answerAck',answer,correct:result.correct,matchType:result.matchType});
-      const isCentre=room.state==='centre_question'||room.currentCatId===FR.centre?.id;
+      // Only a genuine centre question (by state) should resolve as a win.
+      // Do NOT compare category IDs — the centre may fall back to ring[0]'s id,
+      // which would wrongly treat that ring category as the centre.
+      const isCentre=room.state==='centre_question';
       if(isCentre){resolveCentreQ(room);}
       else if(result.correct){resolveQ(room,null);}
       else if(room.state==='steal'){resolveSteal(room);}
@@ -847,11 +874,39 @@ wss.on('connection',ws=>{
 
   ws.on('close',()=>{
     if(!rcode||!rooms[rcode])return;
-    const room=rooms[rcode];delete room.players[pid];
-    const rem=Object.keys(room.players);
-    if(!rem.length){clrTimer(room);delete rooms[rcode];return;}
-    if(room.hostId===pid)room.hostId=rem[0];
+    const room=rooms[rcode];
+    const player=room.players[pid];
+    if(!player)return;
+
+    if(room.state==='lobby'){
+      // In lobby — remove immediately
+      delete room.players[pid];
+      const rem=Object.keys(room.players);
+      if(!rem.length){clrTimer(room);clrAdv(room);delete rooms[rcode];return;}
+      if(room.hostId===pid)room.hostId=rem[0];
+      bcast(room,snap(room));
+      return;
+    }
+
+    // Mid-game — mark as disconnected, keep their slot for 90s to allow reconnect
+    player._disconnected=true;
     bcast(room,snap(room));
+    console.log(`[DISCONNECT] ${player.name} (${pid}) dropped from ${rcode} — 90s grace`);
+    if(player._dcTimer)clearTimeout(player._dcTimer);
+    player._dcTimer=setTimeout(()=>{
+      const r=rooms[rcode];if(!r)return;
+      const p=r.players[pid];
+      if(p&&p._disconnected){
+        delete r.players[pid];
+        const rem=Object.keys(r.players);
+        if(!rem.length){clrTimer(r);clrAdv(r);delete rooms[rcode];return;}
+        if(r.hostId===pid)r.hostId=rem[0];
+        // If it was their turn, advance
+        if(r.activePlayerId===pid){clrTimer(r);clrAdv(r);startTurn(r);}
+        else bcast(r,snap(r));
+        console.log(`[TIMEOUT] ${pid} removed from ${rcode} after grace period`);
+      }
+    },90000);
   });
 });
 
