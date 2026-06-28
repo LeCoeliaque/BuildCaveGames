@@ -393,13 +393,18 @@
   .rules-body .pts { display:flex; justify-content:space-between; padding: 5px 0; border-bottom: 1px solid var(--border); }
   .rules-body .pts:last-child { border-bottom: none; }
   .rules-body .pts strong { color: var(--accent); font-family: 'Space Mono', monospace; }
+@keyframes compFlip{0%{transform:rotateX(90deg);opacity:0}100%{transform:rotateX(0);opacity:1}}
+@keyframes compShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 </style>
+<script src="/assets/audio.js" onerror="window.__noAudio=true"></script>
+<script src="/assets/celebrate.js" onerror="window.__noCeleb=true"></script>
 </head>
 <body>
 
 <header>
   <h1>COMPOUND!</h1>
   <span class="tagline">the word game where thinking alike pays off</span>
+  <button onclick="toggleMute()" id="muteBtn" title="Sound" style="position:absolute;top:14px;right:52px;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--accent);cursor:pointer;font-size:.95rem">🔊</button>
   <button onclick="openRules()" title="How to play" style="position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--accent);font-weight:700;cursor:pointer;font-size:.95rem">?</button>
 </header>
 
@@ -549,6 +554,7 @@
   }
 
   let gameOver = false;
+  if (window.BCAudio) BCAudio.init();
   function connect(onOpen) {
     const proto = location.protocol === 'https:' ? 'wss' : 'ws';
     ws = new WebSocket(`${proto}://${location.host}`);
@@ -639,11 +645,15 @@
     }
   }
 
+  let _prevState = null;
   function renderState(state) {
     if (!state.players) return;
     const me = state.players.find(p => p.id === playerId);
     isHost = me?.isHost || false;
     currentCard = state.currentCard;
+
+    if (state.state !== _prevState && window.BCAudio && state.state === 'answering') BCAudio.play('deal');
+    _prevState = state.state;
 
     if (state.state === 'lobby') {
       gameOver = false;
@@ -751,17 +761,30 @@
     });
 
     const list = document.getElementById('reveal-list');
-    list.innerHTML = results.map(r => {
+    list.innerHTML = results.map((r, i) => {
       const count = answerCounts[r.answer] || 1;
       const rowClass = r.points === 3 ? 'matched-3' : r.points === 1 ? 'matched-1' : '';
       const ptsClass = r.points === 3 ? 'pts-3' : r.points === 1 ? 'pts-1' : 'pts-0';
       const ptsLabel = r.points > 0 ? `+${r.points}` : '—';
-      return `<div class="reveal-row ${rowClass}">
+      return `<div class="reveal-row ${rowClass}" style="opacity:0;transform:translateY(10px)" data-idx="${i}" data-pts="${r.points||0}">
         <span class="r-name">${escHtml(r.playerName)}</span>
         <span class="r-answer">${r.answer}</span>
         <span class="r-pts ${ptsClass}">${ptsLabel}</span>
       </div>`;
     }).join('');
+
+    // Flip the card in, then reveal each answer row in sequence with a sound.
+    if (cardEl) { cardEl.style.animation = 'none'; void cardEl.offsetWidth; cardEl.style.animation = 'compFlip .5s ease'; }
+    if (window.BCAudio) BCAudio.play('flip');
+    const rows = [...list.querySelectorAll('.reveal-row')];
+    rows.forEach((row, i) => {
+      setTimeout(() => {
+        row.style.transition = 'opacity .35s, transform .35s';
+        row.style.opacity = '1'; row.style.transform = 'none';
+        const pts = parseInt(row.dataset.pts) || 0;
+        if (window.BCAudio) BCAudio.play(pts >= 3 ? 'correct' : pts >= 1 ? 'pop' : 'tap');
+      }, 350 + i * 300);
+    });
 
     renderScoreboard('reveal-scoreboard', state.players);
 
@@ -772,16 +795,29 @@
     gameOver = true;
     showScreen('gameover');
     const banner = document.getElementById('winner-banner');
-    if (state.winnerName) {
-      const isMe = state.winnerId === playerId;
-      banner.innerHTML = isMe
-        ? `<span>🏆 You won!</span>`
-        : `<span>${escHtml(state.winnerName)}</span> wins!`;
-    }
-
+    banner.innerHTML = '';
     const players = state.players || [];
-    renderScoreboard('gameover-scoreboard', players);
-    document.getElementById('btn-reset').style.display = isHost ? 'block' : 'none';
+    const board = document.getElementById('gameover-scoreboard');
+
+    if (window.BCCelebrate) {
+      // Dramatic staged reveal: bars rise lowest-first, winner last with confetti.
+      board.innerHTML = '';
+      BCCelebrate.ending(board, {
+        title: 'Final Scores',
+        players: players.map(p => ({ name: p.name + (p.id === playerId ? ' (you)' : ''), score: p.score, color: p.color || '#7c3aed' })),
+        winnerLabel: () => state.winnerId === playerId ? '🏆 You won!' : `${state.winnerName} wins!`,
+        onDone: () => { document.getElementById('btn-reset').style.display = isHost ? 'block' : 'none'; },
+      });
+      document.getElementById('btn-reset').style.display = 'none'; // shown after sequence
+    } else {
+      if (state.winnerName) {
+        const isMe = state.winnerId === playerId;
+        banner.innerHTML = isMe ? `<span>🏆 You won!</span>` : `<span>${escHtml(state.winnerName)}</span> wins!`;
+      }
+      renderScoreboard('gameover-scoreboard', players);
+      document.getElementById('btn-reset').style.display = isHost ? 'block' : 'none';
+    }
+    if (window.BCAudio) BCAudio.play('win');
   }
 
   function renderScoreboard(elId, players) {
@@ -798,6 +834,12 @@
 
   function escHtml(str) {
     return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function toggleMute() {
+    const muted = window.BCAudio ? BCAudio.toggleMute() : false;
+    const btn = document.getElementById('muteBtn');
+    if (btn) btn.textContent = muted ? '🔇' : '🔊';
+    if (!muted && window.BCAudio) BCAudio.play('click');
   }
 </script>
 </body>
