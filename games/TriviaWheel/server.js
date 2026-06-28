@@ -299,15 +299,27 @@ function doMove(room){
   if(pos===board.centreId){newPos=pos;room.movePath=[pos];}
   else if(sq?.type==='spoke'){
     const off=pos-board.RING,sIdx=Math.floor(off/board.SPOKE_LEN),pip=off%board.SPOKE_LEN;
+    const catIds=FR.ring.map(c=>c.id);
+    const hasAll=catIds.every(id=>player.wedges?.[id]);
     const newPip=pip+die;
     const path=[];
-    for(let j=1;j<=Math.min(die,board.SPOKE_LEN-pip);j++)path.push(board.RING+sIdx*board.SPOKE_LEN+Math.min(pip+j,board.SPOKE_LEN-1));
+    // Step inward one tile at a time, without duplicating clamped tiles
+    for(let p=pip+1;p<board.SPOKE_LEN&&p<=newPip;p++){
+      path.push(board.RING+sIdx*board.SPOKE_LEN+p);
+    }
     if(newPip>=board.SPOKE_LEN){
-      const catIds=FR.ring.map(c=>c.id);
-      newPos=catIds.every(id=>player.wedges?.[id])?board.centreId:MID_POS[sIdx];
-      path.push(newPos);
-    }else{newPos=board.RING+sIdx*board.SPOKE_LEN+newPip;}
-    room.movePath=path;
+      // Reached/overshot the inner end of the spoke
+      if(hasAll){newPos=board.centreId;path.push(board.centreId);}
+      else{
+        // Shouldn't normally happen (spoke entry requires all wedges), but handle safely:
+        // stop at the innermost spoke tile rather than bouncing back to the ring.
+        newPos=board.RING+sIdx*board.SPOKE_LEN+(board.SPOKE_LEN-1);
+        if(path[path.length-1]!==newPos)path.push(newPos);
+      }
+    }else{
+      newPos=board.RING+sIdx*board.SPOKE_LEN+newPip;
+    }
+    room.movePath=path.length?path:[newPos];
   }else{
     // Build step-by-step ring path
     const r=moveRing(pos,die,board,player.wedges);
@@ -649,7 +661,7 @@ const server=http.createServer((req,res)=>{
     fs.readFile(fp,(err,data)=>{
       if(err){res.writeHead(404);res.end();return;}
       const ext=path.extname(fp).toLowerCase();
-      const mime={'.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.gif':'image/gif'}[ext]||'application/octet-stream';
+      const mime={'.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.gif':'image/gif','.js':'text/javascript','.css':'text/css','.json':'application/json','.mp3':'audio/mpeg','.wav':'audio/wav'}[ext]||'application/octet-stream';
       res.writeHead(200,{'Content-Type':mime});res.end(data);
     });
   }else{res.writeHead(404);res.end();}
@@ -835,6 +847,8 @@ wss.on('connection',ws=>{
       // 'ring' route: stay where they are (already on the midpoint)
       room.reveal.offerRouteChoice=false;room.reveal.routeChosen=msg.route;
       room._canEnterSpoke=false;room._spokeIdx=-1;
+      room.movePath=null; // no animation for the route transition — snap cleanly
+      room.targetSquareId=null;
       clrTimer(room);clrAdv(room);
       room.state='roll';room.diceRoll=null;
       bcast(room,snap(room));countdown(room,30,()=>doMove(room));
